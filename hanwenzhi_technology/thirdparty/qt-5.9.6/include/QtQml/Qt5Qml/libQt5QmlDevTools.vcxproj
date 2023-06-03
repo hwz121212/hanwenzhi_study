@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D1331F6-1CBC-3857-BEAA-B146D3B89D29}</ProjectGuid>
+    <RootNamespace>Qt5QmlDevTools</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\masm_qt;$(SolutionDir)thirdparty\masm_qt\jit;$(SolutionDir)thirdparty\masm_qt\assembler;$(SolutionDir)thirdparty\masm_qt\runtime;$(SolutionDir)thirdparty\masm_qt\wtf;$(SolutionDir)thirdparty\masm_qt\stubs;$(SolutionDir)thirdparty\masm_qt\stubs\wtf;$(SolutionDir)thirdparty\masm_qt\disassembler;$(SolutionDir)thirdparty\masm_qt\disassembler\udis86;jsruntime;compiler;memory;jit;..\..\..\include;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;NDEBUG;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;NDEBUG;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QMLDEVTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;NDEBUG;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;NDEBUG;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QMLDEVTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\masm_qt;$(SolutionDir)thirdparty\masm_qt\jit;$(SolutionDir)thirdparty\masm_qt\assembler;$(SolutionDir)thirdparty\masm_qt\runtime;$(SolutionDir)thirdparty\masm_qt\wtf;$(SolutionDir)thirdparty\masm_qt\stubs;$(SolutionDir)thirdparty\masm_qt\stubs\wtf;$(SolutionDir)thirdparty\masm_qt\disassembler;$(SolutionDir)thirdparty\masm_qt\disassembler\udis86;jsruntime;compiler;memory;jit;..\..\..\include;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QMLDEVTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QMLDEVTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="compiler\qqmlirbuilder.cpp" />
+    <ClCompile Include="parser\qqmljsast.cpp" />
+    <ClCompile Include="parser\qqmljsastvisitor.cpp" />
+    <ClCompile Include="parser\qqmljsengine_p.cpp" />
+    <ClCompile Include="parser\qqmljsgrammar.cpp" />
+    <ClCompile Include="parser\qqmljslexer.cpp" />
+    <ClCompile Include="parser\qqmljsparser.cpp" />
+    <ClCompile Include="jit\qv4assembler.cpp" />
+    <ClCompile Include="jit\qv4binop.cpp" />
+    <ClCompile Include="compiler\qv4codegen.cpp" />
+    <ClCompile Include="compiler\qv4compileddata.cpp" />
+    <ClCompile Include="compiler\qv4compiler.cpp" />
+    <ClCompile Include="jsruntime\qv4executableallocator.cpp" />
+    <ClCompile Include="compiler\qv4instr_moth.cpp" />
+    <ClCompile Include="jit\qv4isel_masm.cpp" />
+    <ClCompile Include="compiler\qv4isel_moth.cpp" />
+    <ClCompile Include="compiler\qv4isel_p.cpp" />
+    <ClCompile Include="compiler\qv4jsir.cpp" />
+    <ClCompile Include="compiler\qv4jssimplifier.cpp" />
+    <ClCompile Include="jit\qv4regalloc.cpp" />
+    <ClCompile Include="jsruntime\qv4runtime.cpp" />
+    <ClCompile Include="compiler\qv4ssa.cpp" />
+    <ClCompile Include="jsruntime\qv4string.cpp" />
+    <ClCompile Include="jit\qv4unop.cpp" />
+    <ClCompile Include="jsruntime\qv4value.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlirbuilder_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsast_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsastfwd_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsastvisitor_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsglobal_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsgrammar_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljskeywords_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljslexer_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsmemorypool_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsparser_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypecompiler_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4assembler_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4binop_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4codegen_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compileddata_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compiler_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4heap_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4instr_moth_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_masm_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_moth_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_util_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jsir_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jssimplifier_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4regalloc_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4registerinfo_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4runtime_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4runtimeapi_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4ssa_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4string_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4targetplatform_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4unop_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4util_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4value_p.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{ced8858a-b884-4ba4-9d13-fcb751e308a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtThemeSupport">
+      <UniqueIdentifier>{7ddd64dd-a4f1-4d9b-b8fe-8c8be17c73e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtThemeSupport\private">
+      <UniqueIdentifier>{5f61c5c3-85b8-4d42-8d2b-92d4f4d48257}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qabstractfileiconengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtThemeSupport\private\qabstractfileiconengine_p.h">
+      <Filter>Header Files\5.9.6\QtThemeSupport\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{cf727da8-de52-492c-838a-cdb25682f289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtCanvas3D">
+      <UniqueIdentifier>{58d86d5b-b438-4bb1-b3c2-9ead5ed26309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtCanvas3D\private">
+      <UniqueIdentifier>{976246f6-aa6d-4d2c-b7f6-2df9b6f962ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abstractobject3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="activeinfo3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arrayutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="canvas3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="canvasglstatedump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="canvasrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="canvasrendernode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="canvastextureprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compressedtexturepvrtc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compressedtextures3tc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="context3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="contextattributes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enumtostringmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framebuffer3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glcommandqueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glstatestore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openglversionchecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="program3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renderbuffer3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renderjob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shader3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shaderprecisionformat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teximage3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uniformlocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\abstractobject3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\activeinfo3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\buffer3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvas3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvasglstatedump_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvasrenderer_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvasrendernode_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvastextureprovider_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\compressedtexturepvrtc_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\compressedtextures3tc_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\context3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\contextattributes_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\framebuffer3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\glcommandqueue_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\glstatestore_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\program3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\renderbuffer3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\shader3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\shaderprecisionformat_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\teximage3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\texture3d_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\uniformlocation_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\arrayutils_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\canvas3dcommon_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\enumtostringmap_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\openglversionchecker_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\renderjob_p.h">
+      <Filter>Header Files\5.9.6\QtCanvas3D\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt5Canvas3D_resource.rc" />
+  </ItemGroup>
+</Project>

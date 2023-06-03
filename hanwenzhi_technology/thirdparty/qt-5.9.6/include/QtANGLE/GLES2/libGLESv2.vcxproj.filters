@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libANGLE\AttributeMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Blit11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\Blit9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Buffer11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\Buffer9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\BufferD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Caps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Clear11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Compiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\CompilerD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\DebugAnnotator11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\DebugAnnotator9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\DeviceD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\DeviceImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\DisplayD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\DisplayImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\DynamicHLSL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\EGLImageD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Fence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Fence11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\Fence9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Framebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Framebuffer11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\Framebuffer9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\FramebufferAttachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\FramebufferD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\HLSLCompiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\HandleAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Image11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\Image9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\ImageD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\ImageIndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\IndexBuffer11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\IndexBuffer9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\IndexDataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\IndexRangeCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\InputLayoutCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="murmurhash\MurmurHash3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\win32\NativeWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\PixelTransfer11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\ProgramD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Query.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Query11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\Query9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\RenderStateCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\RenderTarget11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\RenderTarget9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\RenderTargetD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Renderbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\RenderbufferD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Renderer11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\Renderer9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\RendererD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\ShaderD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\ShaderExecutable11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\ShaderExecutable9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\ShaderExecutableD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\StateManager11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\StateManager9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Surface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\SurfaceD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\SurfaceImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\SwapChain11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\SwapChain9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="systeminfo\SystemInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\TextureD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\TextureStorage11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\TextureStorage9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\TransformFeedback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\TransformFeedbackD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\Trim11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\Uniform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\VaryingPacking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\VertexArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\VertexAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\VertexBuffer11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\VertexBuffer9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\VertexDataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\VertexDeclarationCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\angletypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\copyimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\dxgi_support_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entry_points_egl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entry_points_egl_ext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entry_points_gles_2_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entry_points_gles_2_0_ext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entry_points_gles_3_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entry_points_gles_3_0_ext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\formatutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\formatutils11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\formatutils9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\formatutilsD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\internal_format_initializer_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\load_functions_table_autogen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\loadimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\loadimageSSE2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\loadimage_etc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\queryconversions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\renderer11_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d9\renderer9_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\swizzle_format_info_autogen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\renderer\d3d\d3d11\texture_format_table_autogen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\validationEGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\validationES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\validationES2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libANGLE\validationES3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLESv2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libANGLE\AttributeMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\BinaryStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Blit11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\Blit9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Buffer11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\Buffer9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\BufferD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\BufferImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Caps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Clear11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\CompilerD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\CompilerImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\DebugAnnotator11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\DebugAnnotator9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\DeviceD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\DeviceImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\DisplayD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\DisplayImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\DynamicHLSL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\EGLImageD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Fence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Fence11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\Fence9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\FenceNVImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\FenceSyncImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Framebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Framebuffer11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\Framebuffer9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\FramebufferAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\FramebufferD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\FramebufferImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\HLSLCompiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\HandleAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Image11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\Image9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\ImageD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\ImageIndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\ImplFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\IndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\IndexBuffer11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\IndexBuffer9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\IndexDataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\IndexRangeCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\InputLayoutCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="murmurhash\MurmurHash3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\PixelTransfer11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\ProgramD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\ProgramImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Query.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Query11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\Query9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\QueryImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\RefCountObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\RenderStateCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\RenderTarget11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\RenderTarget9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\RenderTargetD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Renderbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\RenderbufferD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\RenderbufferImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Renderer11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\Renderer9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\RendererD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\ShaderD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\ShaderExecutable11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\ShaderExecutable9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\ShaderExecutableD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\ShaderImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\StateManager11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\StateManager9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Surface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\SurfaceD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\SurfaceImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\SwapChain11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\SwapChain9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\SwapChainD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="systeminfo\SystemInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\TextureD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\TextureImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\TextureStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\TextureStorage11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\TextureStorage9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\TransformFeedback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\TransformFeedbackD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\TransformFeedbackImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\Trim11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\Uniform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\VaryingPacking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\VertexArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\VertexArrayImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\VertexAttribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\VertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\VertexBuffer11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\VertexBuffer9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\VertexDataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\Workarounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\angletypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_gs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_ps_4f.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_ps_4i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_ps_4ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_vs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\clearfloat11_fl9ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\clearfloat11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\clearfloat11vs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\clearsint11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\clearsint11vs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\clearuint11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\clearuint11vs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\shaders\compiled\componentmaskps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\copyimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\dxgi_support_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entry_points_egl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entry_points_egl_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entry_points_gles_2_0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entry_points_gles_2_0_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entry_points_gles_3_0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entry_points_gles_3_0_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\features.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\shaders\compiled\flipyvs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\formatutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\formatutils11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\formatutils9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\formatutilsD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\generatemip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\imageformats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\internal_format_initializer_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\load_functions_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\loadimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\loadimage_etc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\shaders\compiled\luminanceps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthrough2d11vs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthrough3d11gs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthrough3d11vs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughdepth2d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlum2d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlum3d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlumalpha2d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlumalpha3d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\shaders\compiled\passthroughps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr2d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr2di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr2dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr3d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr3di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr3dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg2d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg2di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg2dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg3d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg3di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg3dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb2d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb2di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb2dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb3d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb3di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb3dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba2d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba2di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba2dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba3d11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba3di11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba3dui11ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\queryconversions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\renderer11_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\renderer9_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d9\shaders\compiled\standardvs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\swizzle_format_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlef2darrayps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlef2dps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlef3dps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlei2darrayps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlei2dps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlei3dps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzleui2darrayps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzleui2dps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzleui3dps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\renderer\d3d\d3d11\texture_format_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\validationEGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\validationES.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\validationES2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\validationES3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libANGLE\vertexconversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GLESv2.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

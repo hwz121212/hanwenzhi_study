@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{caa5863a-a48b-4c4e-b7c1-a945d3ad80d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a65ce538-80b4-4e4f-b9f3-abaf8c813407}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\o3dgcAdjacencyInfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcArithmeticCodec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcBinaryStream.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcCommon.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcDVEncodeParams.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcDynamicVector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcDynamicVectorDecoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcDynamicVectorEncoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcFIFO.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcIndexedFaceSet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcSC3DMCDecoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcSC3DMCEncodeParams.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcSC3DMCEncoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcTimer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcTriangleFans.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcTriangleListDecoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcTriangleListEncoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\o3dgcVector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\o3dgcIndexedFaceSet.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\o3dgcSC3DMCDecoder.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\o3dgcSC3DMCEncoder.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\o3dgcTriangleListDecoder.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\o3dgcTriangleListEncoder.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\o3dgcVector.inl">
+      <Filter>include</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\o3dgcArithmeticCodec.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\o3dgcDynamicVectorDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\o3dgcDynamicVectorEncoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\o3dgcTools.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\o3dgcTriangleFans.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

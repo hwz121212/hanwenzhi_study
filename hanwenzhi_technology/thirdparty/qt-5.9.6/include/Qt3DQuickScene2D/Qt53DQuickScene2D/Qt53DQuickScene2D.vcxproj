@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5AFB264B-E6BC-3ED4-9935-19FC16594C6B}</ProjectGuid>
+    <RootNamespace>Qt53DQuickScene2D</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;qml;quick;concurrent;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;3dquick</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;qml;quick;concurrent;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;3dquick</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;items;..\..\..\include\Qt3DQuickScene2D;..\..\..\include\Qt3DQuickScene2D\5.9.6;..\..\..\include\Qt3DQuickScene2D\5.9.6\Qt3DQuickScene2D;..\..\..\include\Qt3DQuickScene2D\5.9.6\Qt3DQuickScene2D\private;..\..\..\include\Qt3DQuickExtras;..\..\..\include\Qt3DQuickExtras\5.9.6;..\..\..\include\Qt3DQuickExtras\5.9.6\Qt3DQuickExtras;..\..\..\include\Qt3DQuickExtras\5.9.6\Qt3DQuickExtras\private;..\..\..\include;..\..\..\include\Qt3DQuickRender;..\..\..\include\Qt3DQuickRender\5.9.6;..\..\..\include\Qt3DQuickRender\5.9.6\Qt3DQuickRender;..\..\..\include\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender;..\..\..\include\Qt3DQuick;..\..\..\include\Qt3DQuick\5.9.6;..\..\..\include\Qt3DQuick\5.9.6\Qt3DQuick;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtANGLE;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtNetwork;..\..\..\include\QtConcurrent;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DQUICKSCENE2D_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Network.lib;Qt53DInput.lib;Qt53DRender.lib;Qt53DCore.lib;Qt53DLogic.lib;Qt53DAnimation.lib;Qt53DRender.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DQUICKSCENE2D_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_3DRENDER_LIB;QT_3DQUICK_LIB;QT_3DCORE_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;items;..\..\..\include\Qt3DQuickScene2D;..\..\..\include\Qt3DQuickScene2D\5.9.6;..\..\..\include\Qt3DQuickScene2D\5.9.6\Qt3DQuickScene2D;..\..\..\include\Qt3DQuickScene2D\5.9.6\Qt3DQuickScene2D\private;..\..\..\include\Qt3DQuickExtras;..\..\..\include\Qt3DQuickExtras\5.9.6;..\..\..\include\Qt3DQuickExtras\5.9.6\Qt3DQuickExtras;..\..\..\include\Qt3DQuickExtras\5.9.6\Qt3DQuickExtras\private;..\..\..\include;..\..\..\include\Qt3DQuickRender;..\..\..\include\Qt3DQuickRender\5.9.6;..\..\..\include\Qt3DQuickRender\5.9.6\Qt3DQuickRender;..\..\..\include\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender;..\..\..\include\Qt3DQuick;..\..\..\include\Qt3DQuick\5.9.6;..\..\..\include\Qt3DQuick\5.9.6\Qt3DQuick;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtANGLE;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtNetwork;..\..\..\include\QtConcurrent;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DQUICKSCENE2D_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Network.lib;Qt53DInput.lib;Qt53DRender.lib;Qt53DCore.lib;Qt53DLogic.lib;Qt53DAnimation.lib;Qt53DRender.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DQUICKSCENE2D_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_3DRENDER_LIB;QT_3DQUICK_LIB;QT_3DCORE_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DQuickScene2D_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qscene2d_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquickscene2dnodefactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquickscene2d_global_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquickscene2d_logging_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\scene2devent_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\scene2dsharedobject_p.h" />
+    <ClInclude Include="..\qt3dquickscene2dversion.h" />
+    <ClInclude Include="..\qt3dquickscene2d_global.h" />
+    <QtMoc Include="..\qscene2d.h" />
+    <QtMoc Include="..\5.9.6\Qt3DQuickScene2D\private\scene2dmanager_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DQuickScene2D\private\scene2d_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquick3dscene2d_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="items\qscene2d.cpp" />
+    <ClCompile Include="items\qt3dquick3dscene2d.cpp" />
+    <ClCompile Include="items\scene2d.cpp" />
+    <ClCompile Include="items\scene2dmanager.cpp" />
+    <ClCompile Include="items\scene2dsharedobject.cpp" />
+    <ClCompile Include="qt3dquickscene2dnodefactory.cpp" />
+    <ClCompile Include="qt3dquickscene2d_global.cpp" />
+    <ClCompile Include="qt3dquickscene2d_logging.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

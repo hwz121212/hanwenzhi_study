@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BF52B801-6267-368C-A76C-B398478559BC}</ProjectGuid>
+    <RootNamespace>Qt5Designer</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;xml;gui;widgets;uiplugin</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;xml;gui;widgets;uiplugin</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;extension;sdk;shared;qtpropertybrowser;deviceskin;findwidget;qtgradienteditor;uilib;..\..\..\include;..\..\..\include\QtDesigner;..\..\..\include\QtDesigner\5.9.6;..\..\..\include\QtDesigner\5.9.6\QtDesigner;..\..\..\include\QtWidgets;..\..\..\include\QtWidgets\5.9.6;..\..\..\include\QtWidgets\5.9.6\QtWidgets;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtUiPlugin;..\..\..\include\QtANGLE;..\..\..\include\QtXml;uic;moc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QDESIGNER_SDK_LIBRARY;QDESIGNER_EXTENSION_LIBRARY;QDESIGNER_UILIB_LIBRARY;QDESIGNER_SHARED_LIBRARY;QT_DESIGNER;QT_USE_QSTRINGBUILDER;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_DESIGNER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QDESIGNER_SDK_LIBRARY;QDESIGNER_EXTENSION_LIBRARY;QDESIGNER_UILIB_LIBRARY;QDESIGNER_SHARED_LIBRARY;QT_DESIGNER;QT_USE_QSTRINGBUILDER;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_DESIGNER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_UIPLUGIN_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;QT_UIPLUGIN_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <QtUicDir>uic</QtUicDir>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;extension;sdk;shared;qtpropertybrowser;deviceskin;findwidget;qtgradienteditor;uilib;..\..\..\include;..\..\..\include\QtDesigner;..\..\..\include\QtDesigner\5.9.6;..\..\..\include\QtDesigner\5.9.6\QtDesigner;..\..\..\include\QtWidgets;..\..\..\include\QtWidgets\5.9.6;..\..\..\include\QtWidgets\5.9.6\QtWidgets;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtUiPlugin;..\..\..\include\QtANGLE;..\..\..\include\QtXml;uic;moc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QDESIGNER_SDK_LIBRARY;QDESIGNER_EXTENSION_LIBRARY;QDESIGNER_UILIB_LIBRARY;QDESIGNER_SHARED_LIBRARY;QT_DESIGNER;QT_USE_QSTRINGBUILDER;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_DESIGNER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\libEGLd.lib;$(QTDIR)\lib\libGLESv2d.lib;gdi32.lib;user32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QDESIGNER_SDK_LIBRARY;QDESIGNER_EXTENSION_LIBRARY;QDESIGNER_UILIB_LIBRARY;QDESIGNER_SHARED_LIBRARY;QT_DESIGNER;QT_USE_QSTRINGBUILDER;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_DESIGNER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_UIPLUGIN_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;QT_UIPLUGIN_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <QtUicDir>uic</QtUicDir>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="findwidget\abstractfindwidget.cpp" />
+    <ClCompile Include="deviceskin\deviceskin.cpp" />
+    <ClCompile Include="findwidget\itemviewfindwidget.cpp" />
+    <ClCompile Include="fontpanel\fontpanel.cpp" />
+    <ClCompile Include="qtgradienteditor\qtcolorbutton.cpp" />
+    <ClCompile Include="qtgradienteditor\qtcolorline.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientdialog.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradienteditor.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientmanager.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientstopscontroller.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientstopsmodel.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientstopswidget.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientutils.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientview.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientviewdialog.cpp" />
+    <ClCompile Include="qtgradienteditor\qtgradientwidget.cpp" />
+    <ClCompile Include="qtpropertybrowser\qtbuttonpropertybrowser.cpp" />
+    <ClCompile Include="qtpropertybrowser\qteditorfactory.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtgroupboxpropertybrowser.cpp" />
+    <ClCompile Include="qtpropertybrowser\qtpropertybrowser.cpp" />
+    <ClCompile Include="qtpropertybrowser\qtpropertybrowserutils.cpp" />
+    <ClCompile Include="findwidget\texteditfindwidget.cpp" />
+    <ClCompile Include="qtpropertybrowser\qtpropertymanager.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qttreepropertybrowser.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtvariantproperty.cpp" />
+    <ClCompile Include="qttoolbardialog\qttoolbardialog.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qtpropertybrowser\qtvariantproperty.h" />
+    <QtMoc Include="qtpropertybrowser\qttreepropertybrowser.h" />
+    <QtMoc Include="qtpropertybrowser\qtpropertymanager.h" />
+    <QtMoc Include="qtpropertybrowser\qtpropertybrowser.h" />
+    <QtMoc Include="qtpropertybrowser\qtgroupboxpropertybrowser.h" />
+    <QtMoc Include="qtpropertybrowser\qteditorfactory.h" />
+    <QtMoc Include="qtpropertybrowser\qtbuttonpropertybrowser.h" />
+    <QtMoc Include="qttoolbardialog\qttoolbardialog.h" />
+    <QtMoc Include="findwidget\abstractfindwidget.h">
+    </QtMoc>
+    <QtMoc Include="deviceskin\deviceskin.h">
+    </QtMoc>
+    <QtMoc Include="findwidget\itemviewfindwidget.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtcolorbutton.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtcolorline.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientdialog.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradienteditor.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientmanager.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientstopscontroller.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientstopsmodel.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientstopswidget.h">
+    </QtMoc>
+    <QtMoc Include="fontpanel\fontpanel.h" />
+    <ClInclude Include="qtgradienteditor\qtgradientutils.h" />
+    <QtMoc Include="qtgradienteditor\qtgradientview.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientviewdialog.h">
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientwidget.h">
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qtpropertybrowserutils_p.h">
+    </QtMoc>
+    <QtMoc Include="findwidget\texteditfindwidget.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="qtgradienteditor\qtgradientdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtgradienteditor\qtgradientdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradientdialog.ui -o uic\ui_qtgradientdialog.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC qtgradienteditor/qtgradientdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">uic\ui_qtgradientdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qtgradienteditor\qtgradientdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradientdialog.ui -o uic\ui_qtgradientdialog.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC qtgradienteditor/qtgradientdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">uic\ui_qtgradientdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="qtgradienteditor\qtgradienteditor.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtgradienteditor\qtgradienteditor.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradienteditor.ui -o uic\ui_qtgradienteditor.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC qtgradienteditor/qtgradienteditor.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">uic\ui_qtgradienteditor.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qtgradienteditor\qtgradienteditor.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradienteditor.ui -o uic\ui_qtgradienteditor.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC qtgradienteditor/qtgradienteditor.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">uic\ui_qtgradienteditor.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="qtgradienteditor\qtgradientview.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtgradienteditor\qtgradientview.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradientview.ui -o uic\ui_qtgradientview.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC qtgradienteditor/qtgradientview.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">uic\ui_qtgradientview.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qtgradienteditor\qtgradientview.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradientview.ui -o uic\ui_qtgradientview.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC qtgradienteditor/qtgradientview.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">uic\ui_qtgradientview.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="qtgradienteditor\qtgradientviewdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtgradienteditor\qtgradientviewdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradientviewdialog.ui -o uic\ui_qtgradientviewdialog.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC qtgradienteditor/qtgradientviewdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">uic\ui_qtgradientviewdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qtgradienteditor\qtgradientviewdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\qt-5.9.6\uic.exe qtgradienteditor\qtgradientviewdialog.ui -o uic\ui_qtgradientviewdialog.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC qtgradienteditor/qtgradientviewdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">uic\ui_qtgradientviewdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="deviceskin\skins\ClamshellPhone.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone.skin" />
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone1-5-closed.png" />
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone1-5-pressed.png" />
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone1-5.png" />
+    <QtRcc Include="deviceskin\skins\PortableMedia.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\PortableMedia.skin\PortableMedia.skin" />
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\S60-QVGA-Candybar-down.png" />
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\S60-QVGA-Candybar.png" />
+    <QtRcc Include="deviceskin\skins\S60-QVGA-Candybar.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\S60-QVGA-Candybar.skin" />
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\S60-nHD-Touchscreen-down.png" />
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\S60-nHD-Touchscreen.png" />
+    <QtRcc Include="deviceskin\skins\S60-nHD-Touchscreen.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\S60-nHD-Touchscreen.skin" />
+    <None Include="deviceskin\skins\SmartPhone.skin\SmartPhone-pressed.png" />
+    <None Include="deviceskin\skins\SmartPhone.skin\SmartPhone.png" />
+    <QtRcc Include="deviceskin\skins\SmartPhone.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\SmartPhone.skin\SmartPhone.skin" />
+    <None Include="deviceskin\skins\SmartPhone2.skin\SmartPhone2-pressed.png" />
+    <None Include="deviceskin\skins\SmartPhone2.skin\SmartPhone2.png" />
+    <QtRcc Include="deviceskin\skins\SmartPhone2.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\SmartPhone2.skin\SmartPhone2.skin" />
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\SmartPhoneWithButtons-pressed.png" />
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\SmartPhoneWithButtons.png" />
+    <QtRcc Include="deviceskin\skins\SmartPhoneWithButtons.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\SmartPhoneWithButtons.skin" />
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\TouchscreenPhone-pressed.png" />
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\TouchscreenPhone.png" />
+    <QtRcc Include="deviceskin\skins\TouchscreenPhone.qrc">
+    </QtRcc>
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\TouchscreenPhone.skin" />
+    <None Include="findwidget\images\mac\closetab.png" />
+    <None Include="findwidget\images\win\closetab.png" />
+    <None Include="deviceskin\skins\ClamshellPhone.skin\defaultbuttons.conf" />
+    <None Include="deviceskin\skins\PortableMedia.skin\defaultbuttons.conf" />
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\defaultbuttons.conf" />
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\defaultbuttons.conf" />
+    <None Include="deviceskin\skins\SmartPhone.skin\defaultbuttons.conf" />
+    <None Include="deviceskin\skins\SmartPhone2.skin\defaultbuttons.conf" />
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\defaultbuttons.conf" />
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\defaultbuttons.conf" />
+    <None Include="qtgradienteditor\images\down.png" />
+    <None Include="qtgradienteditor\images\edit.png" />
+    <None Include="qtgradienteditor\images\editdelete.png" />
+    <QtRcc Include="findwidget\findwidget.qrc">
+    </QtRcc>
+    <None Include="qtgradienteditor\images\minus.png" />
+    <None Include="findwidget\images\mac\next.png" />
+    <None Include="findwidget\images\win\next.png" />
+    <None Include="qtgradienteditor\images\plus.png" />
+    <None Include="deviceskin\skins\PortableMedia.skin\portablemedia-pressed.png" />
+    <None Include="deviceskin\skins\PortableMedia.skin\portablemedia.png" />
+    <None Include="deviceskin\skins\PortableMedia.skin\portablemedia.xcf" />
+    <None Include="findwidget\images\mac\previous.png" />
+    <None Include="findwidget\images\win\previous.png" />
+    <QtRcc Include="qtgradienteditor\qtgradienteditor.qrc">
+    </QtRcc>
+    <None Include="findwidget\images\mac\searchfind.png" />
+    <None Include="findwidget\images\win\searchfind.png" />
+    <None Include="qtgradienteditor\images\spreadpad.png" />
+    <None Include="qtgradienteditor\images\spreadreflect.png" />
+    <None Include="qtgradienteditor\images\spreadrepeat.png" />
+    <None Include="qtgradienteditor\images\typeconical.png" />
+    <None Include="qtgradienteditor\images\typelinear.png" />
+    <None Include="qtgradienteditor\images\typeradial.png" />
+    <None Include="qtgradienteditor\images\up.png" />
+    <None Include="findwidget\images\wrap.png" />
+    <None Include="qtgradienteditor\images\zoomin.png" />
+    <None Include="qtgradienteditor\images\zoomout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="qttoolbardialog\qttoolbardialog.ui">
+      <QtUicDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">uic</QtUicDir>
+      <QtUicDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">uic</QtUicDir>
+    </QtUic>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

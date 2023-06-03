@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{f7d34909-9aba-43ac-8e80-31ca8a43ac69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtSerialBus">
+      <UniqueIdentifier>{ccbf94e3-ba9e-4682-8143-7199ae477c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtSerialBus\private">
+      <UniqueIdentifier>{649cab8c-82c9-4087-9f3a-ed42d53800fd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qcanbus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcanbusdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcanbusdeviceinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcanbusfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcanbusframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusdataunit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusdeviceidentification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbuspdu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusrtuserialmaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusrtuserialslave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbusserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbustcpclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmodbustcpserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5SerialBus_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qcanbusdevice_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qcanbusdeviceinfo_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbus_symbols_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbusadu_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbusclient_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbuscommevent_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbusdevice_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbusrtuserialmaster_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbusrtuserialslave_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbusserver_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbustcpclient_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qmodbustcpserver_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSerialBus\private\qtserialbus-config_p.h">
+      <Filter>Header Files\5.9.6\QtSerialBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcanbusdeviceinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcanbusfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcanbusframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmodbusdataunit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmodbusdeviceidentification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmodbuspdu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qserialbusglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtserialbus-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtserialbusversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qcanbus.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcanbusdevice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbusclient.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbusdevice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbusreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbusrtuserialmaster.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbusrtuserialslave.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbusserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbustcpclient.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmodbustcpserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

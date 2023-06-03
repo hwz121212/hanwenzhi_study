@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{e61a6073-061e-4bb7-8ec8-5d6aca841fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DExtras">
+      <UniqueIdentifier>{082b7187-9c9a-4e1b-b5d0-9f70ca057466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DExtras\private">
+      <UniqueIdentifier>{174631d6-e477-4973-8e1f-8afcb9a1903f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3dtext">
+      <UniqueIdentifier>{1692ab3c-3cce-4212-97cd-034970bca590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\defaults">
+      <UniqueIdentifier>{b40ddc10-8176-4ed0-a695-e4ddfb431a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geometries">
+      <UniqueIdentifier>{3ed13167-d1d9-426a-8629-7d10648d010d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\text">
+      <UniqueIdentifier>{d4c23690-011d-422a-8e55-0e552ce86244}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\es2\diffusemap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\diffusemap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\diffusemap.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\diffusemap.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\diffusespecularmap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\diffusespecularmap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\distancefieldtext.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\distancefieldtext.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\distancefieldtext.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\distancefieldtext.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="extras.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="shaders\es2\gooch.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\gooch.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\gooch.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\gooch.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\light.inc.frag100">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\light.inc.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\light.inc.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\metalrough.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\metalrough.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\metalroughuniform.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\morphphong.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\morphphong.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\normaldiffusemap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\normaldiffusemap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\normaldiffusemap.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\normaldiffusemap.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\normaldiffusemapalpha.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\normaldiffusemapalpha.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\normaldiffusespecularmap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\normaldiffusespecularmap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\pervertexcolor.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\pervertexcolor.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\pervertexcolor.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\pervertexcolor.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\phong.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\phong.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\phong.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\phong.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\phongalpha.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\phongalpha.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\skybox.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\skybox.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\skybox.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\skybox.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\unlittexture.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\unlittexture.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\es2\unlittexture.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\gl3\unlittexture.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DExtras_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\areaallocator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\distancefieldtextrenderer_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qconegeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qcuboidgeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qcylindergeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qdiffusemapmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qdiffusespecularmapmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qdistancefieldglyphcache_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qextrudedtextgeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qfirstpersoncameracontroller_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qforwardrenderer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qgoochmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qmetalroughmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qmorphphongmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qnormaldiffusemapalphamaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qnormaldiffusemapmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qnormaldiffusespecularmapmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qorbitcameracontroller_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qpervertexcolormaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qphongalphamaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qphongmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qplanegeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qskyboxentity_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qspheregeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qt3dwindow_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtext2dentity_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtext2dmaterial_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtextureatlas_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtexturedmetalroughmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtexturematerial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtorusgeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dextras_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dextrasversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DExtras\private\distancefieldtextrenderer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DExtras\private\qtext2dmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DExtras\private\qtextureatlas_p.h">
+      <Filter>Header Files\5.9.6\Qt3DExtras\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qconegeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qconemesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcuboidgeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcuboidmesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcylindergeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcylindermesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdiffusemapmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdiffusespecularmapmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qextrudedtextgeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qextrudedtextmesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qfirstpersoncameracontroller.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qforwardrenderer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgoochmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmetalroughmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmorphphongmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnormaldiffusemapalphamaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnormaldiffusemapmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnormaldiffusespecularmapmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qorbitcameracontroller.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpervertexcolormaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qphongalphamaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qphongmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplanegeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplanemesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qskyboxentity.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qspheregeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qspheremesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qt3dwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtext2dentity.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtexturedmetalroughmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtexturematerial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtorusgeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtorusmesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3dtext\qextrudedtextgeometry.cpp">
+      <Filter>Source Files\3dtext</Filter>
+    </ClCompile>
+    <ClCompile Include="3dtext\qextrudedtextmesh.cpp">
+      <Filter>Source Files\3dtext</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qdiffusemapmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qdiffusespecularmapmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qfirstpersoncameracontroller.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qforwardrenderer.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qgoochmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qmetalroughmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qmorphphongmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qnormaldiffusemapalphamaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qnormaldiffusemapmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qnormaldiffusespecularmapmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qorbitcameracontroller.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qpervertexcolormaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qphongalphamaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qphongmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qskyboxentity.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qt3dwindow.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qtexturedmetalroughmaterial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults\qtexturematerial.cpp">
+      <Filter>Source Files\defaults</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qconegeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qconemesh.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qcuboidgeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qcuboidmesh.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qcylindergeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qcylindermesh.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qplanegeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qplanemesh.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qspheregeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qspheremesh.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qtorusgeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="geometries\qtorusmesh.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="text\areaallocator.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="text\distancefieldtextrenderer.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="text\qdistancefieldglyphcache.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="text\qtext2dentity.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="text\qtext2dmaterial.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="text\qtextureatlas.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

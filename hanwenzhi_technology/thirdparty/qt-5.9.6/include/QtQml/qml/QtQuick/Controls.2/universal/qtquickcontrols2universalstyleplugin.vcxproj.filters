@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qquickuniversalbusyindicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickuniversalfocusrectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickuniversalprogressbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickuniversalstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickuniversaltheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="qtquickcontrols2universalstyleplugin.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qquickuniversalbusyindicator_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickuniversalfocusrectangle_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickuniversalprogressbar_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickuniversalstyle_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qquickuniversaltheme_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\checkmark.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\checkmark@2x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\checkmark@3x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\checkmark@4x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\downarrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\downarrow@2x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\downarrow@3x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\downarrow@4x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\leftarrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\leftarrow@2x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\leftarrow@3x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\leftarrow@4x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="qtquickcontrols2universalstyleplugin.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\rightarrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\rightarrow@2x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\rightarrow@3x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\rightarrow@4x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtquickcontrols2universalstyleplugin_resource.rc" />
+  </ItemGroup>
+</Project>

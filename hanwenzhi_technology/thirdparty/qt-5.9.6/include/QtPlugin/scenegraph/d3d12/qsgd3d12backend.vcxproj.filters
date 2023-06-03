@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qsgd3d12adaptation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12builtinmaterials.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12glyphcache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12glyphnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12internalimagenode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12internalrectanglenode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12painternode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12publicnodes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12rendercontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12renderloop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12shadereffectnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12spritenode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgd3d12texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="qsgd3d12threadedrenderloop.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="qsgd3d12engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cs_mipmapgen.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cs_tdr.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_flatcolor.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_outlinedtext.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_shadereffectdefault.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_smoothcolor.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_smoothtexture.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_sprite.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_stencilclip.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_styledtext.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_textmask24.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_textmask32.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_textmask8.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_texture.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_vertexcolor.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qsgd3d12adaptation_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qsgd3d12builtinmaterials_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12context_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12engine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12engine_p_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12glyphcache_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12glyphnode_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12internalimagenode_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12internalrectanglenode_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qsgd3d12layer_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qsgd3d12material_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12painternode_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12publicnodes_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12rendercontext_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12renderer_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qsgd3d12renderloop_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qsgd3d12shadereffectnode_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qsgd3d12spritenode_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsgd3d12texture_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qsgd3d12threadedrenderloop_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vs_flatcolor.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_outlinedtext.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_shadereffectdefault.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_smoothcolor.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_smoothtexture.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_sprite.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_stencilclip.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_styledtext.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_textmask.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_texture.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vs_vertexcolor.hlslh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qsgd3d12backend_resource.rc" />
+  </ItemGroup>
+</Project>

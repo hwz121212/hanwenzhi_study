@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{51c3984c-0885-4927-8c6e-1c5c156f6f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickAnimation">
+      <UniqueIdentifier>{fe2e3b0c-1fb3-4abe-8626-43042fbdc0c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickAnimation\private">
+      <UniqueIdentifier>{3589819b-1044-4abc-98cd-694dc762356e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items">
+      <UniqueIdentifier>{90b66eda-b3a1-41c2-abb0-7203bef685f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DQuickAnimation_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DQuickAnimation\private\qt3dquickanimation_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickAnimation\private\qt3dquickanimationnodefactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickanimation_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickanimationversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DQuickAnimation\private\quick3danimationcontroller_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickAnimation\private\quick3danimationgroup_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickAnimation\private\quick3dchannelmapper_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickAnimation\private\quick3dkeyframeanimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickAnimation\private\quick3dmorphinganimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickAnimation\private\quick3dmorphtarget_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickAnimation\private\quick3dvertexblendanimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickAnimation\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qt3dquickanimation_global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3dquickanimationnodefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3danimationcontroller.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3danimationgroup.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dchannelmapper.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dkeyframeanimation.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dmorphinganimation.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dmorphtarget.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dvertexblendanimation.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

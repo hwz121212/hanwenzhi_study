@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F35E4D79-0FF0-3B04-8713-244C111482E5}</ProjectGuid>
+    <RootNamespace>Qt5Location</RootNamespace>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;qml;positioning;quick</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;qml;positioning;quick</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtPositioning;..\..\..\include\QtPositioning\5.9.6;..\..\..\include\QtPositioning\5.9.6\QtPositioning;..\..\..\include\QtPositioning\5.9.6\QtPositioning\private;..\..\..\include\QtLocation;..\..\..\include\QtLocation\5.9.6;..\..\..\include\QtLocation\5.9.6\QtLocation;..\..\..\include\QtLocation\5.9.6\QtLocation\private;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtWidgets;..\..\..\include\QtWidgets\5.9.6;..\..\..\include\QtWidgets\5.9.6\QtWidgets;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtQuick\5.9.6\QtQuick\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\clipper;$(SolutionDir)thirdparty\clip2tri;$(SolutionDir)thirdparty\poly2tri\include;$(SolutionDir)thirdparty\earcut</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>P2T_STATIC_EXPORTS;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_LOCATION_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Positioning.lib;libclipper.lib;libclip2tri.lib;libpoly2tri.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_LOCATION_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_POSITIONING_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtPositioning;..\..\..\include\QtPositioning\5.9.6;..\..\..\include\QtPositioning\5.9.6\QtPositioning;..\..\..\include\QtPositioning\5.9.6\QtPositioning\private;..\..\..\include\QtLocation;..\..\..\include\QtLocation\5.9.6;..\..\..\include\QtLocation\5.9.6\QtLocation;..\..\..\include\QtLocation\5.9.6\QtLocation\private;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtWidgets;..\..\..\include\QtWidgets\5.9.6;..\..\..\include\QtWidgets\5.9.6\QtWidgets;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtQuick\5.9.6\QtQuick\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\clipper;$(SolutionDir)thirdparty\clip2tri;$(SolutionDir)thirdparty\poly2tri\include;$(SolutionDir)thirdparty\earcut</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>P2T_STATIC_EXPORTS;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_LOCATION_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Positioning.lib;libclipper.lib;libclip2tri.lib;libpoly2tri.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_LOCATION_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_POSITIONING_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="declarativemaps\error_messages.cpp" />
+    <ClCompile Include="declarativemaps\locationvaluetypehelper.cpp" />
+    <ClCompile Include="declarativemaps\mapitemviewdelegateincubator.cpp" />
+    <ClCompile Include="maps\qabstractgeotilecache.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativecategory.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativecirclemapitem.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativecontactdetail.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeocodemodel.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomaneuver.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomap.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomapcopyrightsnotice.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomapitembase.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomapitemgroup.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomapitemview.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomapparameter.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomapquickitem.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeomaptype.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeoroute.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeoroutemodel.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeoroutesegment.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativegeoserviceprovider.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeplace.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceattribute.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeplacecontentmodel.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceeditorialmodel.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceicon.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceimagemodel.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceuser.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativepolygonmapitem.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativepolylinemapitem.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativeratings.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativerectanglemapitem.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativereviewmodel.cpp" />
+    <ClCompile Include="declarativemaps\qdeclarativeroutemapitem.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativesearchmodelbase.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativesearchresultmodel.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativesearchsuggestionmodel.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativesupplier.cpp" />
+    <ClCompile Include="declarativeplaces\qdeclarativesupportedcategoriesmodel.cpp" />
+    <ClCompile Include="maps\qgeocameracapabilities.cpp" />
+    <ClCompile Include="maps\qgeocameradata.cpp" />
+    <ClCompile Include="maps\qgeocameratiles.cpp" />
+    <ClCompile Include="maps\qgeocodereply.cpp" />
+    <ClCompile Include="maps\qgeocodingmanager.cpp" />
+    <ClCompile Include="maps\qgeocodingmanagerengine.cpp" />
+    <ClCompile Include="maps\qgeofiletilecache.cpp" />
+    <ClCompile Include="maps\qgeomaneuver.cpp" />
+    <ClCompile Include="maps\qgeomap.cpp" />
+    <ClCompile Include="declarativemaps\qgeomapitemgeometry.cpp" />
+    <ClCompile Include="maps\qgeomapparameter.cpp" />
+    <ClCompile Include="maps\qgeomappingmanager.cpp" />
+    <ClCompile Include="maps\qgeomappingmanagerengine.cpp" />
+    <ClCompile Include="maps\qgeomaptype.cpp" />
+    <ClCompile Include="maps\qgeoprojection.cpp" />
+    <ClCompile Include="maps\qgeoroute.cpp" />
+    <ClCompile Include="maps\qgeorouteparser.cpp" />
+    <ClCompile Include="maps\qgeorouteparserosrmv4.cpp" />
+    <ClCompile Include="maps\qgeorouteparserosrmv5.cpp" />
+    <ClCompile Include="maps\qgeoroutereply.cpp" />
+    <ClCompile Include="maps\qgeorouterequest.cpp" />
+    <ClCompile Include="maps\qgeoroutesegment.cpp" />
+    <ClCompile Include="maps\qgeoroutingmanager.cpp" />
+    <ClCompile Include="maps\qgeoroutingmanagerengine.cpp" />
+    <ClCompile Include="maps\qgeoserviceprovider.cpp" />
+    <ClCompile Include="maps\qgeoserviceproviderfactory.cpp" />
+    <ClCompile Include="maps\qgeotiledmap.cpp" />
+    <ClCompile Include="maps\qgeotiledmappingmanagerengine.cpp" />
+    <ClCompile Include="maps\qgeotiledmapreply.cpp" />
+    <ClCompile Include="maps\qgeotiledmapscene.cpp" />
+    <ClCompile Include="maps\qgeotilefetcher.cpp" />
+    <ClCompile Include="maps\qgeotilespec.cpp" />
+    <ClCompile Include="qlocation.cpp" />
+    <ClCompile Include="places\qplace.cpp" />
+    <ClCompile Include="places\qplaceattribute.cpp" />
+    <ClCompile Include="places\qplacecategory.cpp" />
+    <ClCompile Include="places\qplacecontactdetail.cpp" />
+    <ClCompile Include="places\qplacecontent.cpp" />
+    <ClCompile Include="places\qplacecontentreply.cpp" />
+    <ClCompile Include="places\qplacecontentrequest.cpp" />
+    <ClCompile Include="places\qplacedetailsreply.cpp" />
+    <ClCompile Include="places\qplaceeditorial.cpp" />
+    <ClCompile Include="places\qplaceicon.cpp" />
+    <ClCompile Include="places\qplaceidreply.cpp" />
+    <ClCompile Include="places\qplaceimage.cpp" />
+    <ClCompile Include="places\qplacemanager.cpp" />
+    <ClCompile Include="places\qplacemanagerengine.cpp" />
+    <ClCompile Include="places\qplacematchreply.cpp" />
+    <ClCompile Include="places\qplacematchrequest.cpp" />
+    <ClCompile Include="places\qplaceproposedsearchresult.cpp" />
+    <ClCompile Include="places\qplaceratings.cpp" />
+    <ClCompile Include="places\qplacereply.cpp" />
+    <ClCompile Include="places\qplaceresult.cpp" />
+    <ClCompile Include="places\qplacereview.cpp" />
+    <ClCompile Include="places\qplacesearchreply.cpp" />
+    <ClCompile Include="places\qplacesearchrequest.cpp" />
+    <ClCompile Include="places\qplacesearchresult.cpp" />
+    <ClCompile Include="places\qplacesearchsuggestionreply.cpp" />
+    <ClCompile Include="places\qplacesupplier.cpp" />
+    <ClCompile Include="places\qplaceuser.cpp" />
+    <ClCompile Include="declarativemaps\qquickgeomapgesturearea.cpp" />
+    <ClCompile Include="qquickgeocoordinateanimation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="maps\qgeotilerequestmanager.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Location_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtLocation\private\error_messages_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\locationvaluetypehelper_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\mapitemviewdelegateincubator_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qcache3q_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitemview_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocameracapabilities_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocameradata_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocameratiles_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocodereply_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocodingmanagerengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocodingmanager_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomaneuver_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomapitemgeometry_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomappingmanagerengine_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomaptype_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomaptype_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoprojection_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutereply_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeorouterequest_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutesegment_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutingmanagerengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutingmanager_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoserviceprovider_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotiledmappingmanagerengine_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotiledmapreply_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilefetcher_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilerequestmanager_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilespec_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilespec_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qlocationglobal_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceattribute_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecategory_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecontactdetail_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecontentrequest_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecontent_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceeditorial_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceicon_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceimage_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacemanagerengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceproposedsearchresult_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceratings_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacereply_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceresult_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacereview_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacesearchresult_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacesupplier_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceuser_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplace_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qquickgeocoordinateanimation_p_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qquickgeocoordinateanimation_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qtlocation-config_p.h" />
+    <ClInclude Include="..\placemacro.h" />
+    <ClInclude Include="..\qgeomaneuver.h" />
+    <ClInclude Include="..\qgeoroute.h" />
+    <ClInclude Include="..\qgeorouterequest.h" />
+    <ClInclude Include="..\qgeoroutesegment.h" />
+    <ClInclude Include="..\qgeoserviceproviderfactory.h" />
+    <ClInclude Include="..\qlocation.h" />
+    <ClInclude Include="..\qlocationglobal.h" />
+    <ClInclude Include="..\qplace.h" />
+    <ClInclude Include="..\qplaceattribute.h" />
+    <ClInclude Include="..\qplacecategory.h" />
+    <ClInclude Include="..\qplacecontactdetail.h" />
+    <ClInclude Include="..\qplacecontent.h" />
+    <ClInclude Include="..\qplacecontentrequest.h" />
+    <ClInclude Include="..\qplaceeditorial.h" />
+    <ClInclude Include="..\qplaceicon.h" />
+    <ClInclude Include="..\qplaceimage.h" />
+    <ClInclude Include="..\qplacematchrequest.h" />
+    <ClInclude Include="..\qplaceproposedsearchresult.h" />
+    <ClInclude Include="..\qplaceratings.h" />
+    <ClInclude Include="..\qplaceresult.h" />
+    <ClInclude Include="..\qplacereview.h" />
+    <ClInclude Include="..\qplacesearchrequest.h" />
+    <ClInclude Include="..\qplacesearchresult.h" />
+    <ClInclude Include="..\qplacesupplier.h" />
+    <ClInclude Include="..\qplaceuser.h" />
+    <ClInclude Include="..\qtlocation-config.h" />
+    <ClInclude Include="..\qtlocationversion.h" />
+    <QtMoc Include="..\qplacesearchsuggestionreply.h" />
+    <QtMoc Include="..\qplacesearchreply.h" />
+    <QtMoc Include="..\qplacereply.h" />
+    <QtMoc Include="..\qplacematchreply.h" />
+    <QtMoc Include="..\qplacemanagerengine.h" />
+    <QtMoc Include="..\qplacemanager.h" />
+    <QtMoc Include="..\qplaceidreply.h" />
+    <QtMoc Include="..\qplacedetailsreply.h" />
+    <QtMoc Include="..\qplacecontentreply.h" />
+    <QtMoc Include="..\qgeoserviceprovider.h" />
+    <QtMoc Include="..\qgeoroutingmanagerengine.h" />
+    <QtMoc Include="..\qgeoroutingmanager.h" />
+    <QtMoc Include="..\qgeoroutereply.h" />
+    <QtMoc Include="..\qgeocodingmanagerengine.h" />
+    <QtMoc Include="..\qgeocodingmanager.h" />
+    <QtMoc Include="..\qgeocodereply.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\unsupportedreplies_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qquickgeomapgesturearea_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotilefetcher_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmapscene_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmapreply_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmappingmanagerengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotiledmap_p_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmap_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeorouteparserosrmv5_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeorouteparserosrmv4_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeorouteparser_p_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeorouteparser_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroute_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomappingmanagerengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomappingmanager_p_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomappingmanager_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomapparameter_p.h" />
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomap_p_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomap_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeofiletilecache_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesupportedcategoriesmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesupplier_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesearchsuggestionmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesearchresultmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesearchmodelbase_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeroutemapitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativereviewmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativerectanglemapitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeratings_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativepolylinemapitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativepolygonmapitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceuser_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceimagemodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceicon_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceeditorialmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplacecontentmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceattribute_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplace_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoserviceprovider_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoroutesegment_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoroutemodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoroute_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomaptype_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapquickitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapparameter_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitemview_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitemgroup_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitembase_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapcopyrightsnotice_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomap_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomaneuver_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeocodemodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativecontactdetail_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativecirclemapitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativecategory_p.h" />
+    <QtMoc Include="..\5.9.6\QtLocation\private\qabstractgeotilecache_p.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

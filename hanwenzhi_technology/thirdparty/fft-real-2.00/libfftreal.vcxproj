@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7E532074-05F6-454E-A017-5B038F663739}</ProjectGuid>
+    <RootNamespace>fftreal</RootNamespace>
+    
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  
+  
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  
+  
+  
+  
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtANGLE;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\mkspecs\win32-msvc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtTest;$(SolutionDir)thirdparty\qt-5.9.6\include\QtTest\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtUiTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtConcurrent;$(SolutionDir)thirdparty\qt-5.9.6\include\QtXml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtEglSupport\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc\5.9.6\QtNfc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc\5.9.6\QtNfc\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth\5.9.6\QtBluetooth;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth\5.9.6\QtBluetooth\private;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia\5.9.6\QtMultimedia;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia\5.9.6\QtMultimedia\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p\5.9.6\QtMultimediaQuick_p;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p\5.9.6\QtMultimediaQuick_p\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtOpenGL;</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;LOG_SPECTRUMANALYSER;LOG_ENGINE;SUPERIMPOSE_PROGRESS_ON_WAVEFORM;SPECTRUM_ANALYSER_SEPARATE_THREAD;_CRT_SECURE_NO_WARNINGS;FFTREAL_LIBRARY;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;LOG_SPECTRUMANALYSER;LOG_ENGINE;SUPERIMPOSE_PROGRESS_ON_WAVEFORM;SPECTRUM_ANALYSER_SEPARATE_THREAD;_CRT_SECURE_NO_WARNINGS;FFTREAL_LIBRARY;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtANGLE;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\mkspecs\win32-msvc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtTest;$(SolutionDir)thirdparty\qt-5.9.6\include\QtTest\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtUiTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtConcurrent;$(SolutionDir)thirdparty\qt-5.9.6\include\QtXml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtEglSupport\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc\5.9.6\QtNfc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNfc\5.9.6\QtNfc\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth\5.9.6\QtBluetooth;$(SolutionDir)thirdparty\qt-5.9.6\include\QtBluetooth\5.9.6\QtBluetooth\private;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia\5.9.6\QtMultimedia;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimedia\5.9.6\QtMultimedia\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p\5.9.6\QtMultimediaQuick_p;$(SolutionDir)thirdparty\qt-5.9.6\include\QtMultimediaQuick_p\5.9.6\QtMultimediaQuick_p\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtOpenGL;</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;LOG_SPECTRUMANALYSER;LOG_ENGINE;SUPERIMPOSE_PROGRESS_ON_WAVEFORM;SPECTRUM_ANALYSER_SEPARATE_THREAD;_CRT_SECURE_NO_WARNINGS;FFTREAL_LIBRARY;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;LOG_SPECTRUMANALYSER;LOG_ENGINE;SUPERIMPOSE_PROGRESS_ON_WAVEFORM;SPECTRUM_ANALYSER_SEPARATE_THREAD;_CRT_SECURE_NO_WARNINGS;FFTREAL_LIBRARY;QT_NO_EXCEPTIONS;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="fftreal_wrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="Array.hpp" />
+    <ClInclude Include="DynArray.h" />
+    <ClInclude Include="DynArray.hpp" />
+    <ClInclude Include="FFTRealFixLen.h" />
+    <ClInclude Include="FFTRealFixLen.hpp" />
+    <ClInclude Include="FFTRealFixLenParam.h" />
+    <ClInclude Include="FFTRealPassDirect.h" />
+    <ClInclude Include="FFTRealPassDirect.hpp" />
+    <ClInclude Include="FFTRealPassInverse.h" />
+    <ClInclude Include="FFTRealPassInverse.hpp" />
+    <ClInclude Include="FFTRealSelect.h" />
+    <ClInclude Include="FFTRealSelect.hpp" />
+    <ClInclude Include="FFTRealUseTrigo.h" />
+    <ClInclude Include="FFTRealUseTrigo.hpp" />
+    <ClInclude Include="OscSinCos.h" />
+    <ClInclude Include="OscSinCos.hpp" />
+    <ClInclude Include="def.h" />
+    <ClInclude Include="fftreal_wrapper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

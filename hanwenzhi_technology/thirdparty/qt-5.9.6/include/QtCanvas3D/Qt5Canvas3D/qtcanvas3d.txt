@@ -1,0 +1,3 @@
+$(QINSTALL) plugins.qmltypes F:\qt\Src\qtcanvas3d\qml\QtCanvas3D\plugins.qmltypes
+
+$(QINSTALL) qmldir F:\qt\Src\qtcanvas3d\qml\QtCanvas3D\qmldir

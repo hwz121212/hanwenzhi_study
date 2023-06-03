@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A890CD3-4A71-3A53-8A27-23579E94EDFC}</ProjectGuid>
+    <RootNamespace>Qt5WebEngineWidgets</RootNamespace>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>Qt5WebEngineWidgets</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;widgets;qml;positioning;printsupport;webchannel;quickwidgets;quick;webengine;webenginewidgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;widgets;qml;positioning;printsupport;webchannel;quickwidgets;quick;webengine;webenginewidgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtWebEngineWidgets;..\..\..\include\QtWebEngineWidgets\5.9.6;..\..\..\include\QtWebEngineWidgets\5.9.6\QtWebEngineWidgets;..\..\..\include\QtWebEngineWidgets\5.9.6\QtWebEngineWidgets\private;..\..\..\include\QtWebEngine;..\..\..\include\QtWebEngine\5.9.6;..\..\..\include\QtWebEngine\5.9.6\QtWebEngine;..\..\..\include\QtWebEngine\5.9.6\QtWebEngine\private;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtQuick\5.9.6\QtQuick\private;..\..\..\include\QtWidgets;..\..\..\include\QtWidgets\5.9.6;..\..\..\include\QtWidgets\5.9.6\QtWidgets;..\..\..\include\QtWidgets\5.9.6\QtWidgets\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtGui\5.9.6\QtGui\private;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_UI_DELEGATES;ENABLE_SPELLCHECK;ENABLE_PRINTING;ENABLE_PDF;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_UI_DELEGATES;ENABLE_SPELLCHECK;ENABLE_PRINTING;ENABLE_PDF;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;QT_QUICKWIDGETS_LIB;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\..\bin</Command>
+      <Message>Copy Qt5WebEngineWidgets.dll to ..\..\bin</Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtWebEngineWidgets;..\..\..\include\QtWebEngineWidgets\5.9.6;..\..\..\include\QtWebEngineWidgets\5.9.6\QtWebEngineWidgets;..\..\..\include\QtWebEngineWidgets\5.9.6\QtWebEngineWidgets\private;..\..\..\include\QtWebEngine;..\..\..\include\QtWebEngine\5.9.6;..\..\..\include\QtWebEngine\5.9.6\QtWebEngine;..\..\..\include\QtWebEngine\5.9.6\QtWebEngine\private;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtQuick\5.9.6\QtQuick\private;..\..\..\include\QtWidgets;..\..\..\include\QtWidgets\5.9.6;..\..\..\include\QtWidgets\5.9.6\QtWidgets;..\..\..\include\QtWidgets\5.9.6\QtWidgets\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtGui\5.9.6\QtGui\private;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_UI_DELEGATES;ENABLE_SPELLCHECK;ENABLE_PRINTING;ENABLE_PDF;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_UI_DELEGATES;ENABLE_SPELLCHECK;ENABLE_PRINTING;ENABLE_PDF;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_WEBENGINEWIDGETS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;QT_QUICKWIDGETS_LIB;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\..\bin</Command>
+      <Message>Copy Qt5WebEngineWidgetsd.dll to ..\..\bin</Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\messagebubblewidget.cpp" />
+    <ClCompile Include="api\qtwebenginewidgetsglobal.cpp" />
+    <ClCompile Include="api\qwebenginecertificateerror.cpp" />
+    <ClCompile Include="api\qwebenginecontextmenudata.cpp" />
+    <ClCompile Include="api\qwebenginedownloaditem.cpp" />
+    <ClCompile Include="api\qwebenginefullscreenrequest.cpp" />
+    <ClCompile Include="api\qwebenginehistory.cpp" />
+    <ClCompile Include="api\qwebenginepage.cpp" />
+    <ClCompile Include="api\qwebengineprofile.cpp" />
+    <ClCompile Include="api\qwebenginescript.cpp" />
+    <ClCompile Include="api\qwebenginescriptcollection.cpp" />
+    <ClCompile Include="api\qwebenginesettings.cpp" />
+    <ClCompile Include="api\qwebengineview.cpp" />
+    <ClCompile Include="render_widget_host_view_qt_delegate_widget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5WebEngineWidgets_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginedownloaditem_p.h" />
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginehistory_p.h" />
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginepage_p.h" />
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebengineprofile_p.h" />
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginescriptcollection_p.h" />
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebengineview_p.h" />
+    <ClInclude Include="..\qtwebenginewidgetsglobal.h" />
+    <ClInclude Include="..\qtwebenginewidgetsversion.h" />
+    <ClInclude Include="..\qwebenginecertificateerror.h" />
+    <ClInclude Include="..\qwebenginecontextmenudata.h" />
+    <ClInclude Include="..\qwebenginehistory.h" />
+    <ClInclude Include="..\qwebenginescript.h" />
+    <ClInclude Include="..\qwebenginescriptcollection.h" />
+    <ClInclude Include="..\qwebenginesettings.h" />
+    <QtMoc Include="ui\messagebubblewidget_p.h" />
+    <QtMoc Include="render_widget_host_view_qt_delegate_widget.h" />
+    <QtMoc Include="..\qwebengineview.h" />
+    <QtMoc Include="..\qwebengineprofile.h" />
+    <QtMoc Include="..\qwebenginepage.h" />
+    <QtMoc Include="..\qwebenginefullscreenrequest.h" />
+    <QtMoc Include="..\qwebenginedownloaditem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

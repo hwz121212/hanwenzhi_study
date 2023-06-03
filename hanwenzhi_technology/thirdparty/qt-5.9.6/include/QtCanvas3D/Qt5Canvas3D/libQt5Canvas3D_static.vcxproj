@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD31DB76-FE9E-46BA-95FA-BABD4210E3E9}</ProjectGuid>
+    <RootNamespace>qtcanvas3d</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;qml;qml-private;quick;openglextensions</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;qml;qml-private;quick;openglextensions</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;..\..\..\include;..\..\..\include\QtOpenGLExtensions;..\..\..\include\QtGui;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCanvas3D;..\..\..\include\QtCanvas3D\5.9.6;..\..\..\include\QtCanvas3D\5.9.6\QtCanvas3D;..\..\..\include\QtCanvas3D\5.9.6\QtCanvas3D\private;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QTCANVAS3D_LIBRARY;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Network.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QTCANVAS3D_LIBRARY;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_PLUGIN;QT_OPENGLEXTENSIONS_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <Metadata>uri=QtCanvas3D</Metadata>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;..\..\..\include;..\..\..\include\QtOpenGLExtensions;..\..\..\include\QtGui;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCanvas3D;..\..\..\include\QtCanvas3D\5.9.6;..\..\..\include\QtCanvas3D\5.9.6\QtCanvas3D;..\..\..\include\QtCanvas3D\5.9.6\QtCanvas3D\private;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QTCANVAS3D_LIBRARY;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Network.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QTCANVAS3D_LIBRARY;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;QT_PLUGIN;QT_OPENGLEXTENSIONS_LIB;QT_QUICK_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <Metadata>uri=QtCanvas3D</Metadata>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="abstractobject3d.cpp" />
+    <ClCompile Include="activeinfo3d.cpp" />
+    <ClCompile Include="arrayutils.cpp" />
+    <ClCompile Include="buffer3d.cpp" />
+    <ClCompile Include="canvas3d.cpp" />
+    <ClCompile Include="canvasglstatedump.cpp" />
+    <ClCompile Include="canvasrenderer.cpp" />
+    <ClCompile Include="canvasrendernode.cpp" />
+    <ClCompile Include="canvastextureprovider.cpp" />
+    <ClCompile Include="compressedtexturepvrtc.cpp" />
+    <ClCompile Include="compressedtextures3tc.cpp" />
+    <ClCompile Include="context3d.cpp" />
+    <ClCompile Include="contextattributes.cpp" />
+    <ClCompile Include="enumtostringmap.cpp" />
+    <ClCompile Include="framebuffer3d.cpp" />
+    <ClCompile Include="glcommandqueue.cpp" />
+    <ClCompile Include="glstatestore.cpp" />
+    <ClCompile Include="openglversionchecker.cpp" />
+    <ClCompile Include="program3d.cpp" />
+    <ClCompile Include="renderbuffer3d.cpp" />
+    <ClCompile Include="renderjob.cpp" />
+    <ClCompile Include="shader3d.cpp" />
+    <ClCompile Include="shaderprecisionformat.cpp" />
+    <ClCompile Include="teximage3d.cpp" />
+    <ClCompile Include="texture3d.cpp" />
+    <ClCompile Include="uniformlocation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\abstractobject3d_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\activeinfo3d_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\arrayutils_p.h" />
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\canvas3dcommon_p.h" />
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\enumtostringmap_p.h" />
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\openglversionchecker_p.h" />
+    <ClInclude Include="..\5.9.6\QtCanvas3D\private\renderjob_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\uniformlocation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\texture3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\teximage3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\shaderprecisionformat_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\shader3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\renderbuffer3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\program3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\glstatestore_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\glcommandqueue_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\framebuffer3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\contextattributes_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\context3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\compressedtextures3tc_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\compressedtexturepvrtc_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvastextureprovider_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvasrendernode_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvasrenderer_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvasglstatedump_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\canvas3d_p.h" />
+    <QtMoc Include="..\5.9.6\QtCanvas3D\private\buffer3d_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt5Canvas3D_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

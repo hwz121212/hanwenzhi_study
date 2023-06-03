@@ -1,0 +1,2227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{0255c5ba-aed7-40bd-9ce3-6ed5982b37a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtXmlPatterns">
+      <UniqueIdentifier>{246266dd-ff27-48f5-8384-d20f862f7263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtXmlPatterns\private">
+      <UniqueIdentifier>{c9d1f3af-c1e9-4e08-8810-fbe48b057fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\acceltree">
+      <UniqueIdentifier>{ed951d43-edfb-43a8-9e29-9afbd1b2220f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api">
+      <UniqueIdentifier>{d427b272-b13c-4c0c-9b57-ec412ed114e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\data">
+      <UniqueIdentifier>{71639716-0d1d-4e5a-8e4b-38d14844dcf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment">
+      <UniqueIdentifier>{fe224b0f-d1e6-43e9-ae2a-7045c0f57068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\expr">
+      <UniqueIdentifier>{80cea1d6-a336-4997-89c5-a30596f5c2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\functions">
+      <UniqueIdentifier>{3e625c9c-0716-4d73-a754-0faafac8877f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\iterators">
+      <UniqueIdentifier>{a3ed5fcf-a7d8-4da6-a7c4-464d76f467b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\janitors">
+      <UniqueIdentifier>{ca29a82b-58b0-40b4-8b94-c654beb222ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parser">
+      <UniqueIdentifier>{dd06fea8-cbc1-4e8b-b953-7a478b9ca97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\projection">
+      <UniqueIdentifier>{b2c54455-abcf-4fd9-9e6a-1867267b5e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\schema">
+      <UniqueIdentifier>{5ddd2f8c-da38-4437-891a-bf07f71f6ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\type">
+      <UniqueIdentifier>{9509eba0-daf0-47f2-a1fd-3a4e5a93b025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{34d6c5b6-fd6b-49eb-8cee-2e9b39cf97ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="schema\builtinschemas.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="schema\schemas\xml.xsd">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5XmlPatterns_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractdatetime_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractduration_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloat_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloat_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatcasters_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatcasters_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatmathematician_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatmathematician_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfunctionfactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractnodetest_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlforwarditerator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlnodemodel_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlpullprovider_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlreceiver_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceliterators_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltree_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltreebuilder_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltreebuilder_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltreeresourceloader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaccessorfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaggregatefns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaggregator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qandexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanyitemtype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanynodetype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanysimpletype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanytype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanyuri_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qapplytemplate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qargumentconverter_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qargumentreference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qarithmeticexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qassemblestringfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccaster_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccasterlocator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccasterlocators_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccasters_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparatorlocator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparatorlocators_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparators_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematician_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematicianlocator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematicianlocators_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematicians_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicstring_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomictype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomictypedispatch_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomizer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qattributeconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qattributenamevalidator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qautoptr_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaxisstep_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbase64binary_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbasictypesfactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qboolean_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbooleanfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinatomictype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinatomictypes_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinnodetype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinnodetype_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltintypes_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcachecells_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcachingiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcallsite_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcalltargetdescription_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcalltemplate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcardinality_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcardinalityverifier_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastableas_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastas_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastingplatform_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastingplatform_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcollationchecker_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcoloringmessagehandler_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcoloroutput_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcombinenodes_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommentconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommonnamespaces_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommonsequencetypes_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommonvalues_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparescaseaware_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparestringfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparingaggregator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparingaggregator_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparisonfactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparisonplatform_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparisonplatform_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcompressedwhitespace_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomputednamespaceconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qconstructorfunctionsfactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcontextfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcontextitem_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcontextnodechecker_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcopyof_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcppcastinghelper_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcurrentfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcurrentitemcontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcurrentitemstore_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdatetimefn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdatetimefns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdatetimefns_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdaytimeduration_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdecimal_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdeduplicateiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdeepequalfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdelegatingdynamiccontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdelegatingnamespaceresolver_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdelegatingstaticcontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qderivedinteger_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qderivedstring_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdeviceresourceloader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdistinctiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentcontentvalidator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentprojector_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qduration_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdynamiccontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdynamiccontextstore_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qebvextractor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qebvtype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qelementavailablefn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qelementconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptycontainer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptyiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptysequence_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptysequencetype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qerrorfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qevaluationcache_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qevaluationcache_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexceptiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressiondispatch_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressionfactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressionsequence_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressionvariablereference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexternalvariableloader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexternalvariablereference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfirstitempredicate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfocus_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qforclause_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionargument_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionavailablefn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctioncall_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionfactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionfactorycollection_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionsignature_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgday_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgeneralcomparison_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenerateidfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericdynamiccontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericnamespaceresolver_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericpredicate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericsequencetype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericstaticcontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgmonth_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgmonthday_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgyear_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgyearmonth_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qhexbinary_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qifthenclause_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qindexofiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qinsertioniterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qinstanceof_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qinteger_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qintersectiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitem_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitemmappingiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitemtype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitemverifier_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qletclause_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qliteral_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qliteralsequence_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qlocalnametest_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qmaintainingreader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qmaintainingreader_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qmultiitemtype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamedschemacomponent_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamepool_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespacebinding_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespaceconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespacenametest_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespaceresolver_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespacesupport_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qncnameconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnetworkaccessdelegator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodebuilder_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodecomparison_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodefns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodenamespaceresolver_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodesort_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnonetype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnumericfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnumerictype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoperandsiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoptimizationpasses_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoptimizerblocks_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoptimizerframework_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qorderby_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qorexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoutputvalidator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpaircontainer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qparentnodeaxis_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qparsercontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpath_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpatternistlocale_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpatternmatchingfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpatternplatform_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpositionalvariablereference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qprimitives_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qprocessinginstructionconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qprojectedexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpullbridge_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnameconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnamefns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnametest_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnamevalue_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qquantifiedexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qquerytransformparser_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qrangeexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qrangeiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qrangevariablereference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreceiverdynamiccontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreferencecountedvalue_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qremovaliterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreportcontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qresolveurifn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qresourcedelegator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qresourceloader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreturnorderby_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschemacomponent_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschemadatetime_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschemanumeric_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschematime_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschematype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschematypefactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencefns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencegeneratingfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencemappingiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencereceiver_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencetype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsimplecontentconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsinglecontainer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsingletoniterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsorttuple_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsourcelocationreflection_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstackcontextbase_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstackcontextbase_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticbaseuricontainer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticbaseuricontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticbaseuristore_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcompatibilitycontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcompatibilitystore_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcurrentcontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticfocuscontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticnamespacecontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticnamespacescontainer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstringvaluefns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsubsequenceiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsubstringfns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsystempropertyfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplateinvoker_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplatemode_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplateparameterreference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplatepattern_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtextnodeconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtimezonefns_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtocodepointsiterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokenizer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokenrevealer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokensource_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokenvalue_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtracefn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtreatas_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtriplecontainer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtruthpredicate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtxmlpatterns-config_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtypeavailablefn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtypechecker_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunaryexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunioniterator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunlimitedcontainer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedentitypublicidfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedentityurifn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedtextavailablefn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedtextfn_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunresolvedvariablereference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quntyped_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quntypedatomic_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quntypedatomicconverter_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quriloader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quserfunction_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quserfunctioncallsite_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvalidate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvalidationerror_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvaluecomparison_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvaluefactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvariabledeclaration_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvariableloader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvariablereference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qwithparam_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmldebug_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlpatternistcli_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlquery_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlresultitems_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlschema_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlschemavalidator_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlserializer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxpath10corefunctions_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxpath20corefunctions_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxpathhelper_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxquerytokenizer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdalternative_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdannotated_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdannotation_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdapplicationinformation_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdassertion_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattribute_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributegroup_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributereference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributeterm_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributeuse_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdcomplextype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsddocumentation_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdelement_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdfacet_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdidcache_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdidchelper_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdidentityconstraint_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdinstancereader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdmodelgroup_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdnotation_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdparticle_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdparticlechecker_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdreference_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschema_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemachecker_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemacontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemadebugger_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemahelper_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemamerger_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemaparser_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemaparsercontext_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemaresolver_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschematoken_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschematypesfactory_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdsimpletype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdstatemachine_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdstatemachine_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdstatemachinebuilder_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdterm_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdtypechecker_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsduserschematype_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsduserschematype_tpl_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdvalidatedxmlnodemodel_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdvalidatinginstancereader_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdwildcard_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdxpathexpression_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxslt20corefunctions_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsltnodetest_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsltsimplecontentconstructor_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxslttokenizer_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxslttokenlookup_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qyearmonthduration_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qabstractxmlnodemodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qabstractxmlreceiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsimplexmlnodemodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsourcelocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtxmlpatterns-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtxmlpatternsglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtxmlpatternsversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlformatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlname.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlnamepool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlquery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlresultitems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlschema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlschemavalidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qxmlserializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtXmlPatterns\private\qiodevicedelegate_p.h">
+      <Filter>Header Files\5.9.6\QtXmlPatterns\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractmessagehandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstracturiresolver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acceltree\qacceliterators.cpp">
+      <Filter>Source Files\acceltree</Filter>
+    </ClCompile>
+    <ClCompile Include="acceltree\qacceltree.cpp">
+      <Filter>Source Files\acceltree</Filter>
+    </ClCompile>
+    <ClCompile Include="acceltree\qacceltreeresourceloader.cpp">
+      <Filter>Source Files\acceltree</Filter>
+    </ClCompile>
+    <ClCompile Include="acceltree\qcompressedwhitespace.cpp">
+      <Filter>Source Files\acceltree</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qabstractmessagehandler.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qabstracturiresolver.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qabstractxmlforwarditerator.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qabstractxmlnodemodel.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qabstractxmlpullprovider.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qabstractxmlreceiver.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qcoloringmessagehandler.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qcoloroutput.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qiodevicedelegate.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qnetworkaccessdelegator.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qpullbridge.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qresourcedelegator.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qsimplexmlnodemodel.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qsourcelocation.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\quriloader.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qvariableloader.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlformatter.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlname.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlnamepool.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlquery.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlresultitems.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlschema.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlschema_p.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlschemavalidator.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qxmlserializer.cpp">
+      <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qabstractdatetime.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qabstractduration.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qanyuri.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomiccaster.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomiccasters.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomiccomparator.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomiccomparators.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomicmathematician.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomicmathematicians.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomicstring.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qatomicvalue.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qbase64binary.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qboolean.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qcommonvalues.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qcomparisonfactory.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qdate.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qdaytimeduration.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qdecimal.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qduration.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qgday.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qgmonth.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qgmonthday.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qgyear.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qgyearmonth.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qhexbinary.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qinteger.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qitem.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qnodebuilder.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qnodemodel.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qqnamevalue.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qresourceloader.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qschemadatetime.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qschemanumeric.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qschematime.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qsorttuple.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\quntypedatomic.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qvalidationerror.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qvaluefactory.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qyearmonthduration.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qcurrentitemcontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qdelegatingdynamiccontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qdelegatingstaticcontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qdynamiccontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qfocus.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qgenericdynamiccontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qgenericstaticcontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qreceiverdynamiccontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qreportcontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qstaticbaseuricontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qstaticcompatibilitycontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qstaticcontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qstaticcurrentcontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qstaticfocuscontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\qstaticnamespacecontext.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qandexpression.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qapplytemplate.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qargumentreference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qarithmeticexpression.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qattributeconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qattributenamevalidator.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qaxisstep.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcallsite.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcalltargetdescription.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcalltemplate.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcastableas.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcastas.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcollationchecker.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcombinenodes.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcommentconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcomputednamespaceconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcontextitem.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcopyof.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qcurrentitemstore.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qdocumentconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qdocumentcontentvalidator.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qdynamiccontextstore.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qelementconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qemptycontainer.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qemptysequence.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qexpression.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qexpressionfactory.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qexpressionsequence.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qexpressionvariablereference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qexternalvariableloader.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qexternalvariablereference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qfirstitempredicate.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qforclause.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qgeneralcomparison.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qgenericpredicate.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qifthenclause.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qinstanceof.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qletclause.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qliteral.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qliteralsequence.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qnamespaceconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qncnameconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qnodecomparison.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qnodesort.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qoptimizationpasses.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qoptimizerblocks.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qoptimizerframework.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qorderby.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qorexpression.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qpaircontainer.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qparentnodeaxis.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qpath.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qpositionalvariablereference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qprocessinginstructionconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qqnameconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qquantifiedexpression.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qrangeexpression.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qrangevariablereference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qreturnorderby.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qsimplecontentconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qsinglecontainer.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qsourcelocationreflection.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qstaticbaseuristore.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qstaticcompatibilitystore.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtemplate.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtemplateinvoker.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtemplatemode.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtemplateparameterreference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtextnodeconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtreatas.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtriplecontainer.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qtruthpredicate.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qunaryexpression.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qunlimitedcontainer.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qunresolvedvariablereference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\quserfunction.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\quserfunctioncallsite.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qvalidate.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qvaluecomparison.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qvariabledeclaration.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qvariablereference.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\qxsltsimplecontentconstructor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qabstractfunctionfactory.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qaccessorfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qaggregatefns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qaggregator.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qassemblestringfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qbooleanfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qcomparescaseaware.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qcomparestringfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qconstructorfunctionsfactory.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qcontextfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qcontextnodechecker.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qcurrentfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qdatetimefn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qdeepequalfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qdocumentfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qelementavailablefn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qerrorfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qfunctionargument.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qfunctionavailablefn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qfunctioncall.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qfunctionfactory.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qfunctionfactorycollection.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qfunctionsignature.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qgenerateidfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qnodefns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qnumericfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qpatternmatchingfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qpatternplatform.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qqnamefns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qresolveurifn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qsequencefns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qsequencegeneratingfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qstaticnamespacescontainer.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qstringvaluefns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qsubstringfns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qsystempropertyfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qtimezonefns.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qtracefn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qtypeavailablefn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qunparsedentitypublicidfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qunparsedentityurifn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qunparsedtextavailablefn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qunparsedtextfn.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qxpath10corefunctions.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qxpath20corefunctions.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\qxslt20corefunctions.cpp">
+      <Filter>Source Files\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qcachingiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qdeduplicateiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qdistinctiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qexceptiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qindexofiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qinsertioniterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qintersectiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qrangeiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qremovaliterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qsubsequenceiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qtocodepointsiterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="iterators\qunioniterator.cpp">
+      <Filter>Source Files\iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="janitors\qargumentconverter.cpp">
+      <Filter>Source Files\janitors</Filter>
+    </ClCompile>
+    <ClCompile Include="janitors\qatomizer.cpp">
+      <Filter>Source Files\janitors</Filter>
+    </ClCompile>
+    <ClCompile Include="janitors\qcardinalityverifier.cpp">
+      <Filter>Source Files\janitors</Filter>
+    </ClCompile>
+    <ClCompile Include="janitors\qebvextractor.cpp">
+      <Filter>Source Files\janitors</Filter>
+    </ClCompile>
+    <ClCompile Include="janitors\qitemverifier.cpp">
+      <Filter>Source Files\janitors</Filter>
+    </ClCompile>
+    <ClCompile Include="janitors\quntypedatomicconverter.cpp">
+      <Filter>Source Files\janitors</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qparsercontext.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qquerytransformparser.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qtokenrevealer.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qtokensource.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qxquerytokenizer.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qxslttokenizer.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qxslttokenlookup.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="projection\qdocumentprojector.cpp">
+      <Filter>Source Files\projection</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qnamespacesupport.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdalternative.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdannotated.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdannotation.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdapplicationinformation.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdassertion.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdattribute.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdattributegroup.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdattributereference.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdattributeterm.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdattributeuse.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdcomplextype.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsddocumentation.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdelement.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdfacet.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdidcache.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdidchelper.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdidentityconstraint.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdinstancereader.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdmodelgroup.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdnotation.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdparticle.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdparticlechecker.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdreference.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschema.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemachecker.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemachecker_setup.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemacontext.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemadebugger.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemahelper.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemamerger.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemaparser.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemaparser_setup.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemaparsercontext.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschemaresolver.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschematoken.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdschematypesfactory.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdsimpletype.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdstatemachinebuilder.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdterm.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdtypechecker.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdvalidatedxmlnodemodel.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdvalidatinginstancereader.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdwildcard.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="schema\qxsdxpathexpression.cpp">
+      <Filter>Source Files\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qabstractnodetest.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qanyitemtype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qanynodetype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qanysimpletype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qanytype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qatomiccasterlocator.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qatomiccomparatorlocator.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qatomicmathematicianlocator.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qatomictype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qbasictypesfactory.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qbuiltinatomictype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qbuiltinatomictypes.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qcardinality.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qcommonsequencetypes.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qebvtype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qemptysequencetype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qgenericsequencetype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qitemtype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qlocalnametest.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qmultiitemtype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qnamedschemacomponent.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qnamespacenametest.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qnonetype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qnumerictype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qqnametest.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qschemacomponent.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qschematype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qschematypefactory.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qsequencetype.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qtypechecker.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\quntyped.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="type\qxsltnodetest.cpp">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qautoptr.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qdelegatingnamespaceresolver.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qgenericnamespaceresolver.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qnamepool.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qnamespaceresolver.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qnodenamespaceresolver.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qoutputvalidator.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qpatternistlocale.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\qxpathhelper.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2451673-1D0C-391B-B07D-FA8600103628}</ProjectGuid>
+    <RootNamespace>Qt5ScriptTools</RootNamespace>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;script;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;script;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtANGLE;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\mkspecs\win32-msvc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtTest;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\private</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_SCRIPTTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5Script.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_SCRIPTTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_CORE_LIB;QT_SCRIPT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>scripttools_debugging</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScript\5.9.6\QtScript\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools;$(SolutionDir)thirdparty\qt-5.9.6\include\QtScriptTools\5.9.6\QtScriptTools\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickParticles\5.9.6\QtQuickParticles\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickTemplates2\5.9.6\QtQuickTemplates2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuickControls2\5.9.6\QtQuickControls2\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtANGLE;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\mkspecs\win32-msvc;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSql\5.9.6\QtSql\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtTest;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors;$(SolutionDir)thirdparty\qt-5.9.6\include\QtSensors\5.9.6\QtSensors\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPurchasing\5.9.6\QtPurchasing\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\private</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_SCRIPTTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5Script.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_SCRIPTTOOLS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_CORE_LIB;QT_SCRIPT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>scripttools_debugging</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="debugging\qscriptbreakpointdata.cpp" />
+    <ClCompile Include="debugging\qscriptbreakpointsmodel.cpp" />
+    <ClCompile Include="debugging\qscriptbreakpointswidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptcompletiontask.cpp" />
+    <ClCompile Include="debugging\qscriptcompletiontaskinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebugger.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggeragent.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerbackend.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercodefinderwidget.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercodefinderwidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercodeview.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercodeviewinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercodewidget.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercodewidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercommand.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercommandexecutor.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercommandschedulerfrontend.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggercommandschedulerjob.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerconsole.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommand.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommandgroupdata.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommandjob.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommandmanager.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerconsoleglobalobject.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerconsolewidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerevent.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerfrontend.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerjob.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerlocalsmodel.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerlocalswidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerresponse.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerscriptedconsolecommand.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerscriptsmodel.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerscriptswidget.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerscriptswidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerstackmodel.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerstackwidget.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerstackwidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggerstandardwidgetfactory.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggervalue.cpp" />
+    <ClCompile Include="debugging\qscriptdebuggervalueproperty.cpp" />
+    <ClCompile Include="debugging\qscriptdebugoutputwidget.cpp" />
+    <ClCompile Include="debugging\qscriptdebugoutputwidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptedit.cpp" />
+    <ClCompile Include="debugging\qscriptenginedebuggerfrontend.cpp" />
+    <ClCompile Include="debugging\qscripterrorlogwidget.cpp" />
+    <ClCompile Include="debugging\qscripterrorlogwidgetinterface.cpp" />
+    <ClCompile Include="debugging\qscriptobjectsnapshot.cpp" />
+    <ClCompile Include="debugging\qscriptscriptdata.cpp" />
+    <ClCompile Include="debugging\qscriptstdmessagehandler.cpp" />
+    <ClCompile Include="debugging\qscriptsyntaxhighlighter.cpp" />
+    <ClCompile Include="debugging\qscriptvalueproperty.cpp" />
+    <ClCompile Include="debugging\qscriptxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debugging\qscriptbreakpointswidget.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsolewidget.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerlocalswidget.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptenginedebugger.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debugging\scripts\commands\advance.qs" />
+    <None Include="debugging\scripts\commands\backtrace.qs" />
+    <None Include="debugging\scripts\commands\break.qs" />
+    <None Include="debugging\images\breakpoint.png" />
+    <None Include="debugging\images\breakpoint.svg" />
+    <None Include="debugging\scripts\commands\clear.qs" />
+    <None Include="debugging\images\mac\closetab.png" />
+    <None Include="debugging\images\win\closetab.png" />
+    <None Include="debugging\scripts\commands\complete.qs" />
+    <None Include="debugging\scripts\commands\condition.qs" />
+    <None Include="debugging\scripts\commands\continue.qs" />
+    <None Include="debugging\images\d_breakpoint.png" />
+    <None Include="debugging\images\d_breakpoint.svg" />
+    <None Include="debugging\images\d_interrupt.png" />
+    <None Include="debugging\images\d_play.png" />
+    <None Include="debugging\images\delete.png" />
+    <None Include="debugging\scripts\commands\delete.qs" />
+    <None Include="debugging\scripts\commands\disable.qs" />
+    <None Include="debugging\scripts\commands\down.qs" />
+    <None Include="debugging\scripts\commands\enable.qs" />
+    <None Include="debugging\scripts\commands\eval.qs" />
+    <None Include="debugging\images\find.png" />
+    <None Include="debugging\scripts\commands\finish.qs" />
+    <None Include="debugging\scripts\commands\frame.qs" />
+    <None Include="debugging\scripts\commands\help.qs" />
+    <None Include="debugging\scripts\commands\ignore.qs" />
+    <None Include="debugging\scripts\commands\info.qs" />
+    <None Include="debugging\images\interrupt.png" />
+    <None Include="debugging\scripts\commands\interrupt.qs" />
+    <None Include="debugging\scripts\commands\list.qs" />
+    <None Include="debugging\images\location.png" />
+    <None Include="debugging\images\location.svg" />
+    <None Include="debugging\images\new.png" />
+    <None Include="debugging\images\mac\next.png" />
+    <None Include="debugging\images\win\next.png" />
+    <None Include="debugging\scripts\commands\next.qs" />
+    <None Include="debugging\images\play.png" />
+    <None Include="debugging\images\mac\plus.png" />
+    <None Include="debugging\images\win\plus.png" />
+    <None Include="debugging\images\mac\previous.png" />
+    <None Include="debugging\images\win\previous.png" />
+    <None Include="debugging\scripts\commands\print.qs" />
+    <None Include="debugging\images\reload.png" />
+    <None Include="debugging\images\return.png" />
+    <None Include="debugging\scripts\commands\return.qs" />
+    <None Include="debugging\images\runtocursor.png" />
+    <None Include="debugging\images\runtonewscript.png" />
+    <QtRcc Include="debugging\scripttools_debugging.qrc" />
+    <None Include="debugging\scripts\commands\step.qs" />
+    <None Include="debugging\images\stepinto.png" />
+    <None Include="debugging\images\stepout.png" />
+    <None Include="debugging\images\stepover.png" />
+    <None Include="debugging\scripts\commands\tbreak.qs" />
+    <None Include="debugging\scripts\commands\up.qs" />
+    <None Include="debugging\images\wrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5ScriptTools_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointdata_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointswidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptcompletionproviderinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptcompletiontaskinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggeragent_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggeragent_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerbackend_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerbackend_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodefinderwidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodeviewinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodewidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandexecutor_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerfrontend_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerjob_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerjob_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommand_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandgroupdata_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandjob_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandjob_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandmanager_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommand_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommand_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolehistorianinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolewidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggereventhandlerinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerevent_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerfrontend_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerfrontend_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerjobschedulerinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerjob_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerjob_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalswidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerobjectsnapshotdelta_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerresponsehandlerinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerresponse_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptedconsolecommand_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptswidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackmodel_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackwidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstandardwidgetfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggervalueproperty_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggervalue_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerwidgetfactoryinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebugoutputwidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptenginedebuggerfrontend_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscripterrorlogwidgetinterface_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptmessagehandlerinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptobjectsnapshot_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptscriptdata_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptstdmessagehandler_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptsyntaxhighlighter_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscripttooltipproviderinterface_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptvalueproperty_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptxmlparser_p.h" />
+    <ClInclude Include="..\qtscripttoolsversion.h" />
+    <QtMoc Include="..\qscriptenginedebugger.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscripterrorlogwidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscripterrorlogwidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptedit_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebugoutputwidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebugoutputwidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackwidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackwidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptswidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptswidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptsmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalswidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalswidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalsmodel_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolewidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolewidget_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrependInclude>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qscriptdebuggerconsolewidgetinterface_p_p.h</Include>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qscriptdebuggerconsolewidgetinterface_p_p.h</Include>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsoleglobalobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsole_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodewidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodewidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodeviewinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodeview_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodefinderwidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodefinderwidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebugger_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptcompletiontaskinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptcompletiontask_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointswidgetinterface_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointswidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointsmodel_p.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

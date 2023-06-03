@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="placesv2\jsonparserhelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeocodejsonparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeocodereply_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeocodingmanagerengine_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoerror_messages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeofiletilecachenokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeointrinsicnetworkaccessmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeomapreply_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeomapversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoroutereply_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoroutexmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoroutingmanagerengine_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoserviceproviderplugin_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeotiledmap_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeotiledmappingmanagerengine_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeotilefetcher_nokia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeouriprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="placesv2\qplacecategoriesreplyhere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="placesv2\qplacecontentreplyimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="placesv2\qplacedetailsreplyimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="placesv2\qplaceidreplyimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qplacemanagerengine_nokiav2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="placesv2\qplacesearchreplyhere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="placesv2\qplacesearchsuggestionreplyimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uri_constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="placesv2\jsonparserhelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="marclanguagecodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qgeocodejsonparser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeocodereply_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeocodingmanagerengine_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qgeoerror_messages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qgeofiletilecachenokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qgeointrinsicnetworkaccessmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qgeomapreply_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qgeomapversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qgeonetworkaccessmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeoroutereply_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeoroutexmlparser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeoroutingmanagerengine_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeoserviceproviderplugin_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeotiledmap_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeotiledmappingmanagerengine_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeotilefetcher_nokia.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeouriprovider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="placesv2\qplacecategoriesreplyhere.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="placesv2\qplacecontentreplyimpl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="placesv2\qplacedetailsreplyimpl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="placesv2\qplaceidreplyimpl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qplacemanagerengine_nokiav2.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="placesv2\qplacesearchreplyhere.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="placesv2\qplacesearchsuggestionreplyimpl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="uri_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="nokia.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtgeoservices_nokia_resource.rc" />
+  </ItemGroup>
+</Project>

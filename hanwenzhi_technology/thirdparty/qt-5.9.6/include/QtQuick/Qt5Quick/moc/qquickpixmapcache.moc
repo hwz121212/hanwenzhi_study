@@ -1,0 +1,373 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'qquickpixmapcache.cpp'
+**
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.6)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'qquickpixmapcache.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.9.6. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_QQuickPixmapReply_t {
+    QByteArrayData data[4];
+    char stringdata0[45];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_QQuickPixmapReply_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_QQuickPixmapReply_t qt_meta_stringdata_QQuickPixmapReply = {
+    {
+QT_MOC_LITERAL(0, 0, 17), // "QQuickPixmapReply"
+QT_MOC_LITERAL(1, 18, 8), // "finished"
+QT_MOC_LITERAL(2, 27, 0), // ""
+QT_MOC_LITERAL(3, 28, 16) // "downloadProgress"
+
+    },
+    "QQuickPixmapReply\0finished\0\0"
+    "downloadProgress"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_QQuickPixmapReply[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       2,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    0,   24,    2, 0x06 /* Public */,
+       3,    2,   25,    2, 0x06 /* Public */,
+
+ // signals: parameters
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::LongLong, QMetaType::LongLong,    2,    2,
+
+       0        // eod
+};
+
+void QQuickPixmapReply::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        QQuickPixmapReply *_t = static_cast<QQuickPixmapReply *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->finished(); break;
+        case 1: _t->downloadProgress((*reinterpret_cast< qint64(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            typedef void (QQuickPixmapReply::*_t)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QQuickPixmapReply::finished)) {
+                *result = 0;
+                return;
+            }
+        }
+        {
+            typedef void (QQuickPixmapReply::*_t)(qint64 , qint64 );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QQuickPixmapReply::downloadProgress)) {
+                *result = 1;
+                return;
+            }
+        }
+    }
+}
+
+const QMetaObject QQuickPixmapReply::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QQuickPixmapReply.data,
+      qt_meta_data_QQuickPixmapReply,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *QQuickPixmapReply::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *QQuickPixmapReply::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_QQuickPixmapReply.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int QQuickPixmapReply::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 2;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void QQuickPixmapReply::finished()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void QQuickPixmapReply::downloadProgress(qint64 _t1, qint64 _t2)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+struct qt_meta_stringdata_QQuickPixmapReaderThreadObject_t {
+    QByteArrayData data[4];
+    char stringdata0[73];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_QQuickPixmapReaderThreadObject_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_QQuickPixmapReaderThreadObject_t qt_meta_stringdata_QQuickPixmapReaderThreadObject = {
+    {
+QT_MOC_LITERAL(0, 0, 30), // "QQuickPixmapReaderThreadObject"
+QT_MOC_LITERAL(1, 31, 18), // "networkRequestDone"
+QT_MOC_LITERAL(2, 50, 0), // ""
+QT_MOC_LITERAL(3, 51, 21) // "asyncResponseFinished"
+
+    },
+    "QQuickPixmapReaderThreadObject\0"
+    "networkRequestDone\0\0asyncResponseFinished"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_QQuickPixmapReaderThreadObject[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags
+       1,    0,   24,    2, 0x08 /* Private */,
+       3,    0,   25,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
+void QQuickPixmapReaderThreadObject::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        QQuickPixmapReaderThreadObject *_t = static_cast<QQuickPixmapReaderThreadObject *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->networkRequestDone(); break;
+        case 1: _t->asyncResponseFinished(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObject QQuickPixmapReaderThreadObject::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QQuickPixmapReaderThreadObject.data,
+      qt_meta_data_QQuickPixmapReaderThreadObject,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *QQuickPixmapReaderThreadObject::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *QQuickPixmapReaderThreadObject::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_QQuickPixmapReaderThreadObject.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int QQuickPixmapReaderThreadObject::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 2;
+    }
+    return _id;
+}
+struct qt_meta_stringdata_QQuickPixmapReader_t {
+    QByteArrayData data[1];
+    char stringdata0[19];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_QQuickPixmapReader_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_QQuickPixmapReader_t qt_meta_stringdata_QQuickPixmapReader = {
+    {
+QT_MOC_LITERAL(0, 0, 18) // "QQuickPixmapReader"
+
+    },
+    "QQuickPixmapReader"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_QQuickPixmapReader[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void QQuickPixmapReader::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject QQuickPixmapReader::staticMetaObject = {
+    { &QThread::staticMetaObject, qt_meta_stringdata_QQuickPixmapReader.data,
+      qt_meta_data_QQuickPixmapReader,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *QQuickPixmapReader::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *QQuickPixmapReader::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_QQuickPixmapReader.stringdata0))
+        return static_cast<void*>(this);
+    return QThread::qt_metacast(_clname);
+}
+
+int QQuickPixmapReader::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QThread::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_QQuickPixmapStore_t {
+    QByteArrayData data[1];
+    char stringdata0[18];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_QQuickPixmapStore_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_QQuickPixmapStore_t qt_meta_stringdata_QQuickPixmapStore = {
+    {
+QT_MOC_LITERAL(0, 0, 17) // "QQuickPixmapStore"
+
+    },
+    "QQuickPixmapStore"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_QQuickPixmapStore[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void QQuickPixmapStore::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject QQuickPixmapStore::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QQuickPixmapStore.data,
+      qt_meta_data_QQuickPixmapStore,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *QQuickPixmapStore::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *QQuickPixmapStore::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_QQuickPixmapStore.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int QQuickPixmapStore::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    return _id;
+}
+QT_WARNING_POP
+QT_END_MOC_NAMESPACE

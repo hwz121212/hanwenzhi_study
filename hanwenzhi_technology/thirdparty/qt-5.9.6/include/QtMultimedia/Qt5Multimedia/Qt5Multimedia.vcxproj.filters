@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{440b9122-85bb-4127-919d-cea2b0a94555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtMultimedia">
+      <UniqueIdentifier>{dfabf641-cd86-44c5-815f-1541fdfd663f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtMultimedia\private">
+      <UniqueIdentifier>{032d373f-239a-44d8-b1ef-066b29371684}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="video\qabstractvideobuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qabstractvideofilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qabstractvideosurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiobuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiodecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qaudiodecodercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiodevicefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiodeviceinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qaudioencodersettingscontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudioformat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiohelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudioinput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qaudioinputselectorcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiooutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qaudiooutputselectorcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudioprobe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recording\qaudiorecorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qaudiorolecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiosystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qaudiosystemplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\qcamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameracapturebufferformatcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameracapturedestinationcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameracontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\qcameraexposure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameraexposurecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcamerafeedbackcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameraflashcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\qcamerafocus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcamerafocuscontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\qcameraimagecapture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameraimagecapturecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\qcameraimageprocessing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameraimageprocessingcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\qcamerainfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcamerainfocontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameralockscontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\qcameraviewfindersettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcameraviewfindersettingscontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qcamerazoomcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qimageencodercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qimagevideobuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediaaudioprobecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediaavailabilitycontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediabindableinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediacontainercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmediacontent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediacontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recording\qmediaencodersettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediagaplessplaybackcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediametadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmedianetworkaccesscontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmedianetworkplaylistprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediaobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmediaplayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediaplayercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmediaplaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediaplaylistcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmediaplaylistioplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmediaplaylistnavigator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmediaplaylistprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediaplaylistsourcecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediapluginloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recording\qmediarecorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediarecordercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qmediaresource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediaresourcepolicy_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediaresourcepolicyplugin_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediaresourceset_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediaservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediaserviceprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediastoragelocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediastreamscontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmediatimerange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmediavideoprobecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qmemoryvideobuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmetadatareadercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qmetadatawritercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmultimedia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmultimediautils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\qplaylistfileparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="radio\qradiodata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qradiodatacontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="radio\qradiotuner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qradiotunercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qsamplecache_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qsound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qsoundeffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qsoundeffect_qaudio_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qvideodeviceselectorcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qvideoencodersettingscontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideoframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideoframeconversionhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideoframeconversionhelper_sse2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideooutputorientationhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideoprobe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qvideorenderercontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideosurfaceformat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideosurfaceoutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\qvideowindowcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\qwavedecoder_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideoframeconversionhelper_avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\qvideoframeconversionhelper_ssse3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Multimedia_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\gstvideoconnector_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qabstractvideobuffer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiobuffer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiodevicefactory_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiohelpers_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiosystempluginext_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qcamera_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstcodecsinfo_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstutils_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstvideobuffer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qimagevideobuffer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediacontrol_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaobject_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaopenglhelper_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediapluginloader_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediarecorder_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaresourcepolicy_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaservice_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediastoragelocation_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmemoryvideobuffer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmultimediautils_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qtmultimedia-config_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qtmultimediaglobal_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qvideoframe_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qvideoframeconversionhelper_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qradiodata_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qcameraexposure_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiodecoder_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qabstractvideobuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qaudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qaudiobuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qaudiodeviceinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qaudioformat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcamerainfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcameraviewfindersettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmediabindableinterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmediacontent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmediaencodersettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmediaenumdebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmediametadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmediaresource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmediatimerange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmultimedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtmultimedia-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtmultimediadefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtmultimediaglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtmultimediaversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qvideoframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qvideosurfaceformat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmedianetworkplaylistprovider_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qcameraimagecapture_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaplayer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qgstbufferpoolinterface_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qgstvideorendererplugin_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylist_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistcontrol_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistioplugin_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistnavigator_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistprovider_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistsourcecontrol_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaresourcepolicyplugin_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaresourceset_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaserviceprovider_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qplaylistfileparser_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qsamplecache_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qsoundeffect_qaudio_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qvideooutputorientationhandler_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qvideosurfacegstsink_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qvideosurfaceoutput_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qwavedecoder_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmedianetworkplaylistprovider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractvideofilter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractvideosurface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiodecoder.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiodecodercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudioencodersettingscontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudioinput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudioinputselectorcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiooutput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiooutputselectorcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudioprobe.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiorecorder.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiorolecontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiosystem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaudiosystemplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcamera.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameracapturebufferformatcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameracapturedestinationcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameracontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraexposure.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraexposurecontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcamerafeedbackcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraflashcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcamerafocus.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcamerafocuscontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraimagecapture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraimagecapturecontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraimageprocessing.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraimageprocessingcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcamerainfocontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameralockscontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraviewfindersettingscontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcamerazoomcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qimageencodercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaaudioprobecontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaavailabilitycontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediacontainercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediacontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediagaplessplaybackcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmedianetworkaccesscontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaobject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaplayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaplayercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaplaylist.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediarecorder.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediarecordercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaservice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediaserviceproviderplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediastreamscontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmediavideoprobecontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmetadatareadercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmetadatawritercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qradiodata.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qradiodatacontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qradiotuner.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qradiotunercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsound.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsoundeffect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvideodeviceselectorcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvideoencodersettingscontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvideoprobe.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvideorenderercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvideowindowcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

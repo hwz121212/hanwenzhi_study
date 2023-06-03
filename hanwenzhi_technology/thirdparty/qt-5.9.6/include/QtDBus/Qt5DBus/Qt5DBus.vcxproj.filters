@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{045135e6-ef7e-4e60-87c7-aa49ee49022a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtDBus">
+      <UniqueIdentifier>{02dd4fee-b1bf-46be-8388-fe9964d5c5ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtDBus\private">
+      <UniqueIdentifier>{c1e0afc6-5b71-4983-8889-ccb07d277f82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qdbus_symbols.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusabstractadaptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusabstractinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusargument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusconnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusconnectioninterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbuscontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbuserror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusextratypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusintegrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusinternalfilters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusintrospection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusmessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusmetaobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusmetatype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusmisc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbuspendingcall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbuspendingreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusservicewatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusunixfiledescriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusvirtualobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusxmlgenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdbusxmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qdbusabstractadaptor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdbusabstractinterface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qdbusargument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qdbusconnection.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdbusconnectioninterface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qdbuscontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdbuserror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdbusextratypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdbusinterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdbusmessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdbusmetatype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qdbuspendingcall.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qdbuspendingreply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdbusreply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qdbusserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdbusservicewatcher.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qdbusunixfiledescriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qdbusvirtualobject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qtdbusglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\dbus_minimal_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtDBus\private\qdbusconnection_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDBus\private\qdbusconnectionmanager_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDBus\private\qdbuspendingcall_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt5DBus_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbus_symbols_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusabstractadaptor_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusabstractinterface_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusargument_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbuscontext_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusintegrator_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusinterface_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusintrospection_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusmessage_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusthreaddebug_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusxmlparser_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qtdbusglobal_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDBus\private\qdbusutil_p.h">
+      <Filter>Header Files\5.9.6\QtDBus\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

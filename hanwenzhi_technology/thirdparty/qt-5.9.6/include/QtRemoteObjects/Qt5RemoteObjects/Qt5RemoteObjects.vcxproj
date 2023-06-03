@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62610135-C37D-371C-85FC-F2A08DB63FF8}</ProjectGuid>
+    <RootNamespace>Qt5RemoteObjects</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtRemoteObjects;..\..\..\include\QtRemoteObjects\5.9.6;..\..\..\include\QtRemoteObjects\5.9.6\QtRemoteObjects;..\..\..\include\QtRemoteObjects\5.9.6\QtRemoteObjects\private;..\..\..\include\QtNetwork;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_REMOTEOBJECTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_CAST_TO_ASCII;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_FROM_BYTEARRAY;QT_NO_URL_CAST_FROM_STRING;QT_BUILD_REMOTEOBJECTS_LIB;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;gdi32.lib;user32.lib;winspool.lib;comdlg32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_REMOTEOBJECTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_CAST_TO_ASCII;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_FROM_BYTEARRAY;QT_NO_URL_CAST_FROM_STRING;QT_BUILD_REMOTEOBJECTS_LIB;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtRemoteObjects;..\..\..\include\QtRemoteObjects\5.9.6;..\..\..\include\QtRemoteObjects\5.9.6\QtRemoteObjects;..\..\..\include\QtRemoteObjects\5.9.6\QtRemoteObjects\private;..\..\..\include\QtNetwork;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_REMOTEOBJECTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_CAST_TO_ASCII;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_FROM_BYTEARRAY;QT_NO_URL_CAST_FROM_STRING;QT_BUILD_REMOTEOBJECTS_LIB;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;gdi32.lib;user32.lib;winspool.lib;comdlg32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_REMOTEOBJECTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_CAST_TO_ASCII;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_FROM_BYTEARRAY;QT_NO_URL_CAST_FROM_STRING;QT_BUILD_REMOTEOBJECTS_LIB;QT_NO_EXCEPTIONS;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="qconnection_local_backend.cpp" />
+    <ClCompile Include="qconnection_tcpip_backend.cpp" />
+    <ClCompile Include="qconnectionfactories.cpp" />
+    <ClCompile Include="qremoteobjectabstractitemmodeladapter.cpp" />
+    <ClCompile Include="qremoteobjectabstractitemmodelreplica.cpp" />
+    <ClCompile Include="qremoteobjectdynamicreplica.cpp" />
+    <ClCompile Include="qremoteobjectnode.cpp" />
+    <ClCompile Include="qremoteobjectpacket.cpp" />
+    <ClCompile Include="qremoteobjectpendingcall.cpp" />
+    <ClCompile Include="qremoteobjectregistry.cpp" />
+    <ClCompile Include="qremoteobjectregistrysource.cpp" />
+    <ClCompile Include="qremoteobjectreplica.cpp" />
+    <ClCompile Include="qremoteobjectsource.cpp" />
+    <ClCompile Include="qremoteobjectsourceio.cpp" />
+    <ClCompile Include="qtremoteobjectglobal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qconnection_local_backend_p.h" />
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qconnection_tcpip_backend_p.h" />
+    <QtMoc Include="..\qconnectionfactories.h" />
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qconnectionfactories_p.h" />
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectabstractitemmodeladapter_p.h" />
+    <QtMoc Include="..\qremoteobjectabstractitemmodelreplica.h" />
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectabstractitemmodelreplica_p.h" />
+    <ClInclude Include="..\qremoteobjectabstractitemmodeltypes.h" />
+    <ClInclude Include="..\qremoteobjectdynamicreplica.h" />
+    <QtMoc Include="..\qremoteobjectnode.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qremoteobjectnode_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qremoteobjectnode_p.h</PrependInclude>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectnode_p.h" />
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectpacket_p.h" />
+    <QtMoc Include="..\qremoteobjectpendingcall.h" />
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectpendingcall_p.h" />
+    <QtMoc Include="..\qremoteobjectregistry.h" />
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectregistrysource_p.h" />
+    <QtMoc Include="..\qremoteobjectreplica.h" />
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectreplica_p.h" />
+    <ClInclude Include="..\qremoteobjectsource.h" />
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectsource_p.h" />
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectsourceio_p.h" />
+    <ClInclude Include="..\qtremoteobjectglobal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt5RemoteObjects_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="DBUSXML2CPP">
+      <UniqueIdentifier>{E0D8C965-CC5F-43d7-AD63-FAEF0BBC0F85}-dbus_interface_source</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="DBUSXML2CPP">
+      <UniqueIdentifier>{E0D8C965-CC5F-43d7-AD63-FAEF0BBC0F85}-dbus_interface_source</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="DBUS_INTERFACE_MOC">
+      <UniqueIdentifier>{E0D8C965-CC5F-43d7-AD63-FAEF0BBC0F85}-dbus_interface_moc</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="DBUS_INTERFACE_MOC">
+      <UniqueIdentifier>{E0D8C965-CC5F-43d7-AD63-FAEF0BBC0F85}-dbus_interface_moc</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="geocluetypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeocluemaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeopositioninfosource_geocluemaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeopositioninfosourcefactory_geoclue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeosatelliteinfosource_geocluemaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="geocluetypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qgeocluemaster.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeopositioninfosource_geocluemaster.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeopositioninfosourcefactory_geoclue.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeosatelliteinfosource_geocluemaster.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="geoclue_interface.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="master_interface.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="masterclient_interface.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="position_interface.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="satellite_interface.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="velocity_interface.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="org.freedesktop.Geoclue.Master.xml">
+      <Filter>DBUSXML2CPP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.MasterClient.xml">
+      <Filter>DBUSXML2CPP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.Position.xml">
+      <Filter>DBUSXML2CPP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.Satellite.xml">
+      <Filter>DBUSXML2CPP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.Velocity.xml">
+      <Filter>DBUSXML2CPP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.xml">
+      <Filter>DBUSXML2CPP</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="geoclue_interface.h">
+      <Filter>DBUS_INTERFACE_MOC</Filter>
+    </QtMoc>
+    <QtMoc Include="master_interface.h">
+      <Filter>DBUS_INTERFACE_MOC</Filter>
+    </QtMoc>
+    <QtMoc Include="masterclient_interface.h">
+      <Filter>DBUS_INTERFACE_MOC</Filter>
+    </QtMoc>
+    <QtMoc Include="position_interface.h">
+      <Filter>DBUS_INTERFACE_MOC</Filter>
+    </QtMoc>
+    <QtMoc Include="satellite_interface.h">
+      <Filter>DBUS_INTERFACE_MOC</Filter>
+    </QtMoc>
+    <QtMoc Include="velocity_interface.h">
+      <Filter>DBUS_INTERFACE_MOC</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtposition_geoclue_resource.rc" />
+  </ItemGroup>
+</Project>

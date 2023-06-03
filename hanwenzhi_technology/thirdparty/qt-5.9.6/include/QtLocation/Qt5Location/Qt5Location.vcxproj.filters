@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{a32d42a3-710c-413e-bd1b-8cf3f653ba1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtLocation">
+      <UniqueIdentifier>{e326950b-82e2-4444-997e-34b962ddf791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtLocation\private">
+      <UniqueIdentifier>{25a6f897-6b3e-4020-a894-fd77068d33d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="declarativemaps\error_messages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\locationvaluetypehelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\mapitemviewdelegateincubator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qabstractgeotilecache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativecategory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativecirclemapitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativecontactdetail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeocodemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomaneuver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomapcopyrightsnotice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomapitembase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomapitemgroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomapitemview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomapparameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomapquickitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeomaptype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeoroute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeoroutemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeoroutesegment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativegeoserviceprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeplace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceattribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeplacecontentmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceeditorialmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceicon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceimagemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeplaceuser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativepolygonmapitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativepolylinemapitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativeratings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativerectanglemapitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativereviewmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qdeclarativeroutemapitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativesearchmodelbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativesearchresultmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativesearchsuggestionmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativesupplier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeplaces\qdeclarativesupportedcategoriesmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeocameracapabilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeocameradata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeocameratiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeocodereply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeocodingmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeocodingmanagerengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeofiletilecache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeomaneuver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeomap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qgeomapitemgeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeomapparameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeomappingmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeomappingmanagerengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeomaptype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoprojection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoroute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeorouteparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeorouteparserosrmv4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeorouteparserosrmv5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoroutereply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeorouterequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoroutesegment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoroutingmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoroutingmanagerengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoserviceprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeoserviceproviderfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeotiledmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeotiledmappingmanagerengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeotiledmapreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeotiledmapscene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maps\qgeotilefetcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="maps\qgeotilerequestmanager.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="maps\qgeotilespec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceattribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacecategory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacecontactdetail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacecontent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacecontentreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacecontentrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacedetailsreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceeditorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceicon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceidreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacemanagerengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacematchreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacematchrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceproposedsearchresult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceratings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacereply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceresult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacereview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacesearchreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacesearchrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacesearchresult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacesearchsuggestionreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplacesupplier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places\qplaceuser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemaps\qquickgeomapgesturearea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickgeocoordinateanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Location_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtLocation\private\error_messages_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\locationvaluetypehelper_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\mapitemviewdelegateincubator_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qcache3q_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitemview_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocameracapabilities_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocameradata_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocameratiles_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocodereply_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocodingmanager_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeocodingmanagerengine_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomaneuver_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomap_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomapitemgeometry_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomappingmanager_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomappingmanagerengine_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomaptype_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeomaptype_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoprojection_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroute_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeorouteparser_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutereply_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeorouterequest_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutesegment_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutingmanager_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoroutingmanagerengine_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeoserviceprovider_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotiledmap_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotiledmappingmanagerengine_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotiledmapreply_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilefetcher_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilerequestmanager_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilespec_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qgeotilespec_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qlocationglobal_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplace_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceattribute_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecategory_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecontactdetail_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecontent_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacecontentrequest_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceeditorial_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceicon_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceimage_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacemanagerengine_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceproposedsearchresult_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceratings_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacereply_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceresult_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacereview_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacesearchresult_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplacesupplier_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qplaceuser_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qtlocation-config_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\placemacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeomaneuver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeoroute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeorouterequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeoroutesegment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeoserviceproviderfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlocationglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceattribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacecategory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacecontactdetail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacecontent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacecontentrequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceeditorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceicon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacematchrequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceproposedsearchresult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceratings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceresult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacereview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacesearchrequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacesearchresult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplacesupplier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qplaceuser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtlocation-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtlocationversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtLocation\private\qquickgeocoordinateanimation_p_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qabstractgeotilecache_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativecategory_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativecirclemapitem_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativecontactdetail_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeocodemodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomaneuver_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomap_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapcopyrightsnotice_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitembase_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitemgroup_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapitemview_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapparameter_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomapquickitem_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeomaptype_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoroute_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoroutemodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoroutesegment_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativegeoserviceprovider_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplace_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceattribute_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplacecontentmodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceeditorialmodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceicon_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceimagemodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeplaceuser_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativepolygonmapitem_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativepolylinemapitem_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeratings_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativerectanglemapitem_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativereviewmodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativeroutemapitem_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesearchmodelbase_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesearchresultmodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesearchsuggestionmodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesupplier_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qdeclarativesupportedcategoriesmodel_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeofiletilecache_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomap_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomapparameter_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomappingmanager_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeomappingmanagerengine_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeorouteparser_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeorouteparserosrmv4_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeorouteparserosrmv5_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmap_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmappingmanagerengine_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmapreply_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotiledmapscene_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qgeotilefetcher_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qquickgeomapgesturearea_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\unsupportedreplies_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeocodereply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeocodingmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeocodingmanagerengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeoroutereply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeoroutingmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeoroutingmanagerengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeoserviceprovider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacecontentreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacedetailsreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplaceidreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacemanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacemanagerengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacematchreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacereply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacesearchreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qplacesearchsuggestionreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtLocation\private\qquickgeocoordinateanimation_p.h">
+      <Filter>Header Files\5.9.6\QtLocation\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

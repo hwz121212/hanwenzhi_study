@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="double-conversion\bignum.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="double-conversion\bignum-dtoa.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="double-conversion\cached-powers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="double-conversion\double-to-string.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="double-conversion\fast-dtoa.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="double-conversion\fixed-dtoa.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="double-conversion\string-to-double.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="double-conversion\strtod.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="double-conversion\bignum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\cached-powers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\diy-fp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\double-conversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\double-to-string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\fast-dtoa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\fixed-dtoa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\ieee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\string-to-double.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\strtod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double-conversion\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4EA0E170-8D6F-3222-860B-91F33E9AFEAA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CCC16E4A-1638-32BB-96BF-BA8C7305CB28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

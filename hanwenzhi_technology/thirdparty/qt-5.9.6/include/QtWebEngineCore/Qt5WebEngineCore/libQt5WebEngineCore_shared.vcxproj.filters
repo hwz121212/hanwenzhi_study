@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{0bfdcb10-b1af-4f56-8abb-d95da791d340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebEngineCore">
+      <UniqueIdentifier>{df36625e-7862-4165-8e13-c1767afecd17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebEngineCore\private">
+      <UniqueIdentifier>{2d2ed789-1cb5-44e6-b07d-480dd75c8e80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qtwebenginecoreglobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebenginebrowsercontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebenginecookiestore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebenginehttprequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebengineurlrequestinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebengineurlrequestjob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebengineurlschemehandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWebEngineCore\private\qtwebenginecoreglobal_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineCore\private\qwebenginebrowsercontext_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineCore\private\qwebenginecallback_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineCore\private\qwebenginecookiestore_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineCore\private\qwebengineurlrequestinfo_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtwebenginecoreglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtwebenginecoreversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginecallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginehttprequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebengineurlrequestinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qwebenginecookiestore.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebengineurlrequestinterceptor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebengineurlrequestjob.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebengineurlschemehandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dec\alphai_dec.h" />
+    <ClInclude Include="dec\common_dec.h" />
+    <ClInclude Include="dec\vp8i_dec.h" />
+    <ClInclude Include="dec\vp8li_dec.h" />
+    <ClInclude Include="dec\vp8_dec.h" />
+    <ClInclude Include="dec\webpi_dec.h" />
+    <ClInclude Include="dsp\common_sse2.h" />
+    <ClInclude Include="dsp\dsp.h" />
+    <ClInclude Include="dsp\lossless.h" />
+    <ClInclude Include="dsp\lossless_common.h" />
+    <ClInclude Include="dsp\mips_macro.h" />
+    <ClInclude Include="dsp\msa_macro.h" />
+    <ClInclude Include="dsp\neon.h" />
+    <ClInclude Include="dsp\yuv.h" />
+    <ClInclude Include="utils\bit_reader_inl_utils.h" />
+    <ClInclude Include="utils\bit_reader_utils.h" />
+    <ClInclude Include="utils\color_cache_utils.h" />
+    <ClInclude Include="utils\endian_inl_utils.h" />
+    <ClInclude Include="utils\filters_utils.h" />
+    <ClInclude Include="utils\huffman_utils.h" />
+    <ClInclude Include="utils\quant_levels_dec_utils.h" />
+    <ClInclude Include="utils\random_utils.h" />
+    <ClInclude Include="utils\rescaler_utils.h" />
+    <ClInclude Include="utils\thread_utils.h" />
+    <ClInclude Include="utils\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dec\alpha_dec.c" />
+    <ClCompile Include="dec\buffer_dec.c" />
+    <ClCompile Include="dec\frame_dec.c" />
+    <ClCompile Include="dec\idec_dec.c" />
+    <ClCompile Include="dec\io_dec.c" />
+    <ClCompile Include="dec\quant_dec.c" />
+    <ClCompile Include="dec\tree_dec.c" />
+    <ClCompile Include="dec\vp8l_dec.c" />
+    <ClCompile Include="dec\vp8_dec.c" />
+    <ClCompile Include="dec\webp_dec.c" />
+    <ClCompile Include="dsp\alpha_processing.c" />
+    <ClCompile Include="dsp\alpha_processing_sse2.c" />
+    <ClCompile Include="dsp\alpha_processing_sse41.c" />
+    <ClCompile Include="dsp\cpu.c" />
+    <ClCompile Include="dsp\dec.c" />
+    <ClCompile Include="dsp\dec_clip_tables.c" />
+    <ClCompile Include="dsp\dec_sse2.c" />
+    <ClCompile Include="dsp\dec_sse41.c" />
+    <ClCompile Include="dsp\filters.c" />
+    <ClCompile Include="dsp\filters_sse2.c" />
+    <ClCompile Include="dsp\lossless.c" />
+    <ClCompile Include="dsp\lossless_sse2.c" />
+    <ClCompile Include="dsp\lossless_sse41.c" />
+    <ClCompile Include="dsp\rescaler.c" />
+    <ClCompile Include="dsp\rescaler_sse2.c" />
+    <ClCompile Include="dsp\upsampling.c" />
+    <ClCompile Include="dsp\upsampling_sse2.c" />
+    <ClCompile Include="dsp\upsampling_sse41.c" />
+    <ClCompile Include="dsp\yuv.c" />
+    <ClCompile Include="dsp\yuv_sse2.c" />
+    <ClCompile Include="dsp\yuv_sse41.c" />
+    <ClCompile Include="utils\bit_reader_utils.c" />
+    <ClCompile Include="utils\color_cache_utils.c" />
+    <ClCompile Include="utils\filters_utils.c" />
+    <ClCompile Include="utils\huffman_utils.c" />
+    <ClCompile Include="utils\quant_levels_dec_utils.c" />
+    <ClCompile Include="utils\random_utils.c" />
+    <ClCompile Include="utils\rescaler_utils.c" />
+    <ClCompile Include="utils\thread_utils.c" />
+    <ClCompile Include="utils\utils.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98621981-B60C-3D85-88D9-59C8534CD88E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libwebpdecoder</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..;</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..;</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

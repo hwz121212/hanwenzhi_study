@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED7B6CE9-7457-3424-91F1-1AAE6DBF0C91}</ProjectGuid>
+    <RootNamespace>Qt5Multimedia</RootNamespace>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;audio;camera;controls;playback;radio;recording;video;..\..\..\include;..\..\..\include\QtMultimedia;..\..\..\include\QtMultimedia\5.9.6;..\..\..\include\QtMultimedia\5.9.6\QtMultimedia;..\..\..\include\QtMultimedia\5.9.6\QtMultimedia\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtGui\5.9.6\QtGui\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\include\QtMultimediaWidgets;..\..\..\include\QtMultimediaWidgets\5.9.6;..\..\..\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets;..\..\..\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)include\gstreamer-1.0;$(SolutionDir)thirdparty\glib-2.48.2;$(SolutionDir)thirdparty\glib-2.48.2\glib</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_MULTIMEDIA_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5Quick.lib;uuid.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_MULTIMEDIA_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;audio;camera;controls;playback;radio;recording;video;..\..\..\include;..\..\..\include\QtMultimedia;..\..\..\include\QtMultimedia\5.9.6;..\..\..\include\QtMultimedia\5.9.6\QtMultimedia;..\..\..\include\QtMultimedia\5.9.6\QtMultimedia\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtGui\5.9.6\QtGui\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\include\QtMultimediaWidgets;..\..\..\include\QtMultimediaWidgets\5.9.6;..\..\..\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets;..\..\..\include\QtMultimediaWidgets\5.9.6\QtMultimediaWidgets\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)include\gstreamer-1.0;$(SolutionDir)thirdparty\glib-2.48.2;$(SolutionDir)thirdparty\glib-2.48.2\glib</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_MULTIMEDIA_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5Quick.lib;uuid.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_MULTIMEDIA_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="video\qabstractvideobuffer.cpp" />
+    <ClCompile Include="video\qabstractvideofilter.cpp" />
+    <ClCompile Include="video\qabstractvideosurface.cpp" />
+    <ClCompile Include="audio\qaudio.cpp" />
+    <ClCompile Include="audio\qaudiobuffer.cpp" />
+    <ClCompile Include="audio\qaudiodecoder.cpp" />
+    <ClCompile Include="controls\qaudiodecodercontrol.cpp" />
+    <ClCompile Include="audio\qaudiodevicefactory.cpp" />
+    <ClCompile Include="audio\qaudiodeviceinfo.cpp" />
+    <ClCompile Include="controls\qaudioencodersettingscontrol.cpp" />
+    <ClCompile Include="audio\qaudioformat.cpp" />
+    <ClCompile Include="audio\qaudiohelpers.cpp" />
+    <ClCompile Include="audio\qaudioinput.cpp" />
+    <ClCompile Include="controls\qaudioinputselectorcontrol.cpp" />
+    <ClCompile Include="audio\qaudiooutput.cpp" />
+    <ClCompile Include="controls\qaudiooutputselectorcontrol.cpp" />
+    <ClCompile Include="audio\qaudioprobe.cpp" />
+    <ClCompile Include="recording\qaudiorecorder.cpp" />
+    <ClCompile Include="controls\qaudiorolecontrol.cpp" />
+    <ClCompile Include="audio\qaudiosystem.cpp" />
+    <ClCompile Include="audio\qaudiosystemplugin.cpp" />
+    <ClCompile Include="camera\qcamera.cpp" />
+    <ClCompile Include="controls\qcameracapturebufferformatcontrol.cpp" />
+    <ClCompile Include="controls\qcameracapturedestinationcontrol.cpp" />
+    <ClCompile Include="controls\qcameracontrol.cpp" />
+    <ClCompile Include="camera\qcameraexposure.cpp" />
+    <ClCompile Include="controls\qcameraexposurecontrol.cpp" />
+    <ClCompile Include="controls\qcamerafeedbackcontrol.cpp" />
+    <ClCompile Include="controls\qcameraflashcontrol.cpp" />
+    <ClCompile Include="camera\qcamerafocus.cpp" />
+    <ClCompile Include="controls\qcamerafocuscontrol.cpp" />
+    <ClCompile Include="camera\qcameraimagecapture.cpp" />
+    <ClCompile Include="controls\qcameraimagecapturecontrol.cpp" />
+    <ClCompile Include="camera\qcameraimageprocessing.cpp" />
+    <ClCompile Include="controls\qcameraimageprocessingcontrol.cpp" />
+    <ClCompile Include="camera\qcamerainfo.cpp" />
+    <ClCompile Include="controls\qcamerainfocontrol.cpp" />
+    <ClCompile Include="controls\qcameralockscontrol.cpp" />
+    <ClCompile Include="camera\qcameraviewfindersettings.cpp" />
+    <ClCompile Include="controls\qcameraviewfindersettingscontrol.cpp" />
+    <ClCompile Include="controls\qcamerazoomcontrol.cpp" />
+    <ClCompile Include="controls\qimageencodercontrol.cpp" />
+    <ClCompile Include="video\qimagevideobuffer.cpp" />
+    <ClCompile Include="controls\qmediaaudioprobecontrol.cpp" />
+    <ClCompile Include="controls\qmediaavailabilitycontrol.cpp" />
+    <ClCompile Include="qmediabindableinterface.cpp" />
+    <ClCompile Include="controls\qmediacontainercontrol.cpp" />
+    <ClCompile Include="playback\qmediacontent.cpp" />
+    <ClCompile Include="qmediacontrol.cpp" />
+    <ClCompile Include="recording\qmediaencodersettings.cpp" />
+    <ClCompile Include="controls\qmediagaplessplaybackcontrol.cpp" />
+    <ClCompile Include="qmediametadata.cpp" />
+    <ClCompile Include="controls\qmedianetworkaccesscontrol.cpp" />
+    <ClCompile Include="playback\qmedianetworkplaylistprovider.cpp" />
+    <ClCompile Include="qmediaobject.cpp" />
+    <ClCompile Include="playback\qmediaplayer.cpp" />
+    <ClCompile Include="controls\qmediaplayercontrol.cpp" />
+    <ClCompile Include="playback\qmediaplaylist.cpp" />
+    <ClCompile Include="controls\qmediaplaylistcontrol.cpp" />
+    <ClCompile Include="playback\qmediaplaylistioplugin.cpp" />
+    <ClCompile Include="playback\qmediaplaylistnavigator.cpp" />
+    <ClCompile Include="playback\qmediaplaylistprovider.cpp" />
+    <ClCompile Include="controls\qmediaplaylistsourcecontrol.cpp" />
+    <ClCompile Include="qmediapluginloader.cpp" />
+    <ClCompile Include="recording\qmediarecorder.cpp" />
+    <ClCompile Include="controls\qmediarecordercontrol.cpp" />
+    <ClCompile Include="playback\qmediaresource.cpp" />
+    <ClCompile Include="qmediaresourcepolicy_p.cpp" />
+    <ClCompile Include="qmediaresourcepolicyplugin_p.cpp" />
+    <ClCompile Include="qmediaresourceset_p.cpp" />
+    <ClCompile Include="qmediaservice.cpp" />
+    <ClCompile Include="qmediaserviceprovider.cpp" />
+    <ClCompile Include="qmediastoragelocation.cpp" />
+    <ClCompile Include="controls\qmediastreamscontrol.cpp" />
+    <ClCompile Include="qmediatimerange.cpp" />
+    <ClCompile Include="controls\qmediavideoprobecontrol.cpp" />
+    <ClCompile Include="video\qmemoryvideobuffer.cpp" />
+    <ClCompile Include="controls\qmetadatareadercontrol.cpp" />
+    <ClCompile Include="controls\qmetadatawritercontrol.cpp" />
+    <ClCompile Include="qmultimedia.cpp" />
+    <ClCompile Include="qmultimediautils.cpp" />
+    <ClCompile Include="playback\qplaylistfileparser.cpp" />
+    <ClCompile Include="radio\qradiodata.cpp" />
+    <ClCompile Include="controls\qradiodatacontrol.cpp" />
+    <ClCompile Include="radio\qradiotuner.cpp" />
+    <ClCompile Include="controls\qradiotunercontrol.cpp" />
+    <ClCompile Include="audio\qsamplecache_p.cpp" />
+    <ClCompile Include="audio\qsound.cpp" />
+    <ClCompile Include="audio\qsoundeffect.cpp" />
+    <ClCompile Include="audio\qsoundeffect_qaudio_p.cpp" />
+    <ClCompile Include="controls\qvideodeviceselectorcontrol.cpp" />
+    <ClCompile Include="controls\qvideoencodersettingscontrol.cpp" />
+    <ClCompile Include="video\qvideoframe.cpp" />
+    <ClCompile Include="video\qvideoframeconversionhelper.cpp" />
+    <ClCompile Include="video\qvideoframeconversionhelper_avx2.cpp" />
+    <ClCompile Include="video\qvideoframeconversionhelper_sse2.cpp" />
+    <ClCompile Include="video\qvideoframeconversionhelper_ssse3.cpp" />
+    <ClCompile Include="video\qvideooutputorientationhandler.cpp" />
+    <ClCompile Include="video\qvideoprobe.cpp" />
+    <ClCompile Include="controls\qvideorenderercontrol.cpp" />
+    <ClCompile Include="video\qvideosurfaceformat.cpp" />
+    <ClCompile Include="video\qvideosurfaceoutput.cpp" />
+    <ClCompile Include="controls\qvideowindowcontrol.cpp" />
+    <ClCompile Include="audio\qwavedecoder_p.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Multimedia_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\gstvideoconnector_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qabstractvideobuffer_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiobuffer_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiodecoder_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiodevicefactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiohelpers_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qaudiosystempluginext_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qcameraexposure_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qcameraimagecapture_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qcamera_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstcodecsinfo_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstutils_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstvideobuffer_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qimagevideobuffer_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediacontrol_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaopenglhelper_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaplayer_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediapluginloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediarecorder_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediastoragelocation_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmemoryvideobuffer_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmultimediautils_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qradiodata_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qtmultimedia-config_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qtmultimediaglobal_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qvideoframeconversionhelper_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qvideoframe_p.h" />
+    <ClInclude Include="..\qabstractvideobuffer.h" />
+    <ClInclude Include="..\qaudio.h" />
+    <ClInclude Include="..\qaudiobuffer.h" />
+    <ClInclude Include="..\qaudiodeviceinfo.h" />
+    <ClInclude Include="..\qaudioformat.h" />
+    <ClInclude Include="..\qcamerainfo.h" />
+    <ClInclude Include="..\qcameraviewfindersettings.h" />
+    <ClInclude Include="..\qmediabindableinterface.h" />
+    <ClInclude Include="..\qmediacontent.h" />
+    <ClInclude Include="..\qmediaencodersettings.h" />
+    <ClInclude Include="..\qmediaenumdebug.h" />
+    <ClInclude Include="..\qmediametadata.h" />
+    <QtMoc Include="..\qmedianetworkplaylistprovider.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmedianetworkplaylistprovider_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmedianetworkplaylistprovider_p.h</PrependInclude>
+    </QtMoc>
+    <ClInclude Include="..\qmediaresource.h" />
+    <ClInclude Include="..\qmediatimerange.h" />
+    <ClInclude Include="..\qmultimedia.h" />
+    <ClInclude Include="..\qtmultimedia-config.h" />
+    <ClInclude Include="..\qtmultimediadefs.h" />
+    <ClInclude Include="..\qtmultimediaglobal.h" />
+    <ClInclude Include="..\qtmultimediaversion.h" />
+    <ClInclude Include="..\qvideoframe.h" />
+    <ClInclude Include="..\qvideosurfaceformat.h" />
+    <QtMoc Include="..\qvideowindowcontrol.h" />
+    <QtMoc Include="..\qvideorenderercontrol.h" />
+    <QtMoc Include="..\qvideoprobe.h" />
+    <QtMoc Include="..\qvideoencodersettingscontrol.h" />
+    <QtMoc Include="..\qvideodeviceselectorcontrol.h" />
+    <QtMoc Include="..\qsoundeffect.h" />
+    <QtMoc Include="..\qsound.h" />
+    <QtMoc Include="..\qradiotunercontrol.h" />
+    <QtMoc Include="..\qradiotuner.h" />
+    <QtMoc Include="..\qradiodatacontrol.h" />
+    <QtMoc Include="..\qradiodata.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qradiodata_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qradiodata_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qmetadatawritercontrol.h" />
+    <QtMoc Include="..\qmetadatareadercontrol.h" />
+    <QtMoc Include="..\qmediavideoprobecontrol.h" />
+    <QtMoc Include="..\qmediastreamscontrol.h" />
+    <QtMoc Include="..\qmediaserviceproviderplugin.h" />
+    <QtMoc Include="..\qmediaservice.h" />
+    <QtMoc Include="..\qmediarecordercontrol.h" />
+    <QtMoc Include="..\qmediarecorder.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmediarecorder_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmediarecorder_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qmediaplaylist.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmediaplaylist_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmediaplaylist_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qmediaplayercontrol.h" />
+    <QtMoc Include="..\qmediaplayer.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmediaplayer_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmediaplayer_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qmediaobject.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmediaobject_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmediaobject_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qmedianetworkaccesscontrol.h" />
+    <QtMoc Include="..\qmediagaplessplaybackcontrol.h" />
+    <QtMoc Include="..\qmediacontrol.h" />
+    <QtMoc Include="..\qmediacontainercontrol.h" />
+    <QtMoc Include="..\qmediaavailabilitycontrol.h" />
+    <QtMoc Include="..\qmediaaudioprobecontrol.h" />
+    <QtMoc Include="..\qimageencodercontrol.h" />
+    <QtMoc Include="..\qcamerazoomcontrol.h" />
+    <QtMoc Include="..\qcameraviewfindersettingscontrol.h" />
+    <QtMoc Include="..\qcameralockscontrol.h" />
+    <QtMoc Include="..\qcamerainfocontrol.h" />
+    <QtMoc Include="..\qcameraimageprocessingcontrol.h" />
+    <QtMoc Include="..\qcameraimageprocessing.h" />
+    <QtMoc Include="..\qcameraimagecapturecontrol.h" />
+    <QtMoc Include="..\qcameraimagecapture.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qcameraimagecapture_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qcameraimagecapture_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qcamerafocuscontrol.h" />
+    <QtMoc Include="..\qcamerafocus.h" />
+    <QtMoc Include="..\qcameraflashcontrol.h" />
+    <QtMoc Include="..\qcamerafeedbackcontrol.h" />
+    <QtMoc Include="..\qcameraexposurecontrol.h" />
+    <QtMoc Include="..\qcameraexposure.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qcameraexposure_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qcameraexposure_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qcameracontrol.h" />
+    <QtMoc Include="..\qcameracapturedestinationcontrol.h" />
+    <QtMoc Include="..\qcameracapturebufferformatcontrol.h" />
+    <QtMoc Include="..\qcamera.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qcamera_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qcamera_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qaudiosystemplugin.h" />
+    <QtMoc Include="..\qaudiosystem.h" />
+    <QtMoc Include="..\qaudiorolecontrol.h" />
+    <QtMoc Include="..\qaudiorecorder.h" />
+    <QtMoc Include="..\qaudioprobe.h" />
+    <QtMoc Include="..\qaudiooutputselectorcontrol.h" />
+    <QtMoc Include="..\qaudiooutput.h" />
+    <QtMoc Include="..\qaudioinputselectorcontrol.h" />
+    <QtMoc Include="..\qaudioinput.h" />
+    <QtMoc Include="..\qaudioencodersettingscontrol.h" />
+    <QtMoc Include="..\qaudiodecodercontrol.h" />
+    <QtMoc Include="..\qaudiodecoder.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qaudiodecoder_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qaudiodecoder_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qabstractvideosurface.h" />
+    <QtMoc Include="..\qabstractvideofilter.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qwavedecoder_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qvideosurfaceoutput_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qvideosurfacegstsink_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qvideooutputorientationhandler_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qsoundeffect_qaudio_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qsamplecache_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qplaylistfileparser_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaserviceprovider_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaservice_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaresourceset_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaresourcepolicyplugin_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmediaresourcepolicy_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistsourcecontrol_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistprovider_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmediaplaylistnavigator_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmediaplaylistnavigator_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistnavigator_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmediaplaylistnavigator_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmediaplaylistnavigator_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistioplugin_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylistcontrol_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qmediaplaylist_p.h" />
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qmedianetworkplaylistprovider_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qgstvideorendererplugin_p.h" />
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qgstbufferpoolinterface_p.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

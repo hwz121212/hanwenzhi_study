@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="qtpropertybrowser">
+      <UniqueIdentifier>{8c1903dd-0355-4527-aba9-b9066c7bb5b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fontpanel">
+      <UniqueIdentifier>{025c0b17-78b9-42a8-9519-c1e6dce8491f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="findwidget\abstractfindwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deviceskin\deviceskin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="findwidget\itemviewfindwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtcolorline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradienteditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientstopscontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientstopsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientstopswidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientviewdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtgradientwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="findwidget\texteditfindwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtgradienteditor\qtcolorbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qttoolbardialog\qttoolbardialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtbuttonpropertybrowser.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtgroupboxpropertybrowser.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtpropertybrowser.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtvariantproperty.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtpropertybrowserutils.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qteditorfactory.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qttreepropertybrowser.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpropertybrowser\qtpropertymanager.cpp">
+      <Filter>qtpropertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="fontpanel\fontpanel.cpp">
+      <Filter>fontpanel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="findwidget\abstractfindwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="deviceskin\deviceskin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="findwidget\itemviewfindwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtcolorbutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtcolorline.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradienteditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientstopscontroller.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientstopsmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientstopswidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qtgradienteditor\qtgradientutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qtgradienteditor\qtgradientview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientviewdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtgradienteditor\qtgradientwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="findwidget\texteditfindwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qttoolbardialog\qttoolbardialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qtbuttonpropertybrowser.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qteditorfactory.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qtgroupboxpropertybrowser.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qtpropertybrowser.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qtpropertymanager.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qttreepropertybrowser.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qtvariantproperty.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="qtpropertybrowser\qtpropertybrowserutils_p.h">
+      <Filter>qtpropertybrowser</Filter>
+    </QtMoc>
+    <QtMoc Include="fontpanel\fontpanel.h">
+      <Filter>fontpanel</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="qtgradienteditor\qtgradientdialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtgradienteditor\qtgradienteditor.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtgradienteditor\qtgradientview.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtgradienteditor\qtgradientviewdialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="deviceskin\skins\ClamshellPhone.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone1-5-closed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone1-5-pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\ClamshellPhone.skin\ClamshellPhone1-5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="deviceskin\skins\PortableMedia.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\PortableMedia.skin\PortableMedia.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\S60-QVGA-Candybar-down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\S60-QVGA-Candybar.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="deviceskin\skins\S60-QVGA-Candybar.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\S60-QVGA-Candybar.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\S60-nHD-Touchscreen-down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\S60-nHD-Touchscreen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="deviceskin\skins\S60-nHD-Touchscreen.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\S60-nHD-Touchscreen.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhone.skin\SmartPhone-pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhone.skin\SmartPhone.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="deviceskin\skins\SmartPhone.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\SmartPhone.skin\SmartPhone.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhone2.skin\SmartPhone2-pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhone2.skin\SmartPhone2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="deviceskin\skins\SmartPhone2.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\SmartPhone2.skin\SmartPhone2.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\SmartPhoneWithButtons-pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\SmartPhoneWithButtons.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="deviceskin\skins\SmartPhoneWithButtons.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\SmartPhoneWithButtons.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\TouchscreenPhone-pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\TouchscreenPhone.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="deviceskin\skins\TouchscreenPhone.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\TouchscreenPhone.skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\mac\closetab.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\win\closetab.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\ClamshellPhone.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\PortableMedia.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\S60-QVGA-Candybar.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\S60-nHD-Touchscreen.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhone.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhone2.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\SmartPhoneWithButtons.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\TouchscreenPhone.skin\defaultbuttons.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\edit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\editdelete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="findwidget\findwidget.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="qtgradienteditor\images\minus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\mac\next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\win\next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\plus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\PortableMedia.skin\portablemedia-pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\PortableMedia.skin\portablemedia.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="deviceskin\skins\PortableMedia.skin\portablemedia.xcf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\mac\previous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\win\previous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="qtgradienteditor\qtgradienteditor.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="findwidget\images\mac\searchfind.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\win\searchfind.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\spreadpad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\spreadreflect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\spreadrepeat.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\typeconical.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\typelinear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\typeradial.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="findwidget\images\wrap.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\zoomin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qtgradienteditor\images\zoomout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="qttoolbardialog\qttoolbardialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

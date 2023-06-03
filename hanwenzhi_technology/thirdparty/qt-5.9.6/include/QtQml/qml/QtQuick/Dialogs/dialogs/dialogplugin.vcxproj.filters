@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="plugin.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="qquickabstractcolordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickabstractdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickabstractfiledialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickabstractfontdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickabstractmessagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcolordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickfiledialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickfontdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickmessagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickplatformcolordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickplatformfiledialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickplatformfontdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickplatformmessagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qquickabstractcolordialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickabstractdialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickabstractfiledialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickabstractfontdialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickabstractmessagedialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickcolordialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickdialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickdialogassets_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickfiledialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickfontdialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickmessagedialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickplatformcolordialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickplatformfiledialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickplatformfontdialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquickplatformmessagedialog_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\dialogplugin_resource.rc" />
+  </ItemGroup>
+</Project>

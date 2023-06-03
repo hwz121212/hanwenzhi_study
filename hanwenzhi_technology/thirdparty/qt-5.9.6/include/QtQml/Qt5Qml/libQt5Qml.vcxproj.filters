@@ -1,0 +1,1221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="retgen">
+      <UniqueIdentifier>{E0D8C965-CC5F-43d7-AD63-FAEF0BBC0F85}-retgen</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\animations">
+      <UniqueIdentifier>{1d253772-d853-4540-9846-ef3c60f6a0a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compiler">
+      <UniqueIdentifier>{7b3c9214-2d57-40e3-b884-cc0f9b24fe6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debugger">
+      <UniqueIdentifier>{bbfb252b-ba75-4e16-91f5-dd4ea981f1d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jit">
+      <UniqueIdentifier>{42d30004-035c-48ee-bf91-9d3ed625f7f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jsapi">
+      <UniqueIdentifier>{e5696ef5-f595-4571-a649-29cecc371192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jsruntime">
+      <UniqueIdentifier>{7cca706d-17e0-494d-b4d5-3509ad261c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memory">
+      <UniqueIdentifier>{78a69bb8-2dba-4c38-9cee-49c457e134c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parser">
+      <UniqueIdentifier>{8d9bdaa8-3489-45b7-9849-46e6547c53c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\qml">
+      <UniqueIdentifier>{41d0ec4a-a6bb-48fb-b324-82731cc1831a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\qml\ftw">
+      <UniqueIdentifier>{8db611be-c4bd-49cb-8bd0-bdfb1716df81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\qml\v8">
+      <UniqueIdentifier>{abb8bd2a-fd4b-4d2a-a60a-c57f3633d2ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\types">
+      <UniqueIdentifier>{90eb94b3-6ba1-43d4-aa51-2c91fbcb7e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{fbff4b62-14c5-4df6-b3ca-0545c12f1349}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+
+    <QtMoc Include="..\5.9.6\QtQml\private\qabstractanimationjob_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qanimationgroupjob_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qanimationjobutil_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qbitfield_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qcontinuinganimationgroupjob_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qdeferredcleanup_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qfieldlist_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qfinitestack_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qflagpointer_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qhashedstring_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qintrusivelist_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qjsengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qjsengine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qjsvalue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qjsvalue_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qjsvalueiterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qjsvalueiterator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qlazilyallocated_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qparallelanimationgroupjob_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qpauseanimationjob_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlabstractbinding_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlabstractprofileradapter_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qqmlabstracturlinterceptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmladaptormodel_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlapplicationengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlapplicationengine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlbind_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlbinding_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlboundsignal_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlboundsignalexpressionpointer_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlchangeset_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcleanup_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlcomponent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcomponent_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlcomponentattached_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlconnections_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qqmlcontext.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcontext_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcustomparser_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldata_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmldebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugconnector_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldebugpluginmanager_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugservice_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugservicefactory_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugserviceinterfaces_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldebugstatesdelegate_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldelayedcallqueue_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldelegatemodel_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldelegatemodel_p_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldirparser_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlengine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlexpression.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlexpression_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlextensioninterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlextensionplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlextensionplugin_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlfileselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlfileselector_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlglobal_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlguard_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlimport_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlincubator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlincubator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlinstantiator_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlinstantiator_p_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlirbuilder_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljavascriptexpression_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsast_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsastfwd_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsastvisitor_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsengine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsglobal_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsgrammar_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljskeywords_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljslexer_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsmemorypool_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsparser_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmllist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllist_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllistaccessor_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllistcompositor_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllistmodel_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllistmodel_p_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllistmodelworkeragent_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllistwrapper_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllocale_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlloggingcategory_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlmemoryprofiler_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlmetatype_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlmodelindexvaluetype_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlmodelsmodule_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlnetworkaccessmanagerfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlnotifier_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlobjectcreator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlobjectmodel_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlopenmetaobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlparserstatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlplatform_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qqmlprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlprofiler_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlprofilerdefinitions_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlproperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlproperty_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertycache_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertycachecreator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertyindex_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlpropertymap.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertyvalidator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertyvalueinterceptor_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlpropertyvaluesource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlproxymetaobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qqmlscriptstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlscriptstring_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlstringconverters_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlthread_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmltimer_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypecompiler_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypeloader_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypenamecache_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmltypenotavailable_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypewrapper_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlvaluetype_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlvaluetypeproxybinding_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlvme_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlvmemetaobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlxmlhttprequest_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qquickpackage_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qquickworkerscript_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qrecursionwatcher_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qrecyclepool_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qsequentialanimationgroupjob_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtqmlglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qtqmlglobal_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4alloca_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4argumentsobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4arraybuffer_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4arraydata_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4arrayobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4assembler_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4binop_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4booleanobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4codegen_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compilationunitmapper_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compileddata_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compiler_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4context_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4dataview_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4dateobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4debugging_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4domerrors_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4engine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4enginebase_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4errorobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4executableallocator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4function_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4functionobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4global_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4globalobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4heap_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4identifier_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4identifiertable_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4include_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4instr_moth_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4internalclass_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_masm_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_moth_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_util_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jsir_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jsonobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jssimplifier_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4lookup_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4managed_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4math_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4mathobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4memberdata_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4mm_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4mmdefs_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4numberobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4object_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4objectiterator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4objectproto_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4persistent_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4profiling_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4property_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4qmlcontext_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4qobjectwrapper_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4regalloc_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4regexp_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4regexpobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4registerinfo_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4runtime_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4runtimeapi_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4scopedvalue_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4script_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4sequenceobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4serialize_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4sparsearray_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4ssa_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4string_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4stringobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4targetplatform_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4typedarray_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4unop_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4util_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4value_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4variantobject_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4vme_moth_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv8engine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\ftw\qpodvector_p.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlbuiltinfunctions_p.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\ftw\qqmlnullablevalue_p.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\ftw\qqmlrefcount_p.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4sqlerrors_p.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Qml_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animations\qabstractanimationjob.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\qanimationgroupjob.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\qcontinuinganimationgroupjob.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\qparallelanimationgroupjob.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\qpauseanimationjob.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\qsequentialanimationgroupjob.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qqmlirbuilder.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qqmlpropertycachecreator.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qqmlpropertyvalidator.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qqmltypecompiler.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4codegen.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4compilationunitmapper.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4compilationunitmapper_win.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4compileddata.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4compiler.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4instr_moth.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4isel_moth.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4isel_p.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4jsir.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4jssimplifier.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\qv4ssa.cpp">
+      <Filter>Source Files\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="debugger\qqmlabstractprofileradapter.cpp">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="debugger\qqmldebug.cpp">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="debugger\qqmldebugconnector.cpp">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="debugger\qqmldebugserviceinterfaces.cpp">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="debugger\qqmlmemoryprofiler.cpp">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="debugger\qqmlprofiler.cpp">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="jit\qv4assembler.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="jit\qv4binop.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="jit\qv4isel_masm.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="jit\qv4regalloc.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="jit\qv4unop.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="jsapi\qjsengine.cpp">
+      <Filter>Source Files\jsapi</Filter>
+    </ClCompile>
+    <ClCompile Include="jsapi\qjsvalue.cpp">
+      <Filter>Source Files\jsapi</Filter>
+    </ClCompile>
+    <ClCompile Include="jsapi\qjsvalueiterator.cpp">
+      <Filter>Source Files\jsapi</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4argumentsobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4arraybuffer.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4arraydata.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4arrayobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4booleanobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4context.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4dataview.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4dateobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4engine.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4errorobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4executableallocator.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4function.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4functionobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4globalobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4identifier.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4identifiertable.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4include.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4internalclass.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4jsonobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4lookup.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4managed.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4mathobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4memberdata.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4numberobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4object.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4objectiterator.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4objectproto.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4persistent.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4profiling.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4qmlcontext.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4qobjectwrapper.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4regexp.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4regexpobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4runtime.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4script.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4sequenceobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4serialize.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4sparsearray.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4string.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4stringobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4typedarray.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4value.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4variantobject.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="jsruntime\qv4vme_moth.cpp">
+      <Filter>Source Files\jsruntime</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\qv4mm.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qqmlchangeset.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qqmllistaccessor.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qqmllistcompositor.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qqmlpropertymap.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmlbind.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmlconnections.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmldelegatemodel.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmlinstantiator.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmllistmodel.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmllistmodelworkeragent.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmlmodelindexvaluetype.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmlmodelsmodule.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmlobjectmodel.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qqmltimer.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\qquickpackage.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\ftw\qhashedstring.cpp">
+      <Filter>Source Files\qml\ftw</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\ftw\qintrusivelist.cpp">
+      <Filter>Source Files\qml\ftw</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\ftw\qqmlthread.cpp">
+      <Filter>Source Files\qml\ftw</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\v8\qqmlbuiltinfunctions.cpp">
+      <Filter>Source Files\qml\v8</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\v8\qv4domerrors.cpp">
+      <Filter>Source Files\qml\v8</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\v8\qv4sqlerrors.cpp">
+      <Filter>Source Files\qml\v8</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\v8\qv8engine.cpp">
+      <Filter>Source Files\qml\v8</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlabstractbinding.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlabstracturlinterceptor.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlapplicationengine.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlbinding.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlboundsignal.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlcleanup.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlcomponent.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlcontext.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlcustomparser.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmldelayedcallqueue.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmldirparser.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlengine.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlerror.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlexpression.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlextensionplugin.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlfileselector.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlglobal.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlimport.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlincubator.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlinfo.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmljavascriptexpression.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmllist.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmllistwrapper.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmllocale.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlloggingcategory.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlmetatype.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlnetworkaccessmanagerfactory.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlnotifier.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlobjectcreator.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlopenmetaobject.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlparserstatus.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlplatform.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlproperty.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlpropertycache.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlpropertyvalueinterceptor.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlpropertyvaluesource.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlproxymetaobject.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlscriptstring.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlstringconverters.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmltypenamecache.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmltypenotavailable.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmltypewrapper.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlvaluetype.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlvaluetypeproxybinding.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlvaluetypewrapper.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlvme.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="qml\qqmlvmemetaobject.cpp">
+      <Filter>Source Files\qml</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qqmljsast.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qqmljsastvisitor.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qqmljsengine_p.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qqmljsgrammar.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qqmljslexer.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\qqmljsparser.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="debugger\qqmldebugservice.cpp">
+      <Filter>Source Files\debugger</Filter>
+    </QtMoc>
+    <QtMoc Include="util\qqmladaptormodel.cpp">
+      <Filter>Source Files\util</Filter>
+    </QtMoc>
+    <QtMoc Include="types\qquickworkerscript.cpp">
+      <Filter>Source Files\types</Filter>
+    </QtMoc>
+    <QtMoc Include="qml\qqmlfile.cpp">
+      <Filter>Source Files\qml</Filter>
+    </QtMoc>
+    <QtMoc Include="qml\qqmltypeloader.cpp">
+      <Filter>Source Files\qml</Filter>
+    </QtMoc>
+    <QtMoc Include="qml\qqmlxmlhttprequest.cpp">
+      <Filter>Source Files\qml</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

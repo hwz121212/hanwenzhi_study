@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE050CCF-E182-4198-AF14-BFDFCC8478FF}</ProjectGuid>
+    <RootNamespace>Qt5XmlPatterns</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;acceltree;data;api;environment;expr;functions;iterators;janitors;parser;schema;type;utils;..\..\..\include;..\..\..\include\QtXmlPatterns;..\..\..\include\QtXmlPatterns\5.9.6;..\..\..\include\QtXmlPatterns\5.9.6\QtXmlPatterns;..\..\..\include\QtXmlPatterns\5.9.6\QtXmlPatterns\private;..\..\..\include\QtXml;..\..\..\include\QtXml\5.9.6;..\..\..\include\QtXml\5.9.6\QtXml;..\..\..\include\QtXml\5.9.6\QtXml\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtNetwork</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_ENABLE_QEXPLICITLYSHAREDDATAPOINTER_STATICCAST;YYLTYPE_IS_DECLARED=1;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_XMLPATTERNS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Xml.lib;Qt5Network.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_ENABLE_QEXPLICITLYSHAREDDATAPOINTER_STATICCAST;YYLTYPE_IS_DECLARED=1;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_XMLPATTERNS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_DEBUG;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>builtinschemas</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;acceltree;data;api;environment;expr;functions;iterators;janitors;parser;schema;type;utils;..\..\..\include;..\..\..\include\QtXmlPatterns;..\..\..\include\QtXmlPatterns\5.9.6;..\..\..\include\QtXmlPatterns\5.9.6\QtXmlPatterns;..\..\..\include\QtXmlPatterns\5.9.6\QtXmlPatterns\private;..\..\..\include\QtXml;..\..\..\include\QtXml\5.9.6;..\..\..\include\QtXml\5.9.6\QtXml;..\..\..\include\QtXml\5.9.6\QtXml\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtNetwork</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_ENABLE_QEXPLICITLYSHAREDDATAPOINTER_STATICCAST;YYLTYPE_IS_DECLARED=1;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_XMLPATTERNS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Xml.lib;Qt5Network.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_USING_NAMESPACE;QT_ENABLE_QEXPLICITLYSHAREDDATAPOINTER_STATICCAST;YYLTYPE_IS_DECLARED=1;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_XMLPATTERNS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>builtinschemas</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtRcc Include="schema\builtinschemas.qrc">
+    </QtRcc>
+    <None Include="schema\schemas\xml.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5XmlPatterns_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractdatetime_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractduration_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatcasters_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatcasters_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatmathematician_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloatmathematician_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloat_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfloat_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractfunctionfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractnodetest_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlforwarditerator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlnodemodel_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlpullprovider_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qabstractxmlreceiver_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceliterators_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltreebuilder_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltreebuilder_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltreeresourceloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qacceltree_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaccessorfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaggregatefns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaggregator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qandexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanyitemtype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanynodetype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanysimpletype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanytype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qanyuri_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qapplytemplate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qargumentconverter_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qargumentreference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qarithmeticexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qassemblestringfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccasterlocators_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccasterlocator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccasters_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccaster_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparatorlocators_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparatorlocator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparators_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomiccomparator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematicianlocators_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematicianlocator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematicians_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicmathematician_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomicstring_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomictypedispatch_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomictype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qatomizer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qattributeconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qattributenamevalidator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qautoptr_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qaxisstep_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbase64binary_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbasictypesfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbooleanfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qboolean_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinatomictypes_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinatomictype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinnodetype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltinnodetype_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qbuiltintypes_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcachecells_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcachingiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcallsite_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcalltargetdescription_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcalltemplate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcardinalityverifier_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcardinality_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastableas_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastas_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastingplatform_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcastingplatform_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcollationchecker_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcoloringmessagehandler_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcoloroutput_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcombinenodes_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommentconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommonnamespaces_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommonsequencetypes_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcommonvalues_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparescaseaware_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparestringfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparingaggregator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparingaggregator_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparisonfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparisonplatform_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomparisonplatform_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcompressedwhitespace_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcomputednamespaceconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qconstructorfunctionsfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcontextfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcontextitem_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcontextnodechecker_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcopyof_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcppcastinghelper_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcurrentfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcurrentitemcontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qcurrentitemstore_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdatetimefns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdatetimefns_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdatetimefn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdaytimeduration_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdecimal_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdeduplicateiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdeepequalfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdelegatingdynamiccontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdelegatingnamespaceresolver_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdelegatingstaticcontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qderivedinteger_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qderivedstring_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdeviceresourceloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdistinctiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentcontentvalidator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdocumentprojector_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qduration_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdynamiccontextstore_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qdynamiccontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qebvextractor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qebvtype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qelementavailablefn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qelementconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptycontainer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptyiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptysequencetype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qemptysequence_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qerrorfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qevaluationcache_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qevaluationcache_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexceptiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressiondispatch_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressionfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressionsequence_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpressionvariablereference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexternalvariableloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qexternalvariablereference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfirstitempredicate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfocus_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qforclause_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionargument_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionavailablefn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctioncall_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionfactorycollection_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qfunctionsignature_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgday_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgeneralcomparison_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenerateidfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericdynamiccontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericnamespaceresolver_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericpredicate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericsequencetype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgenericstaticcontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgmonthday_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgmonth_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgyearmonth_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qgyear_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qhexbinary_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qifthenclause_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qindexofiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qinsertioniterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qinstanceof_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qinteger_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qintersectiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitemmappingiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitemtype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitemverifier_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qitem_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qletclause_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qliteralsequence_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qliteral_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qlocalnametest_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qmaintainingreader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qmaintainingreader_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qmultiitemtype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamedschemacomponent_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamepool_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespacebinding_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespaceconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespacenametest_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespaceresolver_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnamespacesupport_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qncnameconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnetworkaccessdelegator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodebuilder_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodecomparison_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodefns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodenamespaceresolver_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnodesort_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnonetype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnumericfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qnumerictype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoperandsiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoptimizationpasses_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoptimizerblocks_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoptimizerframework_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qorderby_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qorexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qoutputvalidator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpaircontainer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qparentnodeaxis_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qparsercontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpath_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpatternistlocale_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpatternmatchingfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpatternplatform_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpositionalvariablereference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qprimitives_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qprocessinginstructionconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qprojectedexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qpullbridge_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnameconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnamefns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnametest_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qqnamevalue_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qquantifiedexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qquerytransformparser_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qrangeexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qrangeiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qrangevariablereference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreceiverdynamiccontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreferencecountedvalue_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qremovaliterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreportcontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qresolveurifn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qresourcedelegator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qresourceloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qreturnorderby_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschemacomponent_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschemadatetime_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschemanumeric_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschematime_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschematypefactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qschematype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencefns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencegeneratingfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencemappingiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencereceiver_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsequencetype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsimplecontentconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsinglecontainer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsingletoniterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsorttuple_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsourcelocationreflection_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstackcontextbase_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstackcontextbase_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticbaseuricontainer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticbaseuricontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticbaseuristore_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcompatibilitycontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcompatibilitystore_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticcurrentcontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticfocuscontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticnamespacecontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstaticnamespacescontainer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qstringvaluefns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsubsequenceiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsubstringfns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qsystempropertyfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplateinvoker_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplatemode_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplateparameterreference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplatepattern_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtemplate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtextnodeconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtimezonefns_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtocodepointsiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokenizer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokenrevealer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokensource_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtokenvalue_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtracefn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtreatas_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtriplecontainer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtruthpredicate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtxmlpatterns-config_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtypeavailablefn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qtypechecker_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunaryexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunioniterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunlimitedcontainer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedentitypublicidfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedentityurifn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedtextavailablefn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunparsedtextfn_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qunresolvedvariablereference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quntypedatomicconverter_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quntypedatomic_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quntyped_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quriloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quserfunctioncallsite_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\quserfunction_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvalidate_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvalidationerror_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvaluecomparison_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvaluefactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvariabledeclaration_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvariableloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qvariablereference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qwithparam_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmldebug_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlpatternistcli_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlquery_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlresultitems_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlschemavalidator_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlschema_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxmlserializer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxpath10corefunctions_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxpath20corefunctions_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxpathhelper_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxquerytokenizer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdalternative_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdannotated_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdannotation_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdapplicationinformation_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdassertion_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributegroup_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributereference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributeterm_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattributeuse_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdattribute_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdcomplextype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsddocumentation_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdelement_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdfacet_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdidcache_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdidchelper_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdidentityconstraint_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdinstancereader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdmodelgroup_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdnotation_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdparticlechecker_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdparticle_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdreference_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemachecker_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemacontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemadebugger_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemahelper_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemamerger_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemaparsercontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemaparser_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschemaresolver_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschematoken_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschematypesfactory_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdschema_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdsimpletype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdstatemachinebuilder_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdstatemachine_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdstatemachine_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdterm_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdtypechecker_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsduserschematype_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsduserschematype_tpl_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdvalidatedxmlnodemodel_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdvalidatinginstancereader_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdwildcard_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsdxpathexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxslt20corefunctions_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsltnodetest_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxsltsimplecontentconstructor_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxslttokenizer_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qxslttokenlookup_p.h" />
+    <ClInclude Include="..\5.9.6\QtXmlPatterns\private\qyearmonthduration_p.h" />
+    <ClInclude Include="..\qabstractxmlnodemodel.h" />
+    <ClInclude Include="..\qabstractxmlreceiver.h" />
+    <ClInclude Include="..\qsimplexmlnodemodel.h" />
+    <ClInclude Include="..\qsourcelocation.h" />
+    <ClInclude Include="..\qtxmlpatterns-config.h" />
+    <ClInclude Include="..\qtxmlpatternsglobal.h" />
+    <ClInclude Include="..\qtxmlpatternsversion.h" />
+    <ClInclude Include="..\qxmlformatter.h" />
+    <ClInclude Include="..\qxmlname.h" />
+    <ClInclude Include="..\qxmlnamepool.h" />
+    <ClInclude Include="..\qxmlquery.h" />
+    <ClInclude Include="..\qxmlresultitems.h" />
+    <ClInclude Include="..\qxmlschema.h" />
+    <ClInclude Include="..\qxmlschemavalidator.h" />
+    <ClInclude Include="..\qxmlserializer.h" />
+    <QtMoc Include="..\qabstracturiresolver.h" />
+    <QtMoc Include="..\qabstractmessagehandler.h" />
+    <QtMoc Include="..\5.9.6\QtXmlPatterns\private\qiodevicedelegate_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acceltree\qacceliterators.cpp" />
+    <ClCompile Include="acceltree\qacceltree.cpp" />
+    <ClCompile Include="acceltree\qacceltreeresourceloader.cpp" />
+    <ClCompile Include="acceltree\qcompressedwhitespace.cpp" />
+    <ClCompile Include="api\qabstractmessagehandler.cpp" />
+    <ClCompile Include="api\qabstracturiresolver.cpp" />
+    <ClCompile Include="api\qabstractxmlforwarditerator.cpp" />
+    <ClCompile Include="api\qabstractxmlnodemodel.cpp" />
+    <ClCompile Include="api\qabstractxmlpullprovider.cpp" />
+    <ClCompile Include="api\qabstractxmlreceiver.cpp" />
+    <ClCompile Include="api\qcoloringmessagehandler.cpp" />
+    <ClCompile Include="api\qcoloroutput.cpp" />
+    <ClCompile Include="api\qiodevicedelegate.cpp" />
+    <ClCompile Include="api\qnetworkaccessdelegator.cpp" />
+    <ClCompile Include="api\qpullbridge.cpp" />
+    <ClCompile Include="api\qresourcedelegator.cpp" />
+    <ClCompile Include="api\qsimplexmlnodemodel.cpp" />
+    <ClCompile Include="api\qsourcelocation.cpp" />
+    <ClCompile Include="api\quriloader.cpp" />
+    <ClCompile Include="api\qvariableloader.cpp" />
+    <ClCompile Include="api\qxmlformatter.cpp" />
+    <ClCompile Include="api\qxmlname.cpp" />
+    <ClCompile Include="api\qxmlnamepool.cpp" />
+    <ClCompile Include="api\qxmlquery.cpp" />
+    <ClCompile Include="api\qxmlresultitems.cpp" />
+    <ClCompile Include="api\qxmlschema.cpp" />
+    <ClCompile Include="api\qxmlschemavalidator.cpp" />
+    <ClCompile Include="api\qxmlschema_p.cpp" />
+    <ClCompile Include="api\qxmlserializer.cpp" />
+    <ClCompile Include="data\qabstractdatetime.cpp" />
+    <ClCompile Include="data\qabstractduration.cpp" />
+    <ClCompile Include="data\qanyuri.cpp" />
+    <ClCompile Include="data\qatomiccaster.cpp" />
+    <ClCompile Include="data\qatomiccasters.cpp" />
+    <ClCompile Include="data\qatomiccomparator.cpp" />
+    <ClCompile Include="data\qatomiccomparators.cpp" />
+    <ClCompile Include="data\qatomicmathematician.cpp" />
+    <ClCompile Include="data\qatomicmathematicians.cpp" />
+    <ClCompile Include="data\qatomicstring.cpp" />
+    <ClCompile Include="data\qatomicvalue.cpp" />
+    <ClCompile Include="data\qbase64binary.cpp" />
+    <ClCompile Include="data\qboolean.cpp" />
+    <ClCompile Include="data\qcommonvalues.cpp" />
+    <ClCompile Include="data\qcomparisonfactory.cpp" />
+    <ClCompile Include="data\qdate.cpp" />
+    <ClCompile Include="data\qdaytimeduration.cpp" />
+    <ClCompile Include="data\qdecimal.cpp" />
+    <ClCompile Include="data\qduration.cpp" />
+    <ClCompile Include="data\qgday.cpp" />
+    <ClCompile Include="data\qgmonth.cpp" />
+    <ClCompile Include="data\qgmonthday.cpp" />
+    <ClCompile Include="data\qgyear.cpp" />
+    <ClCompile Include="data\qgyearmonth.cpp" />
+    <ClCompile Include="data\qhexbinary.cpp" />
+    <ClCompile Include="data\qinteger.cpp" />
+    <ClCompile Include="data\qitem.cpp" />
+    <ClCompile Include="data\qnodebuilder.cpp" />
+    <ClCompile Include="data\qnodemodel.cpp" />
+    <ClCompile Include="data\qqnamevalue.cpp" />
+    <ClCompile Include="data\qresourceloader.cpp" />
+    <ClCompile Include="data\qschemadatetime.cpp" />
+    <ClCompile Include="data\qschemanumeric.cpp" />
+    <ClCompile Include="data\qschematime.cpp" />
+    <ClCompile Include="data\qsorttuple.cpp" />
+    <ClCompile Include="data\quntypedatomic.cpp" />
+    <ClCompile Include="data\qvalidationerror.cpp" />
+    <ClCompile Include="data\qvaluefactory.cpp" />
+    <ClCompile Include="data\qyearmonthduration.cpp" />
+    <ClCompile Include="environment\qcurrentitemcontext.cpp" />
+    <ClCompile Include="environment\qdelegatingdynamiccontext.cpp" />
+    <ClCompile Include="environment\qdelegatingstaticcontext.cpp" />
+    <ClCompile Include="environment\qdynamiccontext.cpp" />
+    <ClCompile Include="environment\qfocus.cpp" />
+    <ClCompile Include="environment\qgenericdynamiccontext.cpp" />
+    <ClCompile Include="environment\qgenericstaticcontext.cpp" />
+    <ClCompile Include="environment\qreceiverdynamiccontext.cpp" />
+    <ClCompile Include="environment\qreportcontext.cpp" />
+    <ClCompile Include="environment\qstaticbaseuricontext.cpp" />
+    <ClCompile Include="environment\qstaticcompatibilitycontext.cpp" />
+    <ClCompile Include="environment\qstaticcontext.cpp" />
+    <ClCompile Include="environment\qstaticcurrentcontext.cpp" />
+    <ClCompile Include="environment\qstaticfocuscontext.cpp" />
+    <ClCompile Include="environment\qstaticnamespacecontext.cpp" />
+    <ClCompile Include="expr\qandexpression.cpp" />
+    <ClCompile Include="expr\qapplytemplate.cpp" />
+    <ClCompile Include="expr\qargumentreference.cpp" />
+    <ClCompile Include="expr\qarithmeticexpression.cpp" />
+    <ClCompile Include="expr\qattributeconstructor.cpp" />
+    <ClCompile Include="expr\qattributenamevalidator.cpp" />
+    <ClCompile Include="expr\qaxisstep.cpp" />
+    <ClCompile Include="expr\qcallsite.cpp" />
+    <ClCompile Include="expr\qcalltargetdescription.cpp" />
+    <ClCompile Include="expr\qcalltemplate.cpp" />
+    <ClCompile Include="expr\qcastableas.cpp" />
+    <ClCompile Include="expr\qcastas.cpp" />
+    <ClCompile Include="expr\qcollationchecker.cpp" />
+    <ClCompile Include="expr\qcombinenodes.cpp" />
+    <ClCompile Include="expr\qcommentconstructor.cpp" />
+    <ClCompile Include="expr\qcomputednamespaceconstructor.cpp" />
+    <ClCompile Include="expr\qcontextitem.cpp" />
+    <ClCompile Include="expr\qcopyof.cpp" />
+    <ClCompile Include="expr\qcurrentitemstore.cpp" />
+    <ClCompile Include="expr\qdocumentconstructor.cpp" />
+    <ClCompile Include="expr\qdocumentcontentvalidator.cpp" />
+    <ClCompile Include="expr\qdynamiccontextstore.cpp" />
+    <ClCompile Include="expr\qelementconstructor.cpp" />
+    <ClCompile Include="expr\qemptycontainer.cpp" />
+    <ClCompile Include="expr\qemptysequence.cpp" />
+    <ClCompile Include="expr\qexpression.cpp" />
+    <ClCompile Include="expr\qexpressionfactory.cpp" />
+    <ClCompile Include="expr\qexpressionsequence.cpp" />
+    <ClCompile Include="expr\qexpressionvariablereference.cpp" />
+    <ClCompile Include="expr\qexternalvariableloader.cpp" />
+    <ClCompile Include="expr\qexternalvariablereference.cpp" />
+    <ClCompile Include="expr\qfirstitempredicate.cpp" />
+    <ClCompile Include="expr\qforclause.cpp" />
+    <ClCompile Include="expr\qgeneralcomparison.cpp" />
+    <ClCompile Include="expr\qgenericpredicate.cpp" />
+    <ClCompile Include="expr\qifthenclause.cpp" />
+    <ClCompile Include="expr\qinstanceof.cpp" />
+    <ClCompile Include="expr\qletclause.cpp" />
+    <ClCompile Include="expr\qliteral.cpp" />
+    <ClCompile Include="expr\qliteralsequence.cpp" />
+    <ClCompile Include="expr\qnamespaceconstructor.cpp" />
+    <ClCompile Include="expr\qncnameconstructor.cpp" />
+    <ClCompile Include="expr\qnodecomparison.cpp" />
+    <ClCompile Include="expr\qnodesort.cpp" />
+    <ClCompile Include="expr\qoptimizationpasses.cpp" />
+    <ClCompile Include="expr\qoptimizerblocks.cpp" />
+    <ClCompile Include="expr\qoptimizerframework.cpp" />
+    <ClCompile Include="expr\qorderby.cpp" />
+    <ClCompile Include="expr\qorexpression.cpp" />
+    <ClCompile Include="expr\qpaircontainer.cpp" />
+    <ClCompile Include="expr\qparentnodeaxis.cpp" />
+    <ClCompile Include="expr\qpath.cpp" />
+    <ClCompile Include="expr\qpositionalvariablereference.cpp" />
+    <ClCompile Include="expr\qprocessinginstructionconstructor.cpp" />
+    <ClCompile Include="expr\qqnameconstructor.cpp" />
+    <ClCompile Include="expr\qquantifiedexpression.cpp" />
+    <ClCompile Include="expr\qrangeexpression.cpp" />
+    <ClCompile Include="expr\qrangevariablereference.cpp" />
+    <ClCompile Include="expr\qreturnorderby.cpp" />
+    <ClCompile Include="expr\qsimplecontentconstructor.cpp" />
+    <ClCompile Include="expr\qsinglecontainer.cpp" />
+    <ClCompile Include="expr\qsourcelocationreflection.cpp" />
+    <ClCompile Include="expr\qstaticbaseuristore.cpp" />
+    <ClCompile Include="expr\qstaticcompatibilitystore.cpp" />
+    <ClCompile Include="expr\qtemplate.cpp" />
+    <ClCompile Include="expr\qtemplateinvoker.cpp" />
+    <ClCompile Include="expr\qtemplatemode.cpp" />
+    <ClCompile Include="expr\qtemplateparameterreference.cpp" />
+    <ClCompile Include="expr\qtextnodeconstructor.cpp" />
+    <ClCompile Include="expr\qtreatas.cpp" />
+    <ClCompile Include="expr\qtriplecontainer.cpp" />
+    <ClCompile Include="expr\qtruthpredicate.cpp" />
+    <ClCompile Include="expr\qunaryexpression.cpp" />
+    <ClCompile Include="expr\qunlimitedcontainer.cpp" />
+    <ClCompile Include="expr\qunresolvedvariablereference.cpp" />
+    <ClCompile Include="expr\quserfunction.cpp" />
+    <ClCompile Include="expr\quserfunctioncallsite.cpp" />
+    <ClCompile Include="expr\qvalidate.cpp" />
+    <ClCompile Include="expr\qvaluecomparison.cpp" />
+    <ClCompile Include="expr\qvariabledeclaration.cpp" />
+    <ClCompile Include="expr\qvariablereference.cpp" />
+    <ClCompile Include="expr\qxsltsimplecontentconstructor.cpp" />
+    <ClCompile Include="functions\qabstractfunctionfactory.cpp" />
+    <ClCompile Include="functions\qaccessorfns.cpp" />
+    <ClCompile Include="functions\qaggregatefns.cpp" />
+    <ClCompile Include="functions\qaggregator.cpp" />
+    <ClCompile Include="functions\qassemblestringfns.cpp" />
+    <ClCompile Include="functions\qbooleanfns.cpp" />
+    <ClCompile Include="functions\qcomparescaseaware.cpp" />
+    <ClCompile Include="functions\qcomparestringfns.cpp" />
+    <ClCompile Include="functions\qconstructorfunctionsfactory.cpp" />
+    <ClCompile Include="functions\qcontextfns.cpp" />
+    <ClCompile Include="functions\qcontextnodechecker.cpp" />
+    <ClCompile Include="functions\qcurrentfn.cpp" />
+    <ClCompile Include="functions\qdatetimefn.cpp" />
+    <ClCompile Include="functions\qdeepequalfn.cpp" />
+    <ClCompile Include="functions\qdocumentfn.cpp" />
+    <ClCompile Include="functions\qelementavailablefn.cpp" />
+    <ClCompile Include="functions\qerrorfn.cpp" />
+    <ClCompile Include="functions\qfunctionargument.cpp" />
+    <ClCompile Include="functions\qfunctionavailablefn.cpp" />
+    <ClCompile Include="functions\qfunctioncall.cpp" />
+    <ClCompile Include="functions\qfunctionfactory.cpp" />
+    <ClCompile Include="functions\qfunctionfactorycollection.cpp" />
+    <ClCompile Include="functions\qfunctionsignature.cpp" />
+    <ClCompile Include="functions\qgenerateidfn.cpp" />
+    <ClCompile Include="functions\qnodefns.cpp" />
+    <ClCompile Include="functions\qnumericfns.cpp" />
+    <ClCompile Include="functions\qpatternmatchingfns.cpp" />
+    <ClCompile Include="functions\qpatternplatform.cpp" />
+    <ClCompile Include="functions\qqnamefns.cpp" />
+    <ClCompile Include="functions\qresolveurifn.cpp" />
+    <ClCompile Include="functions\qsequencefns.cpp" />
+    <ClCompile Include="functions\qsequencegeneratingfns.cpp" />
+    <ClCompile Include="functions\qstaticnamespacescontainer.cpp" />
+    <ClCompile Include="functions\qstringvaluefns.cpp" />
+    <ClCompile Include="functions\qsubstringfns.cpp" />
+    <ClCompile Include="functions\qsystempropertyfn.cpp" />
+    <ClCompile Include="functions\qtimezonefns.cpp" />
+    <ClCompile Include="functions\qtracefn.cpp" />
+    <ClCompile Include="functions\qtypeavailablefn.cpp" />
+    <ClCompile Include="functions\qunparsedentitypublicidfn.cpp" />
+    <ClCompile Include="functions\qunparsedentityurifn.cpp" />
+    <ClCompile Include="functions\qunparsedtextavailablefn.cpp" />
+    <ClCompile Include="functions\qunparsedtextfn.cpp" />
+    <ClCompile Include="functions\qxpath10corefunctions.cpp" />
+    <ClCompile Include="functions\qxpath20corefunctions.cpp" />
+    <ClCompile Include="functions\qxslt20corefunctions.cpp" />
+    <ClCompile Include="iterators\qcachingiterator.cpp" />
+    <ClCompile Include="iterators\qdeduplicateiterator.cpp" />
+    <ClCompile Include="iterators\qdistinctiterator.cpp" />
+    <ClCompile Include="iterators\qexceptiterator.cpp" />
+    <ClCompile Include="iterators\qindexofiterator.cpp" />
+    <ClCompile Include="iterators\qinsertioniterator.cpp" />
+    <ClCompile Include="iterators\qintersectiterator.cpp" />
+    <ClCompile Include="iterators\qrangeiterator.cpp" />
+    <ClCompile Include="iterators\qremovaliterator.cpp" />
+    <ClCompile Include="iterators\qsubsequenceiterator.cpp" />
+    <ClCompile Include="iterators\qtocodepointsiterator.cpp" />
+    <ClCompile Include="iterators\qunioniterator.cpp" />
+    <ClCompile Include="janitors\qargumentconverter.cpp" />
+    <ClCompile Include="janitors\qatomizer.cpp" />
+    <ClCompile Include="janitors\qcardinalityverifier.cpp" />
+    <ClCompile Include="janitors\qebvextractor.cpp" />
+    <ClCompile Include="janitors\qitemverifier.cpp" />
+    <ClCompile Include="janitors\quntypedatomicconverter.cpp" />
+    <ClCompile Include="parser\qparsercontext.cpp" />
+    <ClCompile Include="parser\qquerytransformparser.cpp" />
+    <ClCompile Include="parser\qtokenrevealer.cpp" />
+    <ClCompile Include="parser\qtokensource.cpp" />
+    <ClCompile Include="parser\qxquerytokenizer.cpp" />
+    <ClCompile Include="parser\qxslttokenizer.cpp" />
+    <ClCompile Include="parser\qxslttokenlookup.cpp" />
+    <ClCompile Include="projection\qdocumentprojector.cpp" />
+    <ClCompile Include="schema\qnamespacesupport.cpp" />
+    <ClCompile Include="schema\qxsdalternative.cpp" />
+    <ClCompile Include="schema\qxsdannotated.cpp" />
+    <ClCompile Include="schema\qxsdannotation.cpp" />
+    <ClCompile Include="schema\qxsdapplicationinformation.cpp" />
+    <ClCompile Include="schema\qxsdassertion.cpp" />
+    <ClCompile Include="schema\qxsdattribute.cpp" />
+    <ClCompile Include="schema\qxsdattributegroup.cpp" />
+    <ClCompile Include="schema\qxsdattributereference.cpp" />
+    <ClCompile Include="schema\qxsdattributeterm.cpp" />
+    <ClCompile Include="schema\qxsdattributeuse.cpp" />
+    <ClCompile Include="schema\qxsdcomplextype.cpp" />
+    <ClCompile Include="schema\qxsddocumentation.cpp" />
+    <ClCompile Include="schema\qxsdelement.cpp" />
+    <ClCompile Include="schema\qxsdfacet.cpp" />
+    <ClCompile Include="schema\qxsdidcache.cpp" />
+    <ClCompile Include="schema\qxsdidchelper.cpp" />
+    <ClCompile Include="schema\qxsdidentityconstraint.cpp" />
+    <ClCompile Include="schema\qxsdinstancereader.cpp" />
+    <ClCompile Include="schema\qxsdmodelgroup.cpp" />
+    <ClCompile Include="schema\qxsdnotation.cpp" />
+    <ClCompile Include="schema\qxsdparticle.cpp" />
+    <ClCompile Include="schema\qxsdparticlechecker.cpp" />
+    <ClCompile Include="schema\qxsdreference.cpp" />
+    <ClCompile Include="schema\qxsdschema.cpp" />
+    <ClCompile Include="schema\qxsdschemachecker.cpp" />
+    <ClCompile Include="schema\qxsdschemachecker_setup.cpp" />
+    <ClCompile Include="schema\qxsdschemacontext.cpp" />
+    <ClCompile Include="schema\qxsdschemadebugger.cpp" />
+    <ClCompile Include="schema\qxsdschemahelper.cpp" />
+    <ClCompile Include="schema\qxsdschemamerger.cpp" />
+    <ClCompile Include="schema\qxsdschemaparser.cpp" />
+    <ClCompile Include="schema\qxsdschemaparsercontext.cpp" />
+    <ClCompile Include="schema\qxsdschemaparser_setup.cpp" />
+    <ClCompile Include="schema\qxsdschemaresolver.cpp" />
+    <ClCompile Include="schema\qxsdschematoken.cpp" />
+    <ClCompile Include="schema\qxsdschematypesfactory.cpp" />
+    <ClCompile Include="schema\qxsdsimpletype.cpp" />
+    <ClCompile Include="schema\qxsdstatemachinebuilder.cpp" />
+    <ClCompile Include="schema\qxsdterm.cpp" />
+    <ClCompile Include="schema\qxsdtypechecker.cpp" />
+    <ClCompile Include="schema\qxsdvalidatedxmlnodemodel.cpp" />
+    <ClCompile Include="schema\qxsdvalidatinginstancereader.cpp" />
+    <ClCompile Include="schema\qxsdwildcard.cpp" />
+    <ClCompile Include="schema\qxsdxpathexpression.cpp" />
+    <ClCompile Include="type\qabstractnodetest.cpp" />
+    <ClCompile Include="type\qanyitemtype.cpp" />
+    <ClCompile Include="type\qanynodetype.cpp" />
+    <ClCompile Include="type\qanysimpletype.cpp" />
+    <ClCompile Include="type\qanytype.cpp" />
+    <ClCompile Include="type\qatomiccasterlocator.cpp" />
+    <ClCompile Include="type\qatomiccomparatorlocator.cpp" />
+    <ClCompile Include="type\qatomicmathematicianlocator.cpp" />
+    <ClCompile Include="type\qatomictype.cpp" />
+    <ClCompile Include="type\qbasictypesfactory.cpp" />
+    <ClCompile Include="type\qbuiltinatomictype.cpp" />
+    <ClCompile Include="type\qbuiltinatomictypes.cpp" />
+    <ClCompile Include="type\qcardinality.cpp" />
+    <ClCompile Include="type\qcommonsequencetypes.cpp" />
+    <ClCompile Include="type\qebvtype.cpp" />
+    <ClCompile Include="type\qemptysequencetype.cpp" />
+    <ClCompile Include="type\qgenericsequencetype.cpp" />
+    <ClCompile Include="type\qitemtype.cpp" />
+    <ClCompile Include="type\qlocalnametest.cpp" />
+    <ClCompile Include="type\qmultiitemtype.cpp" />
+    <ClCompile Include="type\qnamedschemacomponent.cpp" />
+    <ClCompile Include="type\qnamespacenametest.cpp" />
+    <ClCompile Include="type\qnonetype.cpp" />
+    <ClCompile Include="type\qnumerictype.cpp" />
+    <ClCompile Include="type\qqnametest.cpp" />
+    <ClCompile Include="type\qschemacomponent.cpp" />
+    <ClCompile Include="type\qschematype.cpp" />
+    <ClCompile Include="type\qschematypefactory.cpp" />
+    <ClCompile Include="type\qsequencetype.cpp" />
+    <ClCompile Include="type\qtypechecker.cpp" />
+    <ClCompile Include="type\quntyped.cpp" />
+    <ClCompile Include="type\qxsltnodetest.cpp" />
+    <ClCompile Include="utils\qautoptr.cpp" />
+    <ClCompile Include="utils\qdelegatingnamespaceresolver.cpp" />
+    <ClCompile Include="utils\qgenericnamespaceresolver.cpp" />
+    <ClCompile Include="utils\qnamepool.cpp" />
+    <ClCompile Include="utils\qnamespaceresolver.cpp" />
+    <ClCompile Include="utils\qnodenamespaceresolver.cpp" />
+    <ClCompile Include="utils\qoutputvalidator.cpp" />
+    <ClCompile Include="utils\qpatternistlocale.cpp" />
+    <ClCompile Include="utils\qxpathhelper.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

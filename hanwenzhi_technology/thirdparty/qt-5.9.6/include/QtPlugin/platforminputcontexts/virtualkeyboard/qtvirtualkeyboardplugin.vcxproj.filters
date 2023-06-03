@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abstractinputmethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="abstractinputpanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="appinputpanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="defaultinputmethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktopinputpanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktopinputselectioncontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enterkeyaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enterkeyactionattachedtype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputmethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputselectionhandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plaininputmethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platforminputcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="selectionlistmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shadowinputcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shifthandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="virtualkeyboardsettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="abstractinputmethod.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="abstractinputpanel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="appinputpanel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="defaultinputmethod.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="desktopinputpanel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="desktopinputselectioncontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="enterkeyaction.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="enterkeyactionattachedtype.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inputcontext.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inputengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inputmethod.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inputselectionhandle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inputview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="plaininputmethod.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="platforminputcontext.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="plugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="selectionlistmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="settings.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="shadowinputcontext.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="shifthandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="trace.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="virtualkeyboarddebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="virtualkeyboardsettings.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\components\AlternativeKeys.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\BackspaceKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\BaseKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\ChangeLanguageKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\CharacterPreviewBubble.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\EnterKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\FillerKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\HandwritingInputPanel.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\HandwritingModeKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\HideKeyboardKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\InputPanel.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\Key.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\Keyboard.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\KeyboardColumn.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\KeyboardLayout.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\KeyboardLayoutLoader.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\KeyboardRow.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\LanguagePopupList.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\ModeKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\MultiSoundEffect.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\MultitapInputMethod.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\NumberKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\SelectionControl.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\ShadowInputControl.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\ShiftKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\SpaceKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\SymbolModeKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\TraceInputArea.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\TraceInputKey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\components\WordCandidatePopupList.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\backspace-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\backspace-c5a96f.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\check-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\check-c5a96f.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="content\content.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="content\styles\default\default_style.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="content\layouts\en_GB\dialpad.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\layouts\en_GB\digits.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\enter-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\enter-c5a96f.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\globe-110b05.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\globe-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\handwriting-110b05.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\handwriting-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\layouts\en_GB\handwriting.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\hidekeyboard-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\hidekeyboard-c5a96f.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_black.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_black_long.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_capslock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_capslock_long.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_colorA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_colorA.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_colorA_long.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_colorB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_shiftcase.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key154px_shiftcase_long.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key156px_black_long.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key156px_black_medium_long.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key156px_colorA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key156px_colorB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key160px_black.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key160px_colorA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key160px_colorB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\key_preview.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="layouts.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="content\layouts\en_GB\main.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\layouts\en_GB\numbers.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="content\styles\retro\retro_style.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="content\styles\default\images\search-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\search-c5a96f.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\selectionhandle-bottom.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\selectionhandle-bottom.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\shift-80c342.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\shift-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\shift-c5a96f.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\shift-c5d6b6.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\shift-cd8865.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\shift-dc4f28.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\style.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\style.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\layouts\en_GB\symbols.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\textmode-110b05.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\default\images\textmode-868482.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\triangle_black.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="content\styles\retro\images\triangle_highlight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtvirtualkeyboardplugin_resource.rc" />
+  </ItemGroup>
+</Project>

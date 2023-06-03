@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\windows\accessible\comutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\accessible\iaccessible2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwin10helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\accessible\qwindowsaccessibility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsclipboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowscontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowscursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dbackingstore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dbitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2ddevicecontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dintegration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dnativeinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dpaintdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dpaintengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dplatformpixmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsdrag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowseglcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsinputcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsintegration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsinternalmimedata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowskeymapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsmime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsmousehandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\accessible\qwindowsmsaaaccessible.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsnativeinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsopengltester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsscreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsservices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowssessionmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowstabletsupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowstheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowswindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsglcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwindowsdirect2dplatformplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\qwindowsdialoghelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\windows\accessible\comutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\accessible\iaccessible2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qtwindowsglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\accessible\qwindowsaccessibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsclipboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowscontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowscursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dbackingstore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dbitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dcontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2ddevicecontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dhelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dintegration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qwindowsdirect2dnativeinterface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qwindowsdirect2dpaintdevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dpaintengine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dplatformpixmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qwindowsdirect2dwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsdrag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowseglcontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\windows\qwindowsinputcontext.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\windows\qwindowsintegration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsinternalmimedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowskeymapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsmime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsmousehandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\accessible\qwindowsmsaaaccessible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\windows\qwindowsnativeinterface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\windows\qwindowsole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsopenglcontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsopengltester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsscreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsservices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowssessionmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowstabletsupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowstheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsthreadpoolrunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowswindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\qwindowsglcontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\windows\images\closedhandcursor_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\closedhandcursor_48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\closedhandcursor_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\windows\cursors.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\windows\openglblacklists\default.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\dragcopycursor_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\dragcopycursor_48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\dragcopycursor_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\draglinkcursor_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\draglinkcursor_48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\draglinkcursor_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\dragmovecursor_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\dragmovecursor_48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\dragmovecursor_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\windows\openglblacklists.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\windows\images\openhandcursor_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\openhandcursor_48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\openhandcursor_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\splithcursor_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\splithcursor_48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\splithcursor_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\splitvcursor_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\splitvcursor_48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\windows\images\splitvcursor_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qdirect2d_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\windows\qwindowsdialoghelpers.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qwindowsdirect2dplatformplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

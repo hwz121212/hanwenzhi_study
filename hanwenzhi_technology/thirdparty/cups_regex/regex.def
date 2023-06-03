@@ -1,0 +1,7 @@
+LIBRARY cups_regex
+VERSION 1.0
+EXPORTS
+regcomp
+regerror
+regexec
+regfree

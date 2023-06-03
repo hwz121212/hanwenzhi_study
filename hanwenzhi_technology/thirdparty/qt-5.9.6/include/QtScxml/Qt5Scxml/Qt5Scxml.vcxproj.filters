@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{911c34b6-3dbf-4ce9-bab6-e04430a1d461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtScxml">
+      <UniqueIdentifier>{b1a4a460-941f-4be0-830a-38e9d017a3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtScxml\private">
+      <UniqueIdentifier>{ff44453e-fe58-4d7f-bee2-c62010b8d514}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qscxmlcompiler.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="qscxmlcppdatamodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmldatamodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlecmascriptdatamodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlecmascriptplatformproperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlevent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlexecutablecontent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlinvokableservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlnulldatamodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlstatemachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmlstatemachineinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscxmltabledata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="..\5.9.6\QtScxml\private\qscxmlecmascriptplatformproperties_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScxml\private\qscxmlinvokableservice_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScxml\private\qscxmlstatemachine_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScxml\private\qscxmlstatemachineinfo_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmlcppdatamodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmldatamodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmlecmascriptdatamodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmlerror.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmlevent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmlinvokableservice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmlnulldatamodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscxmlstatemachine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Scxml_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtScxml\private\qscxmlcompiler_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScxml\private\qscxmlcppdatamodel_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScxml\private\qscxmldatamodel_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScxml\private\qscxmlevent_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScxml\private\qscxmlexecutablecontent_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScxml\private\qscxmlglobals_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScxml\private\qscxmltabledata_p.h">
+      <Filter>Header Files\5.9.6\QtScxml\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qscxmlcompiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qscxmlexecutablecontent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qscxmlglobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qscxmltabledata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtscxmlversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/QtQuick/Controls">
+<file alias="Shaders/blur.vert">Shaders/blur.vert</file>
+<file alias="Shaders/blur.frag">Shaders/blur.frag</file>
+<file alias="Shaders/glow.frag">Shaders/glow.frag</file>
+<file alias="Shaders/+glslcore/blur.vert">Shaders/+glslcore/blur.vert</file>
+<file alias="Shaders/+glslcore/blur.frag">Shaders/+glslcore/blur.frag</file>
+<file alias="Shaders/+glslcore/glow.frag">Shaders/+glslcore/glow.frag</file>
+<file alias="Shaders/+hlsl/blur.vert">Shaders/+hlsl/blur.vert</file>
+<file alias="Shaders/+hlsl/blur.frag">Shaders/+hlsl/blur.frag</file>
+<file alias="Shaders/+hlsl/glow.frag">Shaders/+hlsl/glow.frag</file>
+</qresource>
+</RCC>

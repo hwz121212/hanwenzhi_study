@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="chartsqml2_plugin.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="declarativeareaseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeaxes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativebarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeboxplotseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativecandlestickseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativecategoryaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativechart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativechartnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativelineseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativemargins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeopenglrendernode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativepieseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativepolarchart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativescatterseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativesplineseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativexypoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativexyseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="declarativeabstractrendernode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="declarativeareaseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativeaxes.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativebarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativeboxplotseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativecandlestickseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativecategoryaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativechart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="declarativechartnode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="declarativelineseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativemargins.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativeopenglrendernode.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativepieseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativepolarchart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativescatterseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativesplineseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativexypoint.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="declarativexyseries.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtchartsqml2_resource.rc" />
+  </ItemGroup>
+</Project>

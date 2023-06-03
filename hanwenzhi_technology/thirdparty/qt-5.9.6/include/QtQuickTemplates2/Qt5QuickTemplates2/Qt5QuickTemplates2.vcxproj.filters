@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{2d869aca-0c99-4224-9d80-1fd8a0faedbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuickTemplates2">
+      <UniqueIdentifier>{04bf4c6d-2dec-45c4-b4f2-39a09aad4190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuickTemplates2\private">
+      <UniqueIdentifier>{fd5da0a6-aebd-48a4-9704-eb18c2a6f1e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qquickabstractbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickapplicationwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickbusyindicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickbuttongroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcheckbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcheckdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcontainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdeferredexecute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdelaybutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdialogbuttonbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdrawer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickgroupbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickitemdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicklabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickmenuitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickmenuseparator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickoverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpageindicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpagelayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpopup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpopupitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpopuppositioner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpresshandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickprogressbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickradiobutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickradiodelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickrangeslider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickroundbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickscrollbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickscrollindicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickscrollview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickshortcutcontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickslider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickspinbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstackelement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstacktransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstackview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstackview_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickswipedelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickswipeview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickswitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickswitchdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktabbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktabbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktextarea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktextfield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktoolbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktoolseparator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktumbler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickvelocitycalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5QuickTemplates2_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickabstractbutton_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickapplicationwindow_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickbusyindicator_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickbutton_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickbuttongroup_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickcheckbox_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickcheckdelegate_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickcombobox_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickcontainer_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickcontrol_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickdelaybutton_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickdial_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickdialog_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickdialogbuttonbox_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickdrawer_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickframe_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickgroupbox_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickitemdelegate_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicklabel_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickmenu_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickmenuitem_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickmenuseparator_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickoverlay_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickpage_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickpageindicator_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickpane_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickpopup_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickpopupitem_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickprogressbar_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickradiobutton_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickradiodelegate_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickrangeslider_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickroundbutton_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickscrollbar_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickscrollindicator_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickscrollview_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickslider_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickspinbox_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickstackview_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickswipe_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickswipedelegate_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickswipeview_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickswitch_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquickswitchdelegate_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktabbar_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktabbutton_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktextarea_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktextfield_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktoolbar_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktoolbutton_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktoolseparator_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktooltip_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickTemplates2\private\qquicktumbler_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickabstractbutton_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickbutton_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickcontainer_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickcontrol_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickdeferredexecute_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickdeferredpointer_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickdialog_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickdialogbuttonbox_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickdrawer_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickframe_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickitemdelegate_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquicklabel_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickmenu_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickoverlay_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickpagelayout_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickpane_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickpopup_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickpopuppositioner_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickpresshandler_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickscrollbar_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickshortcutcontext_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickstackelement_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickstacktransition_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickstackview_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickswipedelegate_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquicktextarea_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquicktextfield_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquicktumbler_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qquickvelocitycalculator_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qtquicktemplates2-config_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickTemplates2\private\qtquicktemplates2global_p.h">
+      <Filter>Header Files\5.9.6\QtQuickTemplates2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtquicktemplates2-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtquicktemplates2version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

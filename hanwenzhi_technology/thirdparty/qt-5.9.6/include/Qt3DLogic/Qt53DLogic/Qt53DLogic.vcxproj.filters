@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{0f7db4df-b426-478a-a871-e1be23967cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DLogic">
+      <UniqueIdentifier>{d68a69f3-4156-415b-a3e9-e77f6349d862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DLogic\private">
+      <UniqueIdentifier>{e268eb39-22da-4f64-942a-fac876dbebf5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DLogic_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\callbackjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\handle_types_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\handler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\job_common_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\manager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\managers_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\qframeaction_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DLogic\private\qlogicaspect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dlogic_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dlogicversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DLogic\private\executor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DLogic\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qframeaction.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlogicaspect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="callbackjob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="executor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qframeaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlogicaspect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{1f9a0e19-520c-4857-b8f0-e52a0d783d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtSensors">
+      <UniqueIdentifier>{47553465-c05b-48c5-ad7f-c7dd1adb6753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtSensors\private">
+      <UniqueIdentifier>{548075cc-cf25-4992-a99e-972184ffc9ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qaccelerometer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qaltimeter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qambientlightsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qambienttemperaturesensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcompass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdistancesensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgyroscope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qholstersensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qhumiditysensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qirproximitysensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlidsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlightsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmagnetometer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qorientationsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qpressuresensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qproximitysensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qrotationsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsensorbackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gestures\qsensorgesture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gestures\qsensorgesturemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gestures\qsensorgesturemanagerprivate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gestures\qsensorgestureplugininterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gestures\qsensorgesturerecognizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsensorplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtapsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtiltsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsensormanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Sensors_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qaccelerometer_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qaltimeter_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qambientlightsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qambienttemperaturesensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qcompass_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qdistancesensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qgyroscope_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qholstersensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qhumiditysensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qirproximitysensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qlidsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qlightsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qmagnetometer_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qorientationsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qpressuresensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qproximitysensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qrotationsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qsensorbackend_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qsensorgesture_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qtapsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qtiltsensor_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\qtsensors-config_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSensors\private\sensorlog_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mybackend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsensorgesture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsensorgestureplugininterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsensorplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsensorsglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtsensors-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtsensorsversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtSensors\private\qsensorgesturemanagerprivate_p.h">
+      <Filter>Header Files\5.9.6\QtSensors\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\myplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaccelerometer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaltimeter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qambientlightsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qambienttemperaturesensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcompass.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdistancesensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgyroscope.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qholstersensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhumiditysensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qirproximitysensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlidsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlightsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmagnetometer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qorientationsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpressuresensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qproximitysensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrotationsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsensorbackend.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsensorgesturemanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsensorgesturerecognizer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtapsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtiltsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsensormanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

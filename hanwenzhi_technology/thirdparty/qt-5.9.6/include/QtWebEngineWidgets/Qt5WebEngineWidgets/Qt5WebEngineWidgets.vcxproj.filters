@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{9e529eff-bcf1-451a-96a7-aadcd44aa6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebEngineWidgets">
+      <UniqueIdentifier>{81588ff9-42c4-4a8f-acd3-246d3e60e553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebEngineWidgets\private">
+      <UniqueIdentifier>{34f509ef-e9e2-4daf-ba92-d5a514cb0f50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\messagebubblewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qtwebenginewidgetsglobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginecertificateerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginecontextmenudata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginedownloaditem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginefullscreenrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginehistory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginepage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebengineprofile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginescript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginescriptcollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebenginesettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qwebengineview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render_widget_host_view_qt_delegate_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5WebEngineWidgets_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginedownloaditem_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineWidgets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginehistory_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineWidgets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginepage_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineWidgets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebengineprofile_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineWidgets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebenginescriptcollection_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineWidgets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngineWidgets\private\qwebengineview_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngineWidgets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtwebenginewidgetsglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtwebenginewidgetsversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginecertificateerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginecontextmenudata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginehistory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginescript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginescriptcollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebenginesettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qwebenginedownloaditem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebenginefullscreenrequest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebenginepage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebengineprofile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebengineview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="render_widget_host_view_qt_delegate_widget.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\messagebubblewidget_p.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\generators">
+      <UniqueIdentifier>{682f8fac-210d-4a46-82b4-285fac131761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generators\win32">
+      <UniqueIdentifier>{670b2276-f722-488f-9154-c10b64c19cfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="library\ioutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\makefile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\makefiledeps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\metamakefile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\mingw_make.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\msbuild_objectmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\msvc_nmake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\msvc_objectmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\msvc_vcproj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\msvc_vcxproj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="option.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\mac\pbuilder_pbx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\proitems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="project.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\projectgenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\qmakebuiltins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\qmakeevaluator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\qmakeglobals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\qmakeparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\qmakevfs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\unix\unixmake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\unix\unixmake2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\winmakefile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\xmloutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generators\win32\registry.cpp">
+      <Filter>Source Files\generators\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Qt5Core\global\qlibraryinfo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cachekeys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\ioutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\makefile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\makefiledeps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\metamakefile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\win32\mingw_make.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\win32\msbuild_objectmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\win32\msvc_nmake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\win32\msvc_objectmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\win32\msvc_vcproj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\win32\msvc_vcxproj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="option.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\mac\pbuilder_pbx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\proitems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="project.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\projectgenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="property.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qabstractfileengine_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qarraydata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qarraydataops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qarraydatapointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qbitarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qbytearray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qbytearraymatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcryptographichash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qdatetime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qdatetime_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qdir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qdir_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qdiriterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qfileinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qiodevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qjson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qjsonarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qjsondocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qjsonobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qjsonparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qjsonvalue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qjsonwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qlinkedlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qlocale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qlocale_tools_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\qmake_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\qmakeevaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\qmakeevaluator_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\qmakeglobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\qmakeparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\qmakevfs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmetatype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qnumeric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qregexp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qstringlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qstringmatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsystemerror_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qtemporaryfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qtextcodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qtextstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qutfcodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qxmlstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qxmlutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\unix\unixmake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\win32\winmakefile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generators\xmloutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qmake_resource.rc" />
+  </ItemGroup>
+</Project>

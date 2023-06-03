@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{9f8ae63c-7bcb-49fc-9130-6d8efbdf1ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DAnimation">
+      <UniqueIdentifier>{7941af10-1e02-410a-bf90-e0fb6d70741f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DAnimation\private">
+      <UniqueIdentifier>{f02da4bf-cb46-4709-98ea-cdd65d9a900b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\backend">
+      <UniqueIdentifier>{0ab32107-16e2-472b-a5dc-2c3c80af9d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frontend">
+      <UniqueIdentifier>{8ff7b987-f33a-4dae-851c-1970a29e5691}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DAnimation_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\additiveclipblend_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\animationclip_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\animationlogging_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\animationutils_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\backendnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\bezierevaluator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\blendedclipanimator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\buildblendtreesjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\channelmapper_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\channelmapping_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\clipanimator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\clipblendnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\clipblendnodevisitor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\clipblendvalue_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\evaluateblendclipanimatorjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\evaluateclipanimatorjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\fcurve_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\findrunningclipanimatorsjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\functionrangefinder_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\handle_types_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\handler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\job_common_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\keyframe_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\lerpclipblend_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\loadanimationclipjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\managers_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\nodefunctor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qabstractanimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qabstractanimationclip_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qabstractclipanimator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qabstractclipblendnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qadditiveclipblend_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qanimationaspect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qanimationclip_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qanimationcliploader_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qanimationcontroller_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qanimationgroup_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qblendedclipanimator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qchannelmapper_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qchannelmapping_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qclipanimator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qclipblendnodecreatedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qclipblendvalue_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qkeyframeanimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qlerpclipblend_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qmorphinganimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qmorphtarget_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qt3danimation_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DAnimation\private\qvertexblendanimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DAnimation\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qanimationclipdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qchannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qchannelcomponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qclipblendnodecreatedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qkeyframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3danimation_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3danimationversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qabstractanimation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractanimationclip.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractclipanimator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractclipblendnode.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qadditiveclipblend.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qanimationaspect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qanimationclip.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qanimationcliploader.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qanimationcontroller.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qanimationgroup.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qblendedclipanimator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qchannelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qchannelmapping.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qclipanimator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qclipblendvalue.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qkeyframeanimation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlerpclipblend.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmorphinganimation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmorphtarget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvertexblendanimation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\additiveclipblend.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\animationclip.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\animationutils.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\backendnode.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\bezierevaluator.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\blendedclipanimator.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\buildblendtreesjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\channelmapper.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\channelmapping.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\clipanimator.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\clipblendnode.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\clipblendnodevisitor.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\clipblendvalue.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\evaluateblendclipanimatorjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\evaluateclipanimatorjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\fcurve.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\findrunningclipanimatorsjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\functionrangefinder.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\handler.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\lerpclipblend.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\loadanimationclipjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\managers.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractanimation.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractanimationclip.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractclipanimator.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractclipblendnode.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qadditiveclipblend.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qanimationaspect.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qanimationclip.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qanimationclipdata.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qanimationcliploader.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qanimationcontroller.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qanimationgroup.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qblendedclipanimator.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qchannel.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qchannelcomponent.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qchannelmapper.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qchannelmapping.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qclipanimator.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qclipblendnodecreatedchange.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qclipblendvalue.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qkeyframe.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qkeyframeanimation.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qlerpclipblend.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qmorphinganimation.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qmorphtarget.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qvertexblendanimation.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="animationlogging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

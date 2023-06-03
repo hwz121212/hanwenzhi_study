@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{89f3f107-a169-4988-b990-15cf44660d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebSockets">
+      <UniqueIdentifier>{6c0081c2-c909-43ba-9b0c-a55b92ca1250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebSockets\private">
+      <UniqueIdentifier>{3d0dcc18-d0ab-4b11-8b31-0f8eab89771b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qdefaultmaskgenerator_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmaskgenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocket_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocketcorsauthenticator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocketdataprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocketframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsockethandshakerequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsockethandshakeresponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocketprotocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocketserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebsocketserver_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5WebSockets_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWebSockets\private\qdefaultmaskgenerator_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebSockets\private\qwebsocket_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebSockets\private\qwebsocketcorsauthenticator_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebSockets\private\qwebsocketframe_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebSockets\private\qwebsockethandshakerequest_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebSockets\private\qwebsocketprotocol_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebSockets\private\qwebsocketserver_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qmaskgenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtwebsocketsversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebsocketcorsauthenticator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebsocketprotocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebsockets_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtWebSockets\private\qwebsocketdataprocessor_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebSockets\private\qwebsockethandshakeresponse_p.h">
+      <Filter>Header Files\5.9.6\QtWebSockets\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebsocket.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebsocketserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

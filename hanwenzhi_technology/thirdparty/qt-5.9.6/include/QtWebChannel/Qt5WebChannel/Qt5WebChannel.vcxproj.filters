@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{5c5c8f96-0d8c-40ff-ba78-37a998477f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebChannel">
+      <UniqueIdentifier>{0a4b3a3b-5046-4d59-b371-46e16c3b42c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebChannel\private">
+      <UniqueIdentifier>{cffc995a-a92f-4f2c-bc77-f45218c08d41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qmetaobjectpublisher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qqmlwebchannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qqmlwebchannelattached.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebchannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebchannelabstracttransport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qqmlwebchannel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebchannel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwebchannelabstracttransport.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebChannel\private\qmetaobjectpublisher_p.h">
+      <Filter>Header Files\5.9.6\QtWebChannel\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebChannel\private\qqmlwebchannelattached_p.h">
+      <Filter>Header Files\5.9.6\QtWebChannel\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5WebChannel_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWebChannel\private\qwebchannel_p.h">
+      <Filter>Header Files\5.9.6\QtWebChannel\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebChannel\private\signalhandler_p.h">
+      <Filter>Header Files\5.9.6\QtWebChannel\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebChannel\private\variantargument_p.h">
+      <Filter>Header Files\5.9.6\QtWebChannel\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

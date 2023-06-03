@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="assembler\ARMAssembler.cpp" />
+    <ClCompile Include="assembler\ARMv7Assembler.cpp" />
+    <ClCompile Include="assembler\LinkBuffer.cpp" />
+    <ClCompile Include="assembler\MacroAssemblerARM.cpp" />
+    <ClCompile Include="assembler\MacroAssemblerSH4.cpp" />
+    <ClCompile Include="disassembler\ARM64Disassembler.cpp" />
+    <ClCompile Include="disassembler\ARM64\A64DOpcode.cpp" />
+    <ClCompile Include="disassembler\ARMv7Disassembler.cpp" />
+    <ClCompile Include="disassembler\ARMv7\ARMv7DOpcode.cpp" />
+    <ClCompile Include="disassembler\Disassembler.cpp" />
+    <ClCompile Include="disassembler\Mips32Disassembler.cpp" />
+    <ClCompile Include="disassembler\mips32\Mips32Opcode.cpp" />
+    <ClCompile Include="disassembler\UDis86Disassembler.cpp" />
+    <ClCompile Include="disassembler\udis86\udis86.c" />
+    <ClCompile Include="disassembler\udis86\udis86_decode.c" />
+    <ClCompile Include="disassembler\udis86\udis86_input.c" />
+    <ClCompile Include="disassembler\udis86\udis86_itab_holder.c" />
+    <ClCompile Include="disassembler\udis86\udis86_syn-att.c" />
+    <ClCompile Include="disassembler\udis86\udis86_syn-intel.c" />
+    <ClCompile Include="disassembler\udis86\udis86_syn.c" />
+    <ClCompile Include="stubs\Options.cpp" />
+    <ClCompile Include="stubs\WTFStubs.cpp" />
+    <ClCompile Include="wtf\FilePrintStream.cpp" />
+    <ClCompile Include="wtf\OSAllocatorPosix.cpp" />
+    <ClCompile Include="wtf\OSAllocatorWin.cpp" />
+    <ClCompile Include="wtf\OSAllocatorWinRT.cpp" />
+    <ClCompile Include="wtf\PageAllocationAligned.cpp" />
+    <ClCompile Include="wtf\PageBlock.cpp" />
+    <ClCompile Include="wtf\PrintStream.cpp" />
+    <ClCompile Include="yarr\YarrCanonicalizeUCS2.cpp" />
+    <ClCompile Include="yarr\YarrInterpreter.cpp" />
+    <ClCompile Include="yarr\YarrJIT.cpp" />
+    <ClCompile Include="yarr\YarrPattern.cpp" />
+    <ClCompile Include="yarr\YarrSyntaxChecker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="assembler\AbstractMacroAssembler.h" />
+    <ClInclude Include="assembler\ARM64Assembler.h" />
+    <ClInclude Include="assembler\ARMAssembler.h" />
+    <ClInclude Include="assembler\ARMv7Assembler.h" />
+    <ClInclude Include="assembler\AssemblerBuffer.h" />
+    <ClInclude Include="assembler\AssemblerBufferWithConstantPool.h" />
+    <ClInclude Include="assembler\CodeLocation.h" />
+    <ClInclude Include="assembler\LinkBuffer.h" />
+    <ClInclude Include="assembler\MacroAssembler.h" />
+    <ClInclude Include="assembler\MacroAssemblerARM.h" />
+    <ClInclude Include="assembler\MacroAssemblerARM64.h" />
+    <ClInclude Include="assembler\MacroAssemblerARMv7.h" />
+    <ClInclude Include="assembler\MacroAssemblerCodeRef.h" />
+    <ClInclude Include="assembler\MacroAssemblerMIPS.h" />
+    <ClInclude Include="assembler\MacroAssemblerSH4.h" />
+    <ClInclude Include="assembler\MacroAssemblerX86.h" />
+    <ClInclude Include="assembler\MacroAssemblerX86Common.h" />
+    <ClInclude Include="assembler\MacroAssemblerX86_64.h" />
+    <ClInclude Include="assembler\MIPSAssembler.h" />
+    <ClInclude Include="assembler\RepatchBuffer.h" />
+    <ClInclude Include="assembler\SH4Assembler.h" />
+    <ClInclude Include="assembler\X86Assembler.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="disassembler\ARM64\A64DOpcode.h" />
+    <ClInclude Include="disassembler\ARMv7\ARMv7DOpcode.h" />
+    <ClInclude Include="disassembler\Disassembler.h" />
+    <ClInclude Include="disassembler\mips32\Mips32Opcode.h" />
+    <ClInclude Include="disassembler\udis86\udis86.h" />
+    <ClInclude Include="disassembler\udis86\udis86_decode.h" />
+    <ClInclude Include="disassembler\udis86\udis86_extern.h" />
+    <ClInclude Include="disassembler\udis86\udis86_input.h" />
+    <ClInclude Include="disassembler\udis86\udis86_syn.h" />
+    <ClInclude Include="disassembler\udis86\udis86_types.h" />
+    <ClInclude Include="jit\JITCompilationEffort.h" />
+    <ClInclude Include="runtime\MatchResult.h" />
+    <ClInclude Include="stubs\ExecutableAllocator.h" />
+    <ClInclude Include="stubs\JSGlobalData.h" />
+    <ClInclude Include="stubs\LLIntData.h" />
+    <ClInclude Include="stubs\Options.h" />
+    <ClInclude Include="stubs\WTFStubs.h" />
+    <ClInclude Include="stubs\wtf\FastAllocBase.h" />
+    <ClInclude Include="stubs\wtf\FastMalloc.h" />
+    <ClInclude Include="stubs\wtf\Noncopyable.h" />
+    <ClInclude Include="stubs\wtf\OwnPtr.h" />
+    <ClInclude Include="stubs\wtf\PassOwnPtr.h" />
+    <ClInclude Include="stubs\wtf\PassRefPtr.h" />
+    <ClInclude Include="stubs\wtf\RefCounted.h" />
+    <ClInclude Include="stubs\wtf\RefPtr.h" />
+    <ClInclude Include="stubs\wtf\text\CString.h" />
+    <ClInclude Include="stubs\wtf\text\WTFString.h" />
+    <ClInclude Include="stubs\wtf\TypeTraits.h" />
+    <ClInclude Include="stubs\wtf\unicode\Unicode.h" />
+    <ClInclude Include="stubs\wtf\UnusedParam.h" />
+    <ClInclude Include="stubs\wtf\Vector.h" />
+    <ClInclude Include="WeakRandom.h" />
+    <ClInclude Include="wtf\ASCIICType.h" />
+    <ClInclude Include="wtf\Assertions.h" />
+    <ClInclude Include="wtf\Atomics.h" />
+    <ClInclude Include="wtf\BumpPointerAllocator.h" />
+    <ClInclude Include="wtf\CheckedArithmetic.h" />
+    <ClInclude Include="wtf\Compiler.h" />
+    <ClInclude Include="wtf\CryptographicallyRandomNumber.h" />
+    <ClInclude Include="wtf\DataLog.h" />
+    <ClInclude Include="wtf\DynamicAnnotations.h" />
+    <ClInclude Include="wtf\EnumClass.h" />
+    <ClInclude Include="wtf\FeatureDefines.h" />
+    <ClInclude Include="wtf\FilePrintStream.h" />
+    <ClInclude Include="wtf\Locker.h" />
+    <ClInclude Include="wtf\MathExtras.h" />
+    <ClInclude Include="wtf\NotFound.h" />
+    <ClInclude Include="wtf\NullPtr.h" />
+    <ClInclude Include="wtf\OSAllocator.h" />
+    <ClInclude Include="wtf\PageAllocation.h" />
+    <ClInclude Include="wtf\PageAllocationAligned.h" />
+    <ClInclude Include="wtf\PageBlock.h" />
+    <ClInclude Include="wtf\PageReservation.h" />
+    <ClInclude Include="wtf\Platform.h" />
+    <ClInclude Include="wtf\PossiblyNull.h" />
+    <ClInclude Include="wtf\PrintStream.h" />
+    <ClInclude Include="wtf\RawPointer.h" />
+    <ClInclude Include="wtf\SegmentedVector.h" />
+    <ClInclude Include="wtf\StdLibExtras.h" />
+    <ClInclude Include="wtf\VMTags.h" />
+    <ClInclude Include="yarr\Yarr.h" />
+    <ClInclude Include="yarr\YarrCanonicalizeUCS2.h" />
+    <ClInclude Include="yarr\YarrInterpreter.h" />
+    <ClInclude Include="yarr\YarrJIT.h" />
+    <ClInclude Include="yarr\YarrParser.h" />
+    <ClInclude Include="yarr\YarrPattern.h" />
+    <ClInclude Include="yarr\YarrSyntaxChecker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="create_regex_tables">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\python\python.exe create_regex_tables &gt; RegExpJitTables.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\python\python.exe create_regex_tables &gt; RegExpJitTables.h</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RegExpJitTables.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RegExpJitTables.h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6410BBAD-7942-4EA2-85AE-A891C7ADF1D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>staticlibtemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>libmasm_qt_shared</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;assembler;disassembler;jit;runtime;stubs;stubs\wtf;wtf;yarr;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;assembler;disassembler;jit;runtime;stubs;stubs\wtf;wtf;yarr;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{3353f86a-397f-408e-8736-b7dc54a53f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtPositioning">
+      <UniqueIdentifier>{8eb8b233-b644-465b-9fe1-a48b714539cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtPositioning\private">
+      <UniqueIdentifier>{42d733b4-d5c7-4ef4-9489-84b0674ec2bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qclipperutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdeclarativegeoaddress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdeclarativegeolocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdoublematrix4x4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdoublevector2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdoublevector3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoaddress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoareamonitorinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoareamonitorsource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeocircle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeocoordinate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeolocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeopath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeopositioninfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeopositioninfosource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeopositioninfosourcefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeorectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeosatelliteinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeosatelliteinfosource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoshape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlocationdata_simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlocationutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnmeapositioninfosource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebmercator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Positioning_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qclipperutils_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qdoublematrix4x4_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qdoublevector2d_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qdoublevector3d_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeoaddress_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeocircle_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeocoordinate_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeolocation_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeopath_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeopositioninfo_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeopositioninfosource_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeorectangle_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qgeoshape_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qlocationdata_simulator_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qlocationutils_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qpositioningglobal_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qtpositioning-config_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPositioning\private\qwebmercator_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeoaddress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeoareamonitorinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeolocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeopositioninfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeopositioninfosourcefactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeosatelliteinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpositioningglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtpositioning-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtpositioningversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtPositioning\private\qdeclarativegeoaddress_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtPositioning\private\qdeclarativegeolocation_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtPositioning\private\qnmeapositioninfosource_p.h">
+      <Filter>Header Files\5.9.6\QtPositioning\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeoareamonitorsource.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeocircle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeocoordinate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeopath.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeopositioninfosource.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeorectangle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeosatelliteinfosource.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeoshape.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnmeapositioninfosource.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

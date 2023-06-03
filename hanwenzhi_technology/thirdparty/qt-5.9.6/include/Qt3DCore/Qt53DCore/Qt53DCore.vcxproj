@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7E6482F1-AFED-3015-9EE2-3B8F5EC6BA6E}</ProjectGuid>
+    <RootNamespace>Qt53DCore</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;moc;rcc;uic;aspects;changes;jobs;nodes;transforms;services;..\..\..\include;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DCORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DCORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;moc;rcc;uic;aspects;changes;jobs;nodes;transforms;services;..\..\..\include;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DCORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DCORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DCore_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\qaspectjob.h" />
+    <ClInclude Include="..\qbackendnode.h" />
+    <ClInclude Include="..\qcomponentaddedchange.h" />
+    <ClInclude Include="..\qcomponentremovedchange.h" />
+    <ClInclude Include="..\qdynamicpropertyupdatedchange.h" />
+    <ClInclude Include="..\qnodecreatedchange.h" />
+    <ClInclude Include="..\qnodedestroyedchange.h" />
+    <ClInclude Include="..\qnodeid.h" />
+    <ClInclude Include="..\qpropertynodeaddedchange.h" />
+    <ClInclude Include="..\qpropertynoderemovedchange.h" />
+    <ClInclude Include="..\qpropertyupdatedchange.h" />
+    <ClInclude Include="..\qpropertyupdatedchangebase.h" />
+    <ClInclude Include="..\qpropertyvalueaddedchange.h" />
+    <ClInclude Include="..\qpropertyvalueaddedchangebase.h" />
+    <ClInclude Include="..\qpropertyvalueremovedchange.h" />
+    <ClInclude Include="..\qpropertyvalueremovedchangebase.h" />
+    <ClInclude Include="..\qscenechange.h" />
+    <ClInclude Include="..\qstaticpropertyupdatedchangebase.h" />
+    <ClInclude Include="..\qstaticpropertyvalueaddedchangebase.h" />
+    <ClInclude Include="..\qstaticpropertyvalueremovedchangebase.h" />
+    <ClInclude Include="..\qt3dcore-config.h" />
+    <ClInclude Include="..\qt3dcoreversion.h" />
+    <ClInclude Include="..\qt3dcore_global.h" />
+    <QtMoc Include="..\qtransform.h" />
+    <QtMoc Include="..\qnode.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qnode_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qnode_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qentity.h" />
+    <QtMoc Include="..\qcomponent.h" />
+    <QtMoc Include="..\qaspectengine.h" />
+    <QtMoc Include="..\qabstractaspect.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\aspectcommanddebugger_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\corelogging_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\nullservices_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\propertychangehandler_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qabstractaspect_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qabstractaspectjobmanager_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qabstractframeadvanceservice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qabstractframeadvanceservice_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qabstractnodefactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qabstractserviceprovider_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectengine_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectfactory_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qaspectjobmanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectjobproviderinterface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectjob_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qaspectmanager_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qaspectthread_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qbackendnodefactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qbackendnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qboundedcircularbuffer_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qchangearbiter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcircularbuffer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcomponentaddedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcomponentremovedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcomponent_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qdestructionidandtypecollector_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qdynamicpropertyupdatedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qentity_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qeventfilterservice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qframeallocator_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qframeallocator_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qhandle_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qlockableobserverinterface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qmath3d_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodecreatedchangegenerator_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodecreatedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodedestroyedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodevisitor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qobservableinterface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qobserverinterface_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qopenglinformationservice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qopenglinformationservice_p_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qpostman_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpostman_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertynodeaddedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertynoderemovedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyupdatedchangebase_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyupdatedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueaddedchangebase_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueaddedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueremovedchangebase_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueremovedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qresourcemanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qscenechange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qsceneobserverinterface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qscene_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qscheduler_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qservicelocator_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qstaticpropertyupdatedchangebase_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qstaticpropertyvalueaddedchangebase_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qstaticpropertyvalueremovedchangebase_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qsysteminformationservice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qsysteminformationservice_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qt3dcore-config_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qt3dcore_global_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qthreadpooler_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qtickclockservice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qtickclock_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qtransform_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qtypedpropertyupdatechange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\task_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aspects\aspectcommanddebugger.cpp" />
+    <ClCompile Include="aspects\qabstractaspect.cpp" />
+    <ClCompile Include="aspects\qaspectengine.cpp" />
+    <ClCompile Include="aspects\qaspectfactory.cpp" />
+    <ClCompile Include="aspects\qaspectmanager.cpp" />
+    <ClCompile Include="aspects\qaspectthread.cpp" />
+    <ClCompile Include="changes\qcomponentaddedchange.cpp" />
+    <ClCompile Include="changes\qcomponentremovedchange.cpp" />
+    <ClCompile Include="changes\qdynamicpropertyupdatedchange.cpp" />
+    <ClCompile Include="changes\qnodecreatedchange.cpp" />
+    <ClCompile Include="changes\qnodedestroyedchange.cpp" />
+    <ClCompile Include="changes\qpropertynodeaddedchange.cpp" />
+    <ClCompile Include="changes\qpropertynoderemovedchange.cpp" />
+    <ClCompile Include="changes\qpropertyupdatedchange.cpp" />
+    <ClCompile Include="changes\qpropertyupdatedchangebase.cpp" />
+    <ClCompile Include="changes\qpropertyvalueaddedchange.cpp" />
+    <ClCompile Include="changes\qpropertyvalueaddedchangebase.cpp" />
+    <ClCompile Include="changes\qpropertyvalueremovedchange.cpp" />
+    <ClCompile Include="changes\qpropertyvalueremovedchangebase.cpp" />
+    <ClCompile Include="changes\qscenechange.cpp" />
+    <ClCompile Include="changes\qstaticpropertyupdatedchangebase.cpp" />
+    <ClCompile Include="changes\qstaticpropertyvalueaddedchangebase.cpp" />
+    <ClCompile Include="changes\qstaticpropertyvalueremovedchangebase.cpp" />
+    <ClCompile Include="corelogging.cpp" />
+    <ClCompile Include="jobs\qabstractaspectjobmanager.cpp" />
+    <ClCompile Include="jobs\qaspectjob.cpp" />
+    <ClCompile Include="jobs\qaspectjobmanager.cpp" />
+    <ClCompile Include="jobs\qthreadpooler.cpp" />
+    <ClCompile Include="jobs\task.cpp" />
+    <ClCompile Include="nodes\propertychangehandler.cpp" />
+    <ClCompile Include="nodes\qabstractnodefactory.cpp" />
+    <ClCompile Include="nodes\qbackendnode.cpp" />
+    <ClCompile Include="nodes\qcomponent.cpp" />
+    <ClCompile Include="nodes\qdestructionidandtypecollector.cpp" />
+    <ClCompile Include="nodes\qentity.cpp" />
+    <ClCompile Include="nodes\qnode.cpp" />
+    <ClCompile Include="nodes\qnodecreatedchangegenerator.cpp" />
+    <ClCompile Include="nodes\qnodeid.cpp" />
+    <ClCompile Include="nodes\qnodevisitor.cpp" />
+    <ClCompile Include="qbackendnodefactory.cpp" />
+    <ClCompile Include="qchangearbiter.cpp" />
+    <ClCompile Include="qlockableobserverinterface.cpp" />
+    <ClCompile Include="qobservableinterface.cpp" />
+    <ClCompile Include="qobserverinterface.cpp" />
+    <ClCompile Include="qpostman.cpp" />
+    <ClCompile Include="qscene.cpp" />
+    <ClCompile Include="qsceneobserverinterface.cpp" />
+    <ClCompile Include="qscheduler.cpp" />
+    <ClCompile Include="qtickclock.cpp" />
+    <ClCompile Include="resources\qframeallocator.cpp" />
+    <ClCompile Include="resources\qresourcemanager.cpp" />
+    <ClCompile Include="services\qabstractframeadvanceservice.cpp" />
+    <ClCompile Include="services\qopenglinformationservice.cpp" />
+    <ClCompile Include="services\qservicelocator.cpp" />
+    <ClCompile Include="services\qsysteminformationservice.cpp" />
+    <ClCompile Include="services\qtickclockservice.cpp" />
+    <ClCompile Include="transforms\qtransform.cpp" />
+    <QtMoc Include="services\qeventfilterservice.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

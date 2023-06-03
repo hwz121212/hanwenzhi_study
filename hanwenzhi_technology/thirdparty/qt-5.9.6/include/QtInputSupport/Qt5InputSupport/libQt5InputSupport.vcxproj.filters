@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e2dc95e2-40ab-45e5-b724-e1777e400460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5640215b-0fd1-49f7-844f-af7da50be924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{d5d07556-f922-4266-9d3e-07822de80a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtInputSupport">
+      <UniqueIdentifier>{f8f7b14b-10e6-456d-97b6-ef7fc328cce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtInputSupport\private">
+      <UniqueIdentifier>{0fd186a4-8b3d-487a-a4fd-9ffd86bc2f15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="evdevkeyboard\qevdevkeyboardmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="evdevmouse\qevdevmousemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="evdevtablet\qevdevtabletmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="evdevtouch\qevdevtouchmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\qtouchoutputmapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtInputSupport\private\qevdevkeyboard_defaultmap_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtInputSupport\private\qevdevtouchfilter_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtInputSupport\private\qlibinputpointer_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtInputSupport\private\qlibinputtouch_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtInputSupport\private\qtouchoutputmapping_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevkeyboardhandler_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevkeyboardmanager_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevmousehandler_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevmousemanager_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevtablethandler_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevtabletmanager_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevtouchhandler_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qevdevtouchmanager_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtInputSupport\private\qlibinputhandler_p.h">
+      <Filter>Header Files\5.9.6\QtInputSupport\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qintegrityhidmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

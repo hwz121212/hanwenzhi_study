@@ -1,0 +1,6 @@
+<CustomBuild Include="plugins.qmltypes">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">plugins.qmltypes;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">$(QINSTALL) plugins.qmltypes F:\qt\Src\qt3d\qml\QtQuick\Scene3D\plugins.qmltypes</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">COPY plugins.qmltypes</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\qt\Src\qt3d\qml\QtQuick\Scene3D\plugins.qmltypes;%(Outputs)</Outputs>
+    </CustomBuild>

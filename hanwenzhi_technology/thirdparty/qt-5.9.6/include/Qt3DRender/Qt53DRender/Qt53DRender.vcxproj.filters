@@ -1,0 +1,1719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{913d41f3-e4e9-4724-898f-d9c5a91ab5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DRender">
+      <UniqueIdentifier>{be7a887c-fa7a-4fb1-8840-51787ff57a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DRender\private">
+      <UniqueIdentifier>{39457fc7-91d9-423f-ab78-73bf30c2f3fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\backend">
+      <UniqueIdentifier>{54086ca4-5971-4412-a31d-b2b2052cb593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\framegraph">
+      <UniqueIdentifier>{613a93d4-2fbe-4fa3-8744-17217e6f878c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frontend">
+      <UniqueIdentifier>{b15d1a6e-6b26-4740-8120-7a1721365335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geometry">
+      <UniqueIdentifier>{205da747-5435-4e40-b9ad-1ff9623b5b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphicshelpers">
+      <UniqueIdentifier>{c273d0a7-87da-4637-95bb-a4b275a03ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{61a5c99d-b3db-4a18-8005-96eabf684361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jobs">
+      <UniqueIdentifier>{977ac733-3941-453e-96f1-01898f5a98d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lights">
+      <UniqueIdentifier>{df064378-200f-48bd-a21a-c5c371bd6b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\materialsystem">
+      <UniqueIdentifier>{ef8f3833-76be-46c7-9137-8ed115ad8ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\picking">
+      <UniqueIdentifier>{9ebb7da5-b7fa-4506-bbe2-f775c05a1588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\raycasting">
+      <UniqueIdentifier>{551e8fe3-78dd-4c9b-a9eb-6dc2243fb1b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderstates">
+      <UniqueIdentifier>{7e57aef1-287c-4f79-b819-10341bc83b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services">
+      <UniqueIdentifier>{ee7f421d-a08a-4827-8262-652dd6090503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\texture">
+      <UniqueIdentifier>{e984014e-f9ec-4369-9e09-fa7e4ec4cfe1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DRender_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\abstractrenderer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\apitexturemanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\attachmentpack_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\attribute_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\backendnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\boundingsphere_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\boundingvolumedebug_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffercapture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffermanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\bufferutils_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffervisitor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\calcboundingvolumejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\calcgeometrytrianglevolumes_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\cameralens_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\cameraselectornode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\clearbuffers_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\commandexecuter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\computecommand_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\dispatchcompute_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\effect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\entity_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\environmentlight_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\expandboundingvolumejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filtercompatibletechniquejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filterentitybycomponentjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filterkey_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filterlayerentityjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\framecleanupjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\framegraphnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\framegraphvisitor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\frameprofiler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\frustumculling_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\frustumcullingjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\genericlambdajob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\genericstate_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\geometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\geometryrenderer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\geometryrenderermanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\glbuffer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\gltexture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\gltexturemanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicscontext_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelperes2_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelperes3_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl2_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl3_2_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl3_3_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl4_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelperinterface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\handle_types_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\job_common_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\layer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\layerfilternode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\levelofdetail_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\light_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\lightgatherer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\lightsource_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadbufferjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadgeometryjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadscenejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadtexturedatajob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\managers_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\material_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\materialparametergathererjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\memorybarrier_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\nodefunctor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\nodemanagers_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\nodraw_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\objectpicker_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\openglvertexarrayobject_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\parameter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\parameterpack_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\pickboundingvolumejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\pickboundingvolumeutils_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qabstractlight_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qabstracttexture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qabstracttextureimage_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qalphatest_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qattribute_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qaxisalignedboundingbox_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qblendequation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qblendequationarguments_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qboundingvolume_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qboundingvolumeprovider_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qbuffer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qbuffercapture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcamera_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcameralens_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcameraselector_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qclearbuffers_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qclipplane_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcollisionqueryresult_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcolormask_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcomputecommand_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcullface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qdepthtest_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qdirectionallight_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qdispatchcompute_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qeffect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qenvironmentlight_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qfilterkey_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qframegraphnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qframegraphnodecreatedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qfrontface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgeometryloaderinterface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgeometryrenderer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgraphicsapifilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgraphicsutils_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qlayer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qlayerfilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qlevelofdetail_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qmemorybarrier_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qmesh_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qobjectpicker_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpaintedtextureimage_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qparameter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpickevent_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpickingsettings_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpointlight_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpointsize_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpolygonoffset_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qray3d_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qraycastingservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderaspect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendercapture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderpass_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderpassfilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderplugin_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderpluginfactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendersettings_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderstate_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderstatecreatedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderstateset_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendersurfaceselector_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendertarget_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendertargetoutput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendertargetselector_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsceneexportfactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsceneimportfactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsceneloader_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qscissortest_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qshaderdata_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qshaderprogram_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsortpolicy_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qspotlight_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstencilmask_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciloperation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciloperationarguments_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciltest_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciltestarguments_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qt3drender_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtechnique_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtechniquefilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtexture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtextureimage_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtextureimagedata_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qurlhelper_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qviewport_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendercapture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendercommand_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderconfiguration_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderercache_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderlogging_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderpass_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderpassfilternode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderqueue_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendersettings_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderstatenode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderstates_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderstateset_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendersurfaceselector_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendertarget_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendertargetoutput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendertargetselectornode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderview_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewbuilder_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewbuilderjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewinitializerjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewjobutils_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\resourceaccessor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\scene_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\scenemanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sendbuffercapturejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sendrendercapturejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shader_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shadercache_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shaderdata_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shaderparameterpack_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shadervariables_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sortpolicy_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sphere_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\statemask_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\statesetnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\statevariant_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\stringtoint_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\technique_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\techniquefilternode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\techniquemanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\texture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\texturedatamanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\textureimage_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\transform_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\triangleboundingvolume_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\trianglesextractor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\trianglesvisitor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\uniform_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updatelevelofdetailjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updatemeshtrianglelistjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updateshaderdatatransformjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updatetreeenabledjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updateworldboundingvolumejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updateworldtransformjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\viewportnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\vsyncframeadvanceservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qabstractfunctor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qbufferdatagenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qframegraphnodecreatedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qgeometryfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3drender_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3drenderversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtexturedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtexturegenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtextureimagedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtextureimagedatagenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\commandthread_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\offscreensurfacehelper_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\pickeventfilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\platformsurfacefilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qabstractcollisionqueryservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qgeometryloaderfactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qitemmodelbuffer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qrenderpluginfactoryif_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneexporter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneexportplugin_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneimporter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneimportplugin_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\renderthread_p.h">
+      <Filter>Header Files\5.9.6\Qt3DRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractlight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstracttexture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstracttextureimage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qalphacoverage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qalphatest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qattribute.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qblendequation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qblendequationarguments.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbuffer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbuffercapture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcamera.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameralens.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcameraselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qclearbuffers.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qclipplane.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcolormask.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcomputecommand.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcullface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdepthtest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdirectionallight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdispatchcompute.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdithering.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qeffect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qenvironmentlight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qfilterkey.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qframegraphnode.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qfrontface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qfrustumculling.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgeometryrenderer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qgraphicsapifilter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlayerfilter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlevelofdetail.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlevelofdetailboundingsphere.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlevelofdetailswitch.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmaterial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmemorybarrier.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmesh.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmultisampleantialiasing.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnodepthmask.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnodraw.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qobjectpicker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpaintedtextureimage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qparameter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpickevent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpickingsettings.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpicktriangleevent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpointlight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpointsize.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpolygonoffset.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrenderaspect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrendercapture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrenderpass.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrenderpassfilter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrendersettings.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrenderstate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrenderstateset.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrendersurfaceselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrendertarget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrendertargetoutput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qrendertargetselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsceneloader.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscissortest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qseamlesscubemap.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qshaderdata.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qshaderprogram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsortpolicy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qspotlight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qstencilmask.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qstenciloperation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qstenciloperationarguments.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qstenciltest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qstenciltestarguments.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtechniquefilter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtexture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtextureimage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtexturewrapmode.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qviewport.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\attachmentpack.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\backendnode.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\boundingvolumedebug.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cameralens.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\commandthread.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\computecommand.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\entity.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\layer.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\levelofdetail.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\managers.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nodemanagers.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\offscreensurfacehelper.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\openglvertexarrayobject.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\parameterpack.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\platformsurfacefilter.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\rendercommand.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\renderconfiguration.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\renderer.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\renderqueue.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\rendersettings.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\rendertarget.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\rendertargetoutput.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\renderthread.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\renderview.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\renderviewbuilder.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\resourceaccessor.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\shaderparameterpack.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\stringtoint.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\transform.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\triangleboundingvolume.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\trianglesextractor.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\trianglesvisitor.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\uniform.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\buffercapture.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\cameraselectornode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\clearbuffers.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\dispatchcompute.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\framegraphnode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\framegraphvisitor.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\frustumculling.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\layerfilternode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\memorybarrier.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\nodraw.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qbuffercapture.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qcameraselector.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qclearbuffers.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qdispatchcompute.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qframegraphnode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qframegraphnodecreatedchange.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qfrustumculling.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qlayerfilter.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qmemorybarrier.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qnodraw.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qrendercapture.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qrenderpassfilter.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qrenderstateset.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qrendersurfaceselector.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qrendertargetselector.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qsortpolicy.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qtechniquefilter.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\qviewport.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\rendercapture.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\renderpassfilternode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\rendersurfaceselector.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\rendertargetselectornode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\sortpolicy.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\statesetnode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\techniquefilternode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="framegraph\viewportnode.cpp">
+      <Filter>Source Files\framegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractfunctor.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qcamera.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qcameralens.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qcomputecommand.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qitemmodelbuffer.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qlayer.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qlevelofdetail.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qlevelofdetailboundingsphere.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qlevelofdetailswitch.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qpickingsettings.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qrenderaspect.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qrenderpluginfactory.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qrenderpluginfactoryif.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qrendersettings.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qrendertarget.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qrendertargetoutput.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\sphere.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\attribute.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\buffer.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\buffermanager.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\geometry.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\geometryrenderer.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\geometryrenderermanager.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\qattribute.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\qbuffer.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\qgeometry.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\qgeometryrenderer.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\qmesh.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicshelpers\graphicscontext.cpp">
+      <Filter>Source Files\graphicshelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicshelpers\graphicshelperes2.cpp">
+      <Filter>Source Files\graphicshelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicshelpers\graphicshelperes3.cpp">
+      <Filter>Source Files\graphicshelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicshelpers\graphicshelpergl2.cpp">
+      <Filter>Source Files\graphicshelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicshelpers\graphicshelpergl3_2.cpp">
+      <Filter>Source Files\graphicshelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicshelpers\graphicshelpergl3_3.cpp">
+      <Filter>Source Files\graphicshelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicshelpers\graphicshelpergl4.cpp">
+      <Filter>Source Files\graphicshelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="io\glbuffer.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qaxisalignedboundingbox.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qgeometryloaderfactory.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qsceneexporter.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qsceneexportfactory.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qsceneexportplugin.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qsceneimporter.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qsceneimportfactory.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qsceneimportplugin.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qsceneloader.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\qurlhelper.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\scene.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\scenemanager.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\calcboundingvolumejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\calcgeometrytrianglevolumes.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\expandboundingvolumejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\filtercompatibletechniquejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\filterlayerentityjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\framecleanupjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\frustumcullingjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\lightgatherer.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\loadbufferjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\loadgeometryjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\loadscenejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\loadtexturedatajob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\materialparametergathererjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\pickboundingvolumejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\pickboundingvolumeutils.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\renderviewbuilderjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\renderviewinitializerjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\renderviewjobutils.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\sendbuffercapturejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\sendrendercapturejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\updatelevelofdetailjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\updatemeshtrianglelistjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\updateshaderdatatransformjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\updatetreeenabledjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\updateworldboundingvolumejob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\updateworldtransformjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\environmentlight.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\light.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\lightsource.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\qabstractlight.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\qdirectionallight.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\qenvironmentlight.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\qpointlight.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\qspotlight.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\effect.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\filterkey.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\material.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\parameter.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qeffect.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qfilterkey.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qgraphicsapifilter.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qmaterial.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qparameter.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qrenderpass.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qshaderdata.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qshaderprogram.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\qtechnique.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\renderpass.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\shader.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\shadercache.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\shaderdata.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\technique.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsystem\techniquemanager.cpp">
+      <Filter>Source Files\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\gltexture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qabstracttexture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qabstracttextureimage.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qpaintedtextureimage.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qtexture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qtexturedata.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qtexturegenerator.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qtextureimage.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qtextureimagedata.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\qtexturewrapmode.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\texture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\textureimage.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="services\vsyncframeadvanceservice.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qalphacoverage.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qalphatest.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qblendequation.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qblendequationarguments.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qclipplane.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qcolormask.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qcullface.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qdepthtest.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qdithering.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qfrontface.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qmultisampleantialiasing.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qnodepthmask.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qpointsize.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qpolygonoffset.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qrenderstate.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qrenderstatecreatedchange.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qscissortest.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qseamlesscubemap.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qstencilmask.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qstenciloperation.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qstenciloperationarguments.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qstenciltest.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\qstenciltestarguments.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\renderstatenode.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\renderstates.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\renderstateset.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="renderstates\statevariant.cpp">
+      <Filter>Source Files\renderstates</Filter>
+    </ClCompile>
+    <ClCompile Include="raycasting\boundingsphere.cpp">
+      <Filter>Source Files\raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="raycasting\qabstractcollisionqueryservice.cpp">
+      <Filter>Source Files\raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="raycasting\qboundingvolume.cpp">
+      <Filter>Source Files\raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="raycasting\qboundingvolumeprovider.cpp">
+      <Filter>Source Files\raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="raycasting\qcollisionqueryresult.cpp">
+      <Filter>Source Files\raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="raycasting\qray3d.cpp">
+      <Filter>Source Files\raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="raycasting\qraycastingservice.cpp">
+      <Filter>Source Files\raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="picking\objectpicker.cpp">
+      <Filter>Source Files\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="picking\pickeventfilter.cpp">
+      <Filter>Source Files\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="picking\qobjectpicker.cpp">
+      <Filter>Source Files\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="picking\qpickevent.cpp">
+      <Filter>Source Files\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="picking\qpicktriangleevent.cpp">
+      <Filter>Source Files\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="renderlogging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\qtechnique.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

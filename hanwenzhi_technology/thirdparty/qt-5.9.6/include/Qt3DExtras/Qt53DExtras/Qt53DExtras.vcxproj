@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C322BF4A-07DE-3905-8489-153C554765C7}</ProjectGuid>
+    <RootNamespace>Qt53DExtras</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;concurrent;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;gamepad</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;concurrent;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;gamepad</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;..\..\..\include;..\..\..\include\Qt3DExtras;..\..\..\include\Qt3DExtras\5.9.6;..\..\..\include\Qt3DExtras\5.9.6\Qt3DExtras;..\..\..\include\Qt3DExtras\5.9.6\Qt3DExtras\private;geometries;3dtext;defaults;text;..\..\..\include\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\Qt3DInput;..\..\..\include\Qt3DLogic;..\..\..\include\QtGamepad;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork;..\..\..\include\QtConcurrent</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DEXTRAS_LIBRARY;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DEXTRAS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt53DInput.lib;Qt53DRender.lib;Qt53DCore.lib;Qt53DLogic.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DEXTRAS_LIBRARY;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DEXTRAS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_3DRENDER_LIB;QT_3DINPUT_LIB;QT_3DLOGIC_LIB;QT_3DCORE_LIB;QT_GAMEPAD_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtRcc>
+      <InitFuncName>extras</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;..\..\..\include;..\..\..\include\Qt3DExtras;..\..\..\include\Qt3DExtras\5.9.6;..\..\..\include\Qt3DExtras\5.9.6\Qt3DExtras;..\..\..\include\Qt3DExtras\5.9.6\Qt3DExtras\private;geometries;3dtext;defaults;text;..\..\..\include\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\Qt3DInput;..\..\..\include\Qt3DLogic;..\..\..\include\QtGamepad;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork;..\..\..\include\QtConcurrent</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DEXTRAS_LIBRARY;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DEXTRAS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt53DInput.lib;Qt53DRender.lib;Qt53DCore.lib;Qt53DLogic.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DEXTRAS_LIBRARY;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DEXTRAS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_3DRENDER_LIB;QT_3DINPUT_LIB;QT_3DLOGIC_LIB;QT_3DCORE_LIB;QT_GAMEPAD_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtRcc>
+      <InitFuncName>extras</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="shaders\es2\diffusemap.frag" />
+    <None Include="shaders\gl3\diffusemap.frag" />
+    <None Include="shaders\es2\diffusemap.vert" />
+    <None Include="shaders\gl3\diffusemap.vert" />
+    <None Include="shaders\es2\diffusespecularmap.frag" />
+    <None Include="shaders\gl3\diffusespecularmap.frag" />
+    <None Include="shaders\es2\distancefieldtext.frag" />
+    <None Include="shaders\gl3\distancefieldtext.frag" />
+    <None Include="shaders\es2\distancefieldtext.vert" />
+    <None Include="shaders\gl3\distancefieldtext.vert" />
+    <QtRcc Include="extras.qrc">
+    </QtRcc>
+    <None Include="shaders\es2\gooch.frag" />
+    <None Include="shaders\gl3\gooch.frag" />
+    <None Include="shaders\es2\gooch.vert" />
+    <None Include="shaders\gl3\gooch.vert" />
+    <None Include="shaders\es2\light.inc.frag100" />
+    <None Include="shaders\es2\light.inc.frag" />
+    <None Include="shaders\gl3\light.inc.frag" />
+    <None Include="shaders\gl3\metalrough.frag" />
+    <None Include="shaders\gl3\metalrough.vert" />
+    <None Include="shaders\gl3\metalroughuniform.frag" />
+    <None Include="shaders\es2\morphphong.vert" />
+    <None Include="shaders\gl3\morphphong.vert" />
+    <None Include="shaders\es2\normaldiffusemap.frag" />
+    <None Include="shaders\gl3\normaldiffusemap.frag" />
+    <None Include="shaders\es2\normaldiffusemap.vert" />
+    <None Include="shaders\gl3\normaldiffusemap.vert" />
+    <None Include="shaders\es2\normaldiffusemapalpha.frag" />
+    <None Include="shaders\gl3\normaldiffusemapalpha.frag" />
+    <None Include="shaders\es2\normaldiffusespecularmap.frag" />
+    <None Include="shaders\gl3\normaldiffusespecularmap.frag" />
+    <None Include="shaders\es2\pervertexcolor.frag" />
+    <None Include="shaders\gl3\pervertexcolor.frag" />
+    <None Include="shaders\es2\pervertexcolor.vert" />
+    <None Include="shaders\gl3\pervertexcolor.vert" />
+    <None Include="shaders\es2\phong.frag" />
+    <None Include="shaders\gl3\phong.frag" />
+    <None Include="shaders\es2\phong.vert" />
+    <None Include="shaders\gl3\phong.vert" />
+    <None Include="shaders\es2\phongalpha.frag" />
+    <None Include="shaders\gl3\phongalpha.frag" />
+    <None Include="shaders\es2\skybox.frag" />
+    <None Include="shaders\gl3\skybox.frag" />
+    <None Include="shaders\es2\skybox.vert" />
+    <None Include="shaders\gl3\skybox.vert" />
+    <None Include="shaders\es2\unlittexture.frag" />
+    <None Include="shaders\gl3\unlittexture.frag" />
+    <None Include="shaders\es2\unlittexture.vert" />
+    <None Include="shaders\gl3\unlittexture.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DExtras_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\areaallocator_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\distancefieldtextrenderer_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qconegeometry_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qcuboidgeometry_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qcylindergeometry_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qdiffusemapmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qdiffusespecularmapmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qdistancefieldglyphcache_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qextrudedtextgeometry_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qfirstpersoncameracontroller_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qforwardrenderer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qgoochmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qmetalroughmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qmorphphongmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qnormaldiffusemapalphamaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qnormaldiffusemapmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qnormaldiffusespecularmapmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qorbitcameracontroller_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qpervertexcolormaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qphongalphamaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qphongmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qplanegeometry_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qskyboxentity_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qspheregeometry_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qt3dwindow_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtext2dentity_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtext2dmaterial_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtextureatlas_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtexturedmetalroughmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtexturematerial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DExtras\private\qtorusgeometry_p.h" />
+    <ClInclude Include="..\qt3dextrasversion.h" />
+    <ClInclude Include="..\qt3dextras_global.h" />
+    <QtMoc Include="..\qtorusmesh.h" />
+    <QtMoc Include="..\qtorusgeometry.h" />
+    <QtMoc Include="..\qtexturematerial.h" />
+    <QtMoc Include="..\qtexturedmetalroughmaterial.h" />
+    <QtMoc Include="..\qtext2dentity.h" />
+    <QtMoc Include="..\qt3dwindow.h" />
+    <QtMoc Include="..\qspheremesh.h" />
+    <QtMoc Include="..\qspheregeometry.h" />
+    <QtMoc Include="..\qskyboxentity.h" />
+    <QtMoc Include="..\qplanemesh.h" />
+    <QtMoc Include="..\qplanegeometry.h" />
+    <QtMoc Include="..\qphongmaterial.h" />
+    <QtMoc Include="..\qphongalphamaterial.h" />
+    <QtMoc Include="..\qpervertexcolormaterial.h" />
+    <QtMoc Include="..\qorbitcameracontroller.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qorbitcameracontroller_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qorbitcameracontroller_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qnormaldiffusespecularmapmaterial.h" />
+    <QtMoc Include="..\qnormaldiffusemapmaterial.h" />
+    <QtMoc Include="..\qnormaldiffusemapalphamaterial.h" />
+    <QtMoc Include="..\qmorphphongmaterial.h" />
+    <QtMoc Include="..\qmetalroughmaterial.h" />
+    <QtMoc Include="..\qgoochmaterial.h" />
+    <QtMoc Include="..\qforwardrenderer.h" />
+    <QtMoc Include="..\qfirstpersoncameracontroller.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qfirstpersoncameracontroller_p.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qfirstpersoncameracontroller_p.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qextrudedtextmesh.h" />
+    <QtMoc Include="..\qextrudedtextgeometry.h" />
+    <QtMoc Include="..\qdiffusespecularmapmaterial.h" />
+    <QtMoc Include="..\qdiffusemapmaterial.h" />
+    <QtMoc Include="..\qcylindermesh.h" />
+    <QtMoc Include="..\qcylindergeometry.h" />
+    <QtMoc Include="..\qcuboidmesh.h" />
+    <QtMoc Include="..\qcuboidgeometry.h" />
+    <QtMoc Include="..\qconemesh.h" />
+    <QtMoc Include="..\qconegeometry.h" />
+    <QtMoc Include="..\5.9.6\Qt3DExtras\private\qtextureatlas_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DExtras\private\qtext2dmaterial_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DExtras\private\distancefieldtextrenderer_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3dtext\qextrudedtextgeometry.cpp" />
+    <ClCompile Include="3dtext\qextrudedtextmesh.cpp" />
+    <ClCompile Include="defaults\qdiffusemapmaterial.cpp" />
+    <ClCompile Include="defaults\qdiffusespecularmapmaterial.cpp" />
+    <ClCompile Include="defaults\qfirstpersoncameracontroller.cpp" />
+    <ClCompile Include="defaults\qforwardrenderer.cpp" />
+    <ClCompile Include="defaults\qgoochmaterial.cpp" />
+    <ClCompile Include="defaults\qmetalroughmaterial.cpp" />
+    <ClCompile Include="defaults\qmorphphongmaterial.cpp" />
+    <ClCompile Include="defaults\qnormaldiffusemapalphamaterial.cpp" />
+    <ClCompile Include="defaults\qnormaldiffusemapmaterial.cpp" />
+    <ClCompile Include="defaults\qnormaldiffusespecularmapmaterial.cpp" />
+    <ClCompile Include="defaults\qorbitcameracontroller.cpp" />
+    <ClCompile Include="defaults\qpervertexcolormaterial.cpp" />
+    <ClCompile Include="defaults\qphongalphamaterial.cpp" />
+    <ClCompile Include="defaults\qphongmaterial.cpp" />
+    <ClCompile Include="defaults\qskyboxentity.cpp" />
+    <ClCompile Include="defaults\qt3dwindow.cpp" />
+    <ClCompile Include="defaults\qtexturedmetalroughmaterial.cpp" />
+    <ClCompile Include="defaults\qtexturematerial.cpp" />
+    <ClCompile Include="geometries\qconegeometry.cpp" />
+    <ClCompile Include="geometries\qconemesh.cpp" />
+    <ClCompile Include="geometries\qcuboidgeometry.cpp" />
+    <ClCompile Include="geometries\qcuboidmesh.cpp" />
+    <ClCompile Include="geometries\qcylindergeometry.cpp" />
+    <ClCompile Include="geometries\qcylindermesh.cpp" />
+    <ClCompile Include="geometries\qplanegeometry.cpp" />
+    <ClCompile Include="geometries\qplanemesh.cpp" />
+    <ClCompile Include="geometries\qspheregeometry.cpp" />
+    <ClCompile Include="geometries\qspheremesh.cpp" />
+    <ClCompile Include="geometries\qtorusgeometry.cpp" />
+    <ClCompile Include="geometries\qtorusmesh.cpp" />
+    <ClCompile Include="text\areaallocator.cpp" />
+    <ClCompile Include="text\distancefieldtextrenderer.cpp" />
+    <ClCompile Include="text\qdistancefieldglyphcache.cpp" />
+    <ClCompile Include="text\qtext2dentity.cpp" />
+    <ClCompile Include="text\qtext2dmaterial.cpp" />
+    <ClCompile Include="text\qtextureatlas.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

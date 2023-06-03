@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qmlaccelerometer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlaltimeter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlambientlightsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlambienttemperaturesensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlcompass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmldistancesensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlgyroscope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlholstersensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlhumiditysensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlirproximitysensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmllidsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmllightsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlmagnetometer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlorientationsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlpressuresensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlproximitysensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlrotationsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlsensorgesture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlsensorglobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmlsensorrange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmltapsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmltiltsensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="sensors.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qmlaccelerometer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlaltimeter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlambientlightsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlambienttemperaturesensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlcompass.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmldistancesensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlgyroscope.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlholstersensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlhumiditysensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlirproximitysensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmllidsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmllightsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlmagnetometer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlorientationsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlpressuresensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlproximitysensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlrotationsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlsensorgesture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlsensorglobal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmlsensorrange.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmltapsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmltiltsensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\declarative_sensors_resource.rc" />
+  </ItemGroup>
+</Project>

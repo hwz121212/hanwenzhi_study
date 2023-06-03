@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wnnEngine\WnnJpnDic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\composingtext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\kanaconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\letterconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\ndapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\ndbdic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\ndcommon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\ndfdic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\ndldic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\ndrdic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\neapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\necode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnDictionary\engine\nj_str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\openwnnclauseconverterjajp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\openwnndictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\openwnnenginejajp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\romkan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\romkanfullkatakana.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\romkanhalfkatakana.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnnEngine\wnnlookuptable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="wnnEngine\include\composingtext.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="wnnEngine\include\kanaconverter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="wnnEngine\include\letterconverter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="wnnDictionary\include\nj_dic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnnDictionary\include\nj_err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnnDictionary\include\nj_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnnDictionary\include\nj_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnnDictionary\include\njd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnnDictionary\include\njx_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="wnnEngine\include\openwnnclauseconverterjajp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="wnnEngine\include\openwnndictionary.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="wnnEngine\include\openwnnenginejajp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="wnnEngine\predef_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="wnnEngine\include\romkan.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="wnnEngine\include\romkanfullkatakana.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="wnnEngine\include\romkanhalfkatakana.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="wnnEngine\include\strsegment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnnEngine\include\wnnlookuptable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnnEngine\include\wnnword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

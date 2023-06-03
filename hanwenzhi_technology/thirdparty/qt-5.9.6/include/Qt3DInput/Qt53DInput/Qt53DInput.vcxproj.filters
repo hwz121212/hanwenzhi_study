@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{a07b73dd-275a-40a2-b1ff-ac55d66b8f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DInput">
+      <UniqueIdentifier>{e905af55-17d6-4ddb-a29e-2d50314cd316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DInput\private">
+      <UniqueIdentifier>{35ba5bb7-2c13-47c7-912a-f96fc042e39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\backend">
+      <UniqueIdentifier>{0d69a5c6-90a4-42a6-9746-4feb0fb4cc2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frontend">
+      <UniqueIdentifier>{98d831d9-12b1-4c59-a6de-c2bedc5da986}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\qt\Src\qt3d\src\input\Qt53DInput_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\abstractactioninput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\abstractaxisinput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\action_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\actioninput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\analogaxisinput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\assignkeyboardfocusjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axis_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axisaccumulator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axisaccumulatorjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axissetting_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\buttonaxisinput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\genericdevicebackendnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\handle_types_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputbackendnodefunctor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputchord_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputhandler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputmanagers_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputsequence_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputsettings_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\job_common_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\keyboarddevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\keyboardhandler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\keyeventdispatcherjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\loadproxydevicejob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\logicaldevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\mousedevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\mouseeventdispatcherjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\mousehandler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\movingaverage_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\physicaldeviceproxy_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractactioninput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractaxisinput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldevicebackendnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldevicebackendnode_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldeviceproxy_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaction_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qactioninput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qanalogaxisinput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaxis_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaxisaccumulator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaxissetting_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qbuttonaxisinput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputaspect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputchord_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputdeviceintegration_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputdeviceintegrationfactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputsequence_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputsettings_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qkeyboarddevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qkeyboardhandler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qlogicaldevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qmousedevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qmousehandler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qphysicaldevicecreatedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qt3dinput_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\updateaxisactionjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\utils_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qphysicaldevicecreatedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dinput_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dinputversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\eventsourcesetterhelper_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\keyboardeventfilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\keyboardmousegenericdeviceintegration_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\mouseeventfilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldeviceproxy_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qgamepadinput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qgenericinputdevice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qinputdeviceintegration_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qinputdeviceplugin_p.h">
+      <Filter>Header Files\5.9.6\Qt3DInput\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractactioninput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractaxisinput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractphysicaldevice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaction.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qactioninput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qanalogaxisinput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaxisaccumulator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaxissetting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbuttonaxisinput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qinputaspect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qinputchord.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qinputsequence.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qinputsettings.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qkeyboarddevice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qkeyboardhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qkeyevent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlogicaldevice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmousedevice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmouseevent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qmousehandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\abstractactioninput.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\abstractaxisinput.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\action.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\actioninput.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\analogaxisinput.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\assignkeyboardfocusjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\axis.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\axisaccumulator.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\axisaccumulatorjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\axissetting.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\buttonaxisinput.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\eventsourcesetterhelper.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\genericdevicebackendnode.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\inputchord.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\inputhandler.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\inputsequence.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\inputsettings.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\keyboarddevice.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\keyboardeventfilter.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\keyboardhandler.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\keyboardmousegenericdeviceintegration.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\keyeventdispatcherjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\loadproxydevicejob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\logicaldevice.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\mousedevice.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\mouseeventdispatcherjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\mouseeventfilter.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\mousehandler.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\movingaverage.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\physicaldeviceproxy.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\qabstractphysicaldevicebackendnode.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\updateaxisactionjob.cpp">
+      <Filter>Source Files\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractactioninput.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractaxisinput.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractphysicaldevice.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qabstractphysicaldeviceproxy.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qaction.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qactioninput.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qanalogaxisinput.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qaxis.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qaxisaccumulator.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qaxissetting.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qbuttonaxisinput.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qgamepadinput.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qgenericinputdevice.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qinputaspect.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qinputchord.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qinputdeviceintegration.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qinputdeviceintegrationfactory.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qinputdeviceplugin.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qinputsequence.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qinputsettings.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qkeyboarddevice.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qkeyboardhandler.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qkeyevent.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qlogicaldevice.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qmousedevice.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qmouseevent.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qmousehandler.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend\qphysicaldevicecreatedchange.cpp">
+      <Filter>Source Files\frontend</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

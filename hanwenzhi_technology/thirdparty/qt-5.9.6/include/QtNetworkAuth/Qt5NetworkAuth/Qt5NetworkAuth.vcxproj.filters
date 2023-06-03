@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{a646abe5-316a-4cab-9d8d-a13f2d7b0c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtNetworkAuth">
+      <UniqueIdentifier>{6d18d697-f9e0-4c21-ad88-c7f0d8ce2a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtNetworkAuth\private">
+      <UniqueIdentifier>{46e92d6d-76c7-431a-b7ec-4a2d1c94138f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qabstractoauth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qabstractoauth2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qabstractoauthreplyhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qoauth1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qoauth1signature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qoauth2authorizationcodeflow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qoauthhttpserverreplyhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qoauthoobreplyhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qabstractoauth.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractoauth2.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractoauthreplyhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qoauth1.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qoauth1signature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qoauth2authorizationcodeflow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qoauthglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qoauthhttpserverreplyhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qoauthoobreplyhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5NetworkAuth_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtNetworkAuth\private\qabstractoauth_p.h">
+      <Filter>Header Files\5.9.6\QtNetworkAuth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNetworkAuth\private\qabstractoauth2_p.h">
+      <Filter>Header Files\5.9.6\QtNetworkAuth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNetworkAuth\private\qoauth1_p.h">
+      <Filter>Header Files\5.9.6\QtNetworkAuth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNetworkAuth\private\qoauth1signature_p.h">
+      <Filter>Header Files\5.9.6\QtNetworkAuth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNetworkAuth\private\qoauth2authorizationcodeflow_p.h">
+      <Filter>Header Files\5.9.6\QtNetworkAuth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNetworkAuth\private\qoauthhttpserverreplyhandler_p.h">
+      <Filter>Header Files\5.9.6\QtNetworkAuth\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

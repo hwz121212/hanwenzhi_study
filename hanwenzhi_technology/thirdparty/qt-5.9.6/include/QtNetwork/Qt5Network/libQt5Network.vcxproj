@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ABDA3EA6-4126-428F-8D1D-700A2C009266}</ProjectGuid>
+    <RootNamespace>Qt5Network</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;kernel;..\..\..\include;..\..\..\include\QtNetwork;..\..\..\include\QtNetwork\5.9.6;..\..\..\include\QtNetwork\5.9.6\QtNetwork;..\..\..\include\QtNetwork\5.9.6\QtNetwork\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>qt_pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>qt_pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;WINVER=0x0600;_WIN32_WINNT=0x0600;QT_USE_SYSTEM_PROXIES;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_NETWORK_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_DEBUG;QT_NO_EXCEPTIONS;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libzlib.lib;ws2_32.lib;dnsapi.lib;iphlpapi.lib;advapi32.lib;Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;WINVER=0x0600;_WIN32_WINNT=0x0600;QT_USE_SYSTEM_PROXIES;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_NETWORK_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_DEBUG;QT_CORE_LIB;QT_CORE_LIB;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;kernel;..\..\..\include;..\..\..\include\QtNetwork;..\..\..\include\QtNetwork\5.9.6;..\..\..\include\QtNetwork\5.9.6\QtNetwork;..\..\..\include\QtNetwork\5.9.6\QtNetwork\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>qt_pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>qt_pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_STATIC;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;WINVER=0x0600;_WIN32_WINNT=0x0600;QT_USE_SYSTEM_PROXIES;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_NETWORK_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libzlib.lib;ws2_32.lib;dnsapi.lib;iphlpapi.lib;advapi32.lib;Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;WINVER=0x0600;_WIN32_WINNT=0x0600;QT_USE_SYSTEM_PROXIES;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_NETWORK_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_CORE_LIB;QT_CORE_LIB;QT_NO_EXCEPTIONS;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="access\http2\bitstreams.cpp" />
+    <ClCompile Include="access\http2\hpack.cpp" />
+    <ClCompile Include="access\http2\hpacktable.cpp" />
+    <ClCompile Include="access\http2\http2frames.cpp" />
+    <ClCompile Include="access\http2\http2protocol.cpp" />
+    <ClCompile Include="access\http2\http2streams.cpp" />
+    <ClCompile Include="access\http2\huffman.cpp" />
+    <ClCompile Include="access\qabstractnetworkcache.cpp" />
+    <ClCompile Include="access\qabstractprotocolhandler.cpp" />
+    <ClCompile Include="kernel\qauthenticator.cpp" />
+    <ClCompile Include="kernel\qdnslookup.cpp" />
+    <ClCompile Include="kernel\qdnslookup_win.cpp" />
+    <ClCompile Include="kernel\qhostaddress.cpp" />
+    <ClCompile Include="kernel\qhostinfo.cpp" />
+    <ClCompile Include="kernel\qhostinfo_win.cpp" />
+    <ClCompile Include="kernel\qnetworkdatagram.cpp" />
+    <ClCompile Include="kernel\qnetworkinterface.cpp" />
+    <ClCompile Include="kernel\qnetworkinterface_win.cpp" />
+    <ClCompile Include="kernel\qnetworkproxy.cpp" />
+    <ClCompile Include="kernel\qnetworkproxy_win.cpp" />
+    <ClCompile Include="kernel\qurlinfo.cpp" />
+    <ClCompile Include="socket\qabstractsocket.cpp" />
+    <ClCompile Include="socket\qabstractsocketengine.cpp" />
+    <ClCompile Include="socket\qhttpsocketengine.cpp" />
+    <ClCompile Include="socket\qlocalserver.cpp" />
+    <ClCompile Include="socket\qlocalserver_win.cpp" />
+    <ClCompile Include="socket\qlocalsocket.cpp" />
+    <ClCompile Include="socket\qlocalsocket_win.cpp" />
+    <ClCompile Include="socket\qnativesocketengine.cpp" />
+    <ClCompile Include="socket\qnativesocketengine_win.cpp" />
+    <ClCompile Include="socket\qsocks5socketengine.cpp" />
+    <ClCompile Include="socket\qtcpserver.cpp" />
+    <ClCompile Include="socket\qtcpsocket.cpp" />
+    <ClCompile Include="socket\qudpsocket.cpp" />
+    <ClCompile Include="access\qftp.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="access\qhsts.cpp" />
+    <ClCompile Include="access\qhstspolicy.cpp" />
+    <ClCompile Include="access\qhttp2protocolhandler.cpp" />
+    <ClCompile Include="access\qhttpmultipart.cpp" />
+    <ClCompile Include="access\qhttpnetworkconnection.cpp" />
+    <ClCompile Include="access\qhttpnetworkconnectionchannel.cpp" />
+    <ClCompile Include="access\qhttpnetworkheader.cpp" />
+    <ClCompile Include="access\qhttpnetworkreply.cpp" />
+    <ClCompile Include="access\qhttpnetworkrequest.cpp" />
+    <ClCompile Include="access\qhttpprotocolhandler.cpp" />
+    <ClCompile Include="access\qhttpthreaddelegate.cpp" />
+    <ClCompile Include="access\qnetworkaccessauthenticationmanager.cpp" />
+    <ClCompile Include="access\qnetworkaccessbackend.cpp" />
+    <ClCompile Include="access\qnetworkaccesscache.cpp" />
+    <ClCompile Include="access\qnetworkaccesscachebackend.cpp" />
+    <ClCompile Include="access\qnetworkaccessdebugpipebackend.cpp" />
+    <ClCompile Include="access\qnetworkaccessfilebackend.cpp" />
+    <ClCompile Include="access\qnetworkaccessftpbackend.cpp" />
+    <ClCompile Include="access\qnetworkaccessmanager.cpp" />
+    <ClCompile Include="access\qnetworkcookie.cpp" />
+    <ClCompile Include="access\qnetworkcookiejar.cpp" />
+    <ClCompile Include="access\qnetworkdiskcache.cpp" />
+    <ClCompile Include="access\qnetworkfile.cpp" />
+    <ClCompile Include="access\qnetworkreply.cpp" />
+    <ClCompile Include="access\qnetworkreplydataimpl.cpp" />
+    <ClCompile Include="access\qnetworkreplyfileimpl.cpp" />
+    <ClCompile Include="access\qnetworkreplyhttpimpl.cpp" />
+    <ClCompile Include="access\qnetworkreplyimpl.cpp" />
+    <ClCompile Include="access\qnetworkrequest.cpp" />
+    <ClCompile Include="access\qspdyprotocolhandler.cpp" />
+    <ClCompile Include="bearer\qbearerengine.cpp" />
+    <ClCompile Include="bearer\qbearerplugin.cpp" />
+    <ClCompile Include="bearer\qnetworkconfigmanager.cpp" />
+    <ClCompile Include="bearer\qnetworkconfigmanager_p.cpp" />
+    <ClCompile Include="bearer\qnetworkconfiguration.cpp" />
+    <ClCompile Include="bearer\qnetworksession.cpp" />
+    <ClCompile Include="bearer\qsharednetworksession.cpp" />
+    <ClCompile Include="global\qt_pch.h.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qt_pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qt_pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qt_pch.h</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qt_pch.h</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\bitstreams_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\hpack_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\hpacktable_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\http2frames_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\http2protocol_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\http2streams_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\huffman_p.h" />
+    <QtMoc Include="..\qabstractnetworkcache.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qabstractnetworkcache_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qabstractprotocolhandler_p.h" />
+    <QtMoc Include="..\qabstractsocket.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qabstractsocket_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qabstractsocketengine_p.h">
+    </QtMoc>
+    <ClInclude Include="..\qauthenticator.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qauthenticator_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qbearerengine_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qbearerplugin_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qdnslookup.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qdnslookup_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qftp_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qhostaddress.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qhostaddress_p.h" />
+    <ClInclude Include="..\qhostinfo.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qhostinfo_p.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qhsts_p.h" />
+    <ClInclude Include="..\qhstspolicy.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qhttp2protocolhandler_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qhttpmultipart.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qhttpmultipart_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qhttpnetworkconnection_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qhttpnetworkconnectionchannel_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qhttpnetworkheader_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qhttpnetworkreply_p.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qhttpnetworkrequest_p.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qhttpprotocolhandler_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qhttpsocketengine_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qhttpthreaddelegate_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qlocalserver.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qlocalserver_p.h" />
+    <QtMoc Include="..\qlocalsocket.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qlocalsocket_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnativesocketengine_p.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkaccessauthenticationmanager_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkaccessbackend_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkaccesscache_p.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkaccesscachebackend_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkaccessdebugpipebackend_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkaccessfilebackend_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkaccessftpbackend_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qnetworkaccessmanager.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkaccessmanager_p.h" />
+    <QtMoc Include="..\qnetworkconfigmanager.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkconfigmanager_p.h">
+    </QtMoc>
+    <ClInclude Include="..\qnetworkconfiguration.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkconfiguration_p.h" />
+    <ClInclude Include="..\qnetworkcookie.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkcookie_p.h" />
+    <QtMoc Include="..\qnetworkcookiejar.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkcookiejar_p.h" />
+    <ClInclude Include="..\qnetworkdatagram.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkdatagram_p.h" />
+    <QtMoc Include="..\qnetworkdiskcache.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkdiskcache_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkfile_p.h">
+    </QtMoc>
+    <ClInclude Include="..\qnetworkinterface.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkinterface_p.h" />
+    <QtMoc Include="..\qnetworkproxy.h">
+    </QtMoc>
+    <QtMoc Include="..\qnetworkreply.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkreply_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkreplydataimpl_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkreplyfileimpl_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkreplyhttpimpl_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworkreplyimpl_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qnetworkrequest.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qnetworkrequest_p.h" />
+    <QtMoc Include="..\qnetworksession.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qnetworksession_p.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qsharednetworksession_p.h" />
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qsocks5socketengine_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNetwork\private\qspdyprotocolhandler_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qtcpserver.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qtcpserver_p.h" />
+    <QtMoc Include="..\qtcpsocket.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qtcpsocket_p.h" />
+    <ClInclude Include="..\qtnetworkglobal.h" />
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qtnetworkglobal_p.h" />
+    <QtMoc Include="..\qudpsocket.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNetwork\private\qurlinfo_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Network_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

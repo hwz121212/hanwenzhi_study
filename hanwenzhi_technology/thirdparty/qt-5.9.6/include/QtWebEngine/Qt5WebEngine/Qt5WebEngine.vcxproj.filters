@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{90d5dba5-537a-4799-bed4-1b2b3be8bd4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebEngine">
+      <UniqueIdentifier>{aefd7556-2af4-47d1-812d-14c474527c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebEngine\private">
+      <UniqueIdentifier>{7cfa60ad-0957-4640-9ff4-c512acedcec4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="api\qquickwebenginecertificateerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginecontextmenurequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginedialogrequests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginedownloaditem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginefaviconprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginehistory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebengineloadrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginenavigationrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginenewviewrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebengineprofile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginescript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginesettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebenginesingleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qquickwebengineview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api\qtwebengineglobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render_widget_host_view_qt_delegate_quick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render_widget_host_view_qt_delegate_quickwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_delegates_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5WebEngine_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginecertificateerror_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginecontextmenurequest_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginedialogrequests_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginedownloaditem_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginehistory_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebengineloadrequest_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginenavigationrequest_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginenewviewrequest_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginesettings_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginesingleton_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebenginetestsupport_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebEngine\private\qquickwebengineview_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickwebengineprofile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickwebenginescript.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="render_widget_host_view_qt_delegate_quick.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWebEngine\private\qquickwebenginedownloaditem_p_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngine\private\qquickwebenginefaviconprovider_p_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngine\private\qquickwebenginehistory_p_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngine\private\qquickwebengineprofile_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngine\private\qquickwebenginescript_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngine\private\qquickwebengineview_p_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebEngine\private\qtwebengineglobal_p.h">
+      <Filter>Header Files\5.9.6\QtWebEngine\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtwebengineglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtwebengineversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render_widget_host_view_qt_delegate_quickwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_delegates_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

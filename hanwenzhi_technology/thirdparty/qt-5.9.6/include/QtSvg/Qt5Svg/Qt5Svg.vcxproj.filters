@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{549a25d9-0d20-4c1e-a257-8f1c0ab184bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtSvg">
+      <UniqueIdentifier>{e2827ccc-f5e7-4d24-814c-9ced6958517c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtSvg\private">
+      <UniqueIdentifier>{9d7e1bb7-8d77-4eda-9d5d-cc63877be904}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qgraphicssvgitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvgfont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvggenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvggraphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvghandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvgnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvgrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvgstructure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvgstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvgtinydocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsvgwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qgraphicssvgitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsvgrenderer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsvgwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qtsvgglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Svg_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qsvggenerator.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSvg\private\qsvgfont_p.h">
+      <Filter>Header Files\5.9.6\QtSvg\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSvg\private\qsvggraphics_p.h">
+      <Filter>Header Files\5.9.6\QtSvg\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSvg\private\qsvghandler_p.h">
+      <Filter>Header Files\5.9.6\QtSvg\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSvg\private\qsvgnode_p.h">
+      <Filter>Header Files\5.9.6\QtSvg\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSvg\private\qsvgstructure_p.h">
+      <Filter>Header Files\5.9.6\QtSvg\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSvg\private\qsvgstyle_p.h">
+      <Filter>Header Files\5.9.6\QtSvg\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtSvg\private\qsvgtinydocument_p.h">
+      <Filter>Header Files\5.9.6\QtSvg\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{ea79fc37-8ebf-43f7-ad65-9d830da6e397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtRemoteObjects">
+      <UniqueIdentifier>{fec01fb3-b393-4feb-a1a8-675dbf894c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtRemoteObjects\private">
+      <UniqueIdentifier>{37ca5500-2230-4c35-a301-fb7a371068da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qconnection_local_backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qconnection_tcpip_backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qconnectionfactories.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectabstractitemmodeladapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectabstractitemmodelreplica.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectdynamicreplica.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectpacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectpendingcall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectregistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectregistrysource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectreplica.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectsource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qremoteobjectsourceio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtremoteobjectglobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\qremoteobjectabstractitemmodeltypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qremoteobjectdynamicreplica.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qremoteobjectsource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtremoteobjectglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt5RemoteObjects_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qconnectionfactories_p.h">
+      <Filter>Header Files\5.9.6\QtRemoteObjects\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectnode_p.h">
+      <Filter>Header Files\5.9.6\QtRemoteObjects\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectpacket_p.h">
+      <Filter>Header Files\5.9.6\QtRemoteObjects\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectreplica_p.h">
+      <Filter>Header Files\5.9.6\QtRemoteObjects\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectsource_p.h">
+      <Filter>Header Files\5.9.6\QtRemoteObjects\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qconnection_local_backend_p.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qconnection_tcpip_backend_p.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qconnectionfactories.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectabstractitemmodeladapter_p.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qremoteobjectabstractitemmodelreplica.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectabstractitemmodelreplica_p.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qremoteobjectnode.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qremoteobjectpendingcall.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectpendingcall_p.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qremoteobjectregistry.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectregistrysource_p.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qremoteobjectreplica.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtRemoteObjects\private\qremoteobjectsourceio_p.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

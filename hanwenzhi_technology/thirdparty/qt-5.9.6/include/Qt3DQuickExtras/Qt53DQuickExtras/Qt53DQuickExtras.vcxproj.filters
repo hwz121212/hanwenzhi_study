@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{7b153ce2-ce4f-4eef-911c-20fffc60c451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickExtras">
+      <UniqueIdentifier>{cc1bc431-bcd2-4289-9d75-6526ec2ec053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickExtras\private">
+      <UniqueIdentifier>{6c93fb50-b9f4-4025-a90b-a17a963eb038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items">
+      <UniqueIdentifier>{27a1000d-036d-4d16-b3ae-4a1d75f9ef69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DQuickExtras_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DQuickExtras\private\qt3dquickextras_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickExtras\private\qt3dquickwindow_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickExtras\private\qt3dquickwindowlogging_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickExtras\private\quick3dlevelofdetailloader_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickextras_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickextrasversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DQuickExtras\private\quick3dlevelofdetailloader_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickExtras\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qt3dquickwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt3dquickwindow.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qt3dquickwindowlogging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dlevelofdetailloader.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

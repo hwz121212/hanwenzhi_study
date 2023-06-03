@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qgeocodereplyosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeocodingmanagerengineosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeofiletilecacheosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeomapreplyosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoroutereplyosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoroutingmanagerengineosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeoserviceproviderpluginosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeotiledmaposm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeotiledmappingmanagerengineosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeotilefetcherosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgeotileproviderosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qplacecategoriesreplyosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qplacemanagerengineosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qplacesearchreplyosm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qgeocodereplyosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeocodingmanagerengineosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeofiletilecacheosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeomapreplyosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeoroutereplyosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeoroutingmanagerengineosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeoserviceproviderpluginosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeotiledmaposm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeotiledmappingmanagerengineosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeotilefetcherosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgeotileproviderosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qplacecategoriesreplyosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qplacemanagerengineosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qplacesearchreplyosm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtgeoservices_osm_resource.rc" />
+  </ItemGroup>
+</Project>

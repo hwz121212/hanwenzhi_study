@@ -1,0 +1,6 @@
+<CustomBuild Include="qmldir">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">qmldir;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">$(QINSTALL) qmldir F:\qt\Src\qt3d\qml\QtQuick\Scene3D\qmldir</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">COPY qmldir</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\qt\Src\qt3d\qml\QtQuick\Scene3D\qmldir;%(Outputs)</Outputs>
+    </CustomBuild>

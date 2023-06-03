@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abstractdeclarative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="colorgradient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datavisualizationqml2_plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativebars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativecolor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativerendernode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativescatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativescene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativeseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativesurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="declarativetheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enumtostringmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glstatestore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="abstractdeclarative_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="colorgradient_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="datavisualizationqml2_plugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativebars_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativecolor_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativerendernode_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativescatter_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativescene_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativeseries_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativesurface_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="declarativetheme_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="enumtostringmap_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="glstatestore_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\datavisualizationqml2_resource.rc" />
+  </ItemGroup>
+</Project>

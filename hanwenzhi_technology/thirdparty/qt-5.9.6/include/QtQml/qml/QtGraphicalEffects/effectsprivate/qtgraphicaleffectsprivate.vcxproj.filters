@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="qml">
+      <UniqueIdentifier>{045e1805-0b79-4818-933f-fedca8dcb7d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="plugin.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="qgfxshaderbuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgfxsourceproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qgfxshaderbuilder_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qgfxsourceproxy_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtgraphicaleffectsprivate_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GaussianMaskedBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="DropShadowBase.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="FastGlow.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="FastInnerShadow.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="FastMaskedBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="GaussianDirectionalBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="GaussianGlow.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="GaussianInnerShadow.qml">
+      <Filter>qml</Filter>
+    </None>
+  </ItemGroup>
+</Project>

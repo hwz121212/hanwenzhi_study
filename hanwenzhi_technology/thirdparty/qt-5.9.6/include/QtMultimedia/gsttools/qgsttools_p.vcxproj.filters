@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{d41e29f0-1c70-4902-9060-de411b23d661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtMultimedia">
+      <UniqueIdentifier>{ed11ce50-1efc-4023-a9e1-c0cd420b3e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtMultimedia\private">
+      <UniqueIdentifier>{94f16a3a-90d2-4420-8663-4f556ac30332}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qgstcodecsinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreameraudioinputselector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreameraudioprobecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamerbufferprobe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="qgstreamerbushelper.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="qgstreamermessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamervideoinputdevicecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamervideooverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamervideoprobecontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamervideorenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamervideorendererinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamervideowidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstreamervideowindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstvideobuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstvideorendererplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgstvideorenderersink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstcodecsinfo_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreameraudioinputselector_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreameraudioprobecontrol_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamerbufferprobe_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamerbushelper_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamermessage_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamervideoinputdevicecontrol_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamervideoprobecontrol_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamervideorenderer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamervideorendererinterface_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstreamervideowidget_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstutils_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstvideobuffer_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\qgstvideorenderersink_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimedia\private\gstreamervideowindow_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qgstreamervideooverlay_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimedia\private\qgstvideorendererplugin_p.h">
+      <Filter>Header Files\5.9.6\QtMultimedia\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

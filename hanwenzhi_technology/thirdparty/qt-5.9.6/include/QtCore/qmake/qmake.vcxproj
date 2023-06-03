@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF60EDDE-BE9B-3DBF-B3E6-94FF7EE11A23}</ProjectGuid>
+    <RootNamespace>qmake</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>
+    </QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>
+    </QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;library;generators;generators\mac;generators\unix;generators\win32;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_QMAKE;_CONSOLE;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_QMAKE;QT_NO_FOREACH;QT_VERSION_STR="5.9.6";QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=6;PROEVALUATOR_FULL;QT_BOOTSTRAPPED;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libQt5Bootstrap.lib;libzlib.lib;ole32.lib;advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_QMAKE;QT_NO_FOREACH;PROEVALUATOR_FULL;QT_BOOTSTRAPPED;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;library;generators;generators\mac;generators\unix;generators\win32;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_QMAKE;_CONSOLE;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_QMAKE;QT_NO_FOREACH;QT_VERSION_STR="5.9.6";QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=6;PROEVALUATOR_FULL;QT_BOOTSTRAPPED;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libQt5Bootstrap.lib;libzlib.lib;ole32.lib;advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;WIN64;QT_BUILD_QMAKE;QT_NO_FOREACH;PROEVALUATOR_FULL;QT_BOOTSTRAPPED;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Qt5Core\global\qlibraryinfo.cpp" />
+    <ClCompile Include="generators\win32\registry.cpp" />
+    <ClCompile Include="library\ioutils.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="generators\makefile.cpp" />
+    <ClCompile Include="generators\makefiledeps.cpp" />
+    <ClCompile Include="meta.cpp" />
+    <ClCompile Include="generators\metamakefile.cpp" />
+    <ClCompile Include="generators\win32\mingw_make.cpp" />
+    <ClCompile Include="generators\win32\msbuild_objectmodel.cpp" />
+    <ClCompile Include="generators\win32\msvc_nmake.cpp" />
+    <ClCompile Include="generators\win32\msvc_objectmodel.cpp" />
+    <ClCompile Include="generators\win32\msvc_vcproj.cpp" />
+    <ClCompile Include="generators\win32\msvc_vcxproj.cpp" />
+    <ClCompile Include="option.cpp" />
+    <ClCompile Include="generators\mac\pbuilder_pbx.cpp" />
+    <ClCompile Include="library\proitems.cpp" />
+    <ClCompile Include="project.cpp" />
+    <ClCompile Include="generators\projectgenerator.cpp" />
+    <ClCompile Include="property.cpp" />
+    <ClCompile Include="library\qmakebuiltins.cpp" />
+    <ClCompile Include="library\qmakeevaluator.cpp" />
+    <ClCompile Include="library\qmakeglobals.cpp" />
+    <ClCompile Include="library\qmakeparser.cpp" />
+    <ClCompile Include="library\qmakevfs.cpp" />
+    <ClCompile Include="generators\unix\unixmake.cpp" />
+    <ClCompile Include="generators\unix\unixmake2.cpp" />
+    <ClCompile Include="generators\win32\winmakefile.cpp" />
+    <ClCompile Include="generators\xmloutput.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cachekeys.h" />
+    <ClInclude Include="library\ioutils.h" />
+    <ClInclude Include="generators\makefile.h" />
+    <ClInclude Include="generators\makefiledeps.h" />
+    <ClInclude Include="meta.h" />
+    <ClInclude Include="generators\metamakefile.h" />
+    <ClInclude Include="generators\win32\mingw_make.h" />
+    <ClInclude Include="generators\win32\msbuild_objectmodel.h" />
+    <ClInclude Include="generators\win32\msvc_nmake.h" />
+    <ClInclude Include="generators\win32\msvc_objectmodel.h" />
+    <ClInclude Include="generators\win32\msvc_vcproj.h" />
+    <ClInclude Include="generators\win32\msvc_vcxproj.h" />
+    <ClInclude Include="option.h" />
+    <ClInclude Include="generators\mac\pbuilder_pbx.h" />
+    <ClInclude Include="library\proitems.h" />
+    <ClInclude Include="project.h" />
+    <ClInclude Include="generators\projectgenerator.h" />
+    <ClInclude Include="property.h" />
+    <ClInclude Include="qabstractfileengine_p.h" />
+    <ClInclude Include="qarraydata.h" />
+    <ClInclude Include="qarraydataops.h" />
+    <ClInclude Include="qarraydatapointer.h" />
+    <ClInclude Include="qbitarray.h" />
+    <ClInclude Include="qbuffer.h" />
+    <ClInclude Include="qbytearray.h" />
+    <ClInclude Include="qbytearraymatcher.h" />
+    <ClInclude Include="qchar.h" />
+    <ClInclude Include="qcryptographichash.h" />
+    <ClInclude Include="qdatetime.h" />
+    <ClInclude Include="qdatetime_p.h" />
+    <ClInclude Include="qdir.h" />
+    <ClInclude Include="qdir_p.h" />
+    <ClInclude Include="qdiriterator.h" />
+    <ClInclude Include="qfile.h" />
+    <ClInclude Include="qfileinfo.h" />
+    <ClInclude Include="qglobal.h" />
+    <ClInclude Include="qhash.h" />
+    <ClInclude Include="qiodevice.h" />
+    <ClInclude Include="qjson.h" />
+    <ClInclude Include="qjsonarray.h" />
+    <ClInclude Include="qjsondocument.h" />
+    <ClInclude Include="qjsonobject.h" />
+    <ClInclude Include="qjsonparser.h" />
+    <ClInclude Include="qjsonvalue.h" />
+    <ClInclude Include="qjsonwriter.h" />
+    <ClInclude Include="qlinkedlist.h" />
+    <ClInclude Include="qlist.h" />
+    <ClInclude Include="qlocale.h" />
+    <ClInclude Include="qlocale_tools_p.h" />
+    <ClInclude Include="library\qmake_global.h" />
+    <ClInclude Include="library\qmakeevaluator.h" />
+    <ClInclude Include="library\qmakeevaluator_p.h" />
+    <ClInclude Include="library\qmakeglobals.h" />
+    <ClInclude Include="library\qmakeparser.h" />
+    <ClInclude Include="library\qmakevfs.h" />
+    <ClInclude Include="qmalloc.h" />
+    <ClInclude Include="qmap.h" />
+    <ClInclude Include="qmetatype.h" />
+    <ClInclude Include="qnumeric.h" />
+    <ClInclude Include="qregexp.h" />
+    <ClInclude Include="qstring.h" />
+    <ClInclude Include="qstringlist.h" />
+    <ClInclude Include="qstringmatcher.h" />
+    <ClInclude Include="qsystemerror_p.h" />
+    <ClInclude Include="qtemporaryfile.h" />
+    <ClInclude Include="qtextcodec.h" />
+    <ClInclude Include="qtextstream.h" />
+    <ClInclude Include="qutfcodec.h" />
+    <ClInclude Include="quuid.h" />
+    <ClInclude Include="qvector.h" />
+    <ClInclude Include="qxmlstream.h" />
+    <ClInclude Include="qxmlutils.h" />
+    <ClInclude Include="generators\unix\unixmake.h" />
+    <ClInclude Include="generators\win32\winmakefile.h" />
+    <ClInclude Include="generators\xmloutput.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qmake_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

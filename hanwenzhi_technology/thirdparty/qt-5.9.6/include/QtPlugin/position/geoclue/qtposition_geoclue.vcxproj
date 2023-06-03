@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63D768ED-EABF-3B9E-A02F-3136FCE42B1C}</ProjectGuid>
+    <RootNamespace>qtposition_geoclue</RootNamespace>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;positioning;dbus</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;positioning;dbus</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\plugins\position\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\plugins\position\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning\5.9.6\QtPositioning;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning\5.9.6\QtPositioning\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation\5.9.6\QtLocation;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation\5.9.6\QtLocation\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork\5.9.6\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork\5.9.6\QtNetwork\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtConcurrent;$(SolutionDir)thirdparty\qt-5.9.6\mkspecs\win32-msvc;$(SolutionDir)thirdparty\clipper;$(SolutionDir)thirdparty\clip2tri;$(SolutionDir)thirdparty\poly2tri\poly2tri;$(SolutionDir)thirdparty\earcut</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_PLUGIN;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Positioning.lib;Qt5Location.lib;Qt5Network.lib;Qt5DBus.lib;libclipper.lib;libclip2tri.lib;libpoly2tri.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_PLUGIN;QT_POSITIONING_LIB;QT_DBUS_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\qt-5.9.6\include;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning\5.9.6\QtPositioning;$(SolutionDir)thirdparty\qt-5.9.6\include\QtPositioning\5.9.6\QtPositioning\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation\5.9.6\QtLocation;$(SolutionDir)thirdparty\qt-5.9.6\include\QtLocation\5.9.6\QtLocation\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQml\5.9.6\QtQml\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtWidgets\5.9.6\QtWidgets;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtGui\5.9.6\QtGui;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick;$(SolutionDir)thirdparty\qt-5.9.6\include\QtQuick\5.9.6\QtQuick\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork\5.9.6\QtNetwork;$(SolutionDir)thirdparty\qt-5.9.6\include\QtNetwork\5.9.6\QtNetwork\private;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6;$(SolutionDir)thirdparty\qt-5.9.6\include\QtCore\5.9.6\QtCore;$(SolutionDir)thirdparty\qt-5.9.6\include\QtConcurrent;$(SolutionDir)thirdparty\qt-5.9.6\mkspecs\win32-msvc;$(SolutionDir)thirdparty\clipper;$(SolutionDir)thirdparty\clip2tri;$(SolutionDir)thirdparty\poly2tri\poly2tri;$(SolutionDir)thirdparty\earcut</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;QT_PLUGIN;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Positioning.lib;Qt5Location.lib;Qt5Network.lib;Qt5DBus.lib;libclipper.lib;libclip2tri.lib;libpoly2tri.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_NO_EXCEPTIONS;QT_PLUGIN;QT_POSITIONING_LIB;QT_DBUS_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="geocluetypes.cpp" />
+    <ClCompile Include="qgeocluemaster.cpp" />
+    <ClCompile Include="qgeopositioninfosource_geocluemaster.cpp" />
+    <ClCompile Include="qgeopositioninfosourcefactory_geoclue.cpp" />
+    <ClCompile Include="qgeosatelliteinfosource_geocluemaster.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="geocluetypes.h" />
+    <QtMoc Include="qgeocluemaster.h">
+    </QtMoc>
+    <QtMoc Include="qgeopositioninfosource_geocluemaster.h">
+    </QtMoc>
+    <QtMoc Include="qgeopositioninfosourcefactory_geoclue.h">
+    </QtMoc>
+    <QtMoc Include="qgeosatelliteinfosource_geocluemaster.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="geoclue_interface.cpp" />
+    <ClCompile Include="master_interface.cpp" />
+    <ClCompile Include="masterclient_interface.cpp" />
+    <ClCompile Include="position_interface.cpp" />
+    <ClCompile Include="satellite_interface.cpp" />
+    <ClCompile Include="velocity_interface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="org.freedesktop.Geoclue.Master.xml">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">org.freedesktop.Geoclue.Master.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i master_interface.h -p :master_interface.cpp org.freedesktop.Geoclue.Master.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p master_interface.h: org.freedesktop.Geoclue.Master.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Master.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Master.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">master_interface.cpp;master_interface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">org.freedesktop.Geoclue.Master.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i master_interface.h -p :master_interface.cpp org.freedesktop.Geoclue.Master.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p master_interface.h: org.freedesktop.Geoclue.Master.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Master.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Master.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">master_interface.cpp;master_interface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.MasterClient.xml">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">org.freedesktop.Geoclue.MasterClient.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i masterclient_interface.h -p :masterclient_interface.cpp org.freedesktop.Geoclue.MasterClient.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p masterclient_interface.h: org.freedesktop.Geoclue.MasterClient.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.MasterClient.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.MasterClient.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">masterclient_interface.cpp;masterclient_interface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">org.freedesktop.Geoclue.MasterClient.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i masterclient_interface.h -p :masterclient_interface.cpp org.freedesktop.Geoclue.MasterClient.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p masterclient_interface.h: org.freedesktop.Geoclue.MasterClient.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.MasterClient.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.MasterClient.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">masterclient_interface.cpp;masterclient_interface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.Position.xml">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">org.freedesktop.Geoclue.Position.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i position_interface.h -p :position_interface.cpp org.freedesktop.Geoclue.Position.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p position_interface.h: org.freedesktop.Geoclue.Position.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Position.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Position.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">position_interface.cpp;position_interface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">org.freedesktop.Geoclue.Position.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i position_interface.h -p :position_interface.cpp org.freedesktop.Geoclue.Position.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p position_interface.h: org.freedesktop.Geoclue.Position.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Position.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Position.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">position_interface.cpp;position_interface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.Satellite.xml">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">org.freedesktop.Geoclue.Satellite.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i satellite_interface.h -p :satellite_interface.cpp org.freedesktop.Geoclue.Satellite.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p satellite_interface.h: org.freedesktop.Geoclue.Satellite.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Satellite.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Satellite.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">satellite_interface.cpp;satellite_interface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">org.freedesktop.Geoclue.Satellite.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i satellite_interface.h -p :satellite_interface.cpp org.freedesktop.Geoclue.Satellite.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p satellite_interface.h: org.freedesktop.Geoclue.Satellite.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Satellite.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Satellite.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">satellite_interface.cpp;satellite_interface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.Velocity.xml">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">org.freedesktop.Geoclue.Velocity.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i velocity_interface.h -p :velocity_interface.cpp org.freedesktop.Geoclue.Velocity.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p velocity_interface.h: org.freedesktop.Geoclue.Velocity.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Velocity.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Velocity.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">velocity_interface.cpp;velocity_interface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">org.freedesktop.Geoclue.Velocity.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i velocity_interface.h -p :velocity_interface.cpp org.freedesktop.Geoclue.Velocity.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p velocity_interface.h: org.freedesktop.Geoclue.Velocity.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.Velocity.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.Velocity.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">velocity_interface.cpp;velocity_interface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="org.freedesktop.Geoclue.xml">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">org.freedesktop.Geoclue.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i geoclue_interface.h -p :geoclue_interface.cpp org.freedesktop.Geoclue.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p geoclue_interface.h: org.freedesktop.Geoclue.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">geoclue_interface.cpp;geoclue_interface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">org.freedesktop.Geoclue.xml;$(QTDIR)\bin\qdbusxml2cpp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qdbusxml2cpp.exe -i geoclue_interface.h -p :geoclue_interface.cpp org.freedesktop.Geoclue.xml
+if errorlevel 1 goto VCEnd
+$(QTDIR)\bin\qdbusxml2cpp.exe -N -i geocluetypes.h -p geoclue_interface.h: org.freedesktop.Geoclue.xml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DBUSXML2CPP INTERFACE SOURCE org.freedesktop.Geoclue.xml, DBUSXML2CPP INTERFACE HEADER org.freedesktop.Geoclue.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">geoclue_interface.cpp;geoclue_interface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="geoclue_interface.h">
+    </QtMoc>
+    <QtMoc Include="master_interface.h">
+    </QtMoc>
+    <QtMoc Include="masterclient_interface.h">
+    </QtMoc>
+    <QtMoc Include="position_interface.h">
+    </QtMoc>
+    <QtMoc Include="satellite_interface.h">
+    </QtMoc>
+    <QtMoc Include="velocity_interface.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtposition_geoclue_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

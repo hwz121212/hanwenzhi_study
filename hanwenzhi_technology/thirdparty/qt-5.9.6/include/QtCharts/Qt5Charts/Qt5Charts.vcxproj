@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{575883BD-79E0-3C28-AA37-42B580161E52}</ProjectGuid>
+    <RootNamespace>Qt5Charts</RootNamespace>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;animations;areachart;axis;axis\valueaxis;axis\barcategoryaxis;axis\categoryaxis;axis\logvalueaxis;axis\datetimeaxis;domain;barchart;barchart\vertical\bar;barchart\vertical\stacked;barchart\vertical\percent;barchart\horizontal\bar;barchart\horizontal\stacked;barchart\horizontal\percent;legend;linechart;piechart;scatterchart;splinechart;themes;xychart;layout;boxplotchart;candlestickchart;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCharts;..\..\..\include\QtCharts\5.9.6;..\..\..\include\QtCharts\5.9.6\QtCharts;..\..\..\include\QtCharts\5.9.6\QtCharts\private;..\..\..\include\QtWidgets;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_CHARTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Test.lib;user32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_CHARTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;animations;areachart;axis;axis\valueaxis;axis\barcategoryaxis;axis\categoryaxis;axis\logvalueaxis;axis\datetimeaxis;domain;barchart;barchart\vertical\bar;barchart\vertical\stacked;barchart\vertical\percent;barchart\horizontal\bar;barchart\horizontal\stacked;barchart\horizontal\percent;legend;linechart;piechart;scatterchart;splinechart;themes;xychart;layout;boxplotchart;candlestickchart;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCharts;..\..\..\include\QtCharts\5.9.6;..\..\..\include\QtCharts\5.9.6\QtCharts;..\..\..\include\QtCharts\5.9.6\QtCharts\private;..\..\..\include\QtWidgets;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_CHARTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5Test.lib;user32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_CHARTS_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="barchart\abstractbarchartitem.cpp" />
+    <ClCompile Include="layout\abstractchartlayout.cpp" />
+    <ClCompile Include="domain\abstractdomain.cpp" />
+    <ClCompile Include="areachart\areachartitem.cpp" />
+    <ClCompile Include="animations\axisanimation.cpp" />
+    <ClCompile Include="barchart\bar.cpp" />
+    <ClCompile Include="animations\baranimation.cpp" />
+    <ClCompile Include="barchart\vertical\bar\barchartitem.cpp" />
+    <ClCompile Include="animations\boxplotanimation.cpp" />
+    <ClCompile Include="boxplotchart\boxplotchartitem.cpp" />
+    <ClCompile Include="boxplotchart\boxwhiskers.cpp" />
+    <ClCompile Include="animations\boxwhiskersanimation.cpp" />
+    <ClCompile Include="candlestickchart\candlestick.cpp" />
+    <ClCompile Include="animations\candlestickanimation.cpp" />
+    <ClCompile Include="animations\candlestickbodywicksanimation.cpp" />
+    <ClCompile Include="candlestickchart\candlestickchartitem.cpp" />
+    <ClCompile Include="axis\cartesianchartaxis.cpp" />
+    <ClCompile Include="layout\cartesianchartlayout.cpp" />
+    <ClCompile Include="animations\chartanimation.cpp" />
+    <ClCompile Include="axis\chartaxiselement.cpp" />
+    <ClCompile Include="chartbackground.cpp" />
+    <ClCompile Include="axis\barcategoryaxis\chartbarcategoryaxisx.cpp" />
+    <ClCompile Include="axis\barcategoryaxis\chartbarcategoryaxisy.cpp" />
+    <ClCompile Include="axis\categoryaxis\chartcategoryaxisx.cpp" />
+    <ClCompile Include="axis\categoryaxis\chartcategoryaxisy.cpp" />
+    <ClCompile Include="chartdataset.cpp" />
+    <ClCompile Include="axis\datetimeaxis\chartdatetimeaxisx.cpp" />
+    <ClCompile Include="axis\datetimeaxis\chartdatetimeaxisy.cpp" />
+    <ClCompile Include="chartelement.cpp" />
+    <ClCompile Include="chartitem.cpp" />
+    <ClCompile Include="axis\logvalueaxis\chartlogvalueaxisx.cpp" />
+    <ClCompile Include="axis\logvalueaxis\chartlogvalueaxisy.cpp" />
+    <ClCompile Include="chartpresenter.cpp" />
+    <ClCompile Include="chartthememanager.cpp" />
+    <ClCompile Include="charttitle.cpp" />
+    <ClCompile Include="axis\valueaxis\chartvalueaxisx.cpp" />
+    <ClCompile Include="axis\valueaxis\chartvalueaxisy.cpp" />
+    <ClCompile Include="glwidget.cpp" />
+    <ClCompile Include="xychart\glxyseriesdata.cpp" />
+    <ClCompile Include="axis\horizontalaxis.cpp" />
+    <ClCompile Include="barchart\horizontal\bar\horizontalbarchartitem.cpp" />
+    <ClCompile Include="barchart\horizontal\percent\horizontalpercentbarchartitem.cpp" />
+    <ClCompile Include="barchart\horizontal\stacked\horizontalstackedbarchartitem.cpp" />
+    <ClCompile Include="legend\legendlayout.cpp" />
+    <ClCompile Include="legend\legendmarkeritem.cpp" />
+    <ClCompile Include="legend\legendscroller.cpp" />
+    <ClCompile Include="linechart\linechartitem.cpp" />
+    <ClCompile Include="domain\logxlogydomain.cpp" />
+    <ClCompile Include="domain\logxlogypolardomain.cpp" />
+    <ClCompile Include="domain\logxydomain.cpp" />
+    <ClCompile Include="domain\logxypolardomain.cpp" />
+    <ClCompile Include="barchart\vertical\percent\percentbarchartitem.cpp" />
+    <ClCompile Include="animations\pieanimation.cpp" />
+    <ClCompile Include="piechart\piechartitem.cpp" />
+    <ClCompile Include="animations\piesliceanimation.cpp" />
+    <ClCompile Include="piechart\piesliceitem.cpp" />
+    <ClCompile Include="axis\polarchartaxis.cpp" />
+    <ClCompile Include="axis\polarchartaxisangular.cpp" />
+    <ClCompile Include="axis\polarchartaxisradial.cpp" />
+    <ClCompile Include="axis\categoryaxis\polarchartcategoryaxisangular.cpp" />
+    <ClCompile Include="axis\categoryaxis\polarchartcategoryaxisradial.cpp" />
+    <ClCompile Include="axis\datetimeaxis\polarchartdatetimeaxisangular.cpp" />
+    <ClCompile Include="axis\datetimeaxis\polarchartdatetimeaxisradial.cpp" />
+    <ClCompile Include="layout\polarchartlayout.cpp" />
+    <ClCompile Include="axis\logvalueaxis\polarchartlogvalueaxisangular.cpp" />
+    <ClCompile Include="axis\logvalueaxis\polarchartlogvalueaxisradial.cpp" />
+    <ClCompile Include="axis\valueaxis\polarchartvalueaxisangular.cpp" />
+    <ClCompile Include="axis\valueaxis\polarchartvalueaxisradial.cpp" />
+    <ClCompile Include="domain\polardomain.cpp" />
+    <ClCompile Include="axis\qabstractaxis.cpp" />
+    <ClCompile Include="barchart\qabstractbarseries.cpp" />
+    <ClCompile Include="qabstractseries.cpp" />
+    <ClCompile Include="legend\qarealegendmarker.cpp" />
+    <ClCompile Include="areachart\qareaseries.cpp" />
+    <ClCompile Include="axis\barcategoryaxis\qbarcategoryaxis.cpp" />
+    <ClCompile Include="legend\qbarlegendmarker.cpp" />
+    <ClCompile Include="barchart\qbarmodelmapper.cpp" />
+    <ClCompile Include="barchart\vertical\bar\qbarseries.cpp" />
+    <ClCompile Include="barchart\qbarset.cpp" />
+    <ClCompile Include="legend\qboxplotlegendmarker.cpp" />
+    <ClCompile Include="boxplotchart\qboxplotmodelmapper.cpp" />
+    <ClCompile Include="boxplotchart\qboxplotseries.cpp" />
+    <ClCompile Include="boxplotchart\qboxset.cpp" />
+    <ClCompile Include="legend\qcandlesticklegendmarker.cpp" />
+    <ClCompile Include="candlestickchart\qcandlestickmodelmapper.cpp" />
+    <ClCompile Include="candlestickchart\qcandlestickseries.cpp" />
+    <ClCompile Include="candlestickchart\qcandlestickset.cpp" />
+    <ClCompile Include="axis\categoryaxis\qcategoryaxis.cpp" />
+    <ClCompile Include="qchart.cpp" />
+    <ClCompile Include="qchartview.cpp" />
+    <ClCompile Include="axis\datetimeaxis\qdatetimeaxis.cpp" />
+    <ClCompile Include="barchart\qhbarmodelmapper.cpp" />
+    <ClCompile Include="boxplotchart\qhboxplotmodelmapper.cpp" />
+    <ClCompile Include="candlestickchart\qhcandlestickmodelmapper.cpp" />
+    <ClCompile Include="barchart\horizontal\bar\qhorizontalbarseries.cpp" />
+    <ClCompile Include="barchart\horizontal\percent\qhorizontalpercentbarseries.cpp" />
+    <ClCompile Include="barchart\horizontal\stacked\qhorizontalstackedbarseries.cpp" />
+    <ClCompile Include="piechart\qhpiemodelmapper.cpp" />
+    <ClCompile Include="xychart\qhxymodelmapper.cpp" />
+    <ClCompile Include="legend\qlegend.cpp" />
+    <ClCompile Include="legend\qlegendmarker.cpp" />
+    <ClCompile Include="linechart\qlineseries.cpp" />
+    <ClCompile Include="axis\logvalueaxis\qlogvalueaxis.cpp" />
+    <ClCompile Include="barchart\vertical\percent\qpercentbarseries.cpp" />
+    <ClCompile Include="legend\qpielegendmarker.cpp" />
+    <ClCompile Include="piechart\qpiemodelmapper.cpp" />
+    <ClCompile Include="piechart\qpieseries.cpp" />
+    <ClCompile Include="piechart\qpieslice.cpp" />
+    <ClCompile Include="qpolarchart.cpp" />
+    <ClCompile Include="scatterchart\qscatterseries.cpp" />
+    <ClCompile Include="splinechart\qsplineseries.cpp" />
+    <ClCompile Include="barchart\vertical\stacked\qstackedbarseries.cpp" />
+    <ClCompile Include="axis\valueaxis\qvalueaxis.cpp" />
+    <ClCompile Include="barchart\qvbarmodelmapper.cpp" />
+    <ClCompile Include="boxplotchart\qvboxplotmodelmapper.cpp" />
+    <ClCompile Include="candlestickchart\qvcandlestickmodelmapper.cpp" />
+    <ClCompile Include="piechart\qvpiemodelmapper.cpp" />
+    <ClCompile Include="xychart\qvxymodelmapper.cpp" />
+    <ClCompile Include="legend\qxylegendmarker.cpp" />
+    <ClCompile Include="xychart\qxymodelmapper.cpp" />
+    <ClCompile Include="xychart\qxyseries.cpp" />
+    <ClCompile Include="animations\scatteranimation.cpp" />
+    <ClCompile Include="scatterchart\scatterchartitem.cpp" />
+    <ClCompile Include="scroller.cpp" />
+    <ClCompile Include="animations\splineanimation.cpp" />
+    <ClCompile Include="splinechart\splinechartitem.cpp" />
+    <ClCompile Include="barchart\vertical\stacked\stackedbarchartitem.cpp" />
+    <ClCompile Include="axis\verticalaxis.cpp" />
+    <ClCompile Include="domain\xlogydomain.cpp" />
+    <ClCompile Include="domain\xlogypolardomain.cpp" />
+    <ClCompile Include="animations\xyanimation.cpp" />
+    <ClCompile Include="xychart\xychart.cpp" />
+    <ClCompile Include="domain\xydomain.cpp" />
+    <ClCompile Include="domain\xypolardomain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Charts_resource.rc">
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtCharts\private\abstractbarchartitem_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtCharts\private\abstractchartlayout_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\axisanimation_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\boxwhiskersdata_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\candlestickdata_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\cartesianchartlayout_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartbackground_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartconfig_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartelement_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\charthelpers_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemebluecerulean_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemeblueicy_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemebluencs_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemebrownsand_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemedark_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemehighcontrast_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemelight_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemeqt_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemesystem_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\charttitle_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\horizontalaxis_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\legendlayout_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\linearrowitem_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\piesliceanimation_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\pieslicedata_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\polarchartlayout_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qbarseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qchartview_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qchart_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qhorizontalbarseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qhorizontalpercentbarseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qhorizontalstackedbarseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qlineseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qpercentbarseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qscatterseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\qstackedbarseries_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\scatteranimation_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\splineanimation_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\verticalaxis_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\xyanimation_p.h" />
+    <ClInclude Include="..\chartsnamespace.h" />
+    <ClInclude Include="..\qchartglobal.h" />
+    <ClInclude Include="..\qtchartsversion.h" />
+    <QtMoc Include="..\qxyseries.h" />
+    <QtMoc Include="..\qxymodelmapper.h" />
+    <QtMoc Include="..\qxylegendmarker.h" />
+    <QtMoc Include="..\qvxymodelmapper.h" />
+    <QtMoc Include="..\qvpiemodelmapper.h" />
+    <QtMoc Include="..\qvcandlestickmodelmapper.h" />
+    <QtMoc Include="..\qvboxplotmodelmapper.h" />
+    <QtMoc Include="..\qvbarmodelmapper.h" />
+    <QtMoc Include="..\qvalueaxis.h" />
+    <QtMoc Include="..\qstackedbarseries.h" />
+    <QtMoc Include="..\qsplineseries.h" />
+    <QtMoc Include="..\qscatterseries.h" />
+    <QtMoc Include="..\qpolarchart.h" />
+    <QtMoc Include="..\qpieslice.h" />
+    <QtMoc Include="..\qpieseries.h" />
+    <QtMoc Include="..\qpiemodelmapper.h" />
+    <QtMoc Include="..\qpielegendmarker.h" />
+    <QtMoc Include="..\qpercentbarseries.h" />
+    <QtMoc Include="..\qlogvalueaxis.h" />
+    <QtMoc Include="..\qlineseries.h" />
+    <QtMoc Include="..\qlegendmarker.h" />
+    <QtMoc Include="..\qlegend.h" />
+    <QtMoc Include="..\qhxymodelmapper.h" />
+    <QtMoc Include="..\qhpiemodelmapper.h" />
+    <QtMoc Include="..\qhorizontalstackedbarseries.h" />
+    <QtMoc Include="..\qhorizontalpercentbarseries.h" />
+    <QtMoc Include="..\qhorizontalbarseries.h" />
+    <QtMoc Include="..\qhcandlestickmodelmapper.h" />
+    <QtMoc Include="..\qhboxplotmodelmapper.h" />
+    <QtMoc Include="..\qhbarmodelmapper.h" />
+    <QtMoc Include="..\qdatetimeaxis.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qdatetime.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qdatetime.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qchartview.h" />
+    <QtMoc Include="..\qchart.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qeasingcurve.h;qlocale.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qeasingcurve.h;qlocale.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qcategoryaxis.h" />
+    <QtMoc Include="..\qcandlestickset.h" />
+    <QtMoc Include="..\qcandlestickseries.h" />
+    <QtMoc Include="..\qcandlestickmodelmapper.h" />
+    <QtMoc Include="..\qcandlesticklegendmarker.h" />
+    <QtMoc Include="..\qboxset.h" />
+    <QtMoc Include="..\qboxplotseries.h" />
+    <QtMoc Include="..\qboxplotmodelmapper.h" />
+    <QtMoc Include="..\qboxplotlegendmarker.h" />
+    <QtMoc Include="..\qbarset.h" />
+    <QtMoc Include="..\qbarseries.h" />
+    <QtMoc Include="..\qbarmodelmapper.h" />
+    <QtMoc Include="..\qbarlegendmarker.h" />
+    <QtMoc Include="..\qbarcategoryaxis.h" />
+    <QtMoc Include="..\qareaseries.h" />
+    <QtMoc Include="..\qarealegendmarker.h" />
+    <QtMoc Include="..\qabstractseries.h" />
+    <QtMoc Include="..\qabstractbarseries.h" />
+    <QtMoc Include="..\qabstractaxis.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\xypolardomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\xydomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\xychart_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\xlogypolardomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\xlogydomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\stackedbarchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\splinechartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\scroller_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\scatterchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qxyseries_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qabstractitemmodel.h;qxyseries.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qabstractitemmodel.h;qxyseries.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qxymodelmapper_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qabstractitemmodel.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qabstractitemmodel.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qxylegendmarker_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qvalueaxis_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qsplineseries_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qsplineseries.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qsplineseries.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpieslice_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpieseries_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpiemodelmapper_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qabstractitemmodel.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qabstractitemmodel.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpielegendmarker_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qlogvalueaxis_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qlegendmarker_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qlegend_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qdatetimeaxis_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qdatetime.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qdatetime.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcategoryaxis_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlestickset_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlestickseries_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qcandlestickseries.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qcandlestickseries.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlestickmodelmapper_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qabstractitemmodel.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qabstractitemmodel.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlesticklegendmarker_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxset_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxplotseries_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxplotmodelmapper_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qabstractitemmodel.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qabstractitemmodel.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxplotlegendmarker_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarset_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarmodelmapper_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qabstractitemmodel.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qabstractitemmodel.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarlegendmarker_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarcategoryaxis_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qareaseries_p.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qareaseries.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qareaseries.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qarealegendmarker_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qabstractseries_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qabstractbarseries_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\qabstractaxis_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polardomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartvalueaxisradial_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartvalueaxisangular_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartlogvalueaxisradial_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartlogvalueaxisangular_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartdatetimeaxisradial_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartdatetimeaxisangular_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartcategoryaxisradial_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartcategoryaxisangular_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartaxisradial_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartaxisangular_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartaxis_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\piesliceitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\piechartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\pieanimation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\percentbarchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxypolardomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxydomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxlogypolardomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxlogydomain_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\linechartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\legendscroller_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\legendmarkeritem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\horizontalstackedbarchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\horizontalpercentbarchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\horizontalbarchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\glxyseriesdata_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\glwidget_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartvalueaxisy_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartvalueaxisx_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartthememanager_p.h" />
+    <ClInclude Include="..\5.9.6\QtCharts\private\charttheme_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartpresenter_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartlogvalueaxisy_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartlogvalueaxisx_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartdatetimeaxisy_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartdatetimeaxisx_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartdataset_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartcategoryaxisy_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartcategoryaxisx_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartbarcategoryaxisy_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartbarcategoryaxisx_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartaxiselement_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartanimation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\cartesianchartaxis_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestickchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestickbodywicksanimation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestickanimation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestick_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxwhiskersanimation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxwhiskers_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxplotchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxplotanimation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\barchartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\baranimation_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\bar_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\areachartitem_p.h" />
+    <QtMoc Include="..\5.9.6\QtCharts\private\abstractdomain_p.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

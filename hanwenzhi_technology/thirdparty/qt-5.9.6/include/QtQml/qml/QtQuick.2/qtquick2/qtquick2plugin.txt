@@ -1,0 +1,3 @@
+$(QINSTALL) plugins.qmltypes F:\qt\Src\qtdeclarative\qml\QtQuick.2\plugins.qmltypes
+
+$(QINSTALL) qmldir F:\qt\Src\qtdeclarative\qml\QtQuick.2\qmldir

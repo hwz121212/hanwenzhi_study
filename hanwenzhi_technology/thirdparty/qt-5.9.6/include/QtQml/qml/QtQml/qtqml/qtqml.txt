@@ -1,0 +1,1 @@
+$(QINSTALL) qmldir F:\qt\Src\qtdeclarative\qml\QtQml\qmldir

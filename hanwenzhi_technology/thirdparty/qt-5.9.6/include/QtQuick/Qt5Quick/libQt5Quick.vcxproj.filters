@@ -1,0 +1,1565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{10388d49-6893-4383-bfe9-66d08bfb998e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuick">
+      <UniqueIdentifier>{14b9d0b8-cfea-4187-8c2a-4c445a68f41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuick\private">
+      <UniqueIdentifier>{b4928bd7-5c70-43f1-8d00-ceffbbef9e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\accessible">
+      <UniqueIdentifier>{ad65cb40-4a1b-4526-8312-1875fd4eb544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\designer">
+      <UniqueIdentifier>{a7247c0e-734f-42c7-b762-ee9795e2c29e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items">
+      <UniqueIdentifier>{6d09d497-eccc-4401-83b4-f831f79b0db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items\context2d">
+      <UniqueIdentifier>{9202bc04-379e-45d3-b328-5c24447db7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items\shaders">
+      <UniqueIdentifier>{fab85fc5-1c00-490e-8544-4f949c004c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenegraph">
+      <UniqueIdentifier>{a69a904b-f082-4c39-a74e-ec47997a07de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenegraph\adaptations">
+      <UniqueIdentifier>{b128ac3f-56c5-494a-b1e3-e40fd8c3f3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenegraph\adaptations\software">
+      <UniqueIdentifier>{9100f3dd-4968-4bca-a1c3-01659d8562de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenegraph\coreapi">
+      <UniqueIdentifier>{d0f0ff45-9c81-419d-81db-f502656c8363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenegraph\shaders">
+      <UniqueIdentifier>{a3022fcd-9280-47c4-965e-643f44a4aac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenegraph\util">
+      <UniqueIdentifier>{dfeaa339-4680-4942-b5a3-70621832c41a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{5dd37cfb-9dfe-462e-84fc-cd12b2842fb0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qaccessiblequickitem_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qaccessiblequickview_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanimationcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanimatorcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanimatorjob_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickapplication_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickbehavior_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickcanvascontext_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickcontext2dtile_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickdesignersupport_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickdesignersupportitems_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickdesignersupportmetainfo_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickdesignersupportproperties_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickdesignersupportpropertychanges_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickdesignerwindowmanager_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickdrag_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickdroparea_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickevents_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickflickable_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickflipable_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickfocusscope_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickfontloader_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickfontmetrics_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickgenericshadereffect_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickgraphicsinfo_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickgridview_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickitem_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickitemanimation_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickitemchangelistener_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickitemviewtransition_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicklistview_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickmultipointtoucharea_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickopenglinfo_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickopenglshadereffect_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickpathinterpolator_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickpixmapcache_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickprofiler_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickpropertychanges_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickrectangle_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickscalegrid_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickscreen_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickshadereffect_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickshadereffectmesh_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickshadereffectsource_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickshortcut_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicksmoothedanimation_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicksmoothedanimation_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickspringanimation_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicksprite_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickspriteengine_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickstatechangescript_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickstategroup_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickstyledtext_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicksystempalette_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktextdocument_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicktextnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktextutil_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktimeline_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickvalidator_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickwindow_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickwindowattached_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgabstractrenderer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgbasicglyphnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgbasicinternalimagenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgbatchrenderer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgcontext_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultcontext_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultdistancefieldglyphcache_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultglyphnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultglyphnode_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultimagenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultinternalimagenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultninepatchnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultpainternode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultspritenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdepthstencilbuffer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdistancefieldglyphnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdistancefieldglyphnode_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdistancefieldutil_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgengine_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsggeometry_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgmaterialshader_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgnodeupdater_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgrendernode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgshadersourcebuilder_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwareglyphnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwareinternalimagenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarepainternode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarepublicnodes_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarerenderablenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarerenderablenodeupdater_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarerenderer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgsoftwarethreadedrenderloop_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgthreadedrenderloop_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qtquick2_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qtquickglobal_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgflatcolormaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsggeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgimagenode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgmaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgninepatchnode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgnode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgrectanglenode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgrendererinterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgrendernode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgsimplematerial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgsimplerectnode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgsimpletexturenode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgtexturematerial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsgvertexcolormaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtquickglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Quick_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickaccessibleattached_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanchors_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanimatedimage_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanimatedsprite_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanimation_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickanimator_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickborderimage_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickcanvasitem_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickcontext2d_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickcontext2dtexture_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickdesignercustomparserobject_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickflickable_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickimage_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickimagebase_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickimplicitsizeitem_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickitemanimation_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickitemview_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickloader_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickmousearea_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickopenglshadereffectnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickpath_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickpathview_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickpincharea_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickpositioners_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickrectangle_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickrepeater_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickspritesequence_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickstate_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickstateoperations_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktext_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktextcontrol_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktextedit_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktextinput_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktextmetrics_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktransition_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquicktranslate_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickvaluetypes_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qquickwindowmodule_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgadaptationlayer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgatlastexture_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgcontextplugin_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgdefaultlayer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgdefaultrendercontext_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgrenderloop_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgsoftwarecontext_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgsoftwarelayer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgsoftwarepixmaptexture_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgsoftwarerenderloop_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgtexture_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuick\private\qsgwindowsrenderloop_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickframebufferobject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickimageprovider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickitemgrabresult.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickpainteditem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickrendercontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquicktextdocument.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qquickwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsgabstractrenderer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsgengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsgtexture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsgtextureprovider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="items\qquickflipable.cpp">
+      <Filter>Source Files\items</Filter>
+    </QtMoc>
+    <QtMoc Include="items\qquickframebufferobject.cpp">
+      <Filter>Source Files\items</Filter>
+    </QtMoc>
+    <QtMoc Include="items\qquickimage.cpp">
+      <Filter>Source Files\items</Filter>
+    </QtMoc>
+    <QtMoc Include="items\qquickopenglshadereffectnode.cpp">
+      <Filter>Source Files\items</Filter>
+    </QtMoc>
+    <QtMoc Include="items\qquickshadereffectsource.cpp">
+      <Filter>Source Files\items</Filter>
+    </QtMoc>
+    <QtMoc Include="items\qquickwindow.cpp">
+      <Filter>Source Files\items</Filter>
+    </QtMoc>
+    <QtMoc Include="util\qquickfontloader.cpp">
+      <Filter>Source Files\util</Filter>
+    </QtMoc>
+    <QtMoc Include="util\qquickpixmapcache.cpp">
+      <Filter>Source Files\util</Filter>
+    </QtMoc>
+    <QtMoc Include="util\qquickprofiler.cpp">
+      <Filter>Source Files\util</Filter>
+    </QtMoc>
+    <QtMoc Include="scenegraph\adaptations\software\qsgsoftwarethreadedrenderloop.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </QtMoc>
+    <QtMoc Include="scenegraph\qsgcontext.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </QtMoc>
+    <QtMoc Include="scenegraph\qsgrenderloop.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </QtMoc>
+    <QtMoc Include="scenegraph\qsgthreadedrenderloop.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qqmldesignermetaobject_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickaccessiblefactory_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickanchors_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickanimatedimage_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickanimatedsprite_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickanimation_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickanimator_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickborderimage_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickclipnode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickcontext2dcommandbuffer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickdesignercustomobjectdata_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickdesignersupportstates_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickflickablebehavior_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickimage_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickimagebase_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickimplicitsizeitem_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickitemsmodule_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickitemview_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickloader_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickmousearea_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickpainteditem_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickpath_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickpathview_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickpincharea_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickpositioners_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickrendercontrol_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickrepeater_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickspritesequence_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickstate_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicksvgparser_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicktext_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicktextcontrol_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicktextedit_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicktextinput_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicktextnodeengine_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquicktransitionmanager_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickutilmodule_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qquickview_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgabstractsoftwarerenderer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgareaallocator_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgbasicinternalrectanglenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultinternalrectanglenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgdefaultrectanglenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgrenderer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwareadaptation_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwareinternalrectanglenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarepixmaprenderer_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarerenderlistbuilder_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgsoftwarespritenode_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuick\private\qsgtexturematerial_p.h">
+      <Filter>Header Files\5.9.6\QtQuick\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="accessible\qaccessiblequickitem.cpp">
+      <Filter>Source Files\accessible</Filter>
+    </ClCompile>
+    <ClCompile Include="accessible\qaccessiblequickview.cpp">
+      <Filter>Source Files\accessible</Filter>
+    </ClCompile>
+    <ClCompile Include="accessible\qquickaccessiblefactory.cpp">
+      <Filter>Source Files\accessible</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qqmldesignermetaobject.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignercustomobjectdata.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignercustomparserobject.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignersupport.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignersupportitems.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignersupportmetainfo.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignersupportproperties.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignersupportpropertychanges.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignersupportstates.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="designer\qquickdesignerwindowmanager.cpp">
+      <Filter>Source Files\designer</Filter>
+    </ClCompile>
+    <ClCompile Include="items\context2d\qquickcanvascontext.cpp">
+      <Filter>Source Files\items\context2d</Filter>
+    </ClCompile>
+    <ClCompile Include="items\context2d\qquickcanvasitem.cpp">
+      <Filter>Source Files\items\context2d</Filter>
+    </ClCompile>
+    <ClCompile Include="items\context2d\qquickcontext2d.cpp">
+      <Filter>Source Files\items\context2d</Filter>
+    </ClCompile>
+    <ClCompile Include="items\context2d\qquickcontext2dcommandbuffer.cpp">
+      <Filter>Source Files\items\context2d</Filter>
+    </ClCompile>
+    <ClCompile Include="items\context2d\qquickcontext2dtexture.cpp">
+      <Filter>Source Files\items\context2d</Filter>
+    </ClCompile>
+    <ClCompile Include="items\context2d\qquickcontext2dtile.cpp">
+      <Filter>Source Files\items\context2d</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickaccessibleattached.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickanchors.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickanimatedimage.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickanimatedsprite.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickborderimage.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickclipnode.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickdrag.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickdroparea.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickevents.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickflickable.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickfocusscope.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickgenericshadereffect.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickgraphicsinfo.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickgridview.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickimagebase.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickimplicitsizeitem.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickitem.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickitemanimation.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickitemgrabresult.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickitemsmodule.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickitemview.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickitemviewtransition.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicklistview.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickloader.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickmousearea.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickmultipointtoucharea.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickopenglinfo.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickopenglshadereffect.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickpainteditem.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickpathview.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickpincharea.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickpositioners.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickrectangle.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickrendercontrol.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickrepeater.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickscalegrid.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickscreen.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickshadereffect.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickshadereffectmesh.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicksprite.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickspriteengine.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickspritesequence.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickstateoperations.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktext.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktextcontrol.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktextdocument.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktextedit.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktextinput.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktextnode.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktextnodeengine.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktextutil.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquicktranslate.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickview.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickwindowattached.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qquickwindowmodule.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickanimation.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickanimationcontroller.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickanimator.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickanimatorcontroller.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickanimatorjob.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickapplication.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickbehavior.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickfontmetrics.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickglobal.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickimageprovider.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickpath.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickpathinterpolator.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickpropertychanges.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickshortcut.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquicksmoothedanimation.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickspringanimation.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickstate.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickstatechangescript.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickstategroup.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickstyledtext.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquicksvgparser.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquicksystempalette.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquicktextmetrics.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquicktimeline.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquicktransition.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquicktransitionmanager.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickutilmodule.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickvalidator.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\qquickvaluetypes.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgabstractsoftwarerenderer.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwareadaptation.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarecontext.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwareglyphnode.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwareinternalimagenode.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwareinternalrectanglenode.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarelayer.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarepainternode.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarepixmaprenderer.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarepixmaptexture.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarepublicnodes.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarerenderablenode.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarerenderablenodeupdater.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarerenderer.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarerenderlistbuilder.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarerenderloop.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\adaptations\software\qsgsoftwarespritenode.cpp">
+      <Filter>Source Files\scenegraph\adaptations\software</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgabstractrenderer.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgbatchrenderer.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsggeometry.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgmaterial.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgnode.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgnodeupdater.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgrenderer.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgrendererinterface.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgrendernode.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\coreapi\qsgshaderrewriter.cpp">
+      <Filter>Source Files\scenegraph\coreapi</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgareaallocator.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgatlastexture.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgdefaultimagenode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgdefaultninepatchnode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgdefaultpainternode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgdefaultrectanglenode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgdepthstencilbuffer.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgdistancefieldutil.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgengine.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgflatcolormaterial.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgimagenode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgninepatchnode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgrectanglenode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgshadersourcebuilder.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgsimplematerial.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgsimplerectnode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgsimpletexturenode.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgtexture.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgtexturematerial.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgtextureprovider.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\util\qsgvertexcolormaterial.cpp">
+      <Filter>Source Files\scenegraph\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgadaptationlayer.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgbasicglyphnode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgbasicinternalimagenode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgbasicinternalrectanglenode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgcontextplugin.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultcontext.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultdistancefieldglyphcache.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultglyphnode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultglyphnode_p.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultinternalimagenode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultinternalrectanglenode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultlayer.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultrendercontext.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdefaultspritenode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdistancefieldglyphnode.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgdistancefieldglyphnode_p.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="scenegraph\qsgwindowsrenderloop.cpp">
+      <Filter>Source Files\scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="qtquick2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="items\shaders\shadereffect.frag">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\shaders\shadereffect.vert">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\shaders\shadereffect_core.frag">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\shaders\shadereffect_core.vert">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\shaders\shadereffectfallback.frag">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\shaders\shadereffectfallback.vert">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\shaders\shadereffectfallback_core.frag">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\shaders\shadereffectfallback_core.vert">
+      <Filter>Source Files\items\shaders</Filter>
+    </None>
+    <None Include="items\syncexcludes">
+      <Filter>Source Files\items</Filter>
+    </None>
+    <None Include="scenegraph\shaders\8bittextmask.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\8bittextmask_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\24bittextmask.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\24bittextmask_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\32bitcolortext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\32bitcolortext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldoutlinetext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldoutlinetext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldshiftedtext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldshiftedtext.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldshiftedtext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldshiftedtext_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldtext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldtext.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldtext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\distancefieldtext_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\flatcolor.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\flatcolor.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\flatcolor_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\flatcolor_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\hiqsubpixeldistancefieldtext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\hiqsubpixeldistancefieldtext.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\hiqsubpixeldistancefieldtext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\hiqsubpixeldistancefieldtext_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\loqsubpixeldistancefieldtext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\loqsubpixeldistancefieldtext.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\loqsubpixeldistancefieldtext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\loqsubpixeldistancefieldtext_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\opaquetexture.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\opaquetexture.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\opaquetexture_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\opaquetexture_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\outlinedtext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\outlinedtext.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\outlinedtext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\outlinedtext_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\rendernode.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\rendernode.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\rendernode_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\rendernode_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothcolor.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothcolor.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothcolor_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothcolor_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothtexture.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothtexture.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothtexture_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\smoothtexture_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\sprite.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\sprite.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\sprite_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\sprite_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\stencilclip.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\stencilclip.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\stencilclip_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\stencilclip_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\styledtext.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\styledtext.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\styledtext_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\styledtext_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\textmask.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\textmask.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\textmask_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\textmask_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\texture.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\texture_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\vertexcolor.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\vertexcolor.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\vertexcolor_core.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\vertexcolor_core.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\visualization.frag">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+    <None Include="scenegraph\shaders\visualization.vert">
+      <Filter>Source Files\scenegraph\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="items\items.qrc">
+      <Filter>Source Files\items</Filter>
+    </QtRcc>
+    <QtRcc Include="scenegraph\scenegraph.qrc">
+      <Filter>Source Files\scenegraph</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

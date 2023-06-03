@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="assembler">
+      <UniqueIdentifier>{40d2667c-2d26-4ec5-85ff-5e6e74eb68c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disassembler">
+      <UniqueIdentifier>{6864c8ee-da2b-4949-a0fc-49ce7f5504e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jit">
+      <UniqueIdentifier>{877d41de-f40d-4948-9031-a5df8f0015f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime">
+      <UniqueIdentifier>{f5a03f60-c084-4bd5-b60b-9de6c61860c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stubs">
+      <UniqueIdentifier>{70295f7b-95c1-4c63-8094-fa1efda1b58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wtf">
+      <UniqueIdentifier>{e9016037-e7a7-44ac-8605-1d60fe76c48c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="yarr">
+      <UniqueIdentifier>{7e88a0ee-a1c2-4fd4-bb1a-b3ba5f863d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disassembler\ARM64">
+      <UniqueIdentifier>{87bd8aaa-c410-4512-a3dc-c71f571fec1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disassembler\ARMv7">
+      <UniqueIdentifier>{a16107f6-cb7d-4985-91d0-dc4ae7b712d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disassembler\mips32">
+      <UniqueIdentifier>{cfcc8aec-492b-433d-b9c4-a1bad775aad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disassembler\udis86">
+      <UniqueIdentifier>{c6c5f39b-6970-4545-a759-70500ada69ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stubs\wtf">
+      <UniqueIdentifier>{81235862-0a00-4e83-a081-de49bed00dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stubs\wtf\text">
+      <UniqueIdentifier>{3e1d4fe8-d14c-4fc9-a73f-6b4efc45cdf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stubs\wtf\unicode">
+      <UniqueIdentifier>{8e11acca-5d59-4932-b1a7-daa37c675270}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="assembler\ARMAssembler.cpp">
+      <Filter>assembler</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\ARMv7Assembler.cpp">
+      <Filter>assembler</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\LinkBuffer.cpp">
+      <Filter>assembler</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\MacroAssemblerARM.cpp">
+      <Filter>assembler</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\MacroAssemblerSH4.cpp">
+      <Filter>assembler</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\ARM64Disassembler.cpp">
+      <Filter>disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\ARMv7Disassembler.cpp">
+      <Filter>disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\Disassembler.cpp">
+      <Filter>disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\Mips32Disassembler.cpp">
+      <Filter>disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\UDis86Disassembler.cpp">
+      <Filter>disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\ARM64\A64DOpcode.cpp">
+      <Filter>disassembler\ARM64</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\ARMv7\ARMv7DOpcode.cpp">
+      <Filter>disassembler\ARMv7</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\mips32\Mips32Opcode.cpp">
+      <Filter>disassembler\mips32</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\udis86\udis86.c">
+      <Filter>disassembler\udis86</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\udis86\udis86_decode.c">
+      <Filter>disassembler\udis86</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\udis86\udis86_input.c">
+      <Filter>disassembler\udis86</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\udis86\udis86_itab_holder.c">
+      <Filter>disassembler\udis86</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\udis86\udis86_syn.c">
+      <Filter>disassembler\udis86</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\udis86\udis86_syn-att.c">
+      <Filter>disassembler\udis86</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler\udis86\udis86_syn-intel.c">
+      <Filter>disassembler\udis86</Filter>
+    </ClCompile>
+    <ClCompile Include="yarr\YarrCanonicalizeUCS2.cpp">
+      <Filter>yarr</Filter>
+    </ClCompile>
+    <ClCompile Include="yarr\YarrInterpreter.cpp">
+      <Filter>yarr</Filter>
+    </ClCompile>
+    <ClCompile Include="yarr\YarrJIT.cpp">
+      <Filter>yarr</Filter>
+    </ClCompile>
+    <ClCompile Include="yarr\YarrPattern.cpp">
+      <Filter>yarr</Filter>
+    </ClCompile>
+    <ClCompile Include="yarr\YarrSyntaxChecker.cpp">
+      <Filter>yarr</Filter>
+    </ClCompile>
+    <ClCompile Include="wtf\FilePrintStream.cpp">
+      <Filter>wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="wtf\OSAllocatorPosix.cpp">
+      <Filter>wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="wtf\OSAllocatorWin.cpp">
+      <Filter>wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="wtf\OSAllocatorWinRT.cpp">
+      <Filter>wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="wtf\PageAllocationAligned.cpp">
+      <Filter>wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="wtf\PageBlock.cpp">
+      <Filter>wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="wtf\PrintStream.cpp">
+      <Filter>wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\Options.cpp">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\WTFStubs.cpp">
+      <Filter>stubs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="assembler\AbstractMacroAssembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\ARM64Assembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\ARMAssembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\ARMv7Assembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\AssemblerBuffer.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\AssemblerBufferWithConstantPool.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\CodeLocation.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\LinkBuffer.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerARM.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerARM64.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerARMv7.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerCodeRef.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerMIPS.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerSH4.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerX86.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerX86_64.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MacroAssemblerX86Common.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\MIPSAssembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\RepatchBuffer.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\SH4Assembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\X86Assembler.h">
+      <Filter>assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\Disassembler.h">
+      <Filter>disassembler</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\ARM64\A64DOpcode.h">
+      <Filter>disassembler\ARM64</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\ARMv7\ARMv7DOpcode.h">
+      <Filter>disassembler\ARMv7</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\mips32\Mips32Opcode.h">
+      <Filter>disassembler\mips32</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\udis86\udis86.h">
+      <Filter>disassembler\udis86</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\udis86\udis86_decode.h">
+      <Filter>disassembler\udis86</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\udis86\udis86_extern.h">
+      <Filter>disassembler\udis86</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\udis86\udis86_input.h">
+      <Filter>disassembler\udis86</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\udis86\udis86_syn.h">
+      <Filter>disassembler\udis86</Filter>
+    </ClInclude>
+    <ClInclude Include="disassembler\udis86\udis86_types.h">
+      <Filter>disassembler\udis86</Filter>
+    </ClInclude>
+    <ClInclude Include="jit\JITCompilationEffort.h">
+      <Filter>jit</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\MatchResult.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="yarr\Yarr.h">
+      <Filter>yarr</Filter>
+    </ClInclude>
+    <ClInclude Include="yarr\YarrCanonicalizeUCS2.h">
+      <Filter>yarr</Filter>
+    </ClInclude>
+    <ClInclude Include="yarr\YarrInterpreter.h">
+      <Filter>yarr</Filter>
+    </ClInclude>
+    <ClInclude Include="yarr\YarrJIT.h">
+      <Filter>yarr</Filter>
+    </ClInclude>
+    <ClInclude Include="yarr\YarrParser.h">
+      <Filter>yarr</Filter>
+    </ClInclude>
+    <ClInclude Include="yarr\YarrPattern.h">
+      <Filter>yarr</Filter>
+    </ClInclude>
+    <ClInclude Include="yarr\YarrSyntaxChecker.h">
+      <Filter>yarr</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\ASCIICType.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\Assertions.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\Atomics.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\BumpPointerAllocator.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\CheckedArithmetic.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\Compiler.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\CryptographicallyRandomNumber.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\DataLog.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\DynamicAnnotations.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\EnumClass.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\FeatureDefines.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\FilePrintStream.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\Locker.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\MathExtras.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\NotFound.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\NullPtr.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\OSAllocator.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\PageAllocation.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\PageAllocationAligned.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\PageBlock.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\PageReservation.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\Platform.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\PossiblyNull.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\PrintStream.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\RawPointer.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\SegmentedVector.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\StdLibExtras.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="wtf\VMTags.h">
+      <Filter>wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\ExecutableAllocator.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\JSGlobalData.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\LLIntData.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\Options.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\WTFStubs.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\FastAllocBase.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\FastMalloc.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\Noncopyable.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\OwnPtr.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\PassOwnPtr.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\PassRefPtr.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\RefCounted.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\RefPtr.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\TypeTraits.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\UnusedParam.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\Vector.h">
+      <Filter>stubs\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\text\CString.h">
+      <Filter>stubs\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\text\WTFString.h">
+      <Filter>stubs\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\wtf\unicode\Unicode.h">
+      <Filter>stubs\wtf\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="WeakRandom.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="create_regex_tables" />
+  </ItemGroup>
+</Project>

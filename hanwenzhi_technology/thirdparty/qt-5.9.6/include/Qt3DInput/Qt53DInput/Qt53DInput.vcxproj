@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C195F6B7-3E99-37AF-A9CB-3FF35C9058A9}</ProjectGuid>
+    <RootNamespace>Qt53DInput</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;gamepad</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;gamepad</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;moc;rcc;uic;items;..\..\..\include;..\..\..\include\Qt3DQuick;..\..\..\include\Qt3DQuick\5.9.6;..\..\..\include\Qt3DQuick\5.9.6\Qt3DQuick;..\..\..\include\Qt3DQuick\5.9.6\Qt3DQuick\private;..\..\..\include\Qt3DInput;..\..\..\include\Qt3DInput\5.9.6;..\..\..\include\Qt3DInput\5.9.6\Qt3DInput;..\..\..\include\Qt3DInput\5.9.6\Qt3DInput\private;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtGamepad;..\..\..\include\QtGamepad\5.9.6;..\..\..\include\QtGamepad\5.9.6\QtGamepad;..\..\..\include\QtGamepad\5.9.6\QtGamepad\private;..\..\..\include\QtNetwork;..\..\..\include\QtANGLE;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DINPUT_LIBRARY;QT_NO_FOREACH;HAVE_QGAMEPAD;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DINPUT_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt53DCore.lib;Qt5Gamepad.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DINPUT_LIBRARY;QT_NO_FOREACH;HAVE_QGAMEPAD;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DINPUT_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_3DCORE_LIB;QT_GAMEPAD_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;moc;rcc;uic;items;..\..\..\include;..\..\..\include\Qt3DQuick;..\..\..\include\Qt3DQuick\5.9.6;..\..\..\include\Qt3DQuick\5.9.6\Qt3DQuick;..\..\..\include\Qt3DQuick\5.9.6\Qt3DQuick\private;..\..\..\include\Qt3DInput;..\..\..\include\Qt3DInput\5.9.6;..\..\..\include\Qt3DInput\5.9.6\Qt3DInput;..\..\..\include\Qt3DInput\5.9.6\Qt3DInput\private;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\QtQuick;..\..\..\include\QtQuick\5.9.6;..\..\..\include\QtQuick\5.9.6\QtQuick;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtGamepad;..\..\..\include\QtGamepad\5.9.6;..\..\..\include\QtGamepad\5.9.6\QtGamepad;..\..\..\include\QtGamepad\5.9.6\QtGamepad\private;..\..\..\include\QtNetwork;..\..\..\include\QtANGLE;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DINPUT_LIBRARY;QT_NO_FOREACH;HAVE_QGAMEPAD;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DINPUT_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt53DCore.lib;Qt5Gamepad.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT3DINPUT_LIBRARY;QT_NO_FOREACH;HAVE_QGAMEPAD;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DINPUT_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_3DCORE_LIB;QT_GAMEPAD_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DInput_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\abstractactioninput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\abstractaxisinput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\actioninput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\action_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\analogaxisinput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\assignkeyboardfocusjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axisaccumulatorjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axisaccumulator_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axissetting_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\axis_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\buttonaxisinput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\genericdevicebackendnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\handle_types_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputbackendnodefunctor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputchord_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputhandler_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputmanagers_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputsequence_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\inputsettings_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\job_common_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\keyboarddevice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\keyboardhandler_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\keyeventdispatcherjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\loadproxydevicejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\logicaldevice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\mousedevice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\mouseeventdispatcherjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\mousehandler_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\movingaverage_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\physicaldeviceproxy_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractactioninput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractaxisinput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldevicebackendnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldevicebackendnode_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldeviceproxy_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qactioninput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaction_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qanalogaxisinput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaxisaccumulator_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaxissetting_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qaxis_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qbuttonaxisinput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputaspect_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputchord_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputdeviceintegrationfactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputdeviceintegration_p_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputsequence_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qinputsettings_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qkeyboarddevice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qkeyboardhandler_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qlogicaldevice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qmousedevice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qmousehandler_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qphysicaldevicecreatedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qt3dinput_global_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\updateaxisactionjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\utils_p.h" />
+    <ClInclude Include="..\qphysicaldevicecreatedchange.h" />
+    <ClInclude Include="..\qt3dinputversion.h" />
+    <ClInclude Include="..\qt3dinput_global.h" />
+    <QtMoc Include="..\qmousehandler.h" />
+    <QtMoc Include="..\qmouseevent.h" />
+    <QtMoc Include="..\qmousedevice.h" />
+    <QtMoc Include="..\qlogicaldevice.h" />
+    <QtMoc Include="..\qkeyevent.h" />
+    <QtMoc Include="..\qkeyboardhandler.h" />
+    <QtMoc Include="..\qkeyboarddevice.h" />
+    <QtMoc Include="..\qinputsettings.h" />
+    <QtMoc Include="..\qinputsequence.h" />
+    <QtMoc Include="..\qinputchord.h" />
+    <QtMoc Include="..\qinputaspect.h" />
+    <QtMoc Include="..\qbuttonaxisinput.h" />
+    <QtMoc Include="..\qaxissetting.h" />
+    <QtMoc Include="..\qaxisaccumulator.h" />
+    <QtMoc Include="..\qaxis.h" />
+    <QtMoc Include="..\qanalogaxisinput.h" />
+    <QtMoc Include="..\qactioninput.h" />
+    <QtMoc Include="..\qaction.h" />
+    <QtMoc Include="..\qabstractphysicaldevice.h" />
+    <QtMoc Include="..\qabstractaxisinput.h" />
+    <QtMoc Include="..\qabstractactioninput.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qinputdeviceplugin_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qinputdeviceintegration_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qgenericinputdevice_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qgamepadinput_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldeviceproxy_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DInput\private\qabstractphysicaldevice_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\mouseeventfilter_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\keyboardmousegenericdeviceintegration_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\keyboardeventfilter_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DInput\private\eventsourcesetterhelper_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\abstractactioninput.cpp" />
+    <ClCompile Include="backend\abstractaxisinput.cpp" />
+    <ClCompile Include="backend\action.cpp" />
+    <ClCompile Include="backend\actioninput.cpp" />
+    <ClCompile Include="backend\analogaxisinput.cpp" />
+    <ClCompile Include="backend\assignkeyboardfocusjob.cpp" />
+    <ClCompile Include="backend\axis.cpp" />
+    <ClCompile Include="backend\axisaccumulator.cpp" />
+    <ClCompile Include="backend\axisaccumulatorjob.cpp" />
+    <ClCompile Include="backend\axissetting.cpp" />
+    <ClCompile Include="backend\buttonaxisinput.cpp" />
+    <ClCompile Include="backend\eventsourcesetterhelper.cpp" />
+    <ClCompile Include="backend\genericdevicebackendnode.cpp" />
+    <ClCompile Include="backend\inputchord.cpp" />
+    <ClCompile Include="backend\inputhandler.cpp" />
+    <ClCompile Include="backend\inputsequence.cpp" />
+    <ClCompile Include="backend\inputsettings.cpp" />
+    <ClCompile Include="backend\keyboarddevice.cpp" />
+    <ClCompile Include="backend\keyboardeventfilter.cpp" />
+    <ClCompile Include="backend\keyboardhandler.cpp" />
+    <ClCompile Include="backend\keyboardmousegenericdeviceintegration.cpp" />
+    <ClCompile Include="backend\keyeventdispatcherjob.cpp" />
+    <ClCompile Include="backend\loadproxydevicejob.cpp" />
+    <ClCompile Include="backend\logicaldevice.cpp" />
+    <ClCompile Include="backend\mousedevice.cpp" />
+    <ClCompile Include="backend\mouseeventdispatcherjob.cpp" />
+    <ClCompile Include="backend\mouseeventfilter.cpp" />
+    <ClCompile Include="backend\mousehandler.cpp" />
+    <ClCompile Include="backend\movingaverage.cpp" />
+    <ClCompile Include="backend\physicaldeviceproxy.cpp" />
+    <ClCompile Include="backend\qabstractphysicaldevicebackendnode.cpp" />
+    <ClCompile Include="backend\updateaxisactionjob.cpp" />
+    <ClCompile Include="frontend\qabstractactioninput.cpp" />
+    <ClCompile Include="frontend\qabstractaxisinput.cpp" />
+    <ClCompile Include="frontend\qabstractphysicaldevice.cpp" />
+    <ClCompile Include="frontend\qabstractphysicaldeviceproxy.cpp" />
+    <ClCompile Include="frontend\qaction.cpp" />
+    <ClCompile Include="frontend\qactioninput.cpp" />
+    <ClCompile Include="frontend\qanalogaxisinput.cpp" />
+    <ClCompile Include="frontend\qaxis.cpp" />
+    <ClCompile Include="frontend\qaxisaccumulator.cpp" />
+    <ClCompile Include="frontend\qaxissetting.cpp" />
+    <ClCompile Include="frontend\qbuttonaxisinput.cpp" />
+    <ClCompile Include="frontend\qgamepadinput.cpp" />
+    <ClCompile Include="frontend\qgenericinputdevice.cpp" />
+    <ClCompile Include="frontend\qinputaspect.cpp" />
+    <ClCompile Include="frontend\qinputchord.cpp" />
+    <ClCompile Include="frontend\qinputdeviceintegration.cpp" />
+    <ClCompile Include="frontend\qinputdeviceintegrationfactory.cpp" />
+    <ClCompile Include="frontend\qinputdeviceplugin.cpp" />
+    <ClCompile Include="frontend\qinputsequence.cpp" />
+    <ClCompile Include="frontend\qinputsettings.cpp" />
+    <ClCompile Include="frontend\qkeyboarddevice.cpp" />
+    <ClCompile Include="frontend\qkeyboardhandler.cpp" />
+    <ClCompile Include="frontend\qkeyevent.cpp" />
+    <ClCompile Include="frontend\qlogicaldevice.cpp" />
+    <ClCompile Include="frontend\qmousedevice.cpp" />
+    <ClCompile Include="frontend\qmouseevent.cpp" />
+    <ClCompile Include="frontend\qmousehandler.cpp" />
+    <ClCompile Include="frontend\qphysicaldevicecreatedchange.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

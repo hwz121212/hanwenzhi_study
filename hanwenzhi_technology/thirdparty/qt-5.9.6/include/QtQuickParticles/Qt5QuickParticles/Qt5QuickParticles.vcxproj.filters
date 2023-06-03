@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{dc58bdd4-ddd6-449c-9d24-8eb2961ccc80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuickParticles">
+      <UniqueIdentifier>{d370e8b7-9150-4457-84b3-6bd064ff7ed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuickParticles\private">
+      <UniqueIdentifier>{540f9ad6-e30c-4d2e-9ace-ec8ba858c21a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qquickage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickangledirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcumulativedirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcustomaffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcustomparticle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickdirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickellipseextruder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickfriction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickgravity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickgroupgoal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickimageparticle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickitemparticle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicklineextruder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickmaskextruder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickparticleaffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickparticleemitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickparticleextruder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickparticlegroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickparticlepainter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickparticlesmodule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickparticlesystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpointattractor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpointdirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickrectangleextruder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickspritegoal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktargetdirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktrailemitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickturbulence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickv4particledata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickwander.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickage_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickangledirection_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickcumulativedirection_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickcustomaffector_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickcustomparticle_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickdirection_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickellipseextruder_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickfriction_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickgravity_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickgroupgoal_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickimageparticle_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickitemparticle_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquicklineextruder_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickmaskextruder_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickparticleaffector_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickparticleemitter_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickparticleextruder_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickparticlegroup_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickparticlesystem_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickpointattractor_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickpointdirection_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickrectangleextruder_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickspritegoal_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquicktargetdirection_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquicktrailemitter_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\customparticle.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\customparticle.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\customparticle_core.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\customparticle_core.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\customparticletemplate.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\customparticletemplate_core.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="particleresources\fuzzydot.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="particleresources\glowdot.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\imageparticle.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\imageparticle.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\imageparticle_core.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\imageparticle_core.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="particleresources\noise.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="particles.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="particleresources\star.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5QuickParticles_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickparticlepainter_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickturbulence_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickParticles\private\qquickwander_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtQuickParticles\private\qquickparticlesmodule_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickParticles\private\qquickv4particledata_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickParticles\private\qtquickparticlesglobal_p.h">
+      <Filter>Header Files\5.9.6\QtQuickParticles\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

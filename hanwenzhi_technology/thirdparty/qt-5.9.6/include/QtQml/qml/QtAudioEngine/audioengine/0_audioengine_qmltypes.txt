@@ -1,0 +1,6 @@
+<CustomBuild Include="plugins.qmltypes">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">plugins.qmltypes;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QINSTALL) plugins.qmltypes F:\qt\Src\qtmultimedia\qml\QtAudioEngine\plugins.qmltypes</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">COPY plugins.qmltypes</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\qt\Src\qtmultimedia\qml\QtAudioEngine\plugins.qmltypes;%(Outputs)</Outputs>
+    </CustomBuild>

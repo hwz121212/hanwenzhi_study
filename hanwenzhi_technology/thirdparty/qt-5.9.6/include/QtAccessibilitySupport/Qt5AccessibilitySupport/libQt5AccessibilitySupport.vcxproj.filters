@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{877aa99b-45ee-4b08-95b9-6416570cdcde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{8c5b0006-566b-4fc9-9632-e557885fa69b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtAccessibilitySupport">
+      <UniqueIdentifier>{eb4c6cc2-7fd0-4f3b-a800-91c2a7f0127d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtAccessibilitySupport\private">
+      <UniqueIdentifier>{cdb3eb02-601b-4231-b1d6-c96ebf235469}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qaccessiblebridgeutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtAccessibilitySupport\private\qaccessiblebridgeutils_p.h">
+      <Filter>Header Files\5.9.6\QtAccessibilitySupport\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

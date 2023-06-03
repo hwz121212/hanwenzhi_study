@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EF3EAD5-4958-3A30-A30E-8A804E8F31FD}</ProjectGuid>
+    <RootNamespace>Qt5Qml</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;memory;compiler;jit;jsruntime;debugger;animations;$(SolutionDir)thirdparty\masm_qt\jit;$(SolutionDir)thirdparty\masm_qt\assembler;$(SolutionDir)thirdparty\masm_qt\runtime;$(SolutionDir)thirdparty\masm_qt\wtf;$(SolutionDir)thirdparty\masm_qt\stubs;$(SolutionDir)thirdparty\masm_qt\stubs\wtf;$(SolutionDir)thirdparty\masm_qt;$(SolutionDir)thirdparty\masm_qt\disassembler;$(SolutionDir)thirdparty\masm_qt\disassembler\udis86;..\..\..\include;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtNetwork;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_URL_CAST_FROM_STRING;QT_NO_INTEGER_EVENT_COORDINATES;_CRT_SECURE_NO_WARNINGS;QT_NO_FOREACH;QML_COMPILE_HASH=283a900c4e8518fef33a2c89cb597fbf1e6ad78c;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;NDEBUG;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QML_LIB;QT_BUILDING_QT;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;libmasm_qt_shared.lib;shell32.lib;gdi32.lib;user32.lib;winspool.lib;comdlg32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_URL_CAST_FROM_STRING;QT_NO_INTEGER_EVENT_COORDINATES;_CRT_SECURE_NO_WARNINGS;QT_NO_FOREACH;QML_COMPILE_HASH=283a900c4e8518fef33a2c89cb597fbf1e6ad78c;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;NDEBUG;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QML_LIB;QT_BUILDING_QT;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_NETWORK_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;memory;compiler;jit;jsruntime;debugger;animations;$(SolutionDir)thirdparty\masm_qt\jit;$(SolutionDir)thirdparty\masm_qt\assembler;$(SolutionDir)thirdparty\masm_qt\runtime;$(SolutionDir)thirdparty\masm_qt\wtf;$(SolutionDir)thirdparty\masm_qt\stubs;$(SolutionDir)thirdparty\masm_qt\stubs\wtf;$(SolutionDir)thirdparty\masm_qt;$(SolutionDir)thirdparty\masm_qt\disassembler;$(SolutionDir)thirdparty\masm_qt\disassembler\udis86;..\..\..\include;..\..\..\include\QtQml;..\..\..\include\QtQml\5.9.6;..\..\..\include\QtQml\5.9.6\QtQml;..\..\..\include\QtQml\5.9.6\QtQml\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtNetwork;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_URL_CAST_FROM_STRING;QT_NO_INTEGER_EVENT_COORDINATES;_CRT_SECURE_NO_WARNINGS;QT_NO_FOREACH;QML_COMPILE_HASH=283a900c4e8518fef33a2c89cb597fbf1e6ad78c;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QML_LIB;QT_BUILDING_QT;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;libmasm_qt_shared.lib;shell32.lib;gdi32.lib;user32.lib;winspool.lib;comdlg32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_URL_CAST_FROM_STRING;QT_NO_INTEGER_EVENT_COORDINATES;_CRT_SECURE_NO_WARNINGS;QT_NO_FOREACH;QML_COMPILE_HASH=283a900c4e8518fef33a2c89cb597fbf1e6ad78c;WTF_EXPORT_PRIVATE=;JS_EXPORT_PRIVATE=;ENABLE_ASSEMBLER_WX_EXCLUSIVE=1;WTFReportAssertionFailure=qmlWTFReportAssertionFailure;WTFReportBacktrace=qmlWTFReportBacktrace;WTFInvokeCrashHook=qmlWTFInvokeCrashHook;NOMINMAX;ENABLE_LLINT=0;ENABLE_DFG_JIT=0;ENABLE_DFG_JIT_UTILITY_METHODS=1;ENABLE_JIT_CONSTANT_BLINDING=0;BUILDING_QT__;WTF_USE_UDIS86=0;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_QML_LIB;QT_BUILDING_QT;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtQml\private\qabstractanimationjob_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qanimationgroupjob_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qanimationjobutil_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qbitfield_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qcontinuinganimationgroupjob_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qdeferredcleanup_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qfieldlist_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qfinitestack_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qflagpointer_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qhashedstring_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qintrusivelist_p.h" />
+    <QtMoc Include="..\qjsengine.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qjsengine_p.h" />
+    <ClInclude Include="..\qjsvalue.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qjsvalue_p.h" />
+    <ClInclude Include="..\qjsvalueiterator.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qjsvalueiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qlazilyallocated_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qparallelanimationgroupjob_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qpauseanimationjob_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\ftw\qpodvector_p.h" />
+    <ClInclude Include="..\qqml.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlabstractbinding_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlabstractprofileradapter_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qqmlabstracturlinterceptor.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmladaptormodel_p.h" />
+    <QtMoc Include="..\qqmlapplicationengine.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlapplicationengine_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlbind_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlbinding_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlboundsignal_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlboundsignalexpressionpointer_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlbuiltinfunctions_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlchangeset_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcleanup_p.h" />
+    <QtMoc Include="..\qqmlcomponent.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcomponent_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlcomponentattached_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlconnections_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qqmlcontext.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcontext_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlcustomparser_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldata_p.h" />
+    <ClInclude Include="..\qqmldebug.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugconnector_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldebugpluginmanager_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugservice_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugservicefactory_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldebugserviceinterfaces_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldebugstatesdelegate_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldelayedcallqueue_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldelegatemodel_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmldelegatemodel_p_p.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmldirparser_p.h" />
+    <QtMoc Include="..\qqmlengine.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlengine_p.h" />
+    <ClInclude Include="..\qqmlerror.h" />
+    <QtMoc Include="..\qqmlexpression.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlexpression_p.h" />
+    <ClInclude Include="..\qqmlextensioninterface.h" />
+    <QtMoc Include="..\qqmlextensionplugin.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlextensionplugin_p.h" />
+    <ClInclude Include="..\qqmlfile.h" />
+    <QtMoc Include="..\qqmlfileselector.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlfileselector_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlglobal_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlguard_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlimport_p.h" />
+    <ClInclude Include="..\qqmlincubator.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlincubator_p.h" />
+    <ClInclude Include="..\qqmlinfo.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlinstantiator_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlinstantiator_p_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlirbuilder_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljavascriptexpression_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsast_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsastfwd_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsastvisitor_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsglobal_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsgrammar_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljskeywords_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljslexer_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsmemorypool_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmljsparser_p.h" />
+    <ClInclude Include="..\qqmllist.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllist_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllistaccessor_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllistcompositor_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllistmodel_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllistmodel_p_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllistmodelworkeragent_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmllistwrapper_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmllocale_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlloggingcategory_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlmemoryprofiler_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlmetatype_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlmodelindexvaluetype_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlmodelsmodule_p.h" />
+    <ClInclude Include="..\qqmlnetworkaccessmanagerfactory.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlnotifier_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\ftw\qqmlnullablevalue_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlobjectcreator_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlobjectmodel_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlopenmetaobject_p.h" />
+    <ClInclude Include="..\qqmlparserstatus.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlplatform_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qqmlprivate.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlprofiler_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlprofilerdefinitions_p.h" />
+    <ClInclude Include="..\qqmlproperty.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlproperty_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertycache_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertycachecreator_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertyindex_p.h" />
+    <QtMoc Include="..\qqmlpropertymap.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertyvalidator_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlpropertyvalueinterceptor_p.h" />
+    <ClInclude Include="..\qqmlpropertyvaluesource.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlproxymetaobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\ftw\qqmlrefcount_p.h" />
+    <ClInclude Include="..\qqmlscriptstring.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlscriptstring_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlstringconverters_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlthread_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmltimer_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypecompiler_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypeloader_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypenamecache_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmltypenotavailable_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmltypewrapper_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qqmlvaluetype_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlvaluetypeproxybinding_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlvme_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlvmemetaobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qqmlxmlhttprequest_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qquickpackage_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQml\private\qquickworkerscript_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qrecursionwatcher_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qrecyclepool_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qsequentialanimationgroupjob_p.h" />
+    <ClInclude Include="..\qtqmlglobal.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qtqmlglobal_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4alloca_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4argumentsobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4arraybuffer_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4arraydata_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4arrayobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4assembler_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4binop_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4booleanobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4codegen_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compilationunitmapper_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compileddata_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4compiler_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4context_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4dataview_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4dateobject_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4debugging_p.h">
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4domerrors_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4engine_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4enginebase_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4errorobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4executableallocator_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4function_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4functionobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4global_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4globalobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4heap_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4identifier_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4identifiertable_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4include_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4instr_moth_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4internalclass_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_masm_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_moth_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4isel_util_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jsir_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jsonobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4jssimplifier_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4lookup_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4managed_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4math_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4mathobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4memberdata_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4mm_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4mmdefs_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4numberobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4object_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4objectiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4objectproto_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4persistent_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4profiling_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4property_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4qmlcontext_p.h" />
+    <QtMoc Include="..\5.9.6\QtQml\private\qv4qobjectwrapper_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4regalloc_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4regexp_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4regexpobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4registerinfo_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4runtime_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4runtimeapi_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4scopedvalue_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4script_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4sequenceobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4serialize_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4sparsearray_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4sqlerrors_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4ssa_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4string_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4stringobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4targetplatform_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4typedarray_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4unop_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4util_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4value_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4variantobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv4vme_moth_p.h" />
+    <ClInclude Include="..\5.9.6\QtQml\private\qv8engine_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Qml_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animations\qabstractanimationjob.cpp" />
+    <ClCompile Include="animations\qanimationgroupjob.cpp" />
+    <ClCompile Include="animations\qcontinuinganimationgroupjob.cpp" />
+    <ClCompile Include="animations\qparallelanimationgroupjob.cpp" />
+    <ClCompile Include="animations\qpauseanimationjob.cpp" />
+    <ClCompile Include="animations\qsequentialanimationgroupjob.cpp" />
+    <ClCompile Include="compiler\qqmlirbuilder.cpp" />
+    <ClCompile Include="compiler\qqmlpropertycachecreator.cpp" />
+    <ClCompile Include="compiler\qqmlpropertyvalidator.cpp" />
+    <ClCompile Include="compiler\qqmltypecompiler.cpp" />
+    <ClCompile Include="compiler\qv4codegen.cpp" />
+    <ClCompile Include="compiler\qv4compilationunitmapper.cpp" />
+    <ClCompile Include="compiler\qv4compilationunitmapper_win.cpp" />
+    <ClCompile Include="compiler\qv4compileddata.cpp" />
+    <ClCompile Include="compiler\qv4compiler.cpp" />
+    <ClCompile Include="compiler\qv4instr_moth.cpp" />
+    <ClCompile Include="compiler\qv4isel_moth.cpp" />
+    <ClCompile Include="compiler\qv4isel_p.cpp" />
+    <ClCompile Include="compiler\qv4jsir.cpp" />
+    <ClCompile Include="compiler\qv4jssimplifier.cpp" />
+    <ClCompile Include="compiler\qv4ssa.cpp" />
+    <ClCompile Include="debugger\qqmlabstractprofileradapter.cpp" />
+    <ClCompile Include="debugger\qqmldebug.cpp" />
+    <ClCompile Include="debugger\qqmldebugconnector.cpp" />
+    <ClCompile Include="debugger\qqmldebugserviceinterfaces.cpp" />
+    <ClCompile Include="debugger\qqmlmemoryprofiler.cpp" />
+    <ClCompile Include="debugger\qqmlprofiler.cpp" />
+    <ClCompile Include="jit\qv4assembler.cpp" />
+    <ClCompile Include="jit\qv4binop.cpp" />
+    <ClCompile Include="jit\qv4isel_masm.cpp" />
+    <ClCompile Include="jit\qv4regalloc.cpp" />
+    <ClCompile Include="jit\qv4unop.cpp" />
+    <ClCompile Include="jsapi\qjsengine.cpp" />
+    <ClCompile Include="jsapi\qjsvalue.cpp" />
+    <ClCompile Include="jsapi\qjsvalueiterator.cpp" />
+    <ClCompile Include="jsruntime\qv4argumentsobject.cpp" />
+    <ClCompile Include="jsruntime\qv4arraybuffer.cpp" />
+    <ClCompile Include="jsruntime\qv4arraydata.cpp" />
+    <ClCompile Include="jsruntime\qv4arrayobject.cpp" />
+    <ClCompile Include="jsruntime\qv4booleanobject.cpp" />
+    <ClCompile Include="jsruntime\qv4context.cpp" />
+    <ClCompile Include="jsruntime\qv4dataview.cpp" />
+    <ClCompile Include="jsruntime\qv4dateobject.cpp" />
+    <ClCompile Include="jsruntime\qv4engine.cpp" />
+    <ClCompile Include="jsruntime\qv4errorobject.cpp" />
+    <ClCompile Include="jsruntime\qv4executableallocator.cpp" />
+    <ClCompile Include="jsruntime\qv4function.cpp" />
+    <ClCompile Include="jsruntime\qv4functionobject.cpp" />
+    <ClCompile Include="jsruntime\qv4globalobject.cpp" />
+    <ClCompile Include="jsruntime\qv4identifier.cpp" />
+    <ClCompile Include="jsruntime\qv4identifiertable.cpp" />
+    <ClCompile Include="jsruntime\qv4include.cpp" />
+    <ClCompile Include="jsruntime\qv4internalclass.cpp" />
+    <ClCompile Include="jsruntime\qv4jsonobject.cpp" />
+    <ClCompile Include="jsruntime\qv4lookup.cpp" />
+    <ClCompile Include="jsruntime\qv4managed.cpp" />
+    <ClCompile Include="jsruntime\qv4mathobject.cpp" />
+    <ClCompile Include="jsruntime\qv4memberdata.cpp" />
+    <ClCompile Include="jsruntime\qv4numberobject.cpp" />
+    <ClCompile Include="jsruntime\qv4object.cpp" />
+    <ClCompile Include="jsruntime\qv4objectiterator.cpp" />
+    <ClCompile Include="jsruntime\qv4objectproto.cpp" />
+    <ClCompile Include="jsruntime\qv4persistent.cpp" />
+    <ClCompile Include="jsruntime\qv4profiling.cpp" />
+    <ClCompile Include="jsruntime\qv4qmlcontext.cpp" />
+    <ClCompile Include="jsruntime\qv4qobjectwrapper.cpp" />
+    <ClCompile Include="jsruntime\qv4regexp.cpp" />
+    <ClCompile Include="jsruntime\qv4regexpobject.cpp" />
+    <ClCompile Include="jsruntime\qv4runtime.cpp" />
+    <ClCompile Include="jsruntime\qv4script.cpp" />
+    <ClCompile Include="jsruntime\qv4sequenceobject.cpp" />
+    <ClCompile Include="jsruntime\qv4serialize.cpp" />
+    <ClCompile Include="jsruntime\qv4sparsearray.cpp" />
+    <ClCompile Include="jsruntime\qv4string.cpp" />
+    <ClCompile Include="jsruntime\qv4stringobject.cpp" />
+    <ClCompile Include="jsruntime\qv4typedarray.cpp" />
+    <ClCompile Include="jsruntime\qv4value.cpp" />
+    <ClCompile Include="jsruntime\qv4variantobject.cpp" />
+    <ClCompile Include="jsruntime\qv4vme_moth.cpp" />
+    <ClCompile Include="memory\qv4mm.cpp" />
+    <ClCompile Include="parser\qqmljsast.cpp" />
+    <ClCompile Include="parser\qqmljsastvisitor.cpp" />
+    <ClCompile Include="parser\qqmljsengine_p.cpp" />
+    <ClCompile Include="parser\qqmljsgrammar.cpp" />
+    <ClCompile Include="parser\qqmljslexer.cpp" />
+    <ClCompile Include="parser\qqmljsparser.cpp" />
+    <ClCompile Include="qml\ftw\qhashedstring.cpp" />
+    <ClCompile Include="qml\ftw\qintrusivelist.cpp" />
+    <ClCompile Include="qml\ftw\qqmlthread.cpp" />
+    <ClCompile Include="qml\qqmlabstractbinding.cpp" />
+    <ClCompile Include="qml\qqmlabstracturlinterceptor.cpp" />
+    <ClCompile Include="qml\qqmlapplicationengine.cpp" />
+    <ClCompile Include="qml\qqmlbinding.cpp" />
+    <ClCompile Include="qml\qqmlboundsignal.cpp" />
+    <ClCompile Include="qml\qqmlcleanup.cpp" />
+    <ClCompile Include="qml\qqmlcomponent.cpp" />
+    <ClCompile Include="qml\qqmlcontext.cpp" />
+    <ClCompile Include="qml\qqmlcustomparser.cpp" />
+    <ClCompile Include="qml\qqmldelayedcallqueue.cpp" />
+    <ClCompile Include="qml\qqmldirparser.cpp" />
+    <ClCompile Include="qml\qqmlengine.cpp" />
+    <ClCompile Include="qml\qqmlerror.cpp" />
+    <ClCompile Include="qml\qqmlexpression.cpp" />
+    <ClCompile Include="qml\qqmlextensionplugin.cpp" />
+    <ClCompile Include="qml\qqmlfileselector.cpp" />
+    <ClCompile Include="qml\qqmlglobal.cpp" />
+    <ClCompile Include="qml\qqmlimport.cpp" />
+    <ClCompile Include="qml\qqmlincubator.cpp" />
+    <ClCompile Include="qml\qqmlinfo.cpp" />
+    <ClCompile Include="qml\qqmljavascriptexpression.cpp" />
+    <ClCompile Include="qml\qqmllist.cpp" />
+    <ClCompile Include="qml\qqmllistwrapper.cpp" />
+    <ClCompile Include="qml\qqmllocale.cpp" />
+    <ClCompile Include="qml\qqmlloggingcategory.cpp" />
+    <ClCompile Include="qml\qqmlmetatype.cpp" />
+    <ClCompile Include="qml\qqmlnetworkaccessmanagerfactory.cpp" />
+    <ClCompile Include="qml\qqmlnotifier.cpp" />
+    <ClCompile Include="qml\qqmlobjectcreator.cpp" />
+    <ClCompile Include="qml\qqmlopenmetaobject.cpp" />
+    <ClCompile Include="qml\qqmlparserstatus.cpp" />
+    <ClCompile Include="qml\qqmlplatform.cpp" />
+    <ClCompile Include="qml\qqmlproperty.cpp" />
+    <ClCompile Include="qml\qqmlpropertycache.cpp" />
+    <ClCompile Include="qml\qqmlpropertyvalueinterceptor.cpp" />
+    <ClCompile Include="qml\qqmlpropertyvaluesource.cpp" />
+    <ClCompile Include="qml\qqmlproxymetaobject.cpp" />
+    <ClCompile Include="qml\qqmlscriptstring.cpp" />
+    <ClCompile Include="qml\qqmlstringconverters.cpp" />
+    <ClCompile Include="qml\qqmltypenamecache.cpp" />
+    <ClCompile Include="qml\qqmltypenotavailable.cpp" />
+    <ClCompile Include="qml\qqmltypewrapper.cpp" />
+    <ClCompile Include="qml\qqmlvaluetype.cpp" />
+    <ClCompile Include="qml\qqmlvaluetypeproxybinding.cpp" />
+    <ClCompile Include="qml\qqmlvaluetypewrapper.cpp" />
+    <ClCompile Include="qml\qqmlvme.cpp" />
+    <ClCompile Include="qml\qqmlvmemetaobject.cpp" />
+    <QtMoc Include="qml\qqmlxmlhttprequest.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="qml\qqmltypeloader.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="qml\qqmlfile.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <ClCompile Include="qml\v8\qqmlbuiltinfunctions.cpp" />
+    <ClCompile Include="qml\v8\qv4domerrors.cpp" />
+    <ClCompile Include="qml\v8\qv4sqlerrors.cpp" />
+    <ClCompile Include="qml\v8\qv8engine.cpp" />
+    <ClCompile Include="types\qqmlbind.cpp" />
+    <ClCompile Include="types\qqmlconnections.cpp" />
+    <ClCompile Include="types\qqmldelegatemodel.cpp" />
+    <ClCompile Include="types\qqmlinstantiator.cpp" />
+    <ClCompile Include="types\qqmllistmodel.cpp" />
+    <ClCompile Include="types\qqmllistmodelworkeragent.cpp" />
+    <ClCompile Include="types\qqmlmodelindexvaluetype.cpp" />
+    <ClCompile Include="types\qqmlmodelsmodule.cpp" />
+    <ClCompile Include="types\qqmlobjectmodel.cpp" />
+    <ClCompile Include="types\qqmltimer.cpp" />
+    <ClCompile Include="types\qquickpackage.cpp" />
+    <QtMoc Include="types\qquickworkerscript.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <ClCompile Include="util\qqmlchangeset.cpp" />
+    <ClCompile Include="util\qqmllistaccessor.cpp" />
+    <ClCompile Include="util\qqmllistcompositor.cpp" />
+    <ClCompile Include="util\qqmlpropertymap.cpp" />
+    <QtMoc Include="util\qqmladaptormodel.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="debugger\qqmldebugservice.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

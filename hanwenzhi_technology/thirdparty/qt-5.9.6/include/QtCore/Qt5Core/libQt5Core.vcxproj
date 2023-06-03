@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{31A26811-4F69-4157-B6D2-95FE61E3D241}</ProjectGuid>
+    <RootNamespace>Qt5Core</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>
+    </QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>
+    </QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..;global;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\double-conversion-3.2.1;$(SolutionDir)thirdparty\pcre2-10.40\include;$(SolutionDir)thirdparty\harfbuzz_qt\include</AdditionalIncludeDirectories>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_STATIC;PCRE2_CODE_UNIT_WIDTH=16;PCRE2_STATIC;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;HAVE_CONFIG_H;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;QT_BUILD_CORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_DEBUG;PCRE2_CODE_UNIT_WIDTH=16;PCRE2_STATIC;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libzlib.lib;libpcre2.lib;libharfbuzz_qt.lib;libdouble-conversion.lib;mpr.lib;version.lib;ws2_32.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;winmm.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_CORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_DEBUG;PCRE2_CODE_UNIT_WIDTH=16;PCRE2_STATIC;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <InitFuncName>mimetypes</InitFuncName>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libzlib.lib;libpcre2.lib;libharfbuzz_qt.lib;libdouble-conversion.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..;global;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\double-conversion-3.2.1;$(SolutionDir)thirdparty\pcre2-10.40\include;$(SolutionDir)thirdparty\harfbuzz_qt\include</AdditionalIncludeDirectories>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_STATIC;PCRE2_CODE_UNIT_WIDTH=16;PCRE2_STATIC;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;HAVE_CONFIG_H;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;QT_BUILD_CORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;PCRE2_CODE_UNIT_WIDTH=16;PCRE2_STATIC;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libzlib.lib;libpcre2.lib;libharfbuzz_qt.lib;libdouble-conversion.lib;mpr.lib;version.lib;ws2_32.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;winmm.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_USING_NAMESPACE;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_CORE_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;PCRE2_CODE_UNIT_WIDTH=16;PCRE2_STATIC;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>mimetypes</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>
+      </Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libzlib.lib;libpcre2.lib;libharfbuzz_qt.lib;libdouble-conversion.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="animation\qabstractanimation.cpp" />
+    <ClCompile Include="animation\qanimationgroup.cpp" />
+    <ClCompile Include="animation\qparallelanimationgroup.cpp" />
+    <ClCompile Include="animation\qpauseanimation.cpp" />
+    <ClCompile Include="animation\qpropertyanimation.cpp" />
+    <ClCompile Include="animation\qsequentialanimationgroup.cpp" />
+    <ClCompile Include="animation\qvariantanimation.cpp" />
+    <ClCompile Include="codecs\qbig5codec.cpp" />
+    <ClCompile Include="codecs\qeucjpcodec.cpp" />
+    <ClCompile Include="codecs\qeuckrcodec.cpp" />
+    <ClCompile Include="codecs\qgb18030codec.cpp" />
+    <ClCompile Include="codecs\qisciicodec.cpp" />
+    <ClCompile Include="codecs\qjiscodec.cpp" />
+    <ClCompile Include="codecs\qjpunicode.cpp" />
+    <ClCompile Include="codecs\qlatincodec.cpp" />
+    <ClCompile Include="codecs\qsimplecodec.cpp" />
+    <ClCompile Include="codecs\qsjiscodec.cpp" />
+    <ClCompile Include="codecs\qtextcodec.cpp" />
+    <ClCompile Include="codecs\qtsciicodec.cpp" />
+    <ClCompile Include="codecs\qutfcodec.cpp" />
+    <ClCompile Include="codecs\qwindowscodec.cpp" />
+    <ClCompile Include="global\qfloat16.cpp" />
+    <ClCompile Include="global\qfloat16tables.cpp" />
+    <ClCompile Include="global\qglobal.cpp" />
+    <ClCompile Include="global\qhooks.cpp" />
+    <ClCompile Include="global\qlibraryinfo.cpp" />
+    <ClCompile Include="global\qlogging.cpp" />
+    <ClCompile Include="global\qmalloc.cpp" />
+    <ClCompile Include="global\qnumeric.cpp" />
+    <ClCompile Include="global\qoperatingsystemversion.cpp" />
+    <ClCompile Include="global\qoperatingsystemversion_win.cpp" />
+    <ClCompile Include="global\qt_pch.h.cpp" />
+    <ClCompile Include="global\qversiontagging.cpp" />
+    <ClCompile Include="io\qabstractfileengine.cpp" />
+    <ClCompile Include="io\qbuffer.cpp" />
+    <ClCompile Include="io\qdatastream.cpp" />
+    <ClCompile Include="io\qdataurl.cpp" />
+    <ClCompile Include="io\qdebug.cpp" />
+    <ClCompile Include="io\qdir.cpp" />
+    <ClCompile Include="io\qdiriterator.cpp" />
+    <ClCompile Include="io\qfile.cpp" />
+    <ClCompile Include="io\qfiledevice.cpp" />
+    <ClCompile Include="io\qfileinfo.cpp" />
+    <ClCompile Include="io\qfileselector.cpp" />
+    <ClCompile Include="io\qfilesystemengine.cpp" />
+    <ClCompile Include="io\qfilesystemengine_win.cpp" />
+    <ClCompile Include="io\qfilesystementry.cpp" />
+    <ClCompile Include="io\qfilesystemiterator_win.cpp" />
+    <ClCompile Include="io\qfilesystemwatcher.cpp" />
+    <ClCompile Include="io\qfilesystemwatcher_polling.cpp" />
+    <ClCompile Include="plugin\qelfparser_p.cpp" />
+    <ClCompile Include="plugin\qfactoryinterface.cpp" />
+    <ClCompile Include="plugin\qfactoryloader.cpp" />
+    <ClCompile Include="plugin\qlibrary.cpp" />
+    <ClCompile Include="plugin\qlibrary_win.cpp" />
+    <ClCompile Include="plugin\qmachparser.cpp" />
+    <ClCompile Include="plugin\qpluginloader.cpp" />
+    <ClCompile Include="plugin\qsystemlibrary.cpp" />
+    <ClCompile Include="plugin\quuid.cpp" />
+    <ClCompile Include="statemachine\qabstractstate.cpp" />
+    <ClCompile Include="statemachine\qabstracttransition.cpp" />
+    <ClCompile Include="statemachine\qeventtransition.cpp" />
+    <ClCompile Include="statemachine\qfinalstate.cpp" />
+    <ClCompile Include="statemachine\qhistorystate.cpp" />
+    <ClCompile Include="statemachine\qsignaltransition.cpp" />
+    <ClCompile Include="statemachine\qstate.cpp" />
+    <QtMoc Include="statemachine\qstatemachine.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <ClCompile Include="thread\qatomic.cpp" />
+    <ClCompile Include="thread\qexception.cpp" />
+    <ClCompile Include="thread\qfutureinterface.cpp" />
+    <ClCompile Include="thread\qfuturewatcher.cpp" />
+    <ClCompile Include="thread\qmutex.cpp" />
+    <ClCompile Include="thread\qmutexpool.cpp" />
+    <ClCompile Include="thread\qreadwritelock.cpp" />
+    <ClCompile Include="thread\qresultstore.cpp" />
+    <ClCompile Include="thread\qrunnable.cpp" />
+    <ClCompile Include="thread\qsemaphore.cpp" />
+    <ClCompile Include="thread\qthread.cpp" />
+    <ClCompile Include="thread\qthreadpool.cpp" />
+    <ClCompile Include="thread\qthreadstorage.cpp" />
+    <ClCompile Include="thread\qthread_win.cpp" />
+    <ClCompile Include="thread\qwaitcondition_win.cpp" />
+    <ClCompile Include="tools\qarraydata.cpp" />
+    <ClCompile Include="tools\qbitarray.cpp" />
+    <ClCompile Include="tools\qbytearray.cpp" />
+    <ClCompile Include="tools\qbytearraylist.cpp" />
+    <ClCompile Include="tools\qbytearraymatcher.cpp" />
+    <ClCompile Include="tools\qcollator.cpp" />
+    <ClCompile Include="tools\qcollator_win.cpp" />
+    <ClCompile Include="tools\qcommandlineoption.cpp" />
+    <ClCompile Include="tools\qcommandlineparser.cpp" />
+    <ClCompile Include="tools\qcontiguouscache.cpp" />
+    <ClCompile Include="tools\qcryptographichash.cpp" />
+    <ClCompile Include="tools\qdatetime.cpp" />
+    <ClCompile Include="tools\qdatetimeparser.cpp" />
+    <ClCompile Include="tools\qeasingcurve.cpp" />
+    <ClCompile Include="tools\qfreelist.cpp" />
+    <ClCompile Include="tools\qharfbuzz.cpp" />
+    <ClCompile Include="tools\qhash.cpp" />
+    <ClCompile Include="tools\qline.cpp" />
+    <ClCompile Include="tools\qlinkedlist.cpp" />
+    <ClCompile Include="tools\qlist.cpp" />
+    <ClCompile Include="tools\qlocale.cpp" />
+    <ClCompile Include="tools\qlocale_tools.cpp" />
+    <ClCompile Include="tools\qlocale_win.cpp" />
+    <ClCompile Include="tools\qmap.cpp" />
+    <ClCompile Include="tools\qmargins.cpp" />
+    <ClCompile Include="tools\qmessageauthenticationcode.cpp" />
+    <ClCompile Include="tools\qpoint.cpp" />
+    <ClCompile Include="tools\qrect.cpp" />
+    <ClCompile Include="tools\qrefcount.cpp" />
+    <ClCompile Include="tools\qregexp.cpp" />
+    <ClCompile Include="tools\qregularexpression.cpp" />
+    <ClCompile Include="tools\qringbuffer.cpp" />
+    <ClCompile Include="tools\qshareddata.cpp" />
+    <ClCompile Include="tools\qsharedpointer.cpp" />
+    <ClCompile Include="tools\qsimd.cpp" />
+    <ClCompile Include="tools\qsize.cpp" />
+    <ClCompile Include="tools\qstring.cpp" />
+    <ClCompile Include="tools\qstringbuilder.cpp" />
+    <ClCompile Include="tools\qstringlist.cpp" />
+    <ClCompile Include="tools\qstring_compat.cpp" />
+    <ClCompile Include="tools\qtextboundaryfinder.cpp" />
+    <ClCompile Include="tools\qtimeline.cpp" />
+    <ClCompile Include="tools\qtimezone.cpp" />
+    <ClCompile Include="tools\qtimezoneprivate.cpp" />
+    <ClCompile Include="tools\qtimezoneprivate_win.cpp" />
+    <ClCompile Include="tools\qunicodetools.cpp" />
+    <ClCompile Include="tools\qvector_msvc.cpp" />
+    <ClCompile Include="tools\qversionnumber.cpp" />
+    <ClCompile Include="tools\qvsnprintf.cpp" />
+    <ClCompile Include="xml\qxmlstream.cpp" />
+    <ClCompile Include="xml\qxmlutils.cpp" />
+    <QtMoc Include="io\qfilesystemwatcher_win.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <ClCompile Include="io\qfsfileengine.cpp" />
+    <ClCompile Include="io\qfsfileengine_iterator.cpp" />
+    <ClCompile Include="io\qfsfileengine_win.cpp" />
+    <ClCompile Include="io\qiodevice.cpp" />
+    <ClCompile Include="io\qipaddress.cpp" />
+    <ClCompile Include="io\qlockfile.cpp" />
+    <ClCompile Include="io\qlockfile_win.cpp" />
+    <ClCompile Include="io\qloggingcategory.cpp" />
+    <ClCompile Include="io\qloggingregistry.cpp" />
+    <ClCompile Include="io\qnoncontiguousbytedevice.cpp" />
+    <ClCompile Include="io\qprocess.cpp" />
+    <ClCompile Include="io\qprocess_win.cpp" />
+    <ClCompile Include="io\qresource.cpp" />
+    <ClCompile Include="io\qresource_iterator.cpp" />
+    <ClCompile Include="io\qsavefile.cpp" />
+    <ClCompile Include="io\qsettings.cpp" />
+    <ClCompile Include="io\qsettings_win.cpp" />
+    <ClCompile Include="io\qstandardpaths.cpp" />
+    <ClCompile Include="io\qstandardpaths_win.cpp" />
+    <ClCompile Include="io\qstorageinfo.cpp" />
+    <ClCompile Include="io\qstorageinfo_win.cpp" />
+    <ClCompile Include="io\qtemporarydir.cpp" />
+    <ClCompile Include="io\qtemporaryfile.cpp" />
+    <ClCompile Include="io\qtextstream.cpp" />
+    <ClCompile Include="io\qtldurl.cpp" />
+    <ClCompile Include="io\qurl.cpp" />
+    <ClCompile Include="io\qurlidna.cpp" />
+    <ClCompile Include="io\qurlquery.cpp" />
+    <ClCompile Include="io\qurlrecode.cpp" />
+    <ClCompile Include="io\qwindowspipereader.cpp" />
+    <ClCompile Include="io\qwindowspipewriter.cpp" />
+    <ClCompile Include="io\qwinoverlappedionotifier.cpp" />
+    <ClCompile Include="itemmodels\qabstractitemmodel.cpp" />
+    <ClCompile Include="itemmodels\qabstractproxymodel.cpp" />
+    <ClCompile Include="itemmodels\qidentityproxymodel.cpp" />
+    <ClCompile Include="itemmodels\qitemselectionmodel.cpp" />
+    <ClCompile Include="itemmodels\qsortfilterproxymodel.cpp" />
+    <ClCompile Include="itemmodels\qstringlistmodel.cpp" />
+    <ClCompile Include="json\qjson.cpp" />
+    <ClCompile Include="json\qjsonarray.cpp" />
+    <ClCompile Include="json\qjsondocument.cpp" />
+    <ClCompile Include="json\qjsonobject.cpp" />
+    <ClCompile Include="json\qjsonparser.cpp" />
+    <ClCompile Include="json\qjsonvalue.cpp" />
+    <ClCompile Include="json\qjsonwriter.cpp" />
+    <ClCompile Include="kernel\qabstracteventdispatcher.cpp" />
+    <ClCompile Include="kernel\qabstractnativeeventfilter.cpp" />
+    <ClCompile Include="kernel\qbasictimer.cpp" />
+    <ClCompile Include="kernel\qcoreapplication.cpp" />
+    <ClCompile Include="kernel\qcoreapplication_win.cpp" />
+    <ClCompile Include="kernel\qcoreevent.cpp" />
+    <ClCompile Include="kernel\qcoreglobaldata.cpp" />
+    <ClCompile Include="kernel\qdeadlinetimer.cpp" />
+    <ClCompile Include="kernel\qelapsedtimer.cpp" />
+    <ClCompile Include="kernel\qelapsedtimer_win.cpp" />
+    <ClCompile Include="kernel\qeventdispatcher_win.cpp" />
+    <ClCompile Include="kernel\qeventloop.cpp" />
+    <ClCompile Include="kernel\qmath.cpp" />
+    <ClCompile Include="kernel\qmetaobject.cpp" />
+    <ClCompile Include="kernel\qmetaobjectbuilder.cpp" />
+    <ClCompile Include="kernel\qmetatype.cpp" />
+    <ClCompile Include="kernel\qmimedata.cpp" />
+    <ClCompile Include="kernel\qobject.cpp" />
+    <ClCompile Include="kernel\qobjectcleanuphandler.cpp" />
+    <ClCompile Include="kernel\qpointer.cpp" />
+    <ClCompile Include="kernel\qsharedmemory.cpp" />
+    <ClCompile Include="kernel\qsharedmemory_win.cpp" />
+    <ClCompile Include="kernel\qsignalmapper.cpp" />
+    <ClCompile Include="kernel\qsocketnotifier.cpp" />
+    <ClCompile Include="kernel\qsystemerror.cpp" />
+    <ClCompile Include="kernel\qsystemsemaphore.cpp" />
+    <ClCompile Include="kernel\qsystemsemaphore_win.cpp" />
+    <QtMoc Include="kernel\qtimer.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <ClCompile Include="kernel\qtranslator.cpp" />
+    <ClCompile Include="kernel\qvariant.cpp" />
+    <ClCompile Include="kernel\qwineventnotifier.cpp" />
+    <ClCompile Include="mimetypes\qmimedatabase.cpp" />
+    <ClCompile Include="mimetypes\qmimeglobpattern.cpp" />
+    <ClCompile Include="mimetypes\qmimemagicrule.cpp" />
+    <ClCompile Include="mimetypes\qmimemagicrulematcher.cpp" />
+    <ClCompile Include="mimetypes\qmimeprovider.cpp" />
+    <ClCompile Include="mimetypes\qmimetype.cpp" />
+    <ClCompile Include="mimetypes\qmimetypeparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qabstractanimation.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qabstractanimation_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qabstracteventdispatcher.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qabstracteventdispatcher_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qabstractfileengine_p.h" />
+    <QtMoc Include="..\qabstractitemmodel.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qabstractitemmodel_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qt_pch.h" />
+    <ClInclude Include="..\qabstractnativeeventfilter.h" />
+    <QtMoc Include="..\qabstractproxymodel.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qabstractproxymodel_p.h" />
+    <QtMoc Include="..\qabstractstate.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qabstractstate_p.h" />
+    <QtMoc Include="..\qabstracttransition.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qabstracttransition_p.h" />
+    <ClInclude Include="..\qalgorithms.h" />
+    <QtMoc Include="..\qanimationgroup.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qanimationgroup_p.h" />
+    <ClInclude Include="..\qarraydata.h" />
+    <ClInclude Include="..\qarraydataops.h" />
+    <ClInclude Include="..\qarraydatapointer.h" />
+    <ClInclude Include="..\qatomic.h" />
+    <ClInclude Include="..\qatomic_bootstrap.h" />
+    <ClInclude Include="..\qatomic_cxx11.h" />
+    <ClInclude Include="..\qatomic_msvc.h" />
+    <ClInclude Include="..\qbasicatomic.h" />
+    <ClInclude Include="..\qbasictimer.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qbig5codec_p.h" />
+    <ClInclude Include="..\qbitarray.h" />
+    <QtMoc Include="..\qbuffer.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qbytearray.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qbytearray_p.h" />
+    <ClInclude Include="..\qbytearraylist.h" />
+    <ClInclude Include="..\qbytearraymatcher.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qbytedata_p.h" />
+    <ClInclude Include="..\qcache.h" />
+    <ClInclude Include="..\qchar.h" />
+    <ClInclude Include="..\qcollator.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qcollator_p.h" />
+    <ClInclude Include="..\qcommandlineoption.h" />
+    <ClInclude Include="..\qcommandlineparser.h" />
+    <ClInclude Include="..\qcompilerdetection.h" />
+    <ClInclude Include="..\qcontainerfwd.h" />
+    <ClInclude Include="..\qcontiguouscache.h" />
+    <QtMoc Include="..\qcoreapplication.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qcoreapplication_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qcorecmdlineargs_p.h" />
+    <QtMoc Include="..\qcoreevent.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qcoreglobaldata_p.h" />
+    <QtMoc Include="..\qcryptographichash.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qdatastream.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdatastream_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdataurl_p.h" />
+    <ClInclude Include="..\qdatetime.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdatetime_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdatetimeparser_p.h" />
+    <ClInclude Include="..\qdeadlinetimer.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdeadlinetimer_p.h" />
+    <ClInclude Include="..\qdebug.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdebug_p.h" />
+    <ClInclude Include="..\qdir.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdir_p.h" />
+    <ClInclude Include="..\qdiriterator.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qdoublescanprint_p.h" />
+    <QtMoc Include="..\qeasingcurve.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qelapsedtimer.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qelfparser_p.h" />
+    <ClInclude Include="..\qendian.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qeucjpcodec_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qeuckrcodec_p.h" />
+    <QtMoc Include="..\5.9.6\QtCore\private\qeventdispatcher_win_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qeventloop.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qeventtransition.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qeventtransition_p.h" />
+    <ClInclude Include="..\qexception.h" />
+    <ClInclude Include="..\qfactoryinterface.h" />
+    <QtMoc Include="..\5.9.6\QtCore\private\qfactoryloader_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qfile.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qfiledevice.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qfiledevice_p.h" />
+    <ClInclude Include="..\qfileinfo.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfileinfo_p.h" />
+    <QtMoc Include="..\qfileselector.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qfileselector_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfilesystemengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfilesystementry_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfilesystemiterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfilesystemmetadata_p.h" />
+    <QtMoc Include="..\qfilesystemwatcher.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qfilesystemwatcher_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qfilesystemwatcher_polling_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qfilesystemwatcher_win_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qfinalstate.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qfinalstate_p.h" />
+    <ClInclude Include="..\qflags.h" />
+    <CustomBuild Include="..\qfloat16.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\qfloat16.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\qt-5.9.6\qfloat16-tables.exe global\qfloat16tables.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\qt-5.9.6\qfloat16-tables.exe</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">global\qfloat16tables.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\qfloat16.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\qt-5.9.6\qfloat16-tables.exe global\qfloat16tables.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\qt-5.9.6\qfloat16-tables.exe</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">global\qfloat16tables.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\5.9.6\QtCore\private\qfloat16_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfreelist_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfsfileengine_iterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfsfileengine_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfunctions_p.h" />
+    <ClInclude Include="..\qfuture.h" />
+    <ClInclude Include="..\qfutureinterface.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qfutureinterface_p.h" />
+    <ClInclude Include="..\qfuturesynchronizer.h" />
+    <QtMoc Include="..\qfuturewatcher.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qfuturewatcher_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qgb18030codec_p.h" />
+    <ClInclude Include="..\qgenericatomic.h" />
+    <ClInclude Include="..\qglobal.h" />
+    <ClInclude Include="..\qglobalstatic.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qharfbuzz_p.h" />
+    <ClInclude Include="..\qhash.h" />
+    <ClInclude Include="..\qhashfunctions.h" />
+    <QtMoc Include="..\qhistorystate.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qhistorystate_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qhooks_p.h" />
+    <QtMoc Include="..\qidentityproxymodel.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qiodevice.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qiodevice_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qipaddress_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qisciicodec_p.h" />
+    <ClInclude Include="..\qisenum.h" />
+    <QtMoc Include="..\qitemselectionmodel.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qitemselectionmodel_p.h" />
+    <ClInclude Include="..\qiterator.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qjiscodec_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qjson_p.h" />
+    <ClInclude Include="..\qjsonarray.h" />
+    <ClInclude Include="..\qjsondocument.h" />
+    <ClInclude Include="..\qjsonobject.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qjsonparser_p.h" />
+    <ClInclude Include="..\qjsonvalue.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qjsonwriter_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qlatincodec_p.h" />
+    <QtMoc Include="..\qlibrary.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qlibrary_p.h" />
+    <ClInclude Include="..\qlibraryinfo.h" />
+    <ClInclude Include="..\qline.h" />
+    <ClInclude Include="..\qlinkedlist.h" />
+    <ClInclude Include="..\qlist.h" />
+    <QtMoc Include="..\qlocale.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qlocale_data_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qlocale_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qlocale_tools_p.h" />
+    <ClInclude Include="..\qlockfile.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qlockfile_p.h" />
+    <ClInclude Include="..\qlogging.h" />
+    <ClInclude Include="..\qloggingcategory.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qloggingregistry_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmachparser_p.h" />
+    <ClInclude Include="..\qmap.h" />
+    <ClInclude Include="..\qmargins.h" />
+    <ClInclude Include="..\qmath.h" />
+    <ClInclude Include="..\qmessageauthenticationcode.h" />
+    <ClInclude Include="..\qmetaobject.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmetaobject_moc_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmetaobject_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmetaobjectbuilder_p.h" />
+    <ClInclude Include="..\qmetatype.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmetatype_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmetatypeswitcher_p.h" />
+    <QtMoc Include="..\qmimedata.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qmimedatabase.h" />
+    <ClInclude Include="..\qmimetype.h" />
+    <ClInclude Include="..\qtextcodec.h" />
+    <ClInclude Include="..\qtypeinfo.h" />
+    <ClInclude Include="..\qtypetraits.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmimedatabase_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmimeglobpattern_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmimemagicrule_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmimemagicrulematcher_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmimeprovider_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmimetype_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmimetypeparser_p.h" />
+    <ClInclude Include="..\qmutex.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmutex_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qmutexpool_p.h" />
+    <QtMoc Include="..\qnamespace.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qnoncontiguousbytedevice_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qnumeric.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qnumeric_p.h" />
+    <QtMoc Include="..\qobject.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qobject_impl.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qobject_p.h" />
+    <QtMoc Include="..\qobjectcleanuphandler.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qobjectdefs.h" />
+    <ClInclude Include="..\qobjectdefs_impl.h" />
+    <ClInclude Include="..\qoperatingsystemversion.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qoperatingsystemversion_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qoperatingsystemversion_win_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qorderedmutexlocker_p.h" />
+    <ClInclude Include="..\qpair.h" />
+    <QtMoc Include="..\qparallelanimationgroup.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qparallelanimationgroup_p.h" />
+    <QtMoc Include="..\qpauseanimation.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qplugin.h" />
+    <QtMoc Include="..\qpluginloader.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qpodlist_p.h" />
+    <ClInclude Include="..\qpoint.h" />
+    <ClInclude Include="..\qpointer.h" />
+    <QtMoc Include="..\qprocess.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qprocess_p.h" />
+    <ClInclude Include="..\qprocessordetection.h" />
+    <QtMoc Include="..\qpropertyanimation.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qpropertyanimation_p.h" />
+    <ClInclude Include="..\qqueue.h" />
+    <ClInclude Include="..\qreadwritelock.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qreadwritelock_p.h" />
+    <ClInclude Include="..\qrect.h" />
+    <ClInclude Include="..\qrefcount.h" />
+    <ClInclude Include="..\qregexp.h" />
+    <ClInclude Include="..\qregularexpression.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qresource_iterator_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qresource_p.h" />
+    <ClInclude Include="..\qresultstore.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qringbuffer_p.h" />
+    <ClInclude Include="..\qrunnable.h" />
+    <QtMoc Include="..\qsavefile.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qscopedpointer.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qscopedpointer_p.h" />
+    <ClInclude Include="..\qscopedvaluerollback.h" />
+    <ClInclude Include="..\qsemaphore.h" />
+    <QtMoc Include="..\qsequentialanimationgroup.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qsequentialanimationgroup_p.h" />
+    <ClInclude Include="..\qset.h" />
+    <QtMoc Include="..\qsettings.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qsettings_p.h" />
+    <ClInclude Include="..\qshareddata.h" />
+    <QtMoc Include="..\qsharedmemory.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qsharedmemory_p.h" />
+    <ClInclude Include="..\qsharedpointer.h" />
+    <ClInclude Include="..\qsharedpointer_impl.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qsignaleventgenerator_p.h" />
+    <QtMoc Include="..\qsignalmapper.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qsignaltransition.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qsignaltransition_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qsimd_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qsimplecodec_p.h" />
+    <ClInclude Include="..\qsize.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qsjiscodec_p.h" />
+    <QtMoc Include="..\qsocketnotifier.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qsortfilterproxymodel.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qstack.h" />
+    <QtMoc Include="..\qstandardpaths.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qstate.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qstate_p.h" />
+    <QtMoc Include="..\qstatemachine.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qstatemachine_p.h" />
+    <ClInclude Include="..\qstorageinfo.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qstorageinfo_p.h" />
+    <ClInclude Include="..\qstring.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qstringalgorithms_p.h" />
+    <ClInclude Include="..\qstringbuilder.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qstringiterator_p.h" />
+    <ClInclude Include="..\qstringlist.h" />
+    <QtMoc Include="..\qstringlistmodel.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qstringmatcher.h" />
+    <ClInclude Include="..\qsysinfo.h" />
+    <ClInclude Include="..\qsystemdetection.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qsystemerror_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qsystemlibrary_p.h" />
+    <ClInclude Include="..\qsystemsemaphore.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qsystemsemaphore_p.h" />
+    <ClInclude Include="..\qtemporarydir.h" />
+    <QtMoc Include="..\qtemporaryfile.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qtemporaryfile_p.h" />
+    <ClInclude Include="..\qtextboundaryfinder.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qtextcodec_p.h" />
+    <ClInclude Include="..\qtextstream.h" />
+    <QtMoc Include="..\5.9.6\QtCore\private\qtextstream_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qthread.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qthread_p.h" />
+    <QtMoc Include="..\qthreadpool.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qthreadpool_p.h" />
+    <ClInclude Include="..\qthreadstorage.h" />
+    <QtMoc Include="..\qtimeline.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="..\qtimer.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qtimezone.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qtimezoneprivate_data_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qtimezoneprivate_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qtldurl_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qtools_p.h" />
+    <QtMoc Include="..\qtranslator.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qtranslator_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qtsciicodec_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qunicodetables_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qunicodetools_p.h" />
+    <ClInclude Include="..\qurl.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qurl_p.h" />
+    <ClInclude Include="..\qurlquery.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qurltlds_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qutfcodec_p.h" />
+    <ClInclude Include="..\quuid.h" />
+    <ClInclude Include="..\qvariant.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qvariant_p.h" />
+    <QtMoc Include="..\qvariantanimation.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtCore\private\qvariantanimation_p.h" />
+    <ClInclude Include="..\qvarlengtharray.h" />
+    <ClInclude Include="..\qvector.h" />
+    <ClInclude Include="..\qversionnumber.h" />
+    <ClInclude Include="..\qversiontagging.h" />
+    <ClInclude Include="..\qwaitcondition.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qwindowscodec_p.h" />
+    <QtMoc Include="..\5.9.6\QtCore\private\qwindowspipereader_p.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qwindowspipewriter_p.h">
+    </QtMoc>
+    <QtMoc Include="..\qwineventnotifier.h">
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCore\private\qwinoverlappedionotifier_p.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <ClInclude Include="..\qxmlstream.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qxmlstream_p.h" />
+    <ClInclude Include="..\5.9.6\QtCore\private\qxmlutils_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mimetypes\mime\packages\freedesktop.org.xml" />
+    <QtRcc Include="mimetypes\mimetypes.qrc">
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Core_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

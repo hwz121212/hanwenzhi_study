@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{6eac22b9-fc9d-48e3-9f65-f2aad560a46e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebView">
+      <UniqueIdentifier>{a06dfbc1-8301-400a-9581-7d9942cc9d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWebView\private">
+      <UniqueIdentifier>{3eb726c3-a671-4f16-94c2-96caa381ec6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qquickviewcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickwebview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickwebviewloadrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtwebviewfunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebview_webengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwebviewloadrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\qtwebviewfunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwebview_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5WebView_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWebView\private\qnativeviewcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebView\private\qtwebviewfunctions_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebView\private\qwebviewinterface_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWebView\private\qwebviewloadrequest_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtWebView\private\qquickviewcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebView\private\qquickwebview_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebView\private\qquickwebviewloadrequest_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebView\private\qwebview_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebView\private\qwebview_p_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtWebView\private\qwebview_webengine_p.h">
+      <Filter>Header Files\5.9.6\QtWebView\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

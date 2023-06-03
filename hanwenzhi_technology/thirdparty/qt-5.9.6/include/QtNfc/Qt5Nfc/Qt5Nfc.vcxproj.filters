@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{5e2fea30-4110-47f2-aa51-6c72f0499550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtNfc">
+      <UniqueIdentifier>{3bfaf178-eafd-4f1d-a990-70169f92ae67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtNfc\private">
+      <UniqueIdentifier>{24444fc9-c64a-468c-bb11-176f2f888f70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qllcpserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qllcpserver_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qllcpsocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qllcpsocket_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qndeffilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qndefmessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qndefnfcsmartposterrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qndefnfctextrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qndefnfcurirecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qndefrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldmanagerimpl_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldsharemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldsharemanagerimpl_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldsharetarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldsharetargetimpl_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldtagtype1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldtagtype2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldtagtype3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldtagtype4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldtarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnearfieldtarget_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qnfc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qqmlndefrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtlv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\qndeffilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qndefmessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qndefnfcsmartposterrecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qndefnfctextrecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qndefnfcurirecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qndefrecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qnearfieldmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnearfieldsharemanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnearfieldsharetarget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnearfieldtarget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qnfcglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qqmlndefrecord.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qllcpsocket_p_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qndefnfcsmartposterrecord_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qndefrecord_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qnearfieldmanagerimpl_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qnearfieldsharemanagerimpl_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qnearfieldsharetargetimpl_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qnearfieldtarget_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qtlv_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Nfc_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qllcpserver_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qllcpsocket_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qnearfieldmanager_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qnearfieldsharemanager_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qnearfieldsharetarget_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qnearfieldtagtype1_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qnearfieldtagtype2_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qnearfieldtagtype3_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtNfc\private\qnearfieldtagtype4_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtNfc\private\qllcpserver_p_p.h">
+      <Filter>Header Files\5.9.6\QtNfc\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

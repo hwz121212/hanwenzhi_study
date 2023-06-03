@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{9d1c1982-d944-454c-851b-6436da269cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtCharts">
+      <UniqueIdentifier>{d36e1fdb-19a0-4c3b-a031-4a4f0eacde67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtCharts\private">
+      <UniqueIdentifier>{892f0c2e-fe52-493a-930a-bbaab972b7f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="barchart\abstractbarchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\abstractchartlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\abstractdomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="areachart\areachartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\axisanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\bar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\baranimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\vertical\bar\barchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\boxplotanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxplotchart\boxplotchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxplotchart\boxwhiskers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\boxwhiskersanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestickchart\candlestick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\candlestickanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\candlestickbodywicksanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestickchart\candlestickchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\cartesianchartaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\cartesianchartlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\chartanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\chartaxiselement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chartbackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\barcategoryaxis\chartbarcategoryaxisx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\barcategoryaxis\chartbarcategoryaxisy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\categoryaxis\chartcategoryaxisx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\categoryaxis\chartcategoryaxisy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chartdataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\datetimeaxis\chartdatetimeaxisx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\datetimeaxis\chartdatetimeaxisy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chartelement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\logvalueaxis\chartlogvalueaxisx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\logvalueaxis\chartlogvalueaxisy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chartpresenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chartthememanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="charttitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\valueaxis\chartvalueaxisx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\valueaxis\chartvalueaxisy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xychart\glxyseriesdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\horizontalaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\horizontal\bar\horizontalbarchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\horizontal\percent\horizontalpercentbarchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\horizontal\stacked\horizontalstackedbarchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\legendlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\legendmarkeritem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\legendscroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="linechart\linechartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\logxlogydomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\logxlogypolardomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\logxydomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\logxypolardomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\vertical\percent\percentbarchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\pieanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piechart\piechartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\piesliceanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piechart\piesliceitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\polarchartaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\polarchartaxisangular.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\polarchartaxisradial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\categoryaxis\polarchartcategoryaxisangular.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\categoryaxis\polarchartcategoryaxisradial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\datetimeaxis\polarchartdatetimeaxisangular.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\datetimeaxis\polarchartdatetimeaxisradial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\polarchartlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\logvalueaxis\polarchartlogvalueaxisangular.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\logvalueaxis\polarchartlogvalueaxisradial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\valueaxis\polarchartvalueaxisangular.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\valueaxis\polarchartvalueaxisradial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\polardomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\qabstractaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\qabstractbarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qabstractseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qarealegendmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="areachart\qareaseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\barcategoryaxis\qbarcategoryaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qbarlegendmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\qbarmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\vertical\bar\qbarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\qbarset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qboxplotlegendmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxplotchart\qboxplotmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxplotchart\qboxplotseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxplotchart\qboxset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qcandlesticklegendmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestickchart\qcandlestickmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestickchart\qcandlestickseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestickchart\qcandlestickset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\categoryaxis\qcategoryaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qchart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qchartview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\datetimeaxis\qdatetimeaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\qhbarmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxplotchart\qhboxplotmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestickchart\qhcandlestickmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\horizontal\bar\qhorizontalbarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\horizontal\percent\qhorizontalpercentbarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\horizontal\stacked\qhorizontalstackedbarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piechart\qhpiemodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xychart\qhxymodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qlegend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qlegendmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="linechart\qlineseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\logvalueaxis\qlogvalueaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\vertical\percent\qpercentbarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qpielegendmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piechart\qpiemodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piechart\qpieseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piechart\qpieslice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qpolarchart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scatterchart\qscatterseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="splinechart\qsplineseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\vertical\stacked\qstackedbarseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\valueaxis\qvalueaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\qvbarmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxplotchart\qvboxplotmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestickchart\qvcandlestickmodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piechart\qvpiemodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xychart\qvxymodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="legend\qxylegendmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xychart\qxymodelmapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xychart\qxyseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\scatteranimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scatterchart\scatterchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\splineanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="splinechart\splinechartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barchart\vertical\stacked\stackedbarchartitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\verticalaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\xlogydomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\xlogypolardomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animations\xyanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xychart\xychart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\xydomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\xypolardomain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Charts_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtCharts\private\abstractbarchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\abstractdomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\areachartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\bar_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\baranimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\barchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxplotanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxplotchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxwhiskers_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\boxwhiskersanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestick_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestickanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestickbodywicksanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\candlestickchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\cartesianchartaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartaxiselement_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartbarcategoryaxisx_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartbarcategoryaxisy_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartcategoryaxisx_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartcategoryaxisy_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartdataset_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartdatetimeaxisx_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartdatetimeaxisy_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartlogvalueaxisx_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartlogvalueaxisy_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartpresenter_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartthememanager_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartvalueaxisx_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\chartvalueaxisy_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\glwidget_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\glxyseriesdata_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\horizontalbarchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\horizontalpercentbarchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\horizontalstackedbarchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\legendmarkeritem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\legendscroller_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\linechartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxlogydomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxlogypolardomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxydomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\logxypolardomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\percentbarchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\pieanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\piechartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\piesliceitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartaxisangular_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartaxisradial_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartcategoryaxisangular_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartcategoryaxisradial_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartdatetimeaxisangular_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartdatetimeaxisradial_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartlogvalueaxisangular_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartlogvalueaxisradial_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartvalueaxisangular_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polarchartvalueaxisradial_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\polardomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qabstractaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qabstractbarseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qabstractseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qarealegendmarker_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qareaseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarcategoryaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarlegendmarker_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarmodelmapper_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qbarset_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxplotlegendmarker_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxplotmodelmapper_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxplotseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qboxset_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlesticklegendmarker_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlestickmodelmapper_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlestickseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcandlestickset_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qcategoryaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qdatetimeaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qlegend_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qlegendmarker_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qlogvalueaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpielegendmarker_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpiemodelmapper_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpieseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qpieslice_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qsplineseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qvalueaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qxylegendmarker_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qxymodelmapper_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\qxyseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\scatterchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\scroller_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\splinechartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\stackedbarchartitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\xlogydomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\xlogypolardomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\xychart_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\xydomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtCharts\private\xypolardomain_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractbarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qarealegendmarker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qareaseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbarcategoryaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbarlegendmarker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbarmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbarset.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qboxplotlegendmarker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qboxplotmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qboxplotseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qboxset.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcandlesticklegendmarker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcandlestickmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcandlestickseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcandlestickset.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcategoryaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qchart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qchartview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qdatetimeaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhbarmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhboxplotmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhcandlestickmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhorizontalbarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhorizontalpercentbarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhorizontalstackedbarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhpiemodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qhxymodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlegend.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlegendmarker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlineseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlogvalueaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpercentbarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpielegendmarker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpiemodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpieseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpieslice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpolarchart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscatterseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsplineseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qstackedbarseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvalueaxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvbarmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvboxplotmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvcandlestickmodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvpiemodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvxymodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qxylegendmarker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qxymodelmapper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qxyseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtCharts\private\abstractchartlayout_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\axisanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\boxwhiskersdata_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\candlestickdata_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\cartesianchartlayout_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartbackground_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartconfig_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartelement_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\charthelpers_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\charttheme_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemebluecerulean_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemeblueicy_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemebluencs_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemebrownsand_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemedark_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemehighcontrast_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemelight_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemeqt_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\chartthemesystem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\charttitle_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\horizontalaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\legendlayout_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\linearrowitem_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\piesliceanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\pieslicedata_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\polarchartlayout_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qbarseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qchart_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qchartview_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qhorizontalbarseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qhorizontalpercentbarseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qhorizontalstackedbarseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qlineseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qpercentbarseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qscatterseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\qstackedbarseries_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\scatteranimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\splineanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\verticalaxis_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtCharts\private\xyanimation_p.h">
+      <Filter>Header Files\5.9.6\QtCharts\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chartsnamespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qchartglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtchartsversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

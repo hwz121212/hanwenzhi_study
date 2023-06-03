@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="alpha_processing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dec_clip_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lossless.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rescaler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="upsampling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alpha_processing_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dec_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lossless_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="upsampling_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alpha_processing_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dec_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lossless_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rescaler_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="upsampling_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cost.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lossless_enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ssim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cost_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enc_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lossless_enc_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ssim_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enc_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lossless_enc_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lossless.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lossless_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yuv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common_sse2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="neon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msa_macro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mips_macro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{86EF5DDD-F4D6-34D6-A726-C720E81C4A4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{66E902AC-4F53-37AA-8283-EFCBCCED4793}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

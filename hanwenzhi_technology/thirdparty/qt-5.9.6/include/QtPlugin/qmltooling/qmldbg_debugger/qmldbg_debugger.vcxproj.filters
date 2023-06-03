@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qqmldebuggerservicefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qqmlenginedebugservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="qqmlwatcher.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="qv4datacollector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qv4debugger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qv4debuggeragent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qv4debugjob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qv4debugservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\qqmlconfigurabledebugservice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qqmldebuggerservicefactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\shared\qqmldebugpacket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qqmlenginedebugservice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qqmlwatcher.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qv4datacollector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qv4debugger.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qv4debuggeragent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qv4debugjob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qv4debugservice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qmldbg_debugger_resource.rc" />
+  </ItemGroup>
+</Project>

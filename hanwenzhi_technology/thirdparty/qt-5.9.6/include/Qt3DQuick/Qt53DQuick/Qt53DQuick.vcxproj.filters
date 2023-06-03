@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{576cfe5b-c2e6-4c32-852e-2f86b92dec8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuick">
+      <UniqueIdentifier>{a8844b5b-52fc-4bcd-b1d0-73645852a06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuick\private">
+      <UniqueIdentifier>{1cb18add-21a3-493c-806d-873fc9f7820a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items">
+      <UniqueIdentifier>{c0740f2a-85fc-4b37-b99f-5f478b4ba927}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DQuick_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="items\quick3dentity.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dentityloader.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dnode.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dnodeinstantiator.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dnodev9.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="qqmlaspectengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquaternionanimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3dquick_global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3dquicknodefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3dquickvaluetypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DQuick\private\qt3dquick_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuick\private\qt3dquicknodefactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquick_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DQuick\private\qquaternionanimation_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuick\private\qt3dquickvaluetypes_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuick\private\quick3dentity_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuick\private\quick3dentityloader_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuick\private\quick3dnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuick\private\quick3dnodeinstantiator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuick\private\quick3dnodev9_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuick\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qqmlaspectengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

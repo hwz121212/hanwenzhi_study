@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{8055a8ce-ccde-49cc-b024-acbb5a8a0749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtOpenGL">
+      <UniqueIdentifier>{a65af5c0-9b4a-4226-95a4-f74735a07287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtOpenGL\private">
+      <UniqueIdentifier>{a5fb55c5-482e-4095-97ec-23c70192db10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qgl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl2paintengineex\qgl2pexvertexarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qglbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qglcolormap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl2paintengineex\qglcustomshaderstage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl2paintengineex\qglengineshadermanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qglframebufferobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qglfunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl2paintengineex\qglgradientcache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qglpaintdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qglpixelbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qglshaderprogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qgraphicsshadereffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl2paintengineex\qpaintengineex_opengl2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl2paintengineex\qtextureglyphcache_gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qgl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qglbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qglcolormap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qglframebufferobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qglfunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qglpixelbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qglshaderprogram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qtopenglglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtOpenGL\private\qgl_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5OpenGL_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtOpenGL\private\qglengineshadermanager_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtOpenGL\private\qgraphicsshadereffect_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qgl2pexvertexarray_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qglcustomshaderstage_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qglengineshadersource_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qglframebufferobject_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qglgradientcache_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qglpaintdevice_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qglpixelbuffer_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qglshadercache_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qpaintengineex_opengl2_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtOpenGL\private\qtextureglyphcache_gl_p.h">
+      <Filter>Header Files\5.9.6\QtOpenGL\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

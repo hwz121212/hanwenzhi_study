@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{65efc7e1-1a03-4290-ae69-63c96950a097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuickControls2">
+      <UniqueIdentifier>{47678882-e478-4b82-82ba-dc622077ac97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtQuickControls2\private">
+      <UniqueIdentifier>{08f8df33-1cb1-4d59-9601-381a2676ab0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qquickanimatednode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickclippedtext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickcolorimageprovider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickitemgroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickpaddedrectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickplaceholdertext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickproxytheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstyleattached.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstyleplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquickstyleselector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktumblerview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5QuickControls2_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquickanimatednode_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquickclippedtext_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquickitemgroup_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquickpaddedrectangle_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquickplaceholdertext_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquickstyleattached_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquickstyleplugin_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtQuickControls2\private\qquicktumblerview_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtQuickControls2\private\qquickcolorimageprovider_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickControls2\private\qquickproxytheme_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickControls2\private\qquickstyle_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickControls2\private\qquickstyleselector_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickControls2\private\qquickstyleselector_p_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickControls2\private\qtquickcontrols2-config_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtQuickControls2\private\qtquickcontrols2global_p.h">
+      <Filter>Header Files\5.9.6\QtQuickControls2\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qquickstyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtquickcontrols2-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtquickcontrols2global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtquickcontrols2version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

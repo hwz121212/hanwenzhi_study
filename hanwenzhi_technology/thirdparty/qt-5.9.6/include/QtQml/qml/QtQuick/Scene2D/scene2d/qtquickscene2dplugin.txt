@@ -1,0 +1,1 @@
+$(QINSTALL) plugins.qmltypes F:\qt\Src\qt3d\qml\QtQuick\Scene2D\plugins.qmltypes

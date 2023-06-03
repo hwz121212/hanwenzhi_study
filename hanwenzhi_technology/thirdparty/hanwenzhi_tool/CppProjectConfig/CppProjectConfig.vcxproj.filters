@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="vcxproj">
+      <UniqueIdentifier>{2e2f71fd-7956-4614-9ab5-571afa22df63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\CodeConvert.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CodeConvert.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CodeConvert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeConvertDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vcxproj\vcxproj.h">
+      <Filter>vcxproj</Filter>
+    </ClInclude>
+    <ClInclude Include="vcxproj\PropertyGroup.h">
+      <Filter>vcxproj</Filter>
+    </ClInclude>
+    <ClInclude Include="vcxproj\ItemDefinitionGroup.h">
+      <Filter>vcxproj</Filter>
+    </ClInclude>
+    <ClInclude Include="vcxproj\ItemGroup.h">
+      <Filter>vcxproj</Filter>
+    </ClInclude>
+    <ClInclude Include="vcxproj\Configuration.h">
+      <Filter>vcxproj</Filter>
+    </ClInclude>
+    <ClInclude Include="vcxproj\CreateVcxprojByCpp.h">
+      <Filter>vcxproj</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CodeConvert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeConvertDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vcxproj\vcxproj.cpp">
+      <Filter>vcxproj</Filter>
+    </ClCompile>
+    <ClCompile Include="vcxproj\PropertyGroup.cpp">
+      <Filter>vcxproj</Filter>
+    </ClCompile>
+    <ClCompile Include="vcxproj\ItemDefinitionGroup.cpp">
+      <Filter>vcxproj</Filter>
+    </ClCompile>
+    <ClCompile Include="vcxproj\ItemGroup.cpp">
+      <Filter>vcxproj</Filter>
+    </ClCompile>
+    <ClCompile Include="vcxproj\Configuration.cpp">
+      <Filter>vcxproj</Filter>
+    </ClCompile>
+    <ClCompile Include="vcxproj\CreateVcxprojByCpp.cpp">
+      <Filter>vcxproj</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CodeConvert.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

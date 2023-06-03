@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{4685eb4b-7261-4ed5-8f36-5bd3f60d8188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtMultimediaQuick_p">
+      <UniqueIdentifier>{ee1e44e0-aef2-4ebe-9b0e-626b74b84bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtMultimediaQuick_p\private">
+      <UniqueIdentifier>{ff165df5-b4c2-4a9b-925d-99770616f9c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qdeclarativevideooutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdeclarativevideooutput_render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qdeclarativevideooutput_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgvideonode_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgvideonode_rgb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgvideonode_texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsgvideonode_yuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\biplanaryuvvideo.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\biplanaryuvvideo.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\biplanaryuvvideo_swizzle.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\monoplanarvideo.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="qtmultimediaquicktools.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="shaders\rgbvideo.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\rgbvideo_padded.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\rgbvideo_swizzle.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\triplanaryuvvideo.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\triplanaryuvvideo.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\uyvyvideo.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\yuyvvideo.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5MultimediaQuick_p_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtMultimediaQuick_p\private\qdeclarativevideooutput_render_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimediaQuick_p\private\qdeclarativevideooutput_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtMultimediaQuick_p\private\qsgvideonode_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtMultimediaQuick_p\private\qdeclarativevideooutput_window_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimediaQuick_p\private\qsgvideonode_rgb_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimediaQuick_p\private\qsgvideonode_texture_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimediaQuick_p\private\qsgvideonode_yuv_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtmultimediaquick_pversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimediaQuick_p\private\qdeclarativevideooutput_backend_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtMultimediaQuick_p\private\qtmultimediaquickdefs_p.h">
+      <Filter>Header Files\5.9.6\QtMultimediaQuick_p\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

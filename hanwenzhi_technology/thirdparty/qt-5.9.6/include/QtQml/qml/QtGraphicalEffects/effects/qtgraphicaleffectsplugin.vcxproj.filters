@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="qml">
+      <UniqueIdentifier>{55b540c4-80fb-4092-bb70-b2e1b78e0fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fa1023c1-57e6-4ced-a315-37cd2249075c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtgraphicaleffectsplugin_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Blend.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="BrightnessContrast.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="Colorize.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="ColorOverlay.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="ConicalGradient.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="Desaturate.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="DirectionalBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="Displace.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="DropShadow.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="FastBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="GammaAdjust.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="GaussianBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="Glow.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="HueSaturation.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="InnerShadow.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="LevelAdjust.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="LinearGradient.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="MaskedBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="OpacityMask.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="RadialBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="RadialGradient.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="RectangularGlow.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="RecursiveBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="ThresholdMask.qml">
+      <Filter>qml</Filter>
+    </None>
+    <None Include="ZoomBlur.qml">
+      <Filter>qml</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qtgraphicaleffectsplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qtgraphicaleffectsplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

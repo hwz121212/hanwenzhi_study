@@ -1,0 +1,6 @@
+<CustomBuild Include="qmldir">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmldir;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QINSTALL) qmldir F:\qt\Src\qtwebchannel\qml\QtWebChannel\qmldir</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">COPY qmldir</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\qt\Src\qtwebchannel\qml\QtWebChannel\qmldir;%(Outputs)</Outputs>
+    </CustomBuild>

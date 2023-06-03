@@ -1,0 +1,4 @@
+$(QINSTALL) plugins.qmltypes F:\qt\Src\qtdeclarative\qml\QtQuick\LocalStorage\plugins.qmltypes
+
+
+$(QINSTALL) qmldir F:\qt\Src\qtdeclarative\qml\QtQuick\LocalStorage\qmldir

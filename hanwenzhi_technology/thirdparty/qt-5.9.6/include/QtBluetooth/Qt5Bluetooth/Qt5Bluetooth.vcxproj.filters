@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{18fba96d-fba3-4e2a-bf39-5bd63f173fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtBluetooth">
+      <UniqueIdentifier>{3f2de754-f18b-4737-bda8-19e8fb942ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtBluetooth\private">
+      <UniqueIdentifier>{31b93a4c-6a03-49c8-ba7a-39a8154fb9cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dummy\dummy_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetooth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothaddress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothdevicediscoveryagent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothdevicediscoveryagent_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothdeviceinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothhostinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothlocaldevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothlocaldevice_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothserver_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothservicediscoveryagent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothservicediscoveryagent_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothserviceinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothserviceinfo_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothsocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothsocket_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothtransfermanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothtransferreply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothtransferrequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbluetoothuuid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergyadvertisingdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergyadvertisingparameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergycharacteristic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergycharacteristicdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergyconnectionparameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergycontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergycontroller_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergydescriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergydescriptordata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergyservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergyservicedata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlowenergyserviceprivate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\qbluetooth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qbluetoothaddress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qbluetoothdevicediscoveryagent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qbluetoothdeviceinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qbluetoothglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qbluetoothhostinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qbluetoothlocaldevice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbluetoothserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbluetoothservicediscoveryagent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qbluetoothserviceinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qbluetoothsocket.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbluetoothtransfermanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbluetoothtransferreply.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qbluetoothtransferrequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qbluetoothuuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlowenergyadvertisingdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlowenergyadvertisingparameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlowenergycharacteristic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlowenergycharacteristicdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlowenergyconnectionparameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qlowenergycontroller.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qlowenergydescriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qlowenergydescriptordata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qlowenergyservice.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qlowenergyservicedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\dummy_helper_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\lecmaccalculator_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\qbluetoothaddress_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\qbluetoothdeviceinfo_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\qbluetoothhostinfo_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\qbluetoothserver_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\qbluetoothtransferreply_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\qbluetoothtransferrequest_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtBluetooth\private\qprivatelinearbuffer_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5Bluetooth_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qbluetoothdevicediscoveryagent_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qbluetoothlocaldevice_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qbluetoothservicediscoveryagent_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qbluetoothserviceinfo_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qbluetoothsocket_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qleadvertiser_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qlowenergycontroller_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtBluetooth\private\qlowenergyserviceprivate_p.h">
+      <Filter>Header Files\5.9.6\QtBluetooth\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

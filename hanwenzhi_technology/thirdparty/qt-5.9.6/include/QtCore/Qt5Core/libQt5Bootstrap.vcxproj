@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8756F776-A681-35E2-88B7-FD5D854F5B96}</ProjectGuid>
+    <RootNamespace>Qt5Bootstrap</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\include\QtXml;..\..\..\include\QtXml\5.9.6;..\..\..\include\QtXml\5.9.6\QtXml;..\..\..\include\QtXml\5.9.6\QtXml\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\zlib-1.2.12\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_VERSION_STR="5.9.6";QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=6;QT_BOOTSTRAPPED;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_CAST_FROM_ASCII;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_BOOTSTRAP_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_VERSION_STR="5.9.6";QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=6;QT_BOOTSTRAPPED;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_CAST_FROM_ASCII;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_BOOTSTRAP_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\include;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\include\QtXml;..\..\..\include\QtXml\5.9.6;..\..\..\include\QtXml\5.9.6\QtXml;..\..\..\include\QtXml\5.9.6\QtXml\private;..\..\..\mkspecs\win32-msvc;$(SolutionDir)thirdparty\zlib-1.2.12\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_VERSION_STR="5.9.6";QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=6;QT_BOOTSTRAPPED;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_CAST_FROM_ASCII;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_BOOTSTRAP_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_VERSION_STR="5.9.6";QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=6;QT_BOOTSTRAPPED;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_CAST_FROM_ASCII;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_BOOTSTRAP_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="io\qabstractfileengine.cpp" />
+    <ClCompile Include="io\qsettings.cpp" />
+    <ClCompile Include="io\qsettings_win.cpp" />
+    <ClCompile Include="tools\qarraydata.cpp" />
+    <ClCompile Include="tools\qbitarray.cpp" />
+    <ClCompile Include="io\qbuffer.cpp" />
+    <ClCompile Include="tools\qbytearray.cpp" />
+    <ClCompile Include="tools\qbytearraymatcher.cpp" />
+    <ClCompile Include="tools\qcommandlineoption.cpp" />
+    <ClCompile Include="tools\qcommandlineparser.cpp" />
+    <ClCompile Include="kernel\qcoreapplication.cpp" />
+    <ClCompile Include="kernel\qcoreapplication_win.cpp" />
+    <ClCompile Include="kernel\qcoreglobaldata.cpp" />
+    <ClCompile Include="tools\qcryptographichash.cpp" />
+    <ClCompile Include="io\qdatastream.cpp" />
+    <ClCompile Include="tools\qdatetime.cpp" />
+    <ClCompile Include="io\qdebug.cpp" />
+    <ClCompile Include="io\qdir.cpp" />
+    <ClCompile Include="io\qdiriterator.cpp" />
+    <ClCompile Include="io\qfile.cpp" />
+    <ClCompile Include="io\qfiledevice.cpp" />
+    <ClCompile Include="io\qfileinfo.cpp" />
+    <ClCompile Include="io\qfilesystemengine.cpp" />
+    <ClCompile Include="io\qfilesystemengine_win.cpp" />
+    <ClCompile Include="io\qfilesystementry.cpp" />
+    <ClCompile Include="io\qfilesystemiterator_win.cpp" />
+    <ClCompile Include="io\qfsfileengine.cpp" />
+    <ClCompile Include="io\qfsfileengine_iterator.cpp" />
+    <ClCompile Include="io\qfsfileengine_win.cpp" />
+    <ClCompile Include="global\qglobal.cpp" />
+    <ClCompile Include="tools\qhash.cpp" />
+    <ClCompile Include="io\qiodevice.cpp" />
+    <ClCompile Include="json\qjson.cpp" />
+    <ClCompile Include="json\qjsonarray.cpp" />
+    <ClCompile Include="json\qjsondocument.cpp" />
+    <ClCompile Include="json\qjsonobject.cpp" />
+    <ClCompile Include="json\qjsonparser.cpp" />
+    <ClCompile Include="json\qjsonvalue.cpp" />
+    <ClCompile Include="json\qjsonwriter.cpp" />
+    <ClCompile Include="codecs\qlatincodec.cpp" />
+    <ClCompile Include="tools\qline.cpp" />
+    <ClCompile Include="tools\qlinkedlist.cpp" />
+    <ClCompile Include="tools\qlist.cpp" />
+    <ClCompile Include="tools\qlocale.cpp" />
+    <ClCompile Include="tools\qlocale_tools.cpp" />
+    <ClCompile Include="global\qlogging.cpp" />
+    <ClCompile Include="io\qloggingcategory.cpp" />
+    <ClCompile Include="io\qloggingregistry.cpp" />
+    <ClCompile Include="global\qmalloc.cpp" />
+    <ClCompile Include="tools\qlocale_win.cpp" />
+    <ClCompile Include="tools\qmap.cpp" />
+    <ClCompile Include="kernel\qmetatype.cpp" />
+    <ClCompile Include="global\qnumeric.cpp" />
+    <ClCompile Include="global\qoperatingsystemversion.cpp" />
+    <ClCompile Include="global\qoperatingsystemversion_win.cpp" />
+    <ClCompile Include="tools\qpoint.cpp" />
+    <ClCompile Include="tools\qrect.cpp" />
+    <ClCompile Include="tools\qregexp.cpp" />
+    <ClCompile Include="io\qresource.cpp" />
+    <ClCompile Include="tools\qringbuffer.cpp" />
+    <ClCompile Include="io\qsavefile.cpp" />
+    <ClCompile Include="tools\qsize.cpp" />
+    <ClCompile Include="io\qstandardpaths.cpp" />
+    <ClCompile Include="io\qstandardpaths_win.cpp" />
+    <ClCompile Include="tools\qstring.cpp" />
+    <ClCompile Include="tools\qstring_compat.cpp" />
+    <ClCompile Include="tools\qstringbuilder.cpp" />
+    <ClCompile Include="tools\qstringlist.cpp" />
+    <ClCompile Include="kernel\qsystemerror.cpp" />
+    <ClCompile Include="plugin\qsystemlibrary.cpp" />
+    <ClCompile Include="io\qtemporaryfile.cpp" />
+    <ClCompile Include="codecs\qtextcodec.cpp" />
+    <ClCompile Include="io\qtextstream.cpp" />
+    <ClCompile Include="codecs\qutfcodec.cpp" />
+    <ClCompile Include="plugin\quuid.cpp" />
+    <ClCompile Include="kernel\qvariant.cpp" />
+    <ClCompile Include="tools\qversionnumber.cpp" />
+    <ClCompile Include="tools\qvsnprintf.cpp" />
+    <ClCompile Include="xml\qxmlstream.cpp" />
+    <ClCompile Include="xml\qxmlutils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

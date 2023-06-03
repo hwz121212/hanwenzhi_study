@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{d2349b16-de25-4e33-8228-8d68e5c288eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtScriptTools">
+      <UniqueIdentifier>{baa8e8ad-9764-4fa0-9acb-b462051bf94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtScriptTools\private">
+      <UniqueIdentifier>{0cd8aa1c-289e-45c0-80dd-db282287477d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debugging\qscriptbreakpointdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptbreakpointsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptbreakpointswidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptcompletiontask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptcompletiontaskinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebugger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggeragent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerbackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercodefinderwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercodefinderwidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercodeview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercodeviewinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercodewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercodewidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercommandexecutor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercommandschedulerfrontend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggercommandschedulerjob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommandgroupdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommandjob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsolecommandmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsoleglobalobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsolewidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerevent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerfrontend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerjob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerlocalsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerlocalswidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerresponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerscriptedconsolecommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerscriptsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerscriptswidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerscriptswidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerstackmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerstackwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerstackwidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerstandardwidgetfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggervalue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggervalueproperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebugoutputwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebugoutputwidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptenginedebuggerfrontend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscripterrorlogwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscripterrorlogwidgetinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptobjectsnapshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptscriptdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptstdmessagehandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptsyntaxhighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptvalueproperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptxmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerconsolewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptbreakpointswidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptdebuggerlocalswidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging\qscriptenginedebugger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debugging\scripts\commands\advance.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\backtrace.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\break.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\breakpoint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\breakpoint.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\clear.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\mac\closetab.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\win\closetab.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\complete.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\condition.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\continue.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\d_breakpoint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\d_breakpoint.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\d_interrupt.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\d_play.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\delete.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\disable.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\down.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\enable.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\eval.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\find.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\finish.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\frame.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\help.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\ignore.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\info.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\interrupt.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\interrupt.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\list.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\location.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\location.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\new.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\mac\next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\win\next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\next.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\play.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\mac\plus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\win\plus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\mac\previous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\win\previous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\print.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\reload.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\return.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\return.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\runtocursor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\runtonewscript.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="debugging\scripttools_debugging.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="debugging\scripts\commands\step.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\stepinto.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\stepout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\stepover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\tbreak.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\scripts\commands\up.qs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="debugging\images\wrap.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5ScriptTools_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointdata_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointswidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptcompletionproviderinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptcompletiontaskinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggeragent_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggeragent_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerbackend_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerbackend_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodefinderwidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodeviewinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodewidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommand_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandexecutor_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerfrontend_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerjob_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercommandschedulerjob_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsole_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommand_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommand_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandgroupdata_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandjob_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandjob_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolecommandmanager_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolehistorianinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolewidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerevent_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggereventhandlerinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerfrontend_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerfrontend_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerjob_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerjob_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerjobschedulerinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalswidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerobjectsnapshotdelta_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerresponse_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerresponsehandlerinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptedconsolecommand_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptswidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackmodel_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackwidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstandardwidgetfactory_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggervalue_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggervalueproperty_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerwidgetfactoryinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptdebugoutputwidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptenginedebuggerfrontend_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscripterrorlogwidgetinterface_p_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptmessagehandlerinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptobjectsnapshot_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptscriptdata_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptstdmessagehandler_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptsyntaxhighlighter_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscripttooltipproviderinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptvalueproperty_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtScriptTools\private\qscriptxmlparser_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtscripttoolsversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointsmodel_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointswidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptbreakpointswidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptcompletiontask_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptcompletiontaskinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebugger_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodefinderwidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodefinderwidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodeview_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodeviewinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodewidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggercodewidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsoleglobalobject_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolewidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerconsolewidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalsmodel_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalswidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerlocalswidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptsmodel_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptswidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerscriptswidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackwidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebuggerstackwidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebugoutputwidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptdebugoutputwidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscriptedit_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscripterrorlogwidget_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtScriptTools\private\qscripterrorlogwidgetinterface_p.h">
+      <Filter>Header Files\5.9.6\QtScriptTools\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscriptenginedebugger.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

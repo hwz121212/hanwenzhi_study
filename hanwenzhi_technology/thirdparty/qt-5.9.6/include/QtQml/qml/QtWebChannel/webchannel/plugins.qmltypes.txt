@@ -1,0 +1,8 @@
+  <ItemGroup>
+    <CustomBuild Include="plugins.qmltypes">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">plugins.qmltypes;%(AdditionalInputs)</AdditionalInputs>
+      plugins.qmltypes</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">COPY plugins.qmltypes</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">plugins.qmltypes;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>

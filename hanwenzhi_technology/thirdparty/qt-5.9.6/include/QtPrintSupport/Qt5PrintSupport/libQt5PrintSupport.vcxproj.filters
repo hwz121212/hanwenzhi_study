@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{cc4df31d-4cf4-45d0-a485-a5a5d5c6464d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtPrintSupport">
+      <UniqueIdentifier>{eb34daf0-7cb6-4ab8-bdd0-f5b3327714e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtPrintSupport\private">
+      <UniqueIdentifier>{6bb50876-cca4-4e36-bc9a-bc722983066e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtPrintSupport\qpa">
+      <UniqueIdentifier>{82b62ed7-2644-4085-aa44-c7b746d86f7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dialogs\qabstractprintdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\qpagesetupdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\qpagesetupdialog_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qpaintengine_alpha.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qpaintengine_preview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qplatformprintdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qplatformprintersupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qplatformprintplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qprintdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\qprintdialog_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qprintengine_pdf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qprintengine_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qprinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\qprinterinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="dialogs\qprintpreviewdialog.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="widgets\qprintpreviewwidget.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qabstractprintdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qpagesetupdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qprintdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qprintengine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qprinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qprinterinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\qprintpreviewdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qprintpreviewwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\qtprintsupportglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\5.9.6\QtPrintSupport\qpa\qplatformprintplugin.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\qpa</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dialogs\images\fit-page-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\fit-page-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\fit-width-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\fit-width-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-first-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-first-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-last-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-last-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-next-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-next-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-previous-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\go-previous-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\layout-landscape-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\layout-landscape-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\layout-portrait-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\layout-portrait-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\page-setup-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\page-setup-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\print-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\print-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="dialogs\qprintdialog.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="dialogs\images\status-color.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\status-gray-scale.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\view-page-multi-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\view-page-multi-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\view-page-one-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\view-page-one-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\view-page-sided-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\view-page-sided-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\zoom-in-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\zoom-in-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\zoom-out-24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dialogs\images\zoom-out-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5PrintSupport_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\qpa\qplatformprintdevice.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\qpa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\qpa\qplatformprintersupport.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\qpa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qabstractprintdialog_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qpagesetupdialog_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qpaintengine_alpha_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qpaintengine_preview_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qprint_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qprintdevice_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qprintengine_win_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qprinter_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qprinterinfo_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtPrintSupport\private\qtprintsupportglobal_p.h">
+      <Filter>Header Files\5.9.6\QtPrintSupport\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="dialogs\qpagesetupwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

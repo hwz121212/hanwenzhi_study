@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{19716250-1f8f-44ed-996e-c967123e4e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtDataVisualization">
+      <UniqueIdentifier>{34fb889b-e03b-41ba-9aed-fa52cc6d4811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtDataVisualization\private">
+      <UniqueIdentifier>{20d7627d-e984-4825-8ec4-e1d6a999b74c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine\abstract3dcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\abstract3drenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\abstractitemmodelhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\abstractobjecthelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\abstractrenderitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\axisrendercache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\baritemmodelhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\barrenderitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bars3dcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bars3drenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\barseriesrendercache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\camerahelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\customrenderitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\drawer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\labelitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\meshloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\objecthelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\q3dbars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\q3dcamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\q3dinputhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\q3dlight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\q3dobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\q3dscatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\q3dscene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\q3dsurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="theme\q3dtheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\qabstract3daxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\qabstract3dgraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\qabstract3dinputhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qabstract3dseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qabstractdataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qbar3dseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qbardataitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qbardataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\qcategory3daxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qcustom3ditem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qcustom3dlabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qcustom3dvolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qheightmapsurfacedataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qitemmodelbardataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qitemmodelscatterdataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qitemmodelsurfacedataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\qlogvalue3daxisformatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qscatter3dseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qscatterdataitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qscatterdataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qsurface3dseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qsurfacedataitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\qsurfacedataproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\qtouch3dinputhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\qvalue3daxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis\qvalue3daxisformatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\scatter3dcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\scatter3drenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scatteritemmodelhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\scatterobjectbufferhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\scatterpointbufferhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scatterrenderitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\scatterseriesrendercache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\selectionpointer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\seriesrendercache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\shaderhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\surface3dcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\surface3drenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\surfaceitemmodelhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\surfaceobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\surfaceseriesrendercache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\texturehelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="theme\thememanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vertexindexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="engine\shaders\3dsliceframes.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\arrowFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\arrowSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\background.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\backgroundNoFloor.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\barFilledFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\barFilledSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\barFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\barSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\colorOnY.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\colorOnY_ES2.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\coneFilledFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\coneFilledSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\coneFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\coneSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cubeFilledFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cubeFilledSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cubeFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cubeSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cylinderFilledFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cylinderFilledSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cylinderFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\cylinderSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\default.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\default.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\defaultNoMatrices.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\default_ES2.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\depth.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\depth.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="engine\engine.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="engine\shaders\label.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\label.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\minimalFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\minimalSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\plainColor.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\plainColor.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\plane.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\point_ES2.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\point_ES2_UV.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\position.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\positionmap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\pyramidFilledFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\pyramidFilledSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\pyramidFlat.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\pyramidSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\shadow.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\shadow.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\shadowNoMatrices.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\shadowNoTex.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\shadowNoTexColorOnY.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\sphere.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\meshes\sphereSmooth.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surface.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceFlat.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceFlat.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceShadowFlat.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceShadowFlat.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceShadowNoTex.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceTexturedFlat.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceTexturedShadow.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surfaceTexturedShadowFlat.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\surface_ES2.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\texture.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\texture.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\texture3d.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\texture3d.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\texture3dlowdef.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\texture3dslice.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="engine\shaders\texture_ES2.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5DataVisualization_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\abstract3dcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\abstract3drenderer_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\abstractitemmodelhandler_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\axisrendercache_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\baritemmodelhandler_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\bars3dcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\bars3drenderer_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\camerahelper_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\drawer_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\q3dbars_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\q3dcamera_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\q3dinputhandler_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\q3dscatter_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\q3dscene_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\q3dsurface_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\q3dtheme_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qabstract3daxis_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qabstract3dgraph_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qabstract3dseries_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qabstractdataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qbar3dseries_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qbardataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qcategory3daxis_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qcustom3ditem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qcustom3dlabel_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qcustom3dvolume_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qheightmapsurfacedataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qitemmodelbardataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qitemmodelscatterdataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qitemmodelsurfacedataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qlogvalue3daxisformatter_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qscatter3dseries_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qscatterdataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qsurface3dseries_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qsurfacedataproxy_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qtouch3dinputhandler_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qvalue3daxis_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\qvalue3daxisformatter_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\scatter3dcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\scatter3drenderer_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\scatteritemmodelhandler_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\selectionpointer_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\surface3dcontroller_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\surface3drenderer_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\surfaceitemmodelhandler_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\QtDataVisualization\private\thememanager_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dbars.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dcamera.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dinputhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dlight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dobject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dscatter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dscene.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dsurface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\q3dtheme.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstract3daxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstract3dgraph.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstract3dinputhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstract3dseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractdataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbar3dseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qbardataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcategory3daxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcustom3ditem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcustom3dlabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcustom3dvolume.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qheightmapsurfacedataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qitemmodelbardataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qitemmodelscatterdataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qitemmodelsurfacedataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qlogvalue3daxisformatter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscatter3dseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscatterdataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsurface3dseries.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qsurfacedataproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtouch3dinputhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvalue3daxis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qvalue3daxisformatter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\abstractobjecthelper_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\abstractrenderitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\barrenderitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\barseriesrendercache_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\customrenderitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\datavisualizationglobal_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\labelitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\meshloader_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\objecthelper_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\q3dlight_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\q3dobject_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\qabstract3dinputhandler_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\qbardataitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\qscatterdataitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\qsurfacedataitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\scatterobjectbufferhelper_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\scatterpointbufferhelper_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\scatterrenderitem_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\scatterseriesrendercache_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\seriesrendercache_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\shaderhelper_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\surfaceobject_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\surfaceseriesrendercache_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\texturehelper_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\utils_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtDataVisualization\private\vertexindexer_p.h">
+      <Filter>Header Files\5.9.6\QtDataVisualization\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qbardataitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdatavisualizationglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qscatterdataitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qsurfacedataitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qtdatavisualizationversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

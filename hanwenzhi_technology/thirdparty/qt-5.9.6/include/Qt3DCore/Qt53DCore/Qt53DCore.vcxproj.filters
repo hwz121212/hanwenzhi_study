@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{2990d79f-f354-42d5-9e49-f93587360bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DCore">
+      <UniqueIdentifier>{b4de7caf-cc3b-4c40-970a-9244f20e52f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DCore\private">
+      <UniqueIdentifier>{570ea509-a8e1-477a-9143-40417e27ee3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aspects">
+      <UniqueIdentifier>{d49d2e5a-52fa-416d-997b-04b55d1a15af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\changes">
+      <UniqueIdentifier>{2305a67c-1b4f-4a4a-b7dc-7142fa5822f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jobs">
+      <UniqueIdentifier>{2f24464b-7ca4-404d-9149-44d35b83dbe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nodes">
+      <UniqueIdentifier>{88bc61ca-f3db-4694-9bb2-fc2041182d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\resources">
+      <UniqueIdentifier>{dc53fd33-d27e-41cb-bef2-cf6a6da4820e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services">
+      <UniqueIdentifier>{5309a243-fa3d-47a4-a736-2b87745ccf18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\transforms">
+      <UniqueIdentifier>{0d5099d8-cf88-4a21-8df2-f687304514e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\qt\Src\qt3d\src\core\Qt53DCore_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\corelogging_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\nullservices_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qabstractframeadvanceservice_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qabstractnodefactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qabstractserviceprovider_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectengine_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectfactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectjob_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qaspectjobproviderinterface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qbackendnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qbackendnodefactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qboundedcircularbuffer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcircularbuffer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcomponent_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcomponentaddedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qcomponentremovedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qdestructionidandtypecollector_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qdynamicpropertyupdatedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qentity_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qframeallocator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qframeallocator_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qhandle_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qlockableobserverinterface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qmath3d_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnode_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodecreatedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodecreatedchangegenerator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodedestroyedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qnodevisitor_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qobservableinterface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qobserverinterface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qopenglinformationservice_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpostman_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertynodeaddedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertynoderemovedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyupdatedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyupdatedchangebase_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueaddedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueaddedchangebase_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueremovedchange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qpropertyvalueremovedchangebase_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qresourcemanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qscene_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qscenechange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qsceneobserverinterface_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qstaticpropertyupdatedchangebase_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qstaticpropertyvalueaddedchangebase_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qstaticpropertyvalueremovedchangebase_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qsysteminformationservice_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qt3dcore_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qt3dcore-config_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qtickclock_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qtransform_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\qtypedpropertyupdatechange_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DCore\private\task_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qaspectjob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qbackendnode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcomponentaddedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcomponentremovedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qdynamicpropertyupdatedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qnodecreatedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qnodedestroyedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qnodeid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertynodeaddedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertynoderemovedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertyupdatedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertyupdatedchangebase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertyvalueaddedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertyvalueaddedchangebase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertyvalueremovedchange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qpropertyvalueremovedchangebase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qscenechange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qstaticpropertyupdatedchangebase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qstaticpropertyvalueaddedchangebase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qstaticpropertyvalueremovedchangebase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dcore_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dcore-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dcoreversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\aspectcommanddebugger_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\propertychangehandler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qabstractaspect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qabstractaspectjobmanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qabstractframeadvanceservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qaspectjobmanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qaspectmanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qaspectthread_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qchangearbiter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qeventfilterservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qopenglinformationservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qpostman_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qscheduler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qservicelocator_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qsysteminformationservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qthreadpooler_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DCore\private\qtickclockservice_p.h">
+      <Filter>Header Files\5.9.6\Qt3DCore\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qabstractaspect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qaspectengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qcomponent.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qentity.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qnode.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qtransform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="services\qeventfilterservice.cpp">
+      <Filter>Source Files\services</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aspects\aspectcommanddebugger.cpp">
+      <Filter>Source Files\aspects</Filter>
+    </ClCompile>
+    <ClCompile Include="aspects\qabstractaspect.cpp">
+      <Filter>Source Files\aspects</Filter>
+    </ClCompile>
+    <ClCompile Include="aspects\qaspectengine.cpp">
+      <Filter>Source Files\aspects</Filter>
+    </ClCompile>
+    <ClCompile Include="aspects\qaspectfactory.cpp">
+      <Filter>Source Files\aspects</Filter>
+    </ClCompile>
+    <ClCompile Include="aspects\qaspectmanager.cpp">
+      <Filter>Source Files\aspects</Filter>
+    </ClCompile>
+    <ClCompile Include="aspects\qaspectthread.cpp">
+      <Filter>Source Files\aspects</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qcomponentaddedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qcomponentremovedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qdynamicpropertyupdatedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qnodecreatedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qnodedestroyedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertynodeaddedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertynoderemovedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertyupdatedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertyupdatedchangebase.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertyvalueaddedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertyvalueaddedchangebase.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertyvalueremovedchange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qpropertyvalueremovedchangebase.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qscenechange.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qstaticpropertyupdatedchangebase.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qstaticpropertyvalueaddedchangebase.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="changes\qstaticpropertyvalueremovedchangebase.cpp">
+      <Filter>Source Files\changes</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\qabstractaspectjobmanager.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\qaspectjob.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\qaspectjobmanager.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\qthreadpooler.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="jobs\task.cpp">
+      <Filter>Source Files\jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\propertychangehandler.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qabstractnodefactory.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qbackendnode.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qcomponent.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qdestructionidandtypecollector.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qentity.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qnode.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qnodecreatedchangegenerator.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qnodeid.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\qnodevisitor.cpp">
+      <Filter>Source Files\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\qframeallocator.cpp">
+      <Filter>Source Files\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\qresourcemanager.cpp">
+      <Filter>Source Files\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="services\qabstractframeadvanceservice.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\qopenglinformationservice.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\qservicelocator.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\qsysteminformationservice.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\qtickclockservice.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="transforms\qtransform.cpp">
+      <Filter>Source Files\transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="corelogging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qbackendnodefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qchangearbiter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qlockableobserverinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qobservableinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qobserverinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qpostman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsceneobserverinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qscheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtickclock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

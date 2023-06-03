@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{348c4919-646f-4b34-ab16-dc06ea6bb39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtEventDispatcherSupport">
+      <UniqueIdentifier>{0fdbfab4-85eb-4823-9953-ec698145215b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtEventDispatcherSupport\private">
+      <UniqueIdentifier>{bcbd18fe-2069-40de-8f60-2178756cd6f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qwindowsguieventdispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\QtEventDispatcherSupport\private\qwindowsguieventdispatcher_p.h">
+      <Filter>Header Files\5.9.6\QtEventDispatcherSupport\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

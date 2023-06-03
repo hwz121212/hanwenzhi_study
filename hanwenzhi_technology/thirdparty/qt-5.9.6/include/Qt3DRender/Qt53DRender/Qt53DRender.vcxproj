@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B08E5084-5E5D-3953-B146-44B4D7BA80DD}</ProjectGuid>
+    <RootNamespace>Qt53DRender</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;concurrent;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;openglextensions</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;concurrent;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;openglextensions</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;backend;geometry;graphicshelpers;framegraph;frontend;jobs;lights;materialsystem;renderstates;io;picking;raycasting;services;texture;..\..\..\include;..\..\..\include\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender\private;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtGui\5.9.6\QtGui\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork;..\..\..\include\QtOpenGLExtensions;..\..\..\include\QtConcurrent;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DRENDER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;NDEBUG;</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt53DCore.lib;Qt5Concurrent.lib;libQt5OpenGLExtensions_shared.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DRENDER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_NO_DEBUG;QT_3DCORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_OPENGLEXTENSIONS_LIB;QT_GUI_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>moc;rcc;uic;.;backend;geometry;graphicshelpers;framegraph;frontend;jobs;lights;materialsystem;renderstates;io;picking;raycasting;services;texture;..\..\..\include;..\..\..\include\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender;..\..\..\include\Qt3DRender\5.9.6\Qt3DRender\private;..\..\..\include\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore;..\..\..\include\Qt3DCore\5.9.6\Qt3DCore\private;..\..\..\include\QtGui;..\..\..\include\QtGui\5.9.6;..\..\..\include\QtGui\5.9.6\QtGui;..\..\..\include\QtGui\5.9.6\QtGui\private;..\..\..\include\QtCore;..\..\..\include\QtCore\5.9.6;..\..\..\include\QtCore\5.9.6\QtCore;..\..\..\include\QtCore\5.9.6\QtCore\private;..\..\..\include\QtANGLE;..\..\..\include\QtNetwork;..\..\..\include\QtOpenGLExtensions;..\..\..\include\QtConcurrent;..\..\..\mkspecs\win32-msvc</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;4577;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>QT_BUILD_INTERNAL;QT_SHARED;_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DRENDER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Qml.lib;Qt5Quick.lib;Qt53DCore.lib;Qt5Concurrent.lib;libQt5OpenGLExtensions_shared.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.9</Version>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_FOREACH;QT_NO_NARROWING_CONVERSIONS_IN_CONNECT;QT_BUILD_3DRENDER_LIB;QT_BUILDING_QT;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;QT_NO_CAST_TO_ASCII;QT_ASCII_CAST_WARNINGS;QT_MOC_COMPAT;QT_USE_QSTRINGBUILDER;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x040800;QT_NO_EXCEPTIONS;QT_3DCORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_OPENGLEXTENSIONS_LIB;QT_GUI_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;_DEBUG;</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <QtMocDir>moc</QtMocDir>
+    </QtMoc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DRender_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\abstractrenderer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\apitexturemanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\attachmentpack_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\attribute_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\backendnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\boundingsphere_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\boundingvolumedebug_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffercapture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffermanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\bufferutils_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffervisitor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\buffer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\calcboundingvolumejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\calcgeometrytrianglevolumes_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\cameralens_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\cameraselectornode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\clearbuffers_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\commandexecuter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\computecommand_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\dispatchcompute_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\effect_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\entity_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\environmentlight_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\expandboundingvolumejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filtercompatibletechniquejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filterentitybycomponentjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filterkey_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\filterlayerentityjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\framecleanupjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\framegraphnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\framegraphvisitor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\frameprofiler_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\frustumcullingjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\frustumculling_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\genericlambdajob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\genericstate_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\geometryrenderermanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\geometryrenderer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\geometry_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\glbuffer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\gltexturemanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\gltexture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicscontext_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelperes2_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelperes3_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl2_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl3_2_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl3_3_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelpergl4_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\graphicshelperinterface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\handle_types_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\job_common_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\layerfilternode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\layer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\levelofdetail_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\lightgatherer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\lightsource_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\light_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadbufferjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadgeometryjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadscenejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\loadtexturedatajob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\managers_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\materialparametergathererjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\material_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\memorybarrier_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\nodefunctor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\nodemanagers_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\nodraw_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\objectpicker_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\openglvertexarrayobject_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\parameterpack_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\parameter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\pickboundingvolumejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\pickboundingvolumeutils_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qabstractlight_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qabstracttextureimage_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qabstracttexture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qalphatest_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qattribute_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qaxisalignedboundingbox_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qblendequationarguments_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qblendequation_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qboundingvolumeprovider_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qboundingvolume_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qbuffercapture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qbuffer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcameralens_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcameraselector_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcamera_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qclearbuffers_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qclipplane_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcollisionqueryresult_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcolormask_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcomputecommand_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qcullface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qdepthtest_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qdirectionallight_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qdispatchcompute_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qeffect_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qenvironmentlight_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qfilterkey_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qframegraphnodecreatedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qframegraphnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qfrontface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgeometryloaderinterface_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgeometryrenderer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgraphicsapifilter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgraphicsutils_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qlayerfilter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qlayer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qlevelofdetail_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qmaterial_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qmemorybarrier_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qmesh_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qobjectpicker_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpaintedtextureimage_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qparameter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpickevent_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpickingsettings_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpointlight_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpointsize_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qpolygonoffset_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qray3d_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qraycastingservice_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderaspect_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendercapture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderpassfilter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderpass_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendersettings_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderstatecreatedchange_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderstateset_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderstate_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendersurfaceselector_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendertargetoutput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendertargetselector_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrendertarget_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsceneexportfactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsceneimportfactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsceneloader_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qscissortest_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qshaderdata_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qshaderprogram_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qsortpolicy_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qspotlight_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstencilmask_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciloperationarguments_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciloperation_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciltestarguments_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qstenciltest_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qt3drender_global_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtechniquefilter_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtechnique_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtextureimagedata_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtextureimage_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qtexture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qurlhelper_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qviewport_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendercapture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendercommand_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderconfiguration_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderercache_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderer_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderlogging_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderpassfilternode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderpass_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderqueue_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendersettings_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderstatenode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderstateset_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderstates_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendersurfaceselector_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendertargetoutput_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendertargetselectornode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\rendertarget_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewbuilderjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewbuilder_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewinitializerjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderviewjobutils_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\renderview_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\resourceaccessor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\scenemanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\scene_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sendbuffercapturejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sendrendercapturejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shadercache_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shaderdata_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shaderparameterpack_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shadervariables_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\shader_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sortpolicy_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\sphere_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\statemask_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\statesetnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\statevariant_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\stringtoint_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\techniquefilternode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\techniquemanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\technique_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\texturedatamanager_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\textureimage_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\texture_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\transform_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\triangleboundingvolume_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\trianglesextractor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\trianglesvisitor_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\uniform_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updatelevelofdetailjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updatemeshtrianglelistjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updateshaderdatatransformjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updatetreeenabledjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updateworldboundingvolumejob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\updateworldtransformjob_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\viewportnode_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\vsyncframeadvanceservice_p.h" />
+    <ClInclude Include="..\qabstractfunctor.h" />
+    <ClInclude Include="..\qbufferdatagenerator.h" />
+    <ClInclude Include="..\qframegraphnodecreatedchange.h" />
+    <ClInclude Include="..\qgeometryfactory.h" />
+    <ClInclude Include="..\qt3drenderversion.h" />
+    <ClInclude Include="..\qt3drender_global.h" />
+    <ClInclude Include="..\qtexturedata.h" />
+    <ClInclude Include="..\qtexturegenerator.h" />
+    <ClInclude Include="..\qtextureimagedata.h" />
+    <ClInclude Include="..\qtextureimagedatagenerator.h" />
+    <QtMoc Include="..\qviewport.h" />
+    <QtMoc Include="..\qtexturewrapmode.h" />
+    <QtMoc Include="..\qtextureimage.h" />
+    <QtMoc Include="..\qtexture.h" />
+    <QtMoc Include="..\qtechniquefilter.h" />
+    <CustomBuild Include="..\qtechnique.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qglobal.h;qtechnique.h;qtechnique_p.h;qfilterkey.h;qfilterkey_p.h;qparameter.h;qparameter_p.h;qrenderpass.h;qrenderstate.h;qrenderstate_p.h;qabstracttexture.h;qpropertyupdatedchange.h;qpropertynodeaddedchange.h;qpropertynoderemovedchange.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qglobal.h;qtechnique.h;qtechnique_p.h;qfilterkey.h;qfilterkey_p.h;qparameter.h;qparameter_p.h;qrenderpass.h;qrenderstate.h;qrenderstate_p.h;qabstracttexture.h;qpropertyupdatedchange.h;qpropertynodeaddedchange.h;qpropertynoderemovedchange.h</PrependInclude>
+      <IgnoreConflicts Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </IgnoreConflicts>
+      <IgnoreConflicts Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </IgnoreConflicts>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)tool\qt-5.9.6\moc.exe %(FullPath) -o moc\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)tool\qt-5.9.6\moc.exe %(FullPath) -o moc\moc_%(Filename).cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc\moc_%(Filename).cpp</Outputs>
+    </CustomBuild>
+    <QtMoc Include="..\qstenciltestarguments.h" />
+    <QtMoc Include="..\qstenciltest.h" />
+    <QtMoc Include="..\qstenciloperationarguments.h" />
+    <QtMoc Include="..\qstenciloperation.h" />
+    <QtMoc Include="..\qstencilmask.h" />
+    <QtMoc Include="..\qspotlight.h" />
+    <QtMoc Include="..\qsortpolicy.h" />
+    <QtMoc Include="..\qshaderprogram.h" />
+    <QtMoc Include="..\qshaderdata.h" />
+    <QtMoc Include="..\qseamlesscubemap.h" />
+    <QtMoc Include="..\qscissortest.h" />
+    <QtMoc Include="..\qsceneloader.h" />
+    <QtMoc Include="..\qrendertargetselector.h" />
+    <QtMoc Include="..\qrendertargetoutput.h" />
+    <QtMoc Include="..\qrendertarget.h" />
+    <QtMoc Include="..\qrendersurfaceselector.h" />
+    <QtMoc Include="..\qrenderstateset.h" />
+    <QtMoc Include="..\qrenderstate.h" />
+    <QtMoc Include="..\qrendersettings.h">
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qrendersettings_p.h;qcomponent.h</PrependInclude>
+      <PrependInclude Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qrendersettings_p.h;qcomponent.h</PrependInclude>
+    </QtMoc>
+    <QtMoc Include="..\qrenderpassfilter.h" />
+    <QtMoc Include="..\qrenderpass.h" />
+    <QtMoc Include="..\qrendercapture.h" />
+    <QtMoc Include="..\qrenderaspect.h" />
+    <QtMoc Include="..\qpolygonoffset.h" />
+    <QtMoc Include="..\qpointsize.h" />
+    <QtMoc Include="..\qpointlight.h" />
+    <QtMoc Include="..\qpicktriangleevent.h" />
+    <QtMoc Include="..\qpickingsettings.h" />
+    <QtMoc Include="..\qpickevent.h" />
+    <QtMoc Include="..\qparameter.h" />
+    <QtMoc Include="..\qpaintedtextureimage.h" />
+    <QtMoc Include="..\qobjectpicker.h" />
+    <QtMoc Include="..\qnodraw.h" />
+    <QtMoc Include="..\qnodepthmask.h" />
+    <QtMoc Include="..\qmultisampleantialiasing.h" />
+    <QtMoc Include="..\qmesh.h" />
+    <QtMoc Include="..\qmemorybarrier.h" />
+    <QtMoc Include="..\qmaterial.h" />
+    <QtMoc Include="..\qlevelofdetailswitch.h" />
+    <QtMoc Include="..\qlevelofdetailboundingsphere.h" />
+    <QtMoc Include="..\qlevelofdetail.h" />
+    <QtMoc Include="..\qlayerfilter.h" />
+    <QtMoc Include="..\qlayer.h" />
+    <QtMoc Include="..\qgraphicsapifilter.h" />
+    <QtMoc Include="..\qgeometryrenderer.h" />
+    <QtMoc Include="..\qgeometry.h" />
+    <QtMoc Include="..\qfrustumculling.h" />
+    <QtMoc Include="..\qfrontface.h" />
+    <QtMoc Include="..\qframegraphnode.h" />
+    <QtMoc Include="..\qfilterkey.h" />
+    <QtMoc Include="..\qenvironmentlight.h" />
+    <QtMoc Include="..\qeffect.h" />
+    <QtMoc Include="..\qdithering.h" />
+    <QtMoc Include="..\qdispatchcompute.h" />
+    <QtMoc Include="..\qdirectionallight.h" />
+    <QtMoc Include="..\qdepthtest.h" />
+    <QtMoc Include="..\qcullface.h" />
+    <QtMoc Include="..\qcomputecommand.h" />
+    <QtMoc Include="..\qcolormask.h" />
+    <QtMoc Include="..\qclipplane.h" />
+    <QtMoc Include="..\qclearbuffers.h" />
+    <QtMoc Include="..\qcameraselector.h" />
+    <QtMoc Include="..\qcameralens.h" />
+    <QtMoc Include="..\qcamera.h" />
+    <QtMoc Include="..\qbuffercapture.h" />
+    <QtMoc Include="..\qbuffer.h" />
+    <QtMoc Include="..\qblendequationarguments.h" />
+    <QtMoc Include="..\qblendequation.h" />
+    <QtMoc Include="..\qattribute.h" />
+    <QtMoc Include="..\qalphatest.h" />
+    <QtMoc Include="..\qalphacoverage.h" />
+    <QtMoc Include="..\qabstracttextureimage.h" />
+    <QtMoc Include="..\qabstracttexture.h" />
+    <QtMoc Include="..\qabstractlight.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\renderthread_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneimportplugin_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneimporter_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneexportplugin_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qsceneexporter_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qrenderpluginfactoryif_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderpluginfactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qrenderplugin_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qitemmodelbuffer_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qgeometryloaderfactory_p.h" />
+    <ClInclude Include="..\5.9.6\Qt3DRender\private\qgeometry_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\qabstractcollisionqueryservice_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\platformsurfacefilter_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\pickeventfilter_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\offscreensurfacehelper_p.h" />
+    <QtMoc Include="..\5.9.6\Qt3DRender\private\commandthread_p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\attachmentpack.cpp" />
+    <ClCompile Include="backend\backendnode.cpp" />
+    <ClCompile Include="backend\boundingvolumedebug.cpp" />
+    <ClCompile Include="backend\cameralens.cpp" />
+    <ClCompile Include="backend\commandthread.cpp" />
+    <ClCompile Include="backend\computecommand.cpp" />
+    <ClCompile Include="backend\entity.cpp" />
+    <ClCompile Include="backend\layer.cpp" />
+    <ClCompile Include="backend\levelofdetail.cpp" />
+    <ClCompile Include="backend\managers.cpp" />
+    <ClCompile Include="backend\nodemanagers.cpp" />
+    <ClCompile Include="backend\offscreensurfacehelper.cpp" />
+    <ClCompile Include="backend\openglvertexarrayobject.cpp" />
+    <ClCompile Include="backend\parameterpack.cpp" />
+    <ClCompile Include="backend\platformsurfacefilter.cpp" />
+    <ClCompile Include="backend\rendercommand.cpp" />
+    <ClCompile Include="backend\renderconfiguration.cpp" />
+    <ClCompile Include="backend\renderer.cpp" />
+    <ClCompile Include="backend\renderqueue.cpp" />
+    <ClCompile Include="backend\rendersettings.cpp" />
+    <ClCompile Include="backend\rendertarget.cpp" />
+    <ClCompile Include="backend\rendertargetoutput.cpp" />
+    <ClCompile Include="backend\renderthread.cpp" />
+    <ClCompile Include="backend\renderview.cpp" />
+    <ClCompile Include="backend\renderviewbuilder.cpp" />
+    <ClCompile Include="backend\resourceaccessor.cpp" />
+    <ClCompile Include="backend\shaderparameterpack.cpp" />
+    <ClCompile Include="backend\stringtoint.cpp" />
+    <ClCompile Include="backend\transform.cpp" />
+    <ClCompile Include="backend\triangleboundingvolume.cpp" />
+    <ClCompile Include="backend\trianglesextractor.cpp" />
+    <ClCompile Include="backend\trianglesvisitor.cpp" />
+    <ClCompile Include="backend\uniform.cpp" />
+    <ClCompile Include="framegraph\buffercapture.cpp" />
+    <ClCompile Include="framegraph\cameraselectornode.cpp" />
+    <ClCompile Include="framegraph\clearbuffers.cpp" />
+    <ClCompile Include="framegraph\dispatchcompute.cpp" />
+    <ClCompile Include="framegraph\framegraphnode.cpp" />
+    <ClCompile Include="framegraph\framegraphvisitor.cpp" />
+    <ClCompile Include="framegraph\frustumculling.cpp" />
+    <ClCompile Include="framegraph\layerfilternode.cpp" />
+    <ClCompile Include="framegraph\memorybarrier.cpp" />
+    <ClCompile Include="framegraph\nodraw.cpp" />
+    <ClCompile Include="framegraph\qbuffercapture.cpp" />
+    <ClCompile Include="framegraph\qcameraselector.cpp" />
+    <ClCompile Include="framegraph\qclearbuffers.cpp" />
+    <ClCompile Include="framegraph\qdispatchcompute.cpp" />
+    <ClCompile Include="framegraph\qframegraphnode.cpp" />
+    <ClCompile Include="framegraph\qframegraphnodecreatedchange.cpp" />
+    <ClCompile Include="framegraph\qfrustumculling.cpp" />
+    <ClCompile Include="framegraph\qlayerfilter.cpp" />
+    <ClCompile Include="framegraph\qmemorybarrier.cpp" />
+    <ClCompile Include="framegraph\qnodraw.cpp" />
+    <ClCompile Include="framegraph\qrendercapture.cpp" />
+    <ClCompile Include="framegraph\qrenderpassfilter.cpp" />
+    <ClCompile Include="framegraph\qrenderstateset.cpp" />
+    <ClCompile Include="framegraph\qrendersurfaceselector.cpp" />
+    <ClCompile Include="framegraph\qrendertargetselector.cpp" />
+    <ClCompile Include="framegraph\qsortpolicy.cpp" />
+    <ClCompile Include="framegraph\qtechniquefilter.cpp" />
+    <ClCompile Include="framegraph\qviewport.cpp" />
+    <ClCompile Include="framegraph\rendercapture.cpp" />
+    <ClCompile Include="framegraph\renderpassfilternode.cpp" />
+    <ClCompile Include="framegraph\rendersurfaceselector.cpp" />
+    <ClCompile Include="framegraph\rendertargetselectornode.cpp" />
+    <ClCompile Include="framegraph\sortpolicy.cpp" />
+    <ClCompile Include="framegraph\statesetnode.cpp" />
+    <ClCompile Include="framegraph\techniquefilternode.cpp" />
+    <ClCompile Include="framegraph\viewportnode.cpp" />
+    <ClCompile Include="frontend\qabstractfunctor.cpp" />
+    <ClCompile Include="frontend\qcamera.cpp" />
+    <ClCompile Include="frontend\qcameralens.cpp" />
+    <ClCompile Include="frontend\qcomputecommand.cpp" />
+    <ClCompile Include="frontend\qitemmodelbuffer.cpp" />
+    <ClCompile Include="frontend\qlayer.cpp" />
+    <ClCompile Include="frontend\qlevelofdetail.cpp" />
+    <ClCompile Include="frontend\qlevelofdetailboundingsphere.cpp" />
+    <ClCompile Include="frontend\qlevelofdetailswitch.cpp" />
+    <ClCompile Include="frontend\qpickingsettings.cpp" />
+    <ClCompile Include="frontend\qrenderaspect.cpp" />
+    <ClCompile Include="frontend\qrenderpluginfactory.cpp" />
+    <ClCompile Include="frontend\qrenderpluginfactoryif.cpp" />
+    <ClCompile Include="frontend\qrendersettings.cpp" />
+    <ClCompile Include="frontend\qrendertarget.cpp" />
+    <ClCompile Include="frontend\qrendertargetoutput.cpp" />
+    <ClCompile Include="frontend\sphere.cpp" />
+    <ClCompile Include="geometry\attribute.cpp" />
+    <ClCompile Include="geometry\buffer.cpp" />
+    <ClCompile Include="geometry\buffermanager.cpp" />
+    <ClCompile Include="geometry\geometry.cpp" />
+    <ClCompile Include="geometry\geometryrenderer.cpp" />
+    <ClCompile Include="geometry\geometryrenderermanager.cpp" />
+    <ClCompile Include="geometry\qattribute.cpp" />
+    <ClCompile Include="geometry\qbuffer.cpp" />
+    <ClCompile Include="geometry\qgeometry.cpp" />
+    <ClCompile Include="geometry\qgeometryrenderer.cpp" />
+    <ClCompile Include="geometry\qmesh.cpp" />
+    <ClCompile Include="graphicshelpers\graphicscontext.cpp" />
+    <ClCompile Include="graphicshelpers\graphicshelperes2.cpp" />
+    <ClCompile Include="graphicshelpers\graphicshelperes3.cpp" />
+    <ClCompile Include="graphicshelpers\graphicshelpergl2.cpp" />
+    <ClCompile Include="graphicshelpers\graphicshelpergl3_2.cpp" />
+    <ClCompile Include="graphicshelpers\graphicshelpergl3_3.cpp" />
+    <ClCompile Include="graphicshelpers\graphicshelpergl4.cpp" />
+    <ClCompile Include="io\glbuffer.cpp" />
+    <ClCompile Include="io\qaxisalignedboundingbox.cpp" />
+    <ClCompile Include="io\qgeometryloaderfactory.cpp" />
+    <ClCompile Include="io\qsceneexporter.cpp" />
+    <ClCompile Include="io\qsceneexportfactory.cpp" />
+    <ClCompile Include="io\qsceneexportplugin.cpp" />
+    <ClCompile Include="io\qsceneimporter.cpp" />
+    <ClCompile Include="io\qsceneimportfactory.cpp" />
+    <ClCompile Include="io\qsceneimportplugin.cpp" />
+    <ClCompile Include="io\qsceneloader.cpp" />
+    <ClCompile Include="io\qurlhelper.cpp" />
+    <ClCompile Include="io\scene.cpp" />
+    <ClCompile Include="io\scenemanager.cpp" />
+    <ClCompile Include="jobs\calcboundingvolumejob.cpp" />
+    <ClCompile Include="jobs\calcgeometrytrianglevolumes.cpp" />
+    <ClCompile Include="jobs\expandboundingvolumejob.cpp" />
+    <ClCompile Include="jobs\filtercompatibletechniquejob.cpp" />
+    <ClCompile Include="jobs\filterlayerentityjob.cpp" />
+    <ClCompile Include="jobs\framecleanupjob.cpp" />
+    <ClCompile Include="jobs\frustumcullingjob.cpp" />
+    <ClCompile Include="jobs\lightgatherer.cpp" />
+    <ClCompile Include="jobs\loadbufferjob.cpp" />
+    <ClCompile Include="jobs\loadgeometryjob.cpp" />
+    <ClCompile Include="jobs\loadscenejob.cpp" />
+    <ClCompile Include="jobs\loadtexturedatajob.cpp" />
+    <ClCompile Include="jobs\materialparametergathererjob.cpp" />
+    <ClCompile Include="jobs\pickboundingvolumejob.cpp" />
+    <ClCompile Include="jobs\pickboundingvolumeutils.cpp" />
+    <ClCompile Include="jobs\renderviewbuilderjob.cpp" />
+    <ClCompile Include="jobs\renderviewinitializerjob.cpp" />
+    <ClCompile Include="jobs\renderviewjobutils.cpp" />
+    <ClCompile Include="jobs\sendbuffercapturejob.cpp" />
+    <ClCompile Include="jobs\sendrendercapturejob.cpp" />
+    <ClCompile Include="jobs\updatelevelofdetailjob.cpp" />
+    <ClCompile Include="jobs\updatemeshtrianglelistjob.cpp" />
+    <ClCompile Include="jobs\updateshaderdatatransformjob.cpp" />
+    <ClCompile Include="jobs\updatetreeenabledjob.cpp" />
+    <ClCompile Include="jobs\updateworldboundingvolumejob.cpp" />
+    <ClCompile Include="jobs\updateworldtransformjob.cpp" />
+    <ClCompile Include="lights\environmentlight.cpp" />
+    <ClCompile Include="lights\light.cpp" />
+    <ClCompile Include="lights\lightsource.cpp" />
+    <ClCompile Include="lights\qabstractlight.cpp" />
+    <ClCompile Include="lights\qdirectionallight.cpp" />
+    <ClCompile Include="lights\qenvironmentlight.cpp" />
+    <ClCompile Include="lights\qpointlight.cpp" />
+    <ClCompile Include="lights\qspotlight.cpp" />
+    <ClCompile Include="materialsystem\effect.cpp" />
+    <ClCompile Include="materialsystem\filterkey.cpp" />
+    <ClCompile Include="materialsystem\material.cpp" />
+    <ClCompile Include="materialsystem\parameter.cpp" />
+    <ClCompile Include="materialsystem\qeffect.cpp" />
+    <ClCompile Include="materialsystem\qfilterkey.cpp" />
+    <ClCompile Include="materialsystem\qgraphicsapifilter.cpp" />
+    <ClCompile Include="materialsystem\qmaterial.cpp" />
+    <ClCompile Include="materialsystem\qparameter.cpp" />
+    <ClCompile Include="materialsystem\qrenderpass.cpp" />
+    <ClCompile Include="materialsystem\qshaderdata.cpp" />
+    <ClCompile Include="materialsystem\qshaderprogram.cpp" />
+    <ClCompile Include="materialsystem\qtechnique.cpp" />
+    <ClCompile Include="materialsystem\renderpass.cpp" />
+    <ClCompile Include="materialsystem\shader.cpp" />
+    <ClCompile Include="materialsystem\shadercache.cpp" />
+    <ClCompile Include="materialsystem\shaderdata.cpp" />
+    <ClCompile Include="materialsystem\technique.cpp" />
+    <ClCompile Include="materialsystem\techniquemanager.cpp" />
+    <ClCompile Include="picking\objectpicker.cpp" />
+    <ClCompile Include="picking\pickeventfilter.cpp" />
+    <ClCompile Include="picking\qobjectpicker.cpp" />
+    <ClCompile Include="picking\qpickevent.cpp" />
+    <ClCompile Include="picking\qpicktriangleevent.cpp" />
+    <ClCompile Include="raycasting\boundingsphere.cpp" />
+    <ClCompile Include="raycasting\qabstractcollisionqueryservice.cpp" />
+    <ClCompile Include="raycasting\qboundingvolume.cpp" />
+    <ClCompile Include="raycasting\qboundingvolumeprovider.cpp" />
+    <ClCompile Include="raycasting\qcollisionqueryresult.cpp" />
+    <ClCompile Include="raycasting\qray3d.cpp" />
+    <ClCompile Include="raycasting\qraycastingservice.cpp" />
+    <ClCompile Include="renderlogging.cpp" />
+    <ClCompile Include="renderstates\qalphacoverage.cpp" />
+    <ClCompile Include="renderstates\qalphatest.cpp" />
+    <ClCompile Include="renderstates\qblendequation.cpp" />
+    <ClCompile Include="renderstates\qblendequationarguments.cpp" />
+    <ClCompile Include="renderstates\qclipplane.cpp" />
+    <ClCompile Include="renderstates\qcolormask.cpp" />
+    <ClCompile Include="renderstates\qcullface.cpp" />
+    <ClCompile Include="renderstates\qdepthtest.cpp" />
+    <ClCompile Include="renderstates\qdithering.cpp" />
+    <ClCompile Include="renderstates\qfrontface.cpp" />
+    <ClCompile Include="renderstates\qmultisampleantialiasing.cpp" />
+    <ClCompile Include="renderstates\qnodepthmask.cpp" />
+    <ClCompile Include="renderstates\qpointsize.cpp" />
+    <ClCompile Include="renderstates\qpolygonoffset.cpp" />
+    <ClCompile Include="renderstates\qrenderstate.cpp" />
+    <ClCompile Include="renderstates\qrenderstatecreatedchange.cpp" />
+    <ClCompile Include="renderstates\qscissortest.cpp" />
+    <ClCompile Include="renderstates\qseamlesscubemap.cpp" />
+    <ClCompile Include="renderstates\qstencilmask.cpp" />
+    <ClCompile Include="renderstates\qstenciloperation.cpp" />
+    <ClCompile Include="renderstates\qstenciloperationarguments.cpp" />
+    <ClCompile Include="renderstates\qstenciltest.cpp" />
+    <ClCompile Include="renderstates\qstenciltestarguments.cpp" />
+    <ClCompile Include="renderstates\renderstatenode.cpp" />
+    <ClCompile Include="renderstates\renderstates.cpp" />
+    <ClCompile Include="renderstates\renderstateset.cpp" />
+    <ClCompile Include="renderstates\statevariant.cpp" />
+    <ClCompile Include="services\vsyncframeadvanceservice.cpp" />
+    <ClCompile Include="texture\gltexture.cpp" />
+    <ClCompile Include="texture\qabstracttexture.cpp" />
+    <ClCompile Include="texture\qabstracttextureimage.cpp" />
+    <ClCompile Include="texture\qpaintedtextureimage.cpp" />
+    <ClCompile Include="texture\qtexture.cpp" />
+    <ClCompile Include="texture\qtexturedata.cpp" />
+    <ClCompile Include="texture\qtexturegenerator.cpp" />
+    <ClCompile Include="texture\qtextureimage.cpp" />
+    <ClCompile Include="texture\qtextureimagedata.cpp" />
+    <ClCompile Include="texture\qtexturewrapmode.cpp" />
+    <ClCompile Include="texture\texture.cpp" />
+    <ClCompile Include="texture\textureimage.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

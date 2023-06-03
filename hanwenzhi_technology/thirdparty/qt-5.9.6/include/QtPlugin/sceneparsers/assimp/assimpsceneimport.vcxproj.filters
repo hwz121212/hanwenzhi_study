@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{224ae53e-a183-4ac4-b6a2-f73f050d8ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{822afcb0-44c8-4bb1-b1c4-71734fe45b5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="assimpimporter.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="assimpimporter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="assimpsceneimport_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="assimphelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="assimphelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

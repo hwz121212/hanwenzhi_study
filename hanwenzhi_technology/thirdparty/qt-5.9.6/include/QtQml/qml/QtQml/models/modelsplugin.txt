@@ -1,0 +1,4 @@
+$(QINSTALL) plugins.qmltypes F:\qt\Src\qtdeclarative\qml\QtQml\Models.2\plugins.qmltypes
+
+
+$(QINSTALL) qmldir F:\qt\Src\qtdeclarative\qml\QtQml\Models.2\qmldir

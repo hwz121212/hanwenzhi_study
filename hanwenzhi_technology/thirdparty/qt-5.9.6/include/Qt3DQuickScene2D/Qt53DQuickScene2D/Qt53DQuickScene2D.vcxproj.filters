@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{746da91c-7ea5-484d-888e-c6605e9d3e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickScene2D">
+      <UniqueIdentifier>{5f78c609-8233-4d94-b08a-da043897b857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickScene2D\private">
+      <UniqueIdentifier>{7f5b6f4e-79be-43ff-ae43-409a948dcb8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items">
+      <UniqueIdentifier>{bb44115a-47af-4cd1-a46b-bc2d1855ffb8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Qt53DQuickScene2D_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qscene2d_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquickscene2d_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquickscene2d_logging_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquickscene2dnodefactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\scene2devent_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickScene2D\private\scene2dsharedobject_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickscene2d_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickscene2dversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DQuickScene2D\private\qt3dquick3dscene2d_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickScene2D\private\scene2d_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickScene2D\private\scene2dmanager_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickScene2D\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qscene2d.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qt3dquickscene2d_global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3dquickscene2d_logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3dquickscene2dnodefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qscene2d.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\qt3dquick3dscene2d.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\scene2d.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\scene2dmanager.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\scene2dsharedobject.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

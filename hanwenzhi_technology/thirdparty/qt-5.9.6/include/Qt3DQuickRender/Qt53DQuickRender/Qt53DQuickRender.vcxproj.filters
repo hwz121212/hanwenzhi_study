@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{c4e00059-d908-4714-86f3-9c46856bb313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickRender">
+      <UniqueIdentifier>{0bfadfda-a1a8-47e9-98c5-129705a906f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\Qt3DQuickRender\private">
+      <UniqueIdentifier>{6250fa51-193a-4a62-8a86-1399ed0a3dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items">
+      <UniqueIdentifier>{ca7b44fd-9cab-4e3e-b70b-4f533c87aa1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\Qt3DQuickRender\private\qt3dquickrender_global_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickRender\private\qt3dquickrendernodefactory_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\Qt3DQuickRender\private\quick3dparameter_p_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickrender_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qt3dquickrenderversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dbuffer_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3deffect_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dgeometry_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dlayerfilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dmaterial_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dmemorybarrier_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dparameter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3drenderpass_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3drenderpassfilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3drendertargetoutput_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3drendertargetselector_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dscene_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dshaderdata_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dshaderdataarray_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dstateset_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dtechnique_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dtechniquefilter_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dtexture_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+    <QtMoc Include="..\5.9.6\Qt3DQuickRender\private\quick3dviewport_p.h">
+      <Filter>Header Files\5.9.6\Qt3DQuickRender\private</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qt3dquickrender_global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3dquickrendernodefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dbuffer.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3deffect.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dgeometry.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dlayerfilter.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dmaterial.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dmemorybarrier.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dparameter.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3drenderpass.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3drenderpassfilter.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3drendertargetoutput.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3drendertargetselector.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dscene.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dshaderdata.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dshaderdataarray.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dstateset.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dtechnique.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dtechniquefilter.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dtexture.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="items\quick3dviewport.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

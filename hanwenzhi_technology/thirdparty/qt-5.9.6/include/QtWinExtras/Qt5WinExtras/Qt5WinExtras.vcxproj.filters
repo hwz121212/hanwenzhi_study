@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\5.9.6">
+      <UniqueIdentifier>{e68b5f77-c44b-4f61-b9bc-b0d3f6484e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWinExtras">
+      <UniqueIdentifier>{4a50660e-b2fd-46f6-8de0-d267f5303ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\5.9.6\QtWinExtras\private">
+      <UniqueIdentifier>{216ad565-3079-4f5f-85ac-ca43060f7da6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qwinevent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwineventfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinfunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinfunctions_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinjumplist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinjumplistcategory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinjumplistitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinmime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwintaskbarbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwintaskbarprogress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinthumbnailtoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qwinthumbnailtoolbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsguidsdefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Qt5WinExtras_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwineventfilter_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwinfunctions_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwinjumplist_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwinjumplistcategory_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwinjumplistitem_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwintaskbarbutton_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwinthumbnailtoolbar_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\qwinthumbnailtoolbutton_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\windowsguidsdefs_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\winpropkey_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\5.9.6\QtWinExtras\private\winshobjidl_p.h">
+      <Filter>Header Files\5.9.6\QtWinExtras\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwinevent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwinextrasglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwinfunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwinjumplistcategory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwinjumplistitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qwinmime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\qwinjumplist.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwintaskbarbutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwintaskbarprogress.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwinthumbnailtoolbar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\qwinthumbnailtoolbutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

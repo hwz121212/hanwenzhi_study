@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="flatstyleplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qquicktexthandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="flatstyleplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qquicktexthandle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApplicationWindowStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BusyIndicatorStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\BusyIndicator_Normal-Large.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\BusyIndicator_Normal-Medium.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\BusyIndicator_Normal-Small.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ButtonStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CalendarStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CheckBoxDrawer.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CheckBoxStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CircularButtonStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CircularGaugeStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CircularTickmarkLabelStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ComboBoxStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CursorHandleStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="DelayButtonStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="DialStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FlatStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FocusFrameStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GaugeStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GroupBoxStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\LICENSE.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="LeftArrowIcon.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MenuBarStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MenuStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\OpenSans-Light.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\OpenSans-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\OpenSans-Semibold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="PieMenuStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ProgressBarStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="RadioButtonStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ScrollViewStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SelectionHandleStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SliderStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SpinBoxStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="StatusBarStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="StatusIndicatorStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SwitchStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="TabViewStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="TableViewStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="TextAreaStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="TextFieldStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ToggleButtonStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ToolBarStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ToolButtonBackground.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ToolButtonIndicator.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ToolButtonStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="TumblerStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="flatstyle.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qtquickextrasflatplugin_resource.rc" />
+  </ItemGroup>
+</Project>

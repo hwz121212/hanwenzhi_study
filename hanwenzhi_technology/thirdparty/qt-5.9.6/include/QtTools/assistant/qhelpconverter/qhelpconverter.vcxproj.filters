@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adpreader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conversionwizard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filespage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filterpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="finishpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generalpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="identifierpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="outputpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pathpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qhcpwriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qhpwriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adpreader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="conversionwizard.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="filespage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="filterpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="finishpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="generalpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="helpwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="identifierpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inputpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="outputpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="pathpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qhcpwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qhpwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assistant-128.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assistant.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="doc\filespage.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="doc\filterpage.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="doc\generalpage.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="doc\identifierpage.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="doc\inputpage.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="doc\outputpage.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="doc\pathpage.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="qhelpconverter.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\qhelpconverter_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="filespage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="filterpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="generalpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="identifierpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="inputpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="outputpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="pathpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>
