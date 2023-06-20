@@ -1,0 +1,7 @@
+ml64.exe /c /nologo /D_M_X64 /W3 /Zi /Fo"$(IntDir)%(Filename).obj" "%(FullPath)"
+
+
+Building and Assembling %(Filename).asm
+
+
+$(IntDir)%(Filename).obj
