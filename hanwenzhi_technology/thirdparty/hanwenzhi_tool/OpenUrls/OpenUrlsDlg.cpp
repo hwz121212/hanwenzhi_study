@@ -36,7 +36,7 @@ BEGIN_MESSAGE_MAP(COpenUrlsDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_OPEN_URL, &COpenUrlsDlg::OnBnClickedButtonOpenUrl)
 	ON_LBN_DBLCLK(IDC_LIST1, &COpenUrlsDlg::OnLbnDblclkList1)
 	ON_BN_CLICKED(IDC_BUTTON_SAVE, &COpenUrlsDlg::OnBnClickedButtonSave)
-	ON_BN_CLICKED(IDC_BUTTON1, &COpenUrlsDlg::OnBnClickedButton1)
+
 END_MESSAGE_MAP()
 
 
@@ -262,10 +262,3 @@ void COpenUrlsDlg::OnBnClickedButtonSave()
 	SaveStringToFile(m_strFilePath, strAll);
 }
 
-
-void COpenUrlsDlg::OnBnClickedButton1()
-{
-
-	ShellExecute(NULL, "open", strUrl, NULL, NULL, SW_MAXIMIZE);  
-
-}
