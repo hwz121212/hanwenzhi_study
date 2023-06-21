@@ -52,6 +52,20 @@ BOOL COpenUrlsDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
+	m_strFilePath = "technical_url.txt";
+	CStringArray arrTemp;
+	ReadUrlsFromFile(m_strFilePath, arrTemp);
+	for (int index = 0; index < arrTemp.GetCount(); index++)
+	{
+		CString strTemp = arrTemp[index];
+		strTemp.Trim();
+		if (!strTemp.IsEmpty())
+		{
+			m_listUrls.AddString(strTemp);
+		}
+	}
+
+	SetWindowText(m_strFilePath);
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -180,6 +194,7 @@ void COpenUrlsDlg::OnDropFiles(HDROP hDropInfo)
 			m_strFilePath = filePath;
 			CStringArray arrTemp;
 			ReadUrlsFromFile(m_strFilePath, arrTemp);
+			SetWindowText(m_strFilePath);
 
 			for (int index=0; index<arrTemp.GetCount(); index++)
 			{

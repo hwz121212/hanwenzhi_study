@@ -15,7 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
     <None Include="res\OpenUrls.rc2">
       <Filter>资源文件</Filter>
     </None>
@@ -55,5 +54,8 @@
     <ResourceCompile Include="OpenUrls.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="technical_url.txt" />
   </ItemGroup>
 </Project>

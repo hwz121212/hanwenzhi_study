@@ -39,3 +39,6 @@ public:
 private:
 	CString m_strFilePath;
 };
+
+
+void ReadUrlsFromFile(const CString& strFilePathName, CStringArray& arrInfos);
