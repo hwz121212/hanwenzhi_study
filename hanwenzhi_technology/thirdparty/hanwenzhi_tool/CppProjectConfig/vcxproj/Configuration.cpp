@@ -47,6 +47,9 @@ void Delete_PropertyGroup_Child(CString& strFileContent, const CString& strConfi
 	Delete_ProjectConfiguration(strFileContent, "<CodeAnalysisRules", "/>", strConfiguration);
 	Delete_ProjectConfiguration(strFileContent, "<CodeAnalysisRuleAssemblies", "/>", strConfiguration);
 
+	Delete_ProjectConfiguration(strFileContent, "<IncludePath", "</IncludePath>", strConfiguration);
+	Delete_ProjectConfiguration(strFileContent, "<LibraryPath", "</LibraryPath>", strConfiguration);	
+
 	Delete_ProjectConfiguration(strFileContent, "<PrecompiledHeader", "</PrecompiledHeader>", strConfiguration);
 	Delete_ProjectConfiguration(strFileContent, "<ExtensionsToDeleteOnClean", "</ExtensionsToDeleteOnClean>", strConfiguration);
 	Delete_ProjectConfiguration(strFileContent, "<EmbedManifest", "</EmbedManifest>", strConfiguration);
