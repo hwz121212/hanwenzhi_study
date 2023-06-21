@@ -65,7 +65,9 @@ BOOL COpenUrlsDlg::OnInitDialog()
 		}
 	}
 
-	SetWindowText(m_strFilePath);
+	CString strWindowTitle;
+	strWindowTitle.Format("%s [%d]", (LPTSTR)(LPCTSTR)m_strFilePath, arrTemp.GetCount());
+	SetWindowText(strWindowTitle);
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -194,7 +196,10 @@ void COpenUrlsDlg::OnDropFiles(HDROP hDropInfo)
 			m_strFilePath = filePath;
 			CStringArray arrTemp;
 			ReadUrlsFromFile(m_strFilePath, arrTemp);
-			SetWindowText(m_strFilePath);
+
+			CString strWindowTitle;
+			strWindowTitle.Format("%s [%d]", (LPTSTR)(LPCTSTR)m_strFilePath, arrTemp.GetCount());
+			SetWindowText(strWindowTitle);
 
 			for (int index=0; index<arrTemp.GetCount(); index++)
 			{
