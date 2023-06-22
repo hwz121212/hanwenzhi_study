@@ -1,0 +1,9 @@
+#if defined(CXIMAGE_DLL)
+#if defined(CXIMAGE_DLL_EXPORT)
+#define DLL_EXP __declspec(dllexport)
+#else
+#define DLL_EXP __declspec(dllimport)
+#endif
+#else
+#define DLL_EXP
+#endif

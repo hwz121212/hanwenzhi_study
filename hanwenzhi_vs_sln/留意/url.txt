@@ -1,0 +1,75 @@
+.vcxproj结构格式说明和.props文件用法说明
+https://blog.csdn.net/baidu_38621657/article/details/109232374
+
+
+https://mirrors.sjtug.sjtu.edu.cn/gnu/
+
+
+
+
+
+
+CxImage Linked Libraries
+CxImage must be linked with additional libraries in order to read and write some specific file formats. All these libraries are freely available, with source code, documentation and examples. Some of the libraries distributed with CxImage have been patched, or slightly edited, to add features normally not enabled in the standard distributions, or just to avoid too many warnings from the compiler during the compilation, and mainly to ensure that CxImage can be easily linked with all of them without troubles. Here is a list of the libraries linked with CxImage :
+
+zLib
+LibTIFF
+LibPNG
+LibMNG
+LibJPEG
+JBIG-Kit
+JasPer
+LibDCR
+LibPSD
+zLib
+Home page : http://www.zlib.net/ [^]
+Version : 1.2.5
+Required for : PNG, TIFF, JBIG.
+Patches : none.
+LibTIFF
+Home page : http://www.libtiff.org/ [^]
+Version : 3.9.4
+Required for : TIFF.
+Optional Patches : support images with non standard bitpersamples (libtiff_patches.7z)
+
+LibPNG
+Home page : http://www.libpng.org/pub/png/ [^]
+Version : 1.5.0
+Required for : PNG.
+Patches : minor configuration changes.
+LibMNG
+Home page : http://www.libpng.org/pub/mng/ [^]
+Version : 1.0.10
+Required for : MNG, JNG.
+Patches : none.
+LibJPEG
+Home page : http://www.ijg.org [^]
+Version : 8b
+Required for : JPG, TIFF, MNG.
+Optional Patches : read corrupted images or with unknown markers (libjpeg_patches.7z)
+
+JBIG-Kit
+Home page : http://www.cl.cam.ac.uk/~mgk25/jbigkit/ [^]
+Version : 1.6
+Required for : JBIG.
+Patches : only some missing cast.
+JasPer
+Home page : http://www.ece.uvic.ca/~mdadams/jasper/ [^]
+Version : 1.900.1
+Required for : JP2, JPC, PNM, RAS, PGX.
+Patches : only some missing cast and minor configuration editing.
+LibDCR
+Home page : http://www.xdp.it/libdcr/ [^]
+Version : 0.1.8.93
+Required for : RAW, CRW, NEF, CR2, DNG, ORF, ARW, ERF, 3FR, DCR, X3F, MEF, RAF, MRW, PEF, SR2.
+
+LibPSD
+Home page : http://sourceforge.net/projects/libpsd/ [^]
+Version : 0.9
+Required for : PSD.
+Patches : required to support the CxImage file management
+
+
+
+
+https://www.zsbeike.com/hy/22810362.html

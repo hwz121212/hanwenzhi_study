@@ -1,0 +1,10 @@
+$(SolutionDir)\bin\$(Configuration)\
+$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)
+
+$(SolutionDir)\third_party\
+
+$(SolutionDir)\lib\$(Configuration)\
+
+$(OutDir)$(TargetName)$(TargetExt)
+
+$(SolutionDir)\lib\$(Configuration)\$(TargetName).lib

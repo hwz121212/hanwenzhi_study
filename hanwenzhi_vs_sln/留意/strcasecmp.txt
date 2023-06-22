@@ -1,0 +1,9 @@
+#ifdef _WIN32
+#define strcasecmp _stricmp
+#define strcnasecmp _strnicmp
+#endif
+
+#ifdef _MSC_VER
+#define strcasecmp _stricmp
+#define strncasecmp _strnicmp
+#endif
