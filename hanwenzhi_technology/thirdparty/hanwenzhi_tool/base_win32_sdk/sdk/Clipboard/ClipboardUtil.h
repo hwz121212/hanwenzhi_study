@@ -1,0 +1,18 @@
+#ifndef _H_CLIPBOARDUTIL_9E0981F1_6C49_480C_BA98_45EEAAD8A839
+#define _H_CLIPBOARDUTIL_9E0981F1_6C49_480C_BA98_45EEAAD8A839
+
+
+namespace sdk
+{	
+	class AFX_EXT_CLASS CClipboardUtil
+	{
+		
+		
+	};
+
+
+
+
+}
+
+#endif

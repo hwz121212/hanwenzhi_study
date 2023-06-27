@@ -16,75 +16,582 @@
     <Filter Include="SDK">
       <UniqueIdentifier>{faa951f0-c45d-4d79-9940-cd6a0d2a09d9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SDK\File">
-      <UniqueIdentifier>{c0482a2d-1798-428b-864e-535b46b49a8b}</UniqueIdentifier>
+    <Filter Include="SDK\Base64">
+      <UniqueIdentifier>{9d313a07-0eda-44e9-9323-ac4eb73e649f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SDK\Ini">
-      <UniqueIdentifier>{d2155378-6c0f-4bc1-8ff6-bad1f5e0a1b7}</UniqueIdentifier>
+    <Filter Include="SDK\md5">
+      <UniqueIdentifier>{3d7385bb-89c8-4fa2-b9c6-4ce774bb7541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Compare">
+      <UniqueIdentifier>{54835942-9bdb-480d-bcce-579f699464d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Cpu">
+      <UniqueIdentifier>{199e0648-7550-4839-949d-a15bff5efa36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\dlg">
+      <UniqueIdentifier>{ca2f5789-f149-4a1e-9e45-8c93f5a5c957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Encrypt">
+      <UniqueIdentifier>{8ae4c3c8-f7ff-4011-ab86-4f6e8df8fc8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\EventNoify">
+      <UniqueIdentifier>{0235bebd-25ef-494a-bdab-2c296d3b8af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\File">
+      <UniqueIdentifier>{2d071147-ab81-434e-83f9-efe5be8b7d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Log">
+      <UniqueIdentifier>{2d86d11f-4cfc-4c33-bf28-e04f538f764f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\OSInfo">
+      <UniqueIdentifier>{4c2f7661-74ca-4f2d-a551-f186667225f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\UI">
+      <UniqueIdentifier>{88841756-bc68-45f7-8908-f1336e7e8e2c}</UniqueIdentifier>
     </Filter>
     <Filter Include="SDK\Process">
-      <UniqueIdentifier>{02ebb100-36e7-46cd-8510-1e955ffb73a6}</UniqueIdentifier>
+      <UniqueIdentifier>{a44c0c1b-ae12-4a6d-9be1-46f77560b7ae}</UniqueIdentifier>
     </Filter>
     <Filter Include="SDK\Rand">
-      <UniqueIdentifier>{83f8c659-bb37-4733-b70a-36d85e10bc9b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SDK\Service">
-      <UniqueIdentifier>{0fe42e05-9518-468a-9b1d-a9a9de662a4d}</UniqueIdentifier>
+      <UniqueIdentifier>{f553db42-d805-4e38-a410-e7ef5603ba3d}</UniqueIdentifier>
     </Filter>
     <Filter Include="SDK\String">
-      <UniqueIdentifier>{2fd2a357-1f3d-4c66-a500-c63cc113ee28}</UniqueIdentifier>
+      <UniqueIdentifier>{4fe0738a-ad50-46cb-ba21-ad3141c1d260}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <Filter Include="SDK\System">
+      <UniqueIdentifier>{66a0cd2e-43c6-4b8f-b729-59bdcfb1c7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Time">
+      <UniqueIdentifier>{f1cf0d95-7029-447f-8ae6-33b86cf29e79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Ftp">
+      <UniqueIdentifier>{8de37fbf-41d1-472b-b05a-68d3c4856d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\http">
+      <UniqueIdentifier>{bd9929e3-905e-4311-a482-230373225674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Resource">
+      <UniqueIdentifier>{8bff19e5-df4a-475e-a228-3672041678bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Bitmap">
+      <UniqueIdentifier>{fdc2c2e1-f1f4-479c-a228-395acab56208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Assert">
+      <UniqueIdentifier>{705163c1-bcb3-433c-8e83-2e2253e09a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\BigInteger">
+      <UniqueIdentifier>{8392b852-f11f-42c6-8fee-bf6b7f428214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Cursor">
+      <UniqueIdentifier>{bec01718-32a2-4294-8eb2-8826bfc34469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Disk">
+      <UniqueIdentifier>{f3bd7605-101d-4a76-8345-ee098a37e058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Ini">
+      <UniqueIdentifier>{0abf2524-e2e1-41f8-98f6-3ab962bd7c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Registry">
+      <UniqueIdentifier>{9645bfa7-e5f7-4931-a5b9-6ad827b6cbe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Service">
+      <UniqueIdentifier>{f7fa3bb8-7219-4a0c-a09b-0c782ed80d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\IE">
+      <UniqueIdentifier>{e78ed763-e91e-402e-bc6f-b09e204bd663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Network">
+      <UniqueIdentifier>{94dc60cb-efd0-4ca3-a8b8-c4b7b4a70680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\HWND">
+      <UniqueIdentifier>{a8c7b97a-8341-4cbb-b702-9105c3e3a65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Error">
+      <UniqueIdentifier>{e7679e87-cb00-48ee-8718-9c8aaf305759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Clipboard">
+      <UniqueIdentifier>{6560d840-f131-482d-bef4-fd4bf7658c0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Keyboard">
+      <UniqueIdentifier>{97168424-9f80-4ae9-a673-46a704d7c7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\URL">
+      <UniqueIdentifier>{5a0b9655-306f-4c35-93b4-efcb5272c16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Sound">
+      <UniqueIdentifier>{74d1ba7a-3918-49f7-ad39-ccb8fc7b4644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Balloon">
+      <UniqueIdentifier>{fd018732-a14f-415d-bd8b-4f826dfe784f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Memory">
+      <UniqueIdentifier>{5c9bc613-8743-4e98-b949-7b7ed19fe3cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Lock">
+      <UniqueIdentifier>{53aa0328-fa38-4f55-8687-85614c76b81c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Hook">
+      <UniqueIdentifier>{7ba566f0-c73c-4f22-9362-1af39f801760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Dll">
+      <UniqueIdentifier>{c2dadf14-3f66-43d9-97ed-fcdefcc28a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\UI\RichEdit">
+      <UniqueIdentifier>{317a10c8-677d-4763-8263-6735014c2e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\barcode">
+      <UniqueIdentifier>{55cd0d14-98d3-4e87-87ee-370e4d884a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\dump">
+      <UniqueIdentifier>{81b05571-00d6-4acc-bfe4-2405fc9376b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\qrcodeutil">
+      <UniqueIdentifier>{197ba1d2-9027-41bb-a440-191677beb19e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\threadsafe">
+      <UniqueIdentifier>{ff06ca16-75cc-41d6-992a-c0fbd1c43ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\dic">
+      <UniqueIdentifier>{68b10c5f-9dc8-479c-926c-813d1873ecea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\File\FileUtil.cpp">
-      <Filter>SDK\File</Filter>
+    <ClCompile Include="Base64\Base64.cpp">
+      <Filter>SDK\Base64</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\Ini\Ini.cpp">
-      <Filter>SDK\Ini</Filter>
+    <ClCompile Include="Compare\Compare.cpp">
+      <Filter>SDK\Compare</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\Process\ProcessUtil.cpp">
-      <Filter>SDK\Process</Filter>
+    <ClCompile Include="Cpu\Cpu.cpp">
+      <Filter>SDK\Cpu</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\Rand\Rand.cpp">
+    <ClCompile Include="dlg\dlg.cpp">
+      <Filter>SDK\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Encrypt\Encrypt.cpp">
+      <Filter>SDK\Encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="EventNoify\EventNoify.cpp">
+      <Filter>SDK\EventNoify</Filter>
+    </ClCompile>
+    <ClCompile Include="md5\md5.cpp">
+      <Filter>SDK\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Regedit.cpp">
+      <Filter>SDK\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Rand\Rand.cpp">
       <Filter>SDK\Rand</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\Service\ServiceUtil.cpp">
+    <ClCompile Include="OSInfo\OSInfo.cpp">
+      <Filter>SDK\OSInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="File\FileUtil.cpp">
+      <Filter>SDK\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Process\ProcessUtil.cpp">
+      <Filter>SDK\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="String\StringUtil.cpp">
+      <Filter>SDK\String</Filter>
+    </ClCompile>
+    <ClCompile Include="System\SystemTime.cpp">
+      <Filter>SDK\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Time\TimeUtil.cpp">
+      <Filter>SDK\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIButton.cpp">
+      <Filter>SDK\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIImagePreview.cpp">
+      <Filter>SDK\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Ftp\FtpServerUtil.cpp">
+      <Filter>SDK\Ftp</Filter>
+    </ClCompile>
+    <ClCompile Include="Time\StopWatch.cpp">
+      <Filter>SDK\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="http\HttpUtil.cpp">
+      <Filter>SDK\http</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceUtil.cpp">
+      <Filter>SDK\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitmap\BitmapUtil.cpp">
+      <Filter>SDK\Bitmap</Filter>
+    </ClCompile>
+    <ClCompile Include="Assert\AssetInfo.cpp">
+      <Filter>SDK\Assert</Filter>
+    </ClCompile>
+    <ClCompile Include="BigInteger\BigInteger.cpp">
+      <Filter>SDK\BigInteger</Filter>
+    </ClCompile>
+    <ClCompile Include="BigInteger\BigIntegerUtils.cpp">
+      <Filter>SDK\BigInteger</Filter>
+    </ClCompile>
+    <ClCompile Include="BigInteger\BigUnsigned.cpp">
+      <Filter>SDK\BigInteger</Filter>
+    </ClCompile>
+    <ClCompile Include="BigInteger\BigUnsignedInABase.cpp">
+      <Filter>SDK\BigInteger</Filter>
+    </ClCompile>
+    <ClCompile Include="Cursor\cursor.cpp">
+      <Filter>SDK\Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="Disk\DiskInfo.cpp">
+      <Filter>SDK\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ExitWindows.cpp">
+      <Filter>SDK\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Ini\IniFile.cpp">
+      <Filter>SDK\Ini</Filter>
+    </ClCompile>
+    <ClCompile Include="OSInfo\MacInfo.cpp">
+      <Filter>SDK\OSInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="OSInfo\OsInfo1.cpp">
+      <Filter>SDK\OSInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry\Registry.cpp">
+      <Filter>SDK\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\TreeCtrlInfo.cpp">
+      <Filter>SDK\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64\Base64_1.cpp">
+      <Filter>SDK\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64\base64_rc4.cpp">
+      <Filter>SDK\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\ServiceUtil.cpp">
       <Filter>SDK\Service</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\String\StringUtil.cpp">
-      <Filter>SDK\String</Filter>
+    <ClCompile Include="Encrypt\Huffman.cpp">
+      <Filter>SDK\Encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="IE\IEUtils.cpp">
+      <Filter>SDK\IE</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetworkUtil.cpp">
+      <Filter>SDK\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="HWND\HWNDUtil.cpp">
+      <Filter>SDK\HWND</Filter>
+    </ClCompile>
+    <ClCompile Include="Error\LastError.cpp">
+      <Filter>SDK\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="Clipboard\ClipboardUtil.cpp">
+      <Filter>SDK\Clipboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard\KeyboardUtil.cpp">
+      <Filter>SDK\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="URL\url.cpp">
+      <Filter>SDK\URL</Filter>
+    </ClCompile>
+    <ClCompile Include="File\CpsFiles.cpp">
+      <Filter>SDK\File</Filter>
+    </ClCompile>
+    <ClCompile Include="File\FileCopy.cpp">
+      <Filter>SDK\File</Filter>
+    </ClCompile>
+    <ClCompile Include="OSInfo\OSUser.cpp">
+      <Filter>SDK\OSInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="OSInfo\OSVersion.cpp">
+      <Filter>SDK\OSInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="File\ExeFile.cpp">
+      <Filter>SDK\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundUtil.cpp">
+      <Filter>SDK\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Balloon\BalloonUtil.cpp">
+      <Filter>SDK\Balloon</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\memorymodule.cpp">
+      <Filter>SDK\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Lock\criticalsectionlock.cpp">
+      <Filter>SDK\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\apihook.cpp">
+      <Filter>SDK\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\inlinehook.cpp">
+      <Filter>SDK\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Dll\DllManager.cpp">
+      <Filter>SDK\Dll</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\RichEdit\MyRichEdit.cpp">
+      <Filter>SDK\UI\RichEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="Ftp\FtpClientUtil.cpp">
+      <Filter>SDK\Ftp</Filter>
+    </ClCompile>
+    <ClCompile Include="barcode\barcode.cpp">
+      <Filter>SDK\barcode</Filter>
+    </ClCompile>
+    <ClCompile Include="barcode\code128.cpp">
+      <Filter>SDK\barcode</Filter>
+    </ClCompile>
+    <ClCompile Include="Ini\Ini.cpp">
+      <Filter>SDK\Ini</Filter>
+    </ClCompile>
+    <ClCompile Include="dump\MiniDumper.cpp">
+      <Filter>SDK\dump</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcodeutil\qrcodeutil.cpp">
+      <Filter>SDK\qrcodeutil</Filter>
+    </ClCompile>
+    <ClCompile Include="threadsafe\critsect.cpp">
+      <Filter>SDK\threadsafe</Filter>
+    </ClCompile>
+    <ClCompile Include="dic\dic.cpp">
+      <Filter>SDK\dic</Filter>
+    </ClCompile>
+    <ClCompile Include="log\logutil.cpp">
+      <Filter>SDK\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="System\AutoRun.cpp">
+      <Filter>SDK\System</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="base_win32_sdk.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="Base64\Base64.h">
+      <Filter>SDK\Base64</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\File\FileUtil.h">
-      <Filter>SDK\File</Filter>
+    <ClInclude Include="Compare\Compare.h">
+      <Filter>SDK\Compare</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\Ini\Ini.h">
-      <Filter>SDK\Ini</Filter>
+    <ClInclude Include="Cpu\Cpu.h">
+      <Filter>SDK\Cpu</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\Process\ProcessUtil.h">
-      <Filter>SDK\Process</Filter>
+    <ClInclude Include="dlg\dlg.h">
+      <Filter>SDK\dlg</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\Rand\Rand.h">
+    <ClInclude Include="Encrypt\Encrypt.h">
+      <Filter>SDK\Encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="EventNoify\EventNoify.h">
+      <Filter>SDK\EventNoify</Filter>
+    </ClInclude>
+    <ClInclude Include="md5\md5.h">
+      <Filter>SDK\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Regedit.h">
+      <Filter>SDK\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Rand\Rand.h">
       <Filter>SDK\Rand</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\Service\ServiceUtil.h">
+    <ClInclude Include="OSInfo\OSInfo.h">
+      <Filter>SDK\OSInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="File\FileUtil.h">
+      <Filter>SDK\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Process\ProcessUtil.h">
+      <Filter>SDK\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="String\StringUtil.h">
+      <Filter>SDK\String</Filter>
+    </ClInclude>
+    <ClInclude Include="System\SystemTime.h">
+      <Filter>SDK\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Time\TimeUtil.h">
+      <Filter>SDK\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIButton.h">
+      <Filter>SDK\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIImagePreview.h">
+      <Filter>SDK\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Ftp\FtpServerUtil.h">
+      <Filter>SDK\Ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="Time\StopWatch.h">
+      <Filter>SDK\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="http\HttpUtil.h">
+      <Filter>SDK\http</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceUtil.h">
+      <Filter>SDK\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitmap\BitmapUtil.h">
+      <Filter>SDK\Bitmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Assert\AssetInfo.h">
+      <Filter>SDK\Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInteger\BigInteger.h">
+      <Filter>SDK\BigInteger</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInteger\BigIntegerLibrary.h">
+      <Filter>SDK\BigInteger</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInteger\BigIntegerUtils.h">
+      <Filter>SDK\BigInteger</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInteger\BigUnsigned.h">
+      <Filter>SDK\BigInteger</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInteger\BigUnsignedInABase.h">
+      <Filter>SDK\BigInteger</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInteger\NumberlikeArray.h">
+      <Filter>SDK\BigInteger</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor\cursor.h">
+      <Filter>SDK\Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="Disk\DiskInfo.h">
+      <Filter>SDK\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ExitWindows.h">
+      <Filter>SDK\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Ini\IniFile.h">
+      <Filter>SDK\Ini</Filter>
+    </ClInclude>
+    <ClInclude Include="OSInfo\MacInfo.h">
+      <Filter>SDK\OSInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="OSInfo\OsInfo1.h">
+      <Filter>SDK\OSInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry\Registry.h">
+      <Filter>SDK\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TreeCtrlInfo.h">
+      <Filter>SDK\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64\Base64_1.h">
+      <Filter>SDK\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64\base64_rc4.h">
+      <Filter>SDK\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\ServiceUtil.h">
       <Filter>SDK\Service</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\String\StringUtil.h">
-      <Filter>SDK\String</Filter>
+    <ClInclude Include="Encrypt\Huffman.h">
+      <Filter>SDK\Encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Encrypt\huffmantree.h">
+      <Filter>SDK\Encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="IE\IEUtils.h">
+      <Filter>SDK\IE</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetworkUtil.h">
+      <Filter>SDK\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="HWND\HWNDUtil.h">
+      <Filter>SDK\HWND</Filter>
+    </ClInclude>
+    <ClInclude Include="Error\LastError.h">
+      <Filter>SDK\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Clipboard\ClipboardUtil.h">
+      <Filter>SDK\Clipboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\KeyboardUtil.h">
+      <Filter>SDK\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="URL\url.h">
+      <Filter>SDK\URL</Filter>
+    </ClInclude>
+    <ClInclude Include="File\CpsFiles.h">
+      <Filter>SDK\File</Filter>
+    </ClInclude>
+    <ClInclude Include="File\FileCopy.h">
+      <Filter>SDK\File</Filter>
+    </ClInclude>
+    <ClInclude Include="OSInfo\OSUser.h">
+      <Filter>SDK\OSInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="OSInfo\OSVersion.h">
+      <Filter>SDK\OSInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="File\ExeFile.h">
+      <Filter>SDK\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundUtil.h">
+      <Filter>SDK\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Balloon\BalloonUtil.h">
+      <Filter>SDK\Balloon</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\memorymodule.h">
+      <Filter>SDK\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Lock\criticalsectionlock.h">
+      <Filter>SDK\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\apihook.h">
+      <Filter>SDK\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\inlinehook.h">
+      <Filter>SDK\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Dll\DllManager.h">
+      <Filter>SDK\Dll</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RichEdit\MyRichEdit.h">
+      <Filter>SDK\UI\RichEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="Ftp\FtpClientUtil.h">
+      <Filter>SDK\Ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="barcode\barcode.h">
+      <Filter>SDK\barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="barcode\barcodemore.h">
+      <Filter>SDK\barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="barcode\code128.h">
+      <Filter>SDK\barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="Ini\Ini.h">
+      <Filter>SDK\Ini</Filter>
+    </ClInclude>
+    <ClInclude Include="dump\MiniDumper.h">
+      <Filter>SDK\dump</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcodeutil\qrcodeutil.h">
+      <Filter>SDK\qrcodeutil</Filter>
+    </ClInclude>
+    <ClInclude Include="threadsafe\critsect.h">
+      <Filter>SDK\threadsafe</Filter>
+    </ClInclude>
+    <ClInclude Include="dic\dic.h">
+      <Filter>SDK\dic</Filter>
+    </ClInclude>
+    <ClInclude Include="log\logutil.h">
+      <Filter>SDK\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="System\AutoRun.h">
+      <Filter>SDK\System</Filter>
+    </ClInclude>
+    <ClInclude Include="base_win32_sdk.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
