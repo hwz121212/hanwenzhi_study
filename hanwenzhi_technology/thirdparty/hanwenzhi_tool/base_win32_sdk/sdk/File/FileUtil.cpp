@@ -310,6 +310,12 @@ namespace sdk
 		{
 			TCHAR buf[MAX_PATH] = { 0 };
 			_tcscpy(buf, (LPCTSTR)strSonPath);
+			int iLen = strlen(buf);
+			if (buf[iLen - 1] == _T('\\'))
+			{
+				buf[iLen - 1] = 0;
+			}
+			
 			TCHAR * szSplit = "\\";
 			TCHAR * p = buf, *q = buf;
 			while (p = strstr(p, szSplit))
