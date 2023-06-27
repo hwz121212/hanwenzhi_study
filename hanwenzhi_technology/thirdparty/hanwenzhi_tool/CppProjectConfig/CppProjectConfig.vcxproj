@@ -58,7 +58,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\hanwenzhi_tool\base_win32_sdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\hanwenzhi_tool\base_win32_sdk;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\curl-7.83.1\include;$(SolutionDir)thirdparty\qrencode-4.1.1</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -85,7 +85,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\hanwenzhi_tool\base_win32_sdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\hanwenzhi_tool\base_win32_sdk;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\curl-7.83.1\include;$(SolutionDir)thirdparty\qrencode-4.1.1</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

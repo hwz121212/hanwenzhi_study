@@ -160,7 +160,7 @@ public:
 
 		char*pszCode=new char[iLen+3];
 		sprintf(pszCode,"*%s*",pszCodeIn);
-		strupr(pszCode);
+		_strupr(pszCode);
 
 		BYTE*pFst=ia_Buf;
 		BYTE*p0=pFst,*p1;
