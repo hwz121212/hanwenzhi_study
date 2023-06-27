@@ -125,12 +125,12 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sdk\FileUtil.cpp" />
-    <ClCompile Include="sdk\Ini.cpp" />
-    <ClCompile Include="sdk\ProcessUtil.cpp" />
-    <ClCompile Include="sdk\Rand.cpp" />
-    <ClCompile Include="sdk\ServiceUtil.cpp" />
-    <ClCompile Include="sdk\StringUtil.cpp" />
+    <ClCompile Include="sdk\File\FileUtil.cpp" />
+    <ClCompile Include="sdk\Ini\Ini.cpp" />
+    <ClCompile Include="sdk\Process\ProcessUtil.cpp" />
+    <ClCompile Include="sdk\Rand\Rand.cpp" />
+    <ClCompile Include="sdk\Service\ServiceUtil.cpp" />
+    <ClCompile Include="sdk\String\StringUtil.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
@@ -138,12 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base_win32_sdk.h" />
-    <ClInclude Include="sdk\FileUtil.h" />
-    <ClInclude Include="sdk\Ini.h" />
-    <ClInclude Include="sdk\ProcessUtil.h" />
-    <ClInclude Include="sdk\Rand.h" />
-    <ClInclude Include="sdk\ServiceUtil.h" />
-    <ClInclude Include="sdk\StringUtil.h" />
+    <ClInclude Include="sdk\File\FileUtil.h" />
+    <ClInclude Include="sdk\Ini\Ini.h" />
+    <ClInclude Include="sdk\Process\ProcessUtil.h" />
+    <ClInclude Include="sdk\Rand\Rand.h" />
+    <ClInclude Include="sdk\Service\ServiceUtil.h" />
+    <ClInclude Include="sdk\String\StringUtil.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

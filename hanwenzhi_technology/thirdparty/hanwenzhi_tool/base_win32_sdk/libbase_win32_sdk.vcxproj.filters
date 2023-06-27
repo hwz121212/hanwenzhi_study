@@ -16,6 +16,24 @@
     <Filter Include="SDK">
       <UniqueIdentifier>{faa951f0-c45d-4d79-9940-cd6a0d2a09d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SDK\File">
+      <UniqueIdentifier>{c0482a2d-1798-428b-864e-535b46b49a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Ini">
+      <UniqueIdentifier>{d2155378-6c0f-4bc1-8ff6-bad1f5e0a1b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Process">
+      <UniqueIdentifier>{02ebb100-36e7-46cd-8510-1e955ffb73a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Rand">
+      <UniqueIdentifier>{83f8c659-bb37-4733-b70a-36d85e10bc9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Service">
+      <UniqueIdentifier>{0fe42e05-9518-468a-9b1d-a9a9de662a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\String">
+      <UniqueIdentifier>{2fd2a357-1f3d-4c66-a500-c63cc113ee28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -24,49 +42,49 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\FileUtil.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="sdk\File\FileUtil.cpp">
+      <Filter>SDK\File</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\Ini.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="sdk\Ini\Ini.cpp">
+      <Filter>SDK\Ini</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\ProcessUtil.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="sdk\Process\ProcessUtil.cpp">
+      <Filter>SDK\Process</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\Rand.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="sdk\Rand\Rand.cpp">
+      <Filter>SDK\Rand</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\StringUtil.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="sdk\Service\ServiceUtil.cpp">
+      <Filter>SDK\Service</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\ServiceUtil.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="sdk\String\StringUtil.cpp">
+      <Filter>SDK\String</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\FileUtil.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\Ini.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ProcessUtil.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\Rand.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\StringUtil.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ServiceUtil.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
     <ClInclude Include="base_win32_sdk.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\File\FileUtil.h">
+      <Filter>SDK\File</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Ini\Ini.h">
+      <Filter>SDK\Ini</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Process\ProcessUtil.h">
+      <Filter>SDK\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Rand\Rand.h">
+      <Filter>SDK\Rand</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Service\ServiceUtil.h">
+      <Filter>SDK\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\String\StringUtil.h">
+      <Filter>SDK\String</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

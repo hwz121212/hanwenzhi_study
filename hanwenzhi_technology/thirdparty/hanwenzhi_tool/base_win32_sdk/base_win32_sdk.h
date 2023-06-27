@@ -27,11 +27,11 @@
 using namespace std;
 
 
-#include "sdk/FileUtil.h"
-#include "sdk/Ini.h"
-#include "sdk/ProcessUtil.h"
-#include "sdk/Rand.h"
-#include "sdk/StringUtil.h"
-#include "sdk/ServiceUtil.h"
+#include "sdk/File/FileUtil.h"
+#include "sdk/Ini/Ini.h"
+#include "sdk/Process/ProcessUtil.h"
+#include "sdk/Rand/Rand.h"
+#include "sdk/String/StringUtil.h"
+#include "sdk/Service/ServiceUtil.h"
 
 
