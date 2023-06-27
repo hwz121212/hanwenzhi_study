@@ -1,9 +1,5 @@
 #include "stdafx.h"
-
-
-
-#include "zlib.h"
-#pragma comment(lib,"libzlib.lib")
+#include "Encrypt.h"
 
 
 

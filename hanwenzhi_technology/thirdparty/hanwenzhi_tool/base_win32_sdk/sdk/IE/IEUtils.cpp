@@ -1,11 +1,5 @@
-
 #include "stdafx.h"
-#include <Windows.h>
 #include "IEUtils.h"
-#include <WinInet.h>
-#include <ShlObj.h>
-
-using namespace sdk;
 
 
 BYTE g_btSecurityLevel[3];
@@ -14,7 +8,7 @@ void CIEUtils::DeleteIECacheFiles()
 {
 	TCHAR szPath[MAX_PATH] = { 0 };
 	if (!SHGetSpecialFolderPath(NULL, szPath, CSIDL_INTERNET_CACHE, FALSE)) return ;
-	return sdk::CFileUtil::ClearDirectory(szPath);
+	return sdk::fileutil::ClearDirectory(szPath);
 }
 
 void CIEUtils::ClearIECache(int type)//0-clear all,1-clear cache,2-clear cookie 

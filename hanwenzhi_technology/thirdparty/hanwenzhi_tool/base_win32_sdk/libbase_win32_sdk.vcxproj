@@ -58,8 +58,8 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\sdk\sdk;$(SolutionDir)\thirdparty;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\curl-7.83.1\include;$(SolutionDir)thirdparty\qrencode-4.1.1</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;sdk;$(SolutionDir)thirdparty;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\curl-7.83.1\include;$(SolutionDir)thirdparty\qrencode-4.1.1</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -93,8 +93,8 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\sdk\sdk;$(SolutionDir)\thirdparty;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\curl-7.83.1\include;$(SolutionDir)thirdparty\qrencode-4.1.1</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;sdk;$(SolutionDir)thirdparty;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\curl-7.83.1\include;$(SolutionDir)thirdparty\qrencode-4.1.1</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -122,158 +122,158 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Assert\AssetInfo.cpp" />
-    <ClCompile Include="Balloon\BalloonUtil.cpp" />
-    <ClCompile Include="barcode\barcode.cpp" />
-    <ClCompile Include="barcode\code128.cpp" />
-    <ClCompile Include="Base64\Base64.cpp" />
-    <ClCompile Include="Base64\Base64_1.cpp" />
-    <ClCompile Include="Base64\base64_rc4.cpp" />
-    <ClCompile Include="BigInteger\BigInteger.cpp" />
-    <ClCompile Include="BigInteger\BigIntegerUtils.cpp" />
-    <ClCompile Include="BigInteger\BigUnsigned.cpp" />
-    <ClCompile Include="BigInteger\BigUnsignedInABase.cpp" />
-    <ClCompile Include="Bitmap\BitmapUtil.cpp" />
-    <ClCompile Include="Clipboard\ClipboardUtil.cpp" />
-    <ClCompile Include="Compare\Compare.cpp" />
-    <ClCompile Include="Cpu\Cpu.cpp" />
-    <ClCompile Include="Cursor\cursor.cpp" />
-    <ClCompile Include="dic\dic.cpp" />
-    <ClCompile Include="Disk\DiskInfo.cpp" />
-    <ClCompile Include="dlg\dlg.cpp" />
-    <ClCompile Include="Dll\DllManager.cpp" />
-    <ClCompile Include="dump\MiniDumper.cpp" />
-    <ClCompile Include="Encrypt\Encrypt.cpp" />
-    <ClCompile Include="Encrypt\Huffman.cpp" />
-    <ClCompile Include="Error\LastError.cpp" />
-    <ClCompile Include="EventNoify\EventNoify.cpp" />
-    <ClCompile Include="File\CpsFiles.cpp" />
-    <ClCompile Include="File\ExeFile.cpp" />
-    <ClCompile Include="File\FileCopy.cpp" />
-    <ClCompile Include="File\FileUtil.cpp" />
-    <ClCompile Include="Ftp\FtpClientUtil.cpp" />
-    <ClCompile Include="Ftp\FtpServerUtil.cpp">
+    <ClCompile Include="sdk\Assert\AssetInfo.cpp" />
+    <ClCompile Include="sdk\Balloon\BalloonUtil.cpp" />
+    <ClCompile Include="sdk\barcode\barcode.cpp" />
+    <ClCompile Include="sdk\barcode\code128.cpp" />
+    <ClCompile Include="sdk\Base64\Base64.cpp" />
+    <ClCompile Include="sdk\Base64\Base64_1.cpp" />
+    <ClCompile Include="sdk\Base64\base64_rc4.cpp" />
+    <ClCompile Include="sdk\BigInteger\BigInteger.cpp" />
+    <ClCompile Include="sdk\BigInteger\BigIntegerUtils.cpp" />
+    <ClCompile Include="sdk\BigInteger\BigUnsigned.cpp" />
+    <ClCompile Include="sdk\BigInteger\BigUnsignedInABase.cpp" />
+    <ClCompile Include="sdk\Bitmap\BitmapUtil.cpp" />
+    <ClCompile Include="sdk\Clipboard\ClipboardUtil.cpp" />
+    <ClCompile Include="sdk\Compare\Compare.cpp" />
+    <ClCompile Include="sdk\Cpu\Cpu.cpp" />
+    <ClCompile Include="sdk\Cursor\cursor.cpp" />
+    <ClCompile Include="sdk\dic\dic.cpp" />
+    <ClCompile Include="sdk\Disk\DiskInfo.cpp" />
+    <ClCompile Include="sdk\dlg\dlg.cpp" />
+    <ClCompile Include="sdk\Dll\DllManager.cpp" />
+    <ClCompile Include="sdk\dump\MiniDumper.cpp" />
+    <ClCompile Include="sdk\Encrypt\Encrypt.cpp" />
+    <ClCompile Include="sdk\Encrypt\Huffman.cpp" />
+    <ClCompile Include="sdk\Error\LastError.cpp" />
+    <ClCompile Include="sdk\EventNoify\EventNoify.cpp" />
+    <ClCompile Include="sdk\File\CpsFiles.cpp" />
+    <ClCompile Include="sdk\File\ExeFile.cpp" />
+    <ClCompile Include="sdk\File\FileCopy.cpp" />
+    <ClCompile Include="sdk\File\FileUtil.cpp" />
+    <ClCompile Include="sdk\Ftp\FtpClientUtil.cpp" />
+    <ClCompile Include="sdk\Ftp\FtpServerUtil.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Hook\apihook.cpp" />
-    <ClCompile Include="Hook\inlinehook.cpp" />
-    <ClCompile Include="http\HttpUtil.cpp" />
-    <ClCompile Include="HWND\HWNDUtil.cpp" />
-    <ClCompile Include="IE\IEUtils.cpp" />
-    <ClCompile Include="Ini\Ini.cpp" />
-    <ClCompile Include="Ini\IniFile.cpp" />
-    <ClCompile Include="Keyboard\KeyboardUtil.cpp" />
-    <ClCompile Include="Lock\criticalsectionlock.cpp" />
-    <ClCompile Include="log\logutil.cpp" />
-    <ClCompile Include="md5\md5.cpp" />
-    <ClCompile Include="Memory\memorymodule.cpp" />
-    <ClCompile Include="Network\NetworkUtil.cpp" />
-    <ClCompile Include="OSInfo\MacInfo.cpp" />
-    <ClCompile Include="OSInfo\OSInfo.cpp" />
-    <ClCompile Include="OSInfo\OsInfo1.cpp" />
-    <ClCompile Include="OSInfo\OSUser.cpp" />
-    <ClCompile Include="OSInfo\OSVersion.cpp" />
-    <ClCompile Include="Process\ProcessUtil.cpp" />
-    <ClCompile Include="qrcodeutil\qrcodeutil.cpp" />
-    <ClCompile Include="Rand\Rand.cpp" />
-    <ClCompile Include="Registry\Registry.cpp" />
-    <ClCompile Include="Resource\ResourceUtil.cpp" />
-    <ClCompile Include="Service\ServiceUtil.cpp" />
-    <ClCompile Include="Sound\SoundUtil.cpp" />
+    <ClCompile Include="sdk\Hook\apihook.cpp" />
+    <ClCompile Include="sdk\Hook\inlinehook.cpp" />
+    <ClCompile Include="sdk\http\HttpUtil.cpp" />
+    <ClCompile Include="sdk\HWND\HWNDUtil.cpp" />
+    <ClCompile Include="sdk\IE\IEUtils.cpp" />
+    <ClCompile Include="sdk\Ini\Ini.cpp" />
+    <ClCompile Include="sdk\Ini\IniFile.cpp" />
+    <ClCompile Include="sdk\Keyboard\KeyboardUtil.cpp" />
+    <ClCompile Include="sdk\Lock\criticalsectionlock.cpp" />
+    <ClCompile Include="sdk\log\logutil.cpp" />
+    <ClCompile Include="sdk\md5\md5.cpp" />
+    <ClCompile Include="sdk\Memory\memorymodule.cpp" />
+    <ClCompile Include="sdk\Network\NetworkUtil.cpp" />
+    <ClCompile Include="sdk\OSInfo\MacInfo.cpp" />
+    <ClCompile Include="sdk\OSInfo\OSInfo.cpp" />
+    <ClCompile Include="sdk\OSInfo\OsInfo1.cpp" />
+    <ClCompile Include="sdk\OSInfo\OSUser.cpp" />
+    <ClCompile Include="sdk\OSInfo\OSVersion.cpp" />
+    <ClCompile Include="sdk\Process\ProcessUtil.cpp" />
+    <ClCompile Include="sdk\qrcodeutil\qrcodeutil.cpp" />
+    <ClCompile Include="sdk\Rand\Rand.cpp" />
+    <ClCompile Include="sdk\Registry\Registry.cpp" />
+    <ClCompile Include="sdk\Resource\ResourceUtil.cpp" />
+    <ClCompile Include="sdk\Service\ServiceUtil.cpp" />
+    <ClCompile Include="sdk\Sound\SoundUtil.cpp" />
+    <ClCompile Include="sdk\String\StringUtil.cpp" />
+    <ClCompile Include="sdk\System\AutoRun.cpp" />
+    <ClCompile Include="sdk\System\ExitWindows.cpp" />
+    <ClCompile Include="sdk\System\Regedit.cpp" />
+    <ClCompile Include="sdk\System\SystemTime.cpp" />
+    <ClCompile Include="sdk\threadsafe\critsect.cpp" />
+    <ClCompile Include="sdk\Time\TimeUtil.cpp" />
+    <ClCompile Include="sdk\Time\StopWatch.cpp" />
+    <ClCompile Include="sdk\UI\RichEdit\MyRichEdit.cpp" />
+    <ClCompile Include="sdk\UI\TreeCtrlInfo.cpp" />
+    <ClCompile Include="sdk\UI\UIButton.cpp" />
+    <ClCompile Include="sdk\UI\UIImagePreview.cpp" />
+    <ClCompile Include="sdk\URL\url.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="String\StringUtil.cpp" />
-    <ClCompile Include="System\AutoRun.cpp" />
-    <ClCompile Include="System\ExitWindows.cpp" />
-    <ClCompile Include="System\Regedit.cpp" />
-    <ClCompile Include="System\SystemTime.cpp" />
-    <ClCompile Include="threadsafe\critsect.cpp" />
-    <ClCompile Include="Time\TimeUtil.cpp" />
-    <ClCompile Include="Time\StopWatch.cpp" />
-    <ClCompile Include="UI\RichEdit\MyRichEdit.cpp" />
-    <ClCompile Include="UI\TreeCtrlInfo.cpp" />
-    <ClCompile Include="UI\UIButton.cpp" />
-    <ClCompile Include="UI\UIImagePreview.cpp" />
-    <ClCompile Include="URL\url.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Assert\AssetInfo.h" />
-    <ClInclude Include="Balloon\BalloonUtil.h" />
-    <ClInclude Include="barcode\barcode.h" />
-    <ClInclude Include="barcode\barcodemore.h" />
-    <ClInclude Include="barcode\code128.h" />
-    <ClInclude Include="Base64\Base64.h" />
-    <ClInclude Include="Base64\Base64_1.h" />
-    <ClInclude Include="Base64\base64_rc4.h" />
+    <ClInclude Include="sdk\Assert\AssetInfo.h" />
+    <ClInclude Include="sdk\Balloon\BalloonUtil.h" />
+    <ClInclude Include="sdk\barcode\barcode.h" />
+    <ClInclude Include="sdk\barcode\barcodemore.h" />
+    <ClInclude Include="sdk\barcode\code128.h" />
+    <ClInclude Include="sdk\Base64\Base64.h" />
+    <ClInclude Include="sdk\Base64\Base64_1.h" />
+    <ClInclude Include="sdk\Base64\base64_rc4.h" />
     <ClInclude Include="base_win32_sdk.h" />
-    <ClInclude Include="BigInteger\BigInteger.h" />
-    <ClInclude Include="BigInteger\BigIntegerLibrary.h" />
-    <ClInclude Include="BigInteger\BigIntegerUtils.h" />
-    <ClInclude Include="BigInteger\BigUnsigned.h" />
-    <ClInclude Include="BigInteger\BigUnsignedInABase.h" />
-    <ClInclude Include="BigInteger\NumberlikeArray.h" />
-    <ClInclude Include="Bitmap\BitmapUtil.h" />
-    <ClInclude Include="Clipboard\ClipboardUtil.h" />
-    <ClInclude Include="Compare\Compare.h" />
-    <ClInclude Include="Cpu\Cpu.h" />
-    <ClInclude Include="Cursor\cursor.h" />
-    <ClInclude Include="dic\dic.h" />
-    <ClInclude Include="Disk\DiskInfo.h" />
-    <ClInclude Include="dlg\dlg.h" />
-    <ClInclude Include="Dll\DllManager.h" />
-    <ClInclude Include="dump\MiniDumper.h" />
-    <ClInclude Include="Encrypt\Encrypt.h" />
-    <ClInclude Include="Encrypt\Huffman.h" />
-    <ClInclude Include="Encrypt\huffmantree.h" />
-    <ClInclude Include="Error\LastError.h" />
-    <ClInclude Include="EventNoify\EventNoify.h" />
-    <ClInclude Include="File\CpsFiles.h" />
-    <ClInclude Include="File\ExeFile.h" />
-    <ClInclude Include="File\FileCopy.h" />
-    <ClInclude Include="File\FileUtil.h" />
-    <ClInclude Include="Ftp\FtpClientUtil.h" />
-    <ClInclude Include="Ftp\FtpServerUtil.h" />
-    <ClInclude Include="Hook\apihook.h" />
-    <ClInclude Include="Hook\inlinehook.h" />
-    <ClInclude Include="http\HttpUtil.h" />
-    <ClInclude Include="HWND\HWNDUtil.h" />
-    <ClInclude Include="IE\IEUtils.h" />
-    <ClInclude Include="Ini\Ini.h" />
-    <ClInclude Include="Ini\IniFile.h" />
-    <ClInclude Include="Keyboard\KeyboardUtil.h" />
-    <ClInclude Include="Lock\criticalsectionlock.h" />
-    <ClInclude Include="log\logutil.h" />
-    <ClInclude Include="md5\md5.h" />
-    <ClInclude Include="Memory\memorymodule.h" />
-    <ClInclude Include="Network\NetworkUtil.h" />
-    <ClInclude Include="OSInfo\MacInfo.h" />
-    <ClInclude Include="OSInfo\OSInfo.h" />
-    <ClInclude Include="OSInfo\OsInfo1.h" />
-    <ClInclude Include="OSInfo\OSUser.h" />
-    <ClInclude Include="OSInfo\OSVersion.h" />
-    <ClInclude Include="Process\ProcessUtil.h" />
-    <ClInclude Include="qrcodeutil\qrcodeutil.h" />
-    <ClInclude Include="Rand\Rand.h" />
-    <ClInclude Include="Registry\Registry.h" />
-    <ClInclude Include="Resource\ResourceUtil.h" />
-    <ClInclude Include="Service\ServiceUtil.h" />
-    <ClInclude Include="Sound\SoundUtil.h" />
+    <ClInclude Include="sdk\BigInteger\BigInteger.h" />
+    <ClInclude Include="sdk\BigInteger\BigIntegerLibrary.h" />
+    <ClInclude Include="sdk\BigInteger\BigIntegerUtils.h" />
+    <ClInclude Include="sdk\BigInteger\BigUnsigned.h" />
+    <ClInclude Include="sdk\BigInteger\BigUnsignedInABase.h" />
+    <ClInclude Include="sdk\BigInteger\NumberlikeArray.h" />
+    <ClInclude Include="sdk\Bitmap\BitmapUtil.h" />
+    <ClInclude Include="sdk\Clipboard\ClipboardUtil.h" />
+    <ClInclude Include="sdk\Compare\Compare.h" />
+    <ClInclude Include="sdk\Cpu\Cpu.h" />
+    <ClInclude Include="sdk\Cursor\cursor.h" />
+    <ClInclude Include="sdk\dic\dic.h" />
+    <ClInclude Include="sdk\Disk\DiskInfo.h" />
+    <ClInclude Include="sdk\dlg\dlg.h" />
+    <ClInclude Include="sdk\Dll\DllManager.h" />
+    <ClInclude Include="sdk\dump\MiniDumper.h" />
+    <ClInclude Include="sdk\Encrypt\Encrypt.h" />
+    <ClInclude Include="sdk\Encrypt\Huffman.h" />
+    <ClInclude Include="sdk\Encrypt\huffmantree.h" />
+    <ClInclude Include="sdk\Error\LastError.h" />
+    <ClInclude Include="sdk\EventNoify\EventNoify.h" />
+    <ClInclude Include="sdk\File\CpsFiles.h" />
+    <ClInclude Include="sdk\File\ExeFile.h" />
+    <ClInclude Include="sdk\File\FileCopy.h" />
+    <ClInclude Include="sdk\File\FileUtil.h" />
+    <ClInclude Include="sdk\Ftp\FtpClientUtil.h" />
+    <ClInclude Include="sdk\Ftp\FtpServerUtil.h" />
+    <ClInclude Include="sdk\Hook\apihook.h" />
+    <ClInclude Include="sdk\Hook\inlinehook.h" />
+    <ClInclude Include="sdk\http\HttpUtil.h" />
+    <ClInclude Include="sdk\HWND\HWNDUtil.h" />
+    <ClInclude Include="sdk\IE\IEUtils.h" />
+    <ClInclude Include="sdk\Ini\Ini.h" />
+    <ClInclude Include="sdk\Ini\IniFile.h" />
+    <ClInclude Include="sdk\Keyboard\KeyboardUtil.h" />
+    <ClInclude Include="sdk\Lock\criticalsectionlock.h" />
+    <ClInclude Include="sdk\log\logutil.h" />
+    <ClInclude Include="sdk\md5\md5.h" />
+    <ClInclude Include="sdk\Memory\memorymodule.h" />
+    <ClInclude Include="sdk\Network\NetworkUtil.h" />
+    <ClInclude Include="sdk\OSInfo\MacInfo.h" />
+    <ClInclude Include="sdk\OSInfo\OSInfo.h" />
+    <ClInclude Include="sdk\OSInfo\OsInfo1.h" />
+    <ClInclude Include="sdk\OSInfo\OSUser.h" />
+    <ClInclude Include="sdk\OSInfo\OSVersion.h" />
+    <ClInclude Include="sdk\Process\ProcessUtil.h" />
+    <ClInclude Include="sdk\qrcodeutil\qrcodeutil.h" />
+    <ClInclude Include="sdk\Rand\Rand.h" />
+    <ClInclude Include="sdk\Registry\Registry.h" />
+    <ClInclude Include="sdk\Resource\ResourceUtil.h" />
+    <ClInclude Include="sdk\Service\ServiceUtil.h" />
+    <ClInclude Include="sdk\Sound\SoundUtil.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="String\StringUtil.h" />
-    <ClInclude Include="System\AutoRun.h" />
-    <ClInclude Include="System\ExitWindows.h" />
-    <ClInclude Include="System\Regedit.h" />
-    <ClInclude Include="System\SystemTime.h" />
-    <ClInclude Include="threadsafe\critsect.h" />
-    <ClInclude Include="Time\TimeUtil.h" />
-    <ClInclude Include="Time\StopWatch.h" />
-    <ClInclude Include="UI\RichEdit\MyRichEdit.h" />
-    <ClInclude Include="UI\TreeCtrlInfo.h" />
-    <ClInclude Include="UI\UIButton.h" />
-    <ClInclude Include="UI\UIImagePreview.h" />
-    <ClInclude Include="URL\url.h" />
+    <ClInclude Include="sdk\String\StringUtil.h" />
+    <ClInclude Include="sdk\System\AutoRun.h" />
+    <ClInclude Include="sdk\System\ExitWindows.h" />
+    <ClInclude Include="sdk\System\Regedit.h" />
+    <ClInclude Include="sdk\System\SystemTime.h" />
+    <ClInclude Include="sdk\threadsafe\critsect.h" />
+    <ClInclude Include="sdk\Time\TimeUtil.h" />
+    <ClInclude Include="sdk\Time\StopWatch.h" />
+    <ClInclude Include="sdk\UI\RichEdit\MyRichEdit.h" />
+    <ClInclude Include="sdk\UI\TreeCtrlInfo.h" />
+    <ClInclude Include="sdk\UI\UIButton.h" />
+    <ClInclude Include="sdk\UI\UIImagePreview.h" />
+    <ClInclude Include="sdk\URL\url.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

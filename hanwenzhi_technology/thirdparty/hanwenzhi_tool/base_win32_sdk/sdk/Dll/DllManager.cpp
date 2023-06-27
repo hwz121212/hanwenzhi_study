@@ -19,7 +19,7 @@ int	CDllManager::LoadDlls(HINSTANCE hModule, const CString& strDir)
 	strDirPath.Format("%s\\%s\\", strDirPath, strDir);
 	
 	CStringArray arrDll;
-	sdk::CFileUtil::EnumDirectoryFiles(strDirPath, "*.dll", arrDll, FALSE);
+	sdk::fileutil::EnumDirectoryFiles(strDirPath, "*.dll", arrDll, FALSE);
 	for (int index=0; index<arrDll.GetCount(); index++)
 	{
 		CString strFile = arrDll.GetAt(index);
@@ -34,7 +34,7 @@ bool CDllManager::LoadDll( const CString& strDllFile)
 	DllInfo Info;
 	Info.strFullPathName = strDllFile;	
 
-	Info.strModuleName = sdk::CFileUtil::GetFileNameWithExtByFullPath(strDllFile);
+	Info.strModuleName = sdk::fileutil::GetFileNameWithExtByFullPath(strDllFile);
 	Info.hInstance = LoadLibrary(strDllFile);
 	if(NULL == Info.hInstance)
 	{

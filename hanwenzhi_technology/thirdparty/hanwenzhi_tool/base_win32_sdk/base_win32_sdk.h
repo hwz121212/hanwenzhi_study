@@ -6,7 +6,7 @@
 #include <windowsx.h>
 #include <shellapi.h>
 #include <shlobj.h>
-
+#include <WinInet.h>
 #include <winsvc.h>
 
 // C 运行时头文件
@@ -25,6 +25,12 @@
 #include <list>
 #include <algorithm>
 using namespace std;
+
+#include "curl/curl.h" 
+#pragma comment (lib, "libcurl.lib" )
+
+#include "zlib.h"
+#pragma comment(lib,"libzlib.lib")
 
 
 
@@ -91,5 +97,5 @@ using namespace std;
 #include "sdk/UI/UIButton.h"
 #include "sdk/UI/UIImagePreview.h"
 #include "sdk/URL/url.h"
-
+using namespace sdk;
 

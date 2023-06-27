@@ -153,7 +153,7 @@ BOOL FTPCreateDirectory(const CString& strLocalDir, const CString& strFTPDir, CF
 			strLocalFileURL = str.Mid(nPos);
 			strFTPFileURL =  strFTPDir + "/" + strLocalFileURL;
 
-			bSuccess = pConn->CreateDirectory(sdk::CStringUtil::GBK2Utf8(strFTPFileURL));
+			bSuccess = pConn->CreateDirectory(sdk::stringutil::GBK2Utf8(strFTPFileURL));
 			if (bSuccess)
 			{
 				strFTPFileURL += "/";
@@ -215,7 +215,7 @@ bool CFtpClientUtil::FTPUploadDir(	const CString& strFtpURL,
 	}
 
 	CStringArray arr;
-	sdk::CFileUtil::EnumDirectoryFiles(strLocalDirctory, "*.*", arr, TRUE);
+	sdk::fileutil::EnumDirectoryFiles(strLocalDirctory, "*.*", arr, TRUE);
 
 	for (int index=0; index<arr.GetSize(); index++)
 	{
