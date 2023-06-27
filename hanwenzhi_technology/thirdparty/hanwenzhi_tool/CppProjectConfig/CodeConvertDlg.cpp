@@ -237,35 +237,40 @@ void CCodeConvertDlg::OnDropFiles(HDROP hDropInfo)
 void CCodeConvertDlg::OnBnClickedButton1()
 {
 	//.c
-	//CString strSuffix;
-	//m_edit_suffix.GetWindowTextA(strSuffix);
-	//strSuffix.Trim();
+	CString strSuffix;
+	m_edit_suffix.GetWindowTextA(strSuffix);
+	strSuffix.Trim();
 
-	//for (int index = 0; index < m_listFiles.GetCount(); index++)
-	//{
-	//	CString strFilePath;
-	//	m_listFiles.GetText(index, strFilePath);
-	//	CString strFileName = sdk::processutil::GetNameWithoutSuffixByPath(strFilePath);
-	//	CString strPath = sdk::processutil::GetPathByFullPath(strFilePath);
-	//	CString strNewDir = strPath + strFileName;
-	//	sdk::fileutil::CreateMultiDirectory(strNewDir);
-	//	CString strNewFile = strNewDir + "\\" + strFileName + strSuffix;
-	//	sdk::fileutil::CopyFileA(strFilePath, strNewFile);
+	for (int index = 0; index < m_listFiles.GetCount(); index++)
+	{
+		CString strFilePath;
+		m_listFiles.GetText(index, strFilePath);
+		CString strFileName = sdk::processutil::GetNameWithoutSuffixByPath(strFilePath);
+		CString strPath = sdk::processutil::GetPathByFullPath(strFilePath);
+		CString strNewDir = strPath + strFileName;
+		sdk::fileutil::CreateMultiDirectory(strNewDir);
+		CString strNewFile = strNewDir + "\\" + strFileName + strSuffix;
+		sdk::fileutil::CopyFileA(strFilePath, strNewFile);
+		sdk::fileutil::DeleteFileA(strFilePath);
 
-	//	CString strExeDir = sdk::CProcessUtil::GetExeDir();
-	//	//CString  strVcxproj = strExeDir + "\\template_exe.vcxproj";
+		//CString strExeDir = sdk::CProcessUtil::GetExeDir();
+		//CString  strVcxproj = strExeDir + "\\template_exe.vcxproj";
 
-	//	CString  strVcxproj = strPath + "\\gif2rgb.vcxproj";
-	//	CString  strVcxprojNew = strNewDir + "\\" + strFileName + ".vcxproj";
-	//	sdk::fileutil::CopyFileA(strVcxproj, strVcxprojNew);
+		CString  strVcxproj = strPath;
+		strVcxproj = sdk::fileutil::GetParentPath(strPath);
+		strVcxproj = strVcxproj + "\\carrots.vcxproj";
+		CString  strVcxprojNew = strNewDir + "\\" + strFileName + ".vcxproj";
+		sdk::fileutil::CopyFileA(strVcxproj, strVcxprojNew);
 
-	//	CString strFileContent;
-	//	strFileContent = sdk::fileutil::GetStringFromFile(strVcxprojNew);
-	//	strFileContent.Replace("gif2rgb", strFileName);
-	//	sdk::fileutil::SaveStringToFile(strVcxprojNew, strFileContent);	
-	//}
+		CString strFileContent;
+		strFileContent = sdk::fileutil::GetStringFromFile(strVcxprojNew);
+		strFileContent.Replace("carrots", strFileName);
+		sdk::fileutil::SaveStringToFile(strVcxprojNew, strFileContent);	
 
-	//AfxMessageBox("replace finished!");
+
+	}
+
+	AfxMessageBox("replace finished!");
 
 
 
@@ -273,32 +278,32 @@ void CCodeConvertDlg::OnBnClickedButton1()
 	//ascii_tag_linux.vcxproj.user
 
 
-	for (int index = 0; index < m_listFiles.GetCount(); index++)
-	{
-		CString strFilePath;
-		m_listFiles.GetText(index, strFilePath);
-		CString strFileName = sdk::processutil::GetNameWithoutSuffixByPath(strFilePath);
+	//for (int index = 0; index < m_listFiles.GetCount(); index++)
+	//{
+	//	CString strFilePath;
+	//	m_listFiles.GetText(index, strFilePath);
+	//	CString strFileName = sdk::processutil::GetNameWithoutSuffixByPath(strFilePath);
 
-		CString strPath = sdk::processutil::GetPathByFullPath(strFilePath);	
+	//	CString strPath = sdk::processutil::GetPathByFullPath(strFilePath);	
 
-		CString  strVcxproj = strPath + "\\ascii_tag_linux.vcxproj";
-		CString  strVcxprojNew = strPath + "\\" + strFileName + "_linux.vcxproj";
-		sdk::fileutil::CopyFileA(strVcxproj, strVcxprojNew);
+	//	CString  strVcxproj = strPath + "\\ascii_tag_linux.vcxproj";
+	//	CString  strVcxprojNew = strPath + "\\" + strFileName + "_linux.vcxproj";
+	//	sdk::fileutil::CopyFileA(strVcxproj, strVcxprojNew);
 
-		CString strFileContent;
-		strFileContent = sdk::fileutil::GetStringFromFile(strVcxprojNew);
-		strFileContent.Replace("ascii_tag", strFileName);
-		sdk::fileutil::SaveStringToFile(strVcxprojNew, strFileContent);
+	//	CString strFileContent;
+	//	strFileContent = sdk::fileutil::GetStringFromFile(strVcxprojNew);
+	//	strFileContent.Replace("ascii_tag", strFileName);
+	//	sdk::fileutil::SaveStringToFile(strVcxprojNew, strFileContent);
 
-		//ascii_tag_linux.vcxproj.user
+	//	//ascii_tag_linux.vcxproj.user
 
-		CString  strVcxprojUser = strPath + "\\ascii_tag_linux.vcxproj.user";
-		CString  strVcxprojUserNew = strPath + "\\" + strFileName + "_linux.vcxproj.user";
-		sdk::fileutil::CopyFileA(strVcxprojUser, strVcxprojUserNew);
+	//	CString  strVcxprojUser = strPath + "\\ascii_tag_linux.vcxproj.user";
+	//	CString  strVcxprojUserNew = strPath + "\\" + strFileName + "_linux.vcxproj.user";
+	//	sdk::fileutil::CopyFileA(strVcxprojUser, strVcxprojUserNew);
 
-	}
+	//}
 
-	AfxMessageBox("replace finished!");
+	//AfxMessageBox("replace finished!");
 
 
 
