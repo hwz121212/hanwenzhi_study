@@ -54,6 +54,10 @@ void GetGitCode_ByGitToolTxt()
 	strFile_pull = strExeDir + "\\" + strFile_pull;
 	CString strPullContent;
 
+	CString strFile_push = "hanwenzhi_github_pull_IP.bat";
+	strFile_push = strExeDir + "\\" + strFile_push;
+	CString strPushContent;
+
 	CString strFile_ClonePull = "hanwenzhi_github_clone_pull.bat";
 	strFile_ClonePull = strExeDir + "\\" + strFile_ClonePull;
 	CString strClonePullContent;
@@ -72,9 +76,11 @@ void GetGitCode_ByGitToolTxt()
 
 	CString strCloneTemplate = "git.exe clone --recursive --branch hanwenzhi git@github.com:hwz121212/XXXXXX.git\r\n";	
 	CString strPullTemplate = "cd XXXXXX & git fetch --all & git reset --hard hanwenzhi & git.exe pull git@github.com:hwz121212/XXXXXX.git --allow-unrelated-histories & cd ..\r\n";
+	CString strPushTemplate = "cd XXXXXX & git push -v --progress \"origin\" hanwenzhi:hanwenzhi & cd ..\r\n";
 
 	strCloneContent += strTemplateBegin;
 	strPullContent += strTemplateBegin;
+	strPushContent += strTemplateBegin;
 	strClonePullContent += strTemplateBegin;
 	for (int index = 0; index < arrReturn.GetCount(); index++)
 	{
@@ -88,11 +94,16 @@ void GetGitCode_ByGitToolTxt()
 		strPullTemplate_.Replace("XXXXXX", strTemp);
 		strPullContent += strPullTemplate_;
 
+		CString strPushTemplate_ = strPushTemplate;
+		strPushTemplate_.Replace("XXXXXX", strTemp);
+		strPushContent += strPushTemplate_;
+
 		strClonePullContent += strCloneTemplate_;
 		strClonePullContent += strPullTemplate_;
 	}
 	strCloneContent += strTemplateEnd;
 	strPullContent += strTemplateEnd;
+	strPushContent += strTemplateEnd;
 	strClonePullContent += strTemplateEnd;
 
 	strPullContent_IP = strPullContent;
@@ -102,6 +113,7 @@ void GetGitCode_ByGitToolTxt()
 
 	sdk::fileutil::SaveStringToFile(strFile_Clone, strCloneContent);
 	sdk::fileutil::SaveStringToFile(strFile_pull, strPullContent);
+	sdk::fileutil::SaveStringToFile(strFile_push, strPushContent);
 	sdk::fileutil::SaveStringToFile(strFile_ClonePull, strClonePullContent);
 
 	sdk::fileutil::SaveStringToFile(strFile_pull_IP, strPullContent_IP);
