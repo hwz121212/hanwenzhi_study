@@ -54,7 +54,7 @@ void GetGitCode_ByGitToolTxt()
 	strFile_pull = strExeDir + "\\" + strFile_pull;
 	CString strPullContent;
 
-	CString strFile_push = "hanwenzhi_github_pull_IP.bat";
+	CString strFile_push = "hanwenzhi_github_push.bat";
 	strFile_push = strExeDir + "\\" + strFile_push;
 	CString strPushContent;
 
