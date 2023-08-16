@@ -90,4 +90,6 @@ public:
 	CButton m_ctlCheckboxAdd;
 	afx_msg void OnBnClickedButtonMt2md();
 	afx_msg void OnBnClickedButtonPostbuildevent();
+	afx_msg void OnBnClickedButtonPrefixTemp();
+	afx_msg void OnBnClickedButtonAddPrefix2();
 };
