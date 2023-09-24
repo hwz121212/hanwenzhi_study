@@ -1,3 +1,8 @@
+https://github.com/Almost-Done/libnyquist
+https://github.com/Almost-Done/Win2D
+https://github.com/irjudson/bluetooth-tools
+https://github.com/irjudson/CNTK
+https://github.com/irjudson/E131
 https://github.com/peterwald/STL
 http://c.ittoolbox.com/topics/core-c/
 http://c.snippets.org/
