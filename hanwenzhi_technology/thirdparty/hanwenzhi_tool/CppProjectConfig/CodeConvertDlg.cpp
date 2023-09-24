@@ -83,6 +83,8 @@ BEGIN_MESSAGE_MAP(CCodeConvertDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_BIN_DIR, &CCodeConvertDlg::OnBnClickedButtonBinDir)
 	ON_BN_CLICKED(IDC_BUTTON_MT2MD, &CCodeConvertDlg::OnBnClickedButtonMt2md)
 	ON_BN_CLICKED(IDC_BUTTON_PostBuildEvent, &CCodeConvertDlg::OnBnClickedButtonPostbuildevent)
+	ON_BN_CLICKED(IDC_BUTTON_PREFIX_Temp, &CCodeConvertDlg::OnBnClickedButtonPrefixTemp)
+	ON_BN_CLICKED(IDC_BUTTON_ADD_PREFIX2, &CCodeConvertDlg::OnBnClickedButtonAddPrefix2)
 END_MESSAGE_MAP()
 
 
@@ -204,6 +206,10 @@ void CCodeConvertDlg::OnDropFiles(HDROP hDropInfo)
 			{
 				m_listFiles.AddString(filePath);
 			}	
+			else if (strTemp.Find(".h") != -1)
+			{
+				m_listFiles.AddString(filePath);
+			}
 			else if (strTemp.Find(".c") != -1)
 			{
 				m_listFiles.AddString(filePath);
@@ -225,6 +231,10 @@ void CCodeConvertDlg::OnDropFiles(HDROP hDropInfo)
 				m_listFiles.AddString(filePath);
 			}
 			else if (strTemp.Find(".cc") != -1)
+			{
+				m_listFiles.AddString(filePath);
+			}
+			else if (strTemp.Find(".ice") != -1)
 			{
 				m_listFiles.AddString(filePath);
 			}
@@ -1269,6 +1279,55 @@ void CCodeConvertDlg::OnBnClickedButtonPostbuildevent()
 		CString strFilePath;
 		m_listFiles.GetText(index, strFilePath);
 		Vcxproj_Remove_Postbuildevent(strFilePath);
+	}
+
+	AfxMessageBox("replace finished!");
+}
+
+
+void CCodeConvertDlg::OnBnClickedButtonPrefixTemp()
+{
+	CString strPrefix;
+	m_edit_prefix.GetWindowTextA(strPrefix);
+	strPrefix.Trim();
+	strPrefix = "_" + strPrefix;
+
+	for (int index = 0; index < m_listFiles.GetCount(); index++)
+	{
+		CString strFilePath;
+		m_listFiles.GetText(index, strFilePath);
+
+		CString strFileName = sdk::processutil::GetNameByPath(strFilePath);
+		CString strFileNameNew = strFileName;
+		strFileNameNew.Replace(strPrefix, "");
+
+		CString strPath = sdk::processutil::GetPathByFullPath(strFilePath);
+		CString strFilePathNew = strPath + strFileNameNew;
+		sdk::fileutil::RenameFile(strFilePath, strFilePathNew);
+	}
+
+	AfxMessageBox("replace finished!");
+}
+
+
+void CCodeConvertDlg::OnBnClickedButtonAddPrefix2()
+{
+	CString strPrefix;
+	m_edit_prefix.GetWindowTextA(strPrefix);
+	strPrefix.Trim();
+	strPrefix = strPrefix + "_";
+
+	for (int index = 0; index < m_listFiles.GetCount(); index++)
+	{
+		CString strFilePath;
+		m_listFiles.GetText(index, strFilePath);
+
+		CString strFileName = sdk::processutil::GetNameByPath(strFilePath);
+		CString strFileNameNew = strPrefix + strFileName;
+
+		CString strPath = sdk::processutil::GetPathByFullPath(strFilePath);
+		CString strFilePathNew = strPath + strFileNameNew;
+		sdk::fileutil::RenameFile(strFilePath, strFilePathNew);
 	}
 
 	AfxMessageBox("replace finished!");
