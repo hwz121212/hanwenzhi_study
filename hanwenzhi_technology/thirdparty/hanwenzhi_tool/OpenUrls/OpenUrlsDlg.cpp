@@ -37,6 +37,7 @@ BEGIN_MESSAGE_MAP(COpenUrlsDlg, CDialogEx)
 	ON_LBN_DBLCLK(IDC_LIST1, &COpenUrlsDlg::OnLbnDblclkList1)
 	ON_BN_CLICKED(IDC_BUTTON_SAVE, &COpenUrlsDlg::OnBnClickedButtonSave)
 
+	ON_BN_CLICKED(IDC_BUTTON_OPEN_URL_SELF, &COpenUrlsDlg::OnBnClickedButtonOpenUrlSelf)
 END_MESSAGE_MAP()
 
 
@@ -282,3 +283,13 @@ void COpenUrlsDlg::OnBnClickedButtonSave()
 	SaveStringToFile(m_strFilePath, strAll);
 }
 
+
+
+void COpenUrlsDlg::OnBnClickedButtonOpenUrlSelf()
+{
+	CString cs = "https://github.com/hwz121212/";
+	for (int index=0; index<10; index++)
+	{
+		OpenUrl(cs);
+	}
+}
