@@ -38,6 +38,8 @@ public:
 
 private:
 	CString m_strFilePath;
+public:
+	afx_msg void OnBnClickedButtonOpenUrlSelf();
 };
 
 
